@@ -1,0 +1,111 @@
+<div id="cart-drawer-upsell-wrapper">
+  <div 
+    id="cart-drawer-upsell" class="gradient color-{{ settings.upsell_main_color_scheme }}" style="padding: 1rem 2rem;"
+    {% if request.page_type == 'cart' and settings.show_empty_cart == false and cart.item_count == 0 %}
+      hidden
+    {% endif %}>
+    <h3 
+      class="cart-drawer-upsell-title"
+      style="text-align: {{ settings.title_text_align }}">
+      <span>
+        {{ settings.title }}
+      </span>
+    </h3>
+    <ul 
+      class="cart-drawer-upsell-list"
+      data-list-style-cart-drawer="{{ settings.list_style_cart_drawer }}"
+      data-list-style-cart-page="{{ settings.list_style_cart_page }}">
+      {% for product in settings.collection.products limit: settings.limit %}
+        {% liquid 
+          assign is_in_cart = false
+          for line_item in cart.items
+            if line_item.product.id == product.id
+              assign is_in_cart = true
+            endif
+          endfor
+        %}
+        {% if is_in_cart == false and product.available %}
+          <li class="cart-drawer-upsell-list-item gradient color-{{ settings.upsell_color_scheme }}">
+            <div class="cart-drawer-upsell-list-item-left">
+              <a href="{{ product.url }}" tabindex="-1"> 
+                <img 
+                  src="{{ product.featured_image | image_url: width: 300 }}"
+                  class="cart-item__image" 
+                  alt="{{ product.featured_image.alt | escape }}" 
+                  width="150" 
+                  height="{{ 150 | divided_by: product.featured_image.aspect_ratio | ceil }}" 
+                  loading="lazy">
+              </a>
+            </div>
+            <div class="cart-drawer-upsell-list-item-right">
+              <a href="{{ product.url }}" class="cart-item__name h4 break">
+                {% assign prdct = product.title |  split: '-' %}
+                {{ prdct[0] }}
+              </a>
+              <product-form data-section-id="{{ id }}">
+                {%- form 'product',
+                  product,
+                  class: 'form',
+                  novalidate: 'novalidate',
+                  data-type: 'add-to-cart-form'
+                -%}
+                  {% if product.has_only_default_variant %}
+                    <input type="hidden" name="id" value="{{ product.first_available_variant.id }}">
+                    <div class="product-option">
+                      {% if product.compare_at_price > product.price %}
+                        <span class="visually-hidden visually-hidden--inline">
+                          {{ 'products.product.price.regular_price' | t }}
+                        </span>
+                        <s>
+                          {{ product.compare_at_price | money }}
+                        </s>
+                      {% endif %}
+                      {{ product.price | money }}
+                    </div>
+                  {% else %}
+                    <div class="field-wrapper">
+                      <div class="select">
+                        <select 
+                          id="cart-drawer-upsell-selector-{{ forloop.index }}"
+                          name="id"
+                          class="select__select"
+                          aria-label="Select variant"
+                          onchange="onChangeKsUpsellVariantSelector(this, event)">
+                          {% for variant in product.variants %}
+                            <option 
+                              value="{{ variant.id }}"
+                              data-variant-img="{% if variant.image %}{{ variant.image | image_url: width: 300 }}{% endif %}"
+                              {% if variant.available == false %}disabled{% endif %}>
+                              {{ variant.title }} -
+                              {% if variant.available == false %}
+                                {{ 'products.product.sold_out' | t }}
+                              {% else %}
+                                {{ variant.price | money }} 
+                              {% endif %}
+                            </option>
+                          {% endfor %}
+                        </select>
+                       <!-- {% render 'icon-caret' %}-->
+                      </div>
+                    </div>
+                  {% endif %}
+                  <button 
+                    type="submit" 
+                    name="add" 
+                    class="button button--{{ settings.upsell_btn_style }}">
+                    {% if settings.upsell_btn_text != blank %}
+                    {{ settings.upsell_btn_text }}
+                    {% else %}
+                    <span>{{ 'products.product.add_to_cart' | t}}</span>
+                    {% endif %}
+                    {%- render 'loading-spinner' -%}
+                  </button>
+                {% endform %}
+              </product-form>
+            </div>
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+</div>

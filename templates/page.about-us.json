@@ -1,0 +1,155 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "rich_text_YnVzfw": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_fByPJ9": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Our Story<\/strong>",
+            "heading_size": "h1"
+          }
+        },
+        "text_78agbX": {
+          "type": "text",
+          "settings": {
+            "text": "<p>At RevoLife™, our mission is to prioritize holistic health over fleeting trends and quick fixes. In a world inundated with diet culture and toxic beauty standards, we've set out to revolutionize the health industry by offering natural, effective, and scientifically-backed wellness solutions.<\/p><p>Founded on the belief that true wellness comes from within, RevoLife™ combines the wisdom of traditional herbal remedies with modern scientific research. Our products, from Eye Vital to Hair Growth Serum, are meticulously crafted to support your well-being in every aspect—be it eye health, hair vitality, bone strength, or overall immunity.<\/p><p>We stand by our promise of delivering only the best. All our products are lab-tested, Non-GMO, and free from sugar, fillers, and harmful chemicals. Whether you're looking for vegan-friendly options or scientifically-backed formulations, RevoLife™ has something for everyone. Our ingredients are traceable, ensuring you receive the highest quality in every purchase.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_fByPJ9",
+        "text_78agbX"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "accent-1",
+        "full_width": true,
+        "padding_top": 60,
+        "padding_bottom": 52,
+        "mobile_padding_top": 20,
+        "mobile_padding_bottom": 20
+      }
+    },
+    "rich_text_ekCF8F": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_P8U9mz": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Our Certifications<\/strong>",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_P8U9mz"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "accent-1",
+        "full_width": true,
+        "padding_top": 80,
+        "padding_bottom": 16,
+        "mobile_padding_top": 76,
+        "mobile_padding_bottom": 20
+      }
+    },
+    "brands_MWVMme": {
+      "type": "brands",
+      "blocks": {
+        "image_kfNFdB": {
+          "type": "image",
+          "settings": {
+            "logo_image": "shopify:\/\/shop_images\/9099_1_2.jpg",
+            "logo_image_width": 174,
+            "logo_image_height_mobile": 94
+          }
+        },
+        "image_3VGb3T": {
+          "type": "image",
+          "settings": {
+            "logo_image": "shopify:\/\/shop_images\/Group_4533.jpg",
+            "logo_image_width": 174,
+            "logo_image_height_mobile": 94
+          }
+        },
+        "image_LMhQQd": {
+          "type": "image",
+          "settings": {
+            "logo_image": "shopify:\/\/shop_images\/567_1_2.jpg",
+            "logo_image_width": 174,
+            "logo_image_height_mobile": 94
+          }
+        },
+        "image_8iizTR": {
+          "type": "image",
+          "settings": {
+            "logo_image": "shopify:\/\/shop_images\/Group_4535.jpg",
+            "logo_image_width": 174,
+            "logo_image_height_mobile": 94
+          }
+        },
+        "image_axmzH9": {
+          "type": "image",
+          "settings": {
+            "logo_image": "shopify:\/\/shop_images\/Group_4527.jpg",
+            "logo_image_width": 174,
+            "logo_image_height_mobile": 94
+          }
+        },
+        "image_ermqrH": {
+          "type": "image",
+          "settings": {
+            "logo_image": "shopify:\/\/shop_images\/Group_4531.jpg",
+            "logo_image_width": 174,
+            "logo_image_height_mobile": 94
+          }
+        },
+        "image_EfFRwH": {
+          "type": "image",
+          "settings": {
+            "logo_image": "shopify:\/\/shop_images\/Group_4527.jpg",
+            "logo_image_width": 174,
+            "logo_image_height_mobile": 94
+          }
+        }
+      },
+      "block_order": [
+        "image_kfNFdB",
+        "image_3VGb3T",
+        "image_LMhQQd",
+        "image_8iizTR",
+        "image_axmzH9",
+        "image_ermqrH",
+        "image_EfFRwH"
+      ],
+      "settings": {
+        "scroll_speed": 15,
+        "color_scheme": "accent-1",
+        "padding_desktop": 16,
+        "padding_mobile": 8,
+        "padding_item_desktop": 36,
+        "padding_item_mobile": 24,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_YnVzfw",
+    "rich_text_ekCF8F",
+    "brands_MWVMme"
+  ]
+}

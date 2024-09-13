@@ -1,0 +1,74 @@
+{% liquid
+    assign product1 = block.settings.prdct1.title | split: '-'
+    assign product2 = block.settings.prdct2.title | split: '-'
+    assign product3 = block.settings.prdct3.title | split: '-'
+%}
+
+{% if block.settings.prdct2 != blank or block.settings.prdct3 != blank %}
+    <div class="gmBndlWrap">
+        <div class="bndlBxWrap">
+            <input type="radio" name="gmbundle" data-pid="{{block.settings.prdct1.id}}" data-prc="{{block.settings.prdct1.selected_or_first_available_variant.price | money_without_trailing_zeros}}" data-var="{{block.settings.prdct1.selected_or_first_available_variant.id}}" id="{{block.id}}-{{product1[1] |  remove: ' ' }}" checked>
+            <label for="{{block.id}}-{{product1[1] |  remove: ' ' }}">
+                <p>{{product1[1]}}</p>
+                <p>
+                    <span class="gmCmPrc">{{block.settings.prdct1.compare_at_price | money_without_trailing_zeros }}</span>
+                    <span class="gmPrc">{{block.settings.prdct1.price |  money_without_trailing_zeros }}</span>
+                </p>
+            </label>
+        </div>
+        <div class="bndlBxWrap">
+            <input type="radio" name="gmbundle" data-pid="{{block.settings.prdct2.id}}" data-prc="{{block.settings.prdct2.selected_or_first_available_variant.price | money_without_trailing_zeros}}" data-var="{{block.settings.prdct2.selected_or_first_available_variant.id}}" id="{{block.id}}-{{product2[1] |  remove: ' ' }}">
+            <label for="{{block.id}}-{{product2[1] |  remove: ' ' }}">
+                <div class="lblBdg">Most Popular</div>
+                <p>{{product2[1]}}</p>
+                <div>
+                    <span class="cmprPrcPer">
+                        {% liquid
+                            assign prc2 = block.settings.prdct2.price
+                            assign cmpPrc2 = block.settings.prdct2.compare_at_price
+                            assign diff2 = cmpPrc2 | minus: prc2
+                            assign raw2 = diff2 | times: 100
+                            assign save2 = raw2 | divided_by: cmpPrc2
+                        %}
+                        save {{save2}}%
+                    </span>
+                    <p>
+                        <span class="gmCmPrc">{{ block.settings.prdct2.compare_at_price |  money_without_trailing_zeros}}</span>
+                        <span class="gmPrc">{{ block.settings.prdct2.price | money_without_trailing_zeros}}</span>
+                    </p>
+                </div>
+            </label>
+        </div>
+        <div class="bndlBxWrap">
+            <input type="radio" name="gmbundle" data-pid="{{block.settings.prdct3.id}}" data-prc="{{block.settings.prdct3.selected_or_first_available_variant.price | money_without_trailing_zeros}}" data-var="{{block.settings.prdct3.selected_or_first_available_variant.id}}" id="{{block.id}}-{{product3[1] |  remove: ' ' }}">
+            <label for="{{block.id}}-{{product3[1] |  remove: ' ' }}">
+                <div class="lblBdg">Best Value</div>
+                <p>{{product3[1]}}</p>
+                <div>
+                    <span class="cmprPrcPer">
+                        {% liquid
+                            assign prc3 = block.settings.prdct3.price
+                            assign cmpPrc3 = block.settings.prdct3.compare_at_price
+                            assign diff3 = cmpPrc3 | minus: prc3
+                            assign raw3 = diff3 | times: 100
+                            assign save3 = raw3 | divided_by: cmpPrc3
+                        %}
+                        save {{save3}}%
+                    </span>
+                    <p>
+                        <span class="gmCmPrc">{{ block.settings.prdct3.compare_at_price |  money_without_trailing_zeros }}</span>
+                        <span class="gmPrc">{{ block.settings.prdct3.price |  money_without_trailing_zeros }}</span>
+                    </p>
+                </div>
+            </label>
+        </div>
+    </div>
+{% endif %}
+
+<script>
+    $('.bndlBxWrap>input').on('change',(el)=>{
+        $('.gmNxtPrc').html(el.currentTarget.dataset.prc);
+        $('.product-variant-id').val(el.currentTarget.dataset.var);
+        $('input[name="product-id"]').val(el.currentTarget.dataset.pid);
+    });
+</script>

@@ -1,0 +1,188 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 0
+      }
+    },
+    "b11d4998-a007-4a26-990e-fba6ade13b76": {
+      "type": "rich-text",
+      "blocks": {
+        "6796aae3-0b94-4c0d-a460-ab06d9a3a33e": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>FAQs<\/strong>",
+            "heading_size": "h0"
+          }
+        },
+        "eb505d90-0714-42cf-b794-4012d27e6860": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Your Guide to Common Queries.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "6796aae3-0b94-4c0d-a460-ab06d9a3a33e",
+        "eb505d90-0714-42cf-b794-4012d27e6860"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "accent-1",
+        "full_width": true,
+        "padding_top": 80,
+        "padding_bottom": 0,
+        "mobile_padding_top": 48,
+        "mobile_padding_bottom": 0
+      }
+    },
+    "93d21b74-3b8b-4fd7-aea5-1624b545659e": {
+      "type": "collapsible-content",
+      "blocks": {
+        "1e45aac1-b5d4-405c-85f3-aa164a8bf820": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Are your products gluten-free?",
+            "icon": "none",
+            "row_content": "<p>Absolutely, our formulations are gluten-free to accommodate various dietary needs.<\/p>",
+            "page": ""
+          }
+        },
+        "2eb9ef10-6d54-4a4c-8ca0-eaa76bfb9bb0": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Do you ship internationally?",
+            "icon": "none",
+            "row_content": "<p>Yes, we offer international shipping to deliver our products worldwide.<\/p>",
+            "page": ""
+          }
+        },
+        "2c158525-2757-4945-95a5-4769f11a5a4a": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How should I store your products?",
+            "icon": "none",
+            "row_content": "<p>Store our products in a cool, dry place away from direct sunlight for optimal freshness.<\/p>",
+            "page": ""
+          }
+        },
+        "template--20491899240760__93d21b74-3b8b-4fd7-aea5-1624b545659e-collapsible_row-3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Are your products tested on animals?",
+            "icon": "none",
+            "row_content": "<p>No, we are committed to cruelty-free practices and do not test on animals.<\/p>",
+            "page": ""
+          }
+        },
+        "template--20491899240760__93d21b74-3b8b-4fd7-aea5-1624b545659e-collapsible_row-4": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can your products help with specific health conditions?",
+            "icon": "none",
+            "row_content": "<p>Our products are formulated to support general wellness; for specific conditions, consult a healthcare professional.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_zbhzwP": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How soon can I expect to see results?",
+            "icon": "none",
+            "row_content": "<p>Results may vary, but many customers report noticeable improvements within weeks of consistent use.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_GYi9hL": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Where can I find more information about your ingredients?",
+            "icon": "none",
+            "row_content": "<p>Detailed ingredient lists and their benefits are available on each product page on our website.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_k6AHcy": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can I use your products during pregnancy or while nursing?",
+            "icon": "none",
+            "row_content": "<p>We recommend consulting your healthcare provider before using any new products during pregnancy or nursing.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_EBr6Xd": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Are your products certified organic?",
+            "icon": "none",
+            "row_content": "<p>Some of our products are certified organic; look for specific certifications on product labels.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_WUDfVd": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Do you use sustainable packaging?",
+            "icon": "none",
+            "row_content": "<p>Yes, we prioritize eco-friendly materials in our packaging to minimize environmental impact.<\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "1e45aac1-b5d4-405c-85f3-aa164a8bf820",
+        "2eb9ef10-6d54-4a4c-8ca0-eaa76bfb9bb0",
+        "2c158525-2757-4945-95a5-4769f11a5a4a",
+        "template--20491899240760__93d21b74-3b8b-4fd7-aea5-1624b545659e-collapsible_row-3",
+        "template--20491899240760__93d21b74-3b8b-4fd7-aea5-1624b545659e-collapsible_row-4",
+        "collapsible_row_zbhzwP",
+        "collapsible_row_GYi9hL",
+        "collapsible_row_k6AHcy",
+        "collapsible_row_EBr6Xd",
+        "collapsible_row_WUDfVd"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "row",
+        "color_scheme": "accent-1",
+        "container_color_scheme": "background-1",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "heading_size_row": "h2",
+        "padding_top": 24,
+        "padding_bottom": 36,
+        "mobile_padding_top": 0,
+        "mobile_padding_bottom": 20,
+        "border_enabled": true,
+        "mobile_heading_font_size": 18
+      }
+    },
+    "extra_button_LQC7VV": {
+      "type": "extra-button",
+      "settings": {
+        "custom_text": "Take me to Shop",
+        "custom_text_small": "",
+        "color_scheme": "accent-1",
+        "padding_top": 0,
+        "padding_bottom": 152,
+        "use_anchor_link": true,
+        "anchor_link": "\/collections\/all"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "b11d4998-a007-4a26-990e-fba6ade13b76",
+    "93d21b74-3b8b-4fd7-aea5-1624b545659e",
+    "extra_button_LQC7VV"
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "type": "custom.popup",
+  "name": "Popup Group",
+  "sections": {
+    "popup_pro_KtXe6n": {
+      "type": "popup-pro",
+      "settings": {
+        "mode": "disabled",
+        "only_homepage": false,
+        "only_visitor": false,
+        "delay": 5,
+        "expiry": 30,
+        "width": 720,
+        "padding": 40,
+        "text_alignment": "center",
+        "text_box_position": "center",
+        "image_position": "left",
+        "colors_text": "#000000",
+        "colors_border": "#f3f3f3",
+        "colors_background": "#ffffff",
+        "colors_shadow": "#f3f3f3",
+        "colors_circle": "#f3f3f3",
+        "colors_border_dis": "#f3f3f3",
+        "colors_bg_dis": "#f3f3f3",
+        "colors_discount": "#000000",
+        "heading_prefix": "Sign up and",
+        "heading": "GET 10% OFF",
+        "heading_size": "h1",
+        "heading_suffix": "",
+        "text": "<p>Sign up for our email newsletter for special discounts and exclusive offers.<\/p>",
+        "text_email": "Enter Email Here",
+        "bottom_text": "Be the first to know about new collections and exclusive offers.",
+        "social_media": true,
+        "dismiss_btn_label": "No thanks",
+        "discount_code": "EXAMPLE10",
+        "success_heading_prefix": "Enjoy your",
+        "success_heading": "DISCOUNT!",
+        "success_heading_size": "h1",
+        "success_heading_suffix": "",
+        "success_text": "<p>Use the code bellow to get 10% off your whole order!<\/p>",
+        "discount_code_label": "Discount code:",
+        "floating": true,
+        "flo_heading": "Get 10% Discount",
+        "floating_social_media": true,
+        "flo_text_box_position": "left",
+        "flo_colors_text": "#1a1b18",
+        "mobile_disabled": true
+      }
+    }
+  },
+  "order": [
+    "popup_pro_KtXe6n"
+  ]
+}

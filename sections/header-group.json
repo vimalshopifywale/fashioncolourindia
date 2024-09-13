@@ -1,0 +1,193 @@
+{
+  "name": "t:sections.header.name",
+  "type": "header",
+  "sections": {
+    "acd1975e-ba1e-41d8-a56e-b40442760d41": {
+      "type": "lumin-scrolling-text",
+      "blocks": {
+        "3baf0326-f261-4c9f-8894-e511f651bf25": {
+          "type": "announcement",
+          "settings": {
+            "Announcement": "<p>Free Shipping On Orders Rs.2,000+<\/p>",
+            "announcement_size": 12,
+            "announcement_size_m": 10,
+            "text_spacing": 1,
+            "text_transform": "uppercase",
+            "announcement_color": "#ffffff",
+            "icon": "truck",
+            "text_link": ""
+          }
+        },
+        "announcement_3aw3Lj": {
+          "type": "announcement",
+          "settings": {
+            "Announcement": "<p>Get 10% Off With Code: SAVE10<\/p>",
+            "announcement_size": 12,
+            "announcement_size_m": 10,
+            "text_spacing": 1,
+            "text_transform": "uppercase",
+            "announcement_color": "#ffffff",
+            "icon": "stopwatch",
+            "text_link": ""
+          }
+        },
+        "announcement_qfBYVF": {
+          "type": "announcement",
+          "settings": {
+            "Announcement": "<p>New Arrivals Just Dropped<\/p>",
+            "announcement_size": 12,
+            "announcement_size_m": 10,
+            "text_spacing": 1,
+            "text_transform": "uppercase",
+            "announcement_color": "#ffffff",
+            "icon": "fire",
+            "text_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "3baf0326-f261-4c9f-8894-e511f651bf25",
+        "announcement_3aw3Lj",
+        "announcement_qfBYVF"
+      ],
+      "settings": {
+        "scroll_speed": 30,
+        "reverse": false,
+        "color_scheme": "inverse",
+        "padding_desktop": 8,
+        "padding_mobile": 8,
+        "padding_item_desktop": 52,
+        "padding_item_mobile": 4,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "header": {
+      "type": "header",
+      "blocks": {
+        "below_menu_bxfiHf": {
+          "type": "below_menu",
+          "settings": {
+            "blk_menu": "primary-menu"
+          }
+        }
+      },
+      "block_order": [
+        "below_menu_bxfiHf"
+      ],
+      "custom_css": [
+
+      ],
+      "settings": {
+        "logo_position": "middle-left",
+        "menu": "secondary-menu",
+        "menu_type_desktop": "mega",
+        "menu_hover": false,
+        "sticky_header_type": "on-scroll-up",
+        "show_line_separator": false,
+        "color_scheme": "background-1",
+        "menu_color_scheme": "background-2",
+        "transparent_header": false,
+        "content_color": "#ffffff",
+        "enable_country_selector": false,
+        "enable_language_selector": false,
+        "mobile_logo_position": "left",
+        "margin_bottom": 0,
+        "padding_top": 8,
+        "padding_bottom": 8
+      }
+    },
+    "custom_fonts_NVpMpR": {
+      "type": "custom-fonts",
+      "blocks": {
+        "image_YptzxR": {
+          "type": "image",
+          "settings": {
+            "name": "Axiforma Regular",
+            "custom_font_weight": "400",
+            "custom_font_style": "normal",
+            "custom_font_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0707\/9356\/0288\/files\/Axiforma-Regular.woff2",
+            "apply_h1": false,
+            "apply_h2": false,
+            "apply_h3": false,
+            "apply_h4": false,
+            "apply_h5": false,
+            "apply_h6": false,
+            "apply_span": false,
+            "apply_p": false,
+            "apply_custom": ".accordion h3, .copyright__content, .header__menu-item, .logo-bar__text-label, .facet-filters__field h2, .facets__summary, .active-facets-vertical-filter h2, .has-submenu span, .mobile-facets__sort label, .mobile-facets__footer .no-js-hidden.button.button--primary, .mobile-facets__info, .mobile-facets__close-button.link.link--text.focus-inset, .ship-wrapper p,.price__regular, .slider-counter, .product-option, .price, .menu-drawer__menu-item, p.totals__total-value, .summary__title h2, .prdcTagWrap, .gm-feature-gm_feature_MLHaBY, .template-404 p, .comparison-table .comparison-table__row-name h3"
+          }
+        },
+        "image_FLPe9D": {
+          "type": "image",
+          "settings": {
+            "name": "Axiforma Light",
+            "custom_font_weight": "300",
+            "custom_font_style": "none",
+            "custom_font_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0707\/9356\/0288\/files\/Axiforma-Light.woff2",
+            "apply_h1": false,
+            "apply_h2": false,
+            "apply_h3": false,
+            "apply_h4": false,
+            "apply_h5": false,
+            "apply_h6": false,
+            "apply_span": false,
+            "apply_p": false,
+            "apply_custom": ".disclaimer, .accordion p, .field, .rte p, .list-menu__item--link, .caption-with-letter-spacing, .article-card__excerpt, .facet-filters__sort, .product-count .light h2, .facet-checkbox, .facets__header-vertical, .field__label, .customer .field label, .product-count__text, .select #SortBy-mobile, .form-status.caption-large.text-body, .form-status-list.caption-large, #ContactFooter-error, .template-search__header p, li.breadcrumbs__item a, loox-rating-label, .article-template__content li, .article-template__link, .lblBdg, .sldWrap>span, .qare-feature p, .qare-feature-mb p"
+          }
+        },
+        "image_m6bzQE": {
+          "type": "image",
+          "settings": {
+            "name": "Axiforma Medium",
+            "custom_font_weight": "500",
+            "custom_font_style": "none",
+            "custom_font_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0707\/9356\/0288\/files\/Axiforma-Medium.woff2?v=1722759266",
+            "apply_h1": false,
+            "apply_h2": false,
+            "apply_h3": false,
+            "apply_h4": false,
+            "apply_h5": false,
+            "apply_h6": false,
+            "apply_span": false,
+            "apply_p": false,
+            "apply_custom": ".mega-menu__link--level-2,  span.gmPrc, comparison-table__others, .comparison-table th, .qare-feature h4, .qare-feature-mb h4"
+          }
+        },
+        "image_it4hCd": {
+          "type": "image",
+          "settings": {
+            "name": "customfont",
+            "custom_font_weight": "none",
+            "custom_font_style": "none",
+            "custom_font_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0707\/9356\/0288\/files\/Axiforma-SemiBold_76d3455f-239f-45db-ac54-1f3b0fdf5847.woff2?v=1724889020",
+            "apply_h1": false,
+            "apply_h2": false,
+            "apply_h3": false,
+            "apply_h4": false,
+            "apply_h5": false,
+            "apply_h6": false,
+            "apply_span": false,
+            "apply_p": false,
+            "apply_custom": ".button--secondary, button.shopify-payment-button__button--unbranded, #lumin-sticky-atc .product-form button[name=add]"
+          }
+        }
+      },
+      "block_order": [
+        "image_YptzxR",
+        "image_FLPe9D",
+        "image_m6bzQE",
+        "image_it4hCd"
+      ],
+      "disabled": true,
+      "settings": {
+        "enable": false
+      }
+    }
+  },
+  "order": [
+    "acd1975e-ba1e-41d8-a56e-b40442760d41",
+    "header",
+    "custom_fonts_NVpMpR"
+  ]
+}

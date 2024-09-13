@@ -1,0 +1,218 @@
+{% comment %}
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: calc({{ section.settings.padding_top }}px * 0.75);
+    padding-bottom: calc({{ section.settings.padding_bottom }}px  * 0.75);
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+
+  .buybutton-{{ section.id }}.button a {
+	color: #fff;
+	text-decoration: none;
+}
+{%- endstyle -%}
+<div class="color-{{ section.settings.color_scheme }} gradient">
+  <div
+    class="section-{{ section.id }}-padding"
+    style="display: flex;justify-content:center;">
+    <button class="buybutton-{{ section.id }} button" style="display: flex;flex-direction: column;gap: 3px;">
+      <span>{{ section.settings.custom_text }}</span>
+      <span style="font-size: 74%;">{{ section.settings.custom_text_small }}</span>
+    </button>
+  </div>
+</div>
+<script>
+  document.querySelector('.buybutton-{{ section.id }}').onclick = clickBuyButton;
+
+  function clickBuyButton(e) {
+    document.querySelector('.product-form__submit').click();
+  }
+</script>
+
+{% schema %}
+{
+  "name": "Extra Button",
+  "tag": "section",
+  "class": "section",
+   "disabled_on": {
+  "groups": ["custom.popup"]
+   },
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "custom_text",
+      "label": "Button Text",
+      "default": "Get Yours"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "custom_text_small",
+      "label": "Small Button Text",
+      "default": "Offer End Soon"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "background-1"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 52
+    }
+  ],
+  "presets": [
+    {
+      "name": "Extra Button"
+    }
+  ]
+}
+{% endschema %}
+ {% endcomment %}
+
+
+
+ {%- style -%}
+  /*Code By Growthx Media LLP*/
+  .section-{{ section.id }}-padding {
+    padding-top: calc({{ section.settings.padding_top }}px * 0.75);
+    padding-bottom: calc({{ section.settings.padding_bottom }}px  * 0.75);
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+
+  .buybutton-{{ section.id }}.button a {
+	color: #fff;
+	text-decoration: none;
+}
+{%- endstyle -%}
+<div class="color-{{ section.settings.color_scheme }} gradient">
+  <div
+    class="section-{{ section.id }}-padding"
+    style="display: flex;justify-content:center;">
+    {% if section.settings.use_anchor_link %}
+      <a href="{{ section.settings.anchor_link }}" class="buybutton-{{ section.id }} button" style="display: flex;flex-direction: column;gap: 3px;">
+        <span>{{ section.settings.custom_text }}</span>
+        <span style="font-size: 74%;">{{ section.settings.custom_text_small }}</span>
+      </a>
+    {% else %}
+      <button class="buybutton-{{ section.id }} button" style="display: flex;flex-direction: column;gap: 3px;">
+        <span>{{ section.settings.custom_text }}</span>
+        <span style="font-size: 74%;">{{ section.settings.custom_text_small }}</span>
+      </button>
+    {% endif %}
+  </div>
+</div>
+<script>
+  if (!{{ section.settings.use_anchor_link | json }}) {
+    document.querySelector('.buybutton-{{ section.id }}').onclick = clickBuyButton;
+
+    function clickBuyButton(e) {
+      document.querySelector('.product-form__submit').click();
+    }
+  }
+</script>
+
+{% schema %}
+{
+  "name": "Extra Button",
+  "tag": "section",
+  "class": "section",
+   "disabled_on": {
+  "groups": ["custom.popup"]
+   },
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "custom_text",
+      "label": "Button Text",
+      "default": "Get Yours"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "custom_text_small",
+      "label": "Small Button Text",
+      "default": "Offer End Soon"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "background-1"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 52
+    },
+    {
+      "type": "checkbox",
+      "id": "use_anchor_link",
+      "label": "Use Anchor Link",
+      "default": false
+    },
+    {
+      "type": "text",
+      "id": "anchor_link",
+      "label": "Anchor Link",
+      "default": "#"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Extra Button"
+    }
+  ]
+}
+{% endschema %}
+

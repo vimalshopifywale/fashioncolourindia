@@ -1,0 +1,115 @@
+{
+  "sections": {
+    "collapsible_content_tzaYU6": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_RyhqXp": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How do I know your products are safe?",
+            "icon": "none",
+            "row_content": "<p>We conduct rigorous lab testing to ensure safety, purity, and effectiveness.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_BF9mJX": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What makes your products different?",
+            "icon": "none",
+            "row_content": "<p>We use natural ingredients backed by science to address specific health concerns effectively.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_F4iWQV": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Are your products suitable for sensitive skin?",
+            "icon": "none",
+            "row_content": "<p>Many of our products are designed with sensitive skin in mind, but we recommend patch testing first.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_tVAFAQ": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Are your products vegan?",
+            "icon": "none",
+            "row_content": "<p>Yes, all our products are 100% vegan, formulated without any animal-derived ingredients.<\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_RyhqXp",
+        "collapsible_row_BF9mJX",
+        "collapsible_row_F4iWQV",
+        "collapsible_row_tVAFAQ"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Frequently Asked Questions",
+        "chkbx": false,
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "row",
+        "color_scheme": "accent-1",
+        "container_color_scheme": "background-1",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "heading_size_row": "h3",
+        "padding_top": 60,
+        "padding_bottom": 52,
+        "mobile_padding_top": 24,
+        "mobile_padding_bottom": 40,
+        "border_enabled": true,
+        "mobile_heading_font_size": 23
+      }
+    },
+    "collection_list_pxk3gH": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_3CFA89": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "featured_collection_78FPUz": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "featured_collection_FDzHLj": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_3CFA89",
+        "featured_collection_78FPUz",
+        "featured_collection_FDzHLj"
+      ],
+      "settings": {
+        "title": "Collections",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "collapsible_content_tzaYU6",
+    "collection_list_pxk3gH"
+  ]
+}

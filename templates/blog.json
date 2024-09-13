@@ -1,0 +1,37 @@
+{
+  "sections": {
+    "breadcrumbs_H4e38M": {
+      "type": "breadcrumbs",
+      "disabled": true,
+      "settings": {
+        "title_home": "Home",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "color_scheme": ""
+      }
+    },
+    "main": {
+      "type": "main-blog",
+      "custom_css": [
+        "h1.title--primary {font-weight: 600 !important; color: #333333 !important;}",
+        "h3.card__heading.h2 {font-weight: 600 !important; color: #333333 !important;}",
+        "@media (max-width: 749px) {.title--primary {margin: 0 0 0.5em 0; }}"
+      ],
+      "settings": {
+        "layout": "grid",
+        "show_image": true,
+        "image_height": "adapt",
+        "show_date": true,
+        "show_author": false,
+        "padding_top": 36,
+        "padding_bottom": 100
+      }
+    }
+  },
+  "order": [
+    "breadcrumbs_H4e38M",
+    "main"
+  ]
+}

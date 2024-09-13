@@ -1,0 +1,8 @@
+<div class="prdcTagWrap prdctTag">
+    {% for prdcTag in product.metafields.custom.product_details_controller.value.gm_card_tags.value %}
+        <div class="prdcTag">
+            <img src="{{prdcTag.gm_icon_or_image | image_url: width: 20 }}" alt="{{prdcTag.gm_icon_or_image.alt}}">
+            <span>{{prdcTag.gm_title}}</span>
+        </div>
+    {% endfor %}
+</div>

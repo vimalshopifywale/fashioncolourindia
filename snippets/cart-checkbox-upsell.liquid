@@ -1,0 +1,221 @@
+{% assign upsell_product = all_products[settings.cart_upsell_product] %}
+{% if upsell_product %}
+  {% assign variant_id = upsell_product.variants.first.id %}
+  {% assign variant_price = upsell_product.variants.first.price | money %}
+  <div
+    class="cart-upsell lumin-toggle"
+    style="display: flex;justify-content: space-between;"
+  >
+  <div style="
+    display: flex;
+    align-items: center;
+    gap: 10px;
+">
+    <span
+      style="
+        display: flex;
+        align-items: center;
+        gap: 14px;
+      "
+    > {%- if settings.gift_icon != blank -%}
+                    <img style="width:40px; height:auto;" src="{{ settings.gift_icon | img_url: '40x' }}">
+                  {%- else -%}
+      <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" viewBox="0 0 48 48" id="a"><defs><style>.b{fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;}</style></defs><path class="b" d="m40.5,20.7591v19.7409c0,1.1046-.8954,2-2,2H9.5c-1.1046,0-2-.8954-2-2v-19.7409"/><rect class="b" x="5.5" y="14.39" width="37" height="6.3692"/><path class="b" d="m24,14.39C18.2523,5.5162,14.8879,3.4975,11.7561,7.39c-3.2694,4.0637,4.0289,7,12.2439,7Z"/><line class="b" x1="24" y1="14.39" x2="18.7991" y2="11.7405"/><path class="b" d="m24,14.39c5.7477-8.8738,9.1121-10.8925,12.2439-7,3.2694,4.0637-4.0289,7-12.2439,7Z"/><line class="b" x1="24" y1="14.39" x2="29.2009" y2="11.7405"/></svg>
+          {% endif %}
+    </span>
+      <div style="
+    display: flex;
+    flex-direction: column;
+">
+      <span><span style="font-size: {{ settings.cart_upsell_font_size }}px; font-weight: {{ settings.cart_upsell_font_weight }};">{{ settings.cart_upsell_text }}</span> <span style="color: {{ settings.gift_price_color }};font-size: {{ settings.cart_upsell_font_size }}px; font-weight: {{ settings.cart_upsell_font_weight }};">{{- variant_price -}}</span></span>
+
+      <span style="font-size: {{ settings.cart_upsell_subtext_size }}px; font-weight: {{ settings.cart_upsell_sub_weight }};">{{ settings.cart_upsell_subtext }}</span>
+    </div>
+  </div>
+    <label for="cart-upsell-checkbox" class="switch">
+      <input
+        type="checkbox"
+        id="cart-upsell-checkbox"
+        class=""
+        name="cart-upsell"
+        value="1"
+        data-variant-id="{{ variant_id }}"
+      >
+      <span class="toggle-slider round"></span>
+    </label>
+  </div>
+{% endif %}
+
+<style>
+   .lumin-toggle {
+       display: inline-flex;
+       width: 100%;
+       align-items: center;
+       gap: 10px;
+       padding: 1rem;
+       background: {{settings.gift_bg_color}};
+       border-radius: {{settings.gift_wrap_radius}}px;
+       {% if settings.show_cart_note %} margin-top: 1rem;{% endif %}
+   }
+   #main-cart-footer.is-empty .cart-upsell {
+     display: none;
+   }
+
+   #cart-upsell-checkbox {
+     display: none;
+   }
+
+  /* .custom-checkbox {
+     cursor: pointer;
+     display: inline-flex;
+     align-items: center;
+   }
+
+   .custom-checkbox__icon {
+     width: 16px;
+     height: 16px;
+     border: 1px solid currentColor;
+     margin-right: 10px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background-color: transparent;
+   }
+
+   .custom-checkbox__input:checked + .custom-checkbox__icon {
+     background-color: rgb(var(--color-background));
+   }
+
+   .custom-checkbox__icon::before {
+     content: '';
+     width: 10px;
+     height: 5px;
+     border-left: 2px solid currentColor;
+     border-bottom: 2px solid currentColor;
+     transform: translate(0, -1px) rotate(-45deg);
+     opacity: 0; /* Hidden when unchecked */
+   }
+
+  /* .custom-checkbox__input:checked + .custom-checkbox__icon::before {
+     opacity: 1; /* Show checkmark when checked
+   }*/
+   .switch {
+     position: relative;
+     display: inline-block;
+     width: 60px;
+     height: 34px;
+     min-width: 60px;
+   }
+
+   .switch input {
+     opacity: 0;
+     width: 0;
+     height: 0;
+   }
+
+   .toggle-slider {
+     position: absolute;
+     cursor: pointer;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     background-color: #ccc;
+     -webkit-transition: .4s;
+     transition: .4s;
+   }
+
+   .toggle-slider:before {
+     position: absolute;
+     content: "";
+     height: 26px;
+     width: 26px;
+     left: 4px;
+     bottom: 4px;
+     background-color: white;
+     -webkit-transition: .4s;
+     transition: .4s;
+   }
+
+   input:checked + .toggle-slider {
+     background-color: #2196F3;
+   }
+
+   input:focus + .toggle-slider {
+     box-shadow: 0 0 1px #2196F3;
+   }
+
+   input:checked + .toggle-slider:before {
+     -webkit-transform: translateX(26px);
+     -ms-transform: translateX(26px);
+     transform: translateX(26px);
+   }
+
+   /* Rounded toggle-sliders */
+   .toggle-slider.round {
+     border-radius: 34px;
+   }
+
+   .toggle-slider.round:before {
+     border-radius: 50%;
+   }.switch {
+     position: relative;
+     display: inline-block;
+     width: 50px;
+     height: 26px;
+     min-width: 50px;
+   }
+
+   .switch input {
+     opacity: 0;
+     width: 0;
+     height: 0;
+   }
+
+   .toggle-slider {
+     position: absolute;
+     cursor: pointer;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     background-color: #ccc;
+     -webkit-transition: .4s;
+     transition: .4s;
+   }
+
+   .toggle-slider:before {
+     position: absolute;
+     content: "";
+     height: 20px;
+     width: 20px;
+     left: 4px;
+     bottom: 3px;
+     background-color: white;
+     -webkit-transition: .4s;
+     transition: .4s;
+   }
+
+   input:checked + .toggle-slider {
+     background-color: {{settings.toggle_color}};
+   }
+
+   input:focus + .toggle-slider {
+     box-shadow: 0 0 1px {{settings.toggle_color}};
+   }
+
+   input:checked + .toggle-slider:before {
+     -webkit-transform: translateX(23px);
+     -ms-transform: translateX(23px);
+     transform: translateX(23px);
+   }
+
+   /* Rounded toggle-sliders */
+   .toggle-slider.round {
+     border-radius: 34px;
+   }
+
+   .toggle-slider.round:before {
+     border-radius: 50%;
+   }
+</style>

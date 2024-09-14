@@ -1,115 +1,114 @@
 {
   "sections": {
-    "collapsible_content_tzaYU6": {
-      "type": "collapsible-content",
-      "blocks": {
-        "collapsible_row_RyhqXp": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "How do I know your products are safe?",
-            "icon": "none",
-            "row_content": "<p>We conduct rigorous lab testing to ensure safety, purity, and effectiveness.<\/p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_BF9mJX": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "What makes your products different?",
-            "icon": "none",
-            "row_content": "<p>We use natural ingredients backed by science to address specific health concerns effectively.<\/p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_F4iWQV": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Are your products suitable for sensitive skin?",
-            "icon": "none",
-            "row_content": "<p>Many of our products are designed with sensitive skin in mind, but we recommend patch testing first.<\/p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_tVAFAQ": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Are your products vegan?",
-            "icon": "none",
-            "row_content": "<p>Yes, all our products are 100% vegan, formulated without any animal-derived ingredients.<\/p>",
-            "page": ""
-          }
-        }
-      },
-      "block_order": [
-        "collapsible_row_RyhqXp",
-        "collapsible_row_BF9mJX",
-        "collapsible_row_F4iWQV",
-        "collapsible_row_tVAFAQ"
-      ],
+    "featured_collection_W8newm": {
+      "type": "featured-collection",
       "settings": {
-        "caption": "",
-        "heading": "Frequently Asked Questions",
-        "chkbx": false,
+        "title": "Best Seller",
         "heading_size": "h1",
-        "heading_alignment": "center",
-        "layout": "row",
+        "description": "",
+        "collection_text_alignment": "center",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "bluser-highlighter-bronzer",
+        "products_to_show": 10,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "navigation_on_desk": true,
         "color_scheme": "accent-1",
-        "container_color_scheme": "background-1",
-        "open_first_collapsible_row": false,
         "image_ratio": "adapt",
-        "desktop_layout": "image_second",
-        "heading_size_row": "h3",
-        "padding_top": 60,
-        "padding_bottom": 52,
-        "mobile_padding_top": 24,
-        "mobile_padding_bottom": 40,
-        "border_enabled": true,
-        "mobile_heading_font_size": 23
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": true,
+        "enable_quick_desc": true,
+        "quick_desc_legth": 90,
+        "quick_desc_size": 14,
+        "enable_quick_add": false,
+        "show_secondary_add": true,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "navigation_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "mobile_padding_top": 20,
+        "mobile_padding_bottom": 20
       }
     },
-    "collection_list_pxk3gH": {
-      "type": "collection-list",
+    "gm_vdo_sld_PXcCY3": {
+      "type": "gm-vdoSld",
       "blocks": {
-        "featured_collection_3CFA89": {
-          "type": "featured_collection",
+        "slide_pNznWQ": {
+          "type": "slide",
           "settings": {
-            "collection": ""
+            "imgPkr": "shopify:\/\/shop_images\/fashion-platinum.png",
+            "video": "shopify:\/\/products\/fashion-colour-platinum-liquid-blusher-5gm",
+            "slctPrdct": "fashion-colour-24hr-longwear-liquid-foundation-with-skin-care"
           }
         },
-        "featured_collection_78FPUz": {
-          "type": "featured_collection",
+        "slide_AYQAtb": {
+          "type": "slide",
           "settings": {
-            "collection": ""
+            "imgPkr": "shopify:\/\/shop_images\/fashion-mattelliquid.png",
+            "video": "shopify:\/\/collections\/eyeliner-pencil",
+            "slctPrdct": "fashion-colour-24hr-longwear-liquid-foundation-with-skin-care"
           }
         },
-        "featured_collection_FDzHLj": {
-          "type": "featured_collection",
+        "slide_hAYdLL": {
+          "type": "slide",
           "settings": {
-            "collection": ""
+            "imgPkr": "shopify:\/\/shop_images\/fashion-mattelliquid.png",
+            "video": "shopify:\/\/collections\/bluser-highlighter-bronzer",
+            "slctPrdct": "fashion-colour-non-transfer-matt-waterproof-lipstick"
+          }
+        },
+        "slide_n84eCd": {
+          "type": "slide",
+          "settings": {
+            "imgPkr": "shopify:\/\/shop_images\/fashion-mattelliquid.png",
+            "video": "shopify:\/\/products\/fashion-colour-lip-crayon-waterproof-long-lasting",
+            "slctPrdct": "fashion-colour-non-transfer-matt-waterproof-lipstick"
+          }
+        },
+        "slide_JQcXGN": {
+          "type": "slide",
+          "settings": {
+            "imgPkr": "shopify:\/\/shop_images\/fashion-platinum-mackup.png",
+            "video": "shopify:\/\/products\/fashion-colour-lip-crayon-waterproof-long-lasting",
+            "slctPrdct": "fashion-colour-non-transfer-matt-waterproof-lipstick"
           }
         }
       },
       "block_order": [
-        "featured_collection_3CFA89",
-        "featured_collection_78FPUz",
-        "featured_collection_FDzHLj"
+        "slide_pNznWQ",
+        "slide_AYQAtb",
+        "slide_hAYdLL",
+        "slide_n84eCd",
+        "slide_JQcXGN"
       ],
       "settings": {
-        "title": "Collections",
-        "heading_size": "h1",
-        "image_ratio": "square",
-        "columns_desktop": 3,
-        "color_scheme": "",
-        "show_view_all": false,
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "preTtl": "Our Products in Action",
+        "ttl": "Real Reviews from Our Beauty Tribe",
+        "subTtl": "",
+        "btnTxt": "",
+        "btnUrl": "",
+        "dskSld": 4,
+        "dskSpc": 34,
+        "tabSld": 4,
+        "tabSpc": 20,
+        "mblSld": 1.8,
+        "mblSpc": 20,
+        "color_scheme": "accent-1",
+        "secPdgTop": 20,
+        "secPdgBtm": 20,
+        "mblPdgTop": 20,
+        "mblPdgBtm": 20
       }
     }
   },
   "order": [
-    "collapsible_content_tzaYU6",
-    "collection_list_pxk3gH"
+    "featured_collection_W8newm",
+    "gm_vdo_sld_PXcCY3"
   ]
 }

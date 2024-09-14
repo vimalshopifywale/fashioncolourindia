@@ -65,30 +65,32 @@
     "header": {
       "type": "header",
       "blocks": {
-        "below_menu_bxfiHf": {
-          "type": "below_menu",
+        "secondary_menus_iXTTUT": {
+          "type": "secondary_menus",
           "settings": {
-            "blk_menu": "primary-menu"
+            "secondary_menu": "secondary-menu"
           }
         }
       },
       "block_order": [
-        "below_menu_bxfiHf"
+        "secondary_menus_iXTTUT"
       ],
       "custom_css": [
 
       ],
       "settings": {
-        "logo_position": "middle-left",
-        "menu": "secondary-menu",
+        "logo_position": "top-left",
+        "checkbox_setting": true,
+        "menu": "primary-menu",
         "menu_type_desktop": "mega",
         "menu_hover": false,
-        "sticky_header_type": "on-scroll-up",
+        "sticky_header_type": "always",
         "show_line_separator": false,
         "color_scheme": "background-1",
         "menu_color_scheme": "background-2",
         "transparent_header": false,
         "content_color": "#ffffff",
+        "background": "#ffffff",
         "enable_country_selector": false,
         "enable_language_selector": false,
         "mobile_logo_position": "left",

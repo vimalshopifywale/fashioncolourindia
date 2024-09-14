@@ -2860,6 +2860,10 @@ details[open]>.header__submenu {
 .header__menu {
   padding: 0 1rem;
 }
+.secondary-main {
+  margin: 0 auto;
+  text-align: center;
+}
 
 .header__menu-item {
   padding: 1.2rem;
@@ -4268,7 +4272,7 @@ h5,
 .h3,
 .h4,
 .h5 {
-  font-family: "p22-mackinac-pro", serif;
+  /* font-family: "p22-mackinac-pro", serif; */
 }
 
 .rte-width {
@@ -4315,7 +4319,7 @@ h5,
 
 .vdoSldCntWrap {
   text-align: center;
-  max-width: 50%;
+  max-width: 100%;
   margin: auto;
   margin-bottom: 30px;
 }
@@ -4325,14 +4329,17 @@ h5,
 }
 
 .vdoSldCntWrap>span {
-  font-family: 'Axiforma Medium';
-  font-weight: 600;
-  color: #3D6332;
+  /* font-family: 'Axiforma Medium'; */
+  font-weight: 500;
+  color: #BF0436;
+  font-size: 20px;
 }
 
 .vdoSldCntWrap h2 {
-  font-weight: 600;
-  margin: 12px 0;
+  font-weight: 500;
+  font-size: 40px;
+  margin: 17px 0 36px;
+  line-height: 1;
 }
 
 .vdoSldCntWrap>* {
@@ -4430,7 +4437,7 @@ cart-drawer.is-empty .carText{
 
 .sldWrap>p {
   font-size: 18px;
-  font-family: 'p22-mackinac-pro';
+  /* font-family: 'p22-mackinac-pro'; */
   font-weight: 600;
   margin: unset;
 }
@@ -4519,22 +4526,26 @@ img.prdctImg {
 .gmPrdctImg p {
   font-size: 16px;
   text-align: center;
-  font-family: 'p22-mackinac-pro';
-  margin-bottom: 0;
+  /* font-family: 'p22-mackinac-pro'; */
+  margin-bottom: 9px;
   font-weight: 500;
-  color: #1b1b1d;
+  /* color: #1b1b1d; */
 }
 
 .gmPrdctImg a {
   text-decoration: none;
-  color: #3d6332;
+  color: #FFF;
   display: inline-block;
-  border: 1px solid #3d6332;
-  padding: 2px 12px;
+  padding: 10px 12px;
   border-radius: 50px;
-  margin-top: 6px;
-  font-family: 'p22-mackinac-pro';
-  font-size: 14px;
+  margin-top: 9px;
+  font-weight: 400;
+  font-size: 12px;
+  background: #BF0436;
+  border-radius: 5px;
+  line-height: 1;
+  /* border: 1px solid #3d6332; */
+  /* font-family: 'p22-mackinac-pro'; */
 }
 
 .gmPrdctImg {

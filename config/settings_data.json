@@ -222,8 +222,8 @@
           "background_gradient": "",
           "text": "#ffffff",
           "button": "#ffffff",
-          "button_label": "#ffffff",
-          "secondary_button_label": "#ffffff",
+          "button_label": "#bf0436",
+          "secondary_button_label": "#bf0436",
           "shadow": "#ffffff"
         }
       },
@@ -251,13 +251,13 @@
       },
       "accent-1": {
         "settings": {
-          "background": "#fcfaf7",
+          "background": "#ffffff",
           "background_gradient": "",
-          "text": "#333333",
-          "button": "#3d6332",
+          "text": "#0d0d0d",
+          "button": "#bf0436",
           "button_label": "#ffffff",
-          "secondary_button_label": "#3d6332",
-          "shadow": "#3d6332"
+          "secondary_button_label": "#bf0436",
+          "shadow": "#bf0436"
         }
       },
       "accent-2": {

@@ -1,56 +1,115 @@
-<div class="color-{{ section.settings.color_scheme }} gradient ">
-
-
-<div class="page-width gmVdoSld-{{section.id}}">
-<div class="vdoSldCntWrap">
-    {% if section.settings.preTtl != blank %}
-        <span>{{section.settings.preTtl}}</span>
-    {% endif %}
-    {% if section.settings.ttl != blank %}
-        <h2 class="h1">{{section.settings.ttl}}</h2>
-    {% endif %}
-  {% if section.settings.subTtl != blank %}
-    <p class="body">{{section.settings.subTtl}}</p>
-  {% endif %}
-  {% if section.settings.btnUrl != blank %}
-        <a href="{{section.settings.btnUrl}}" role="link" class="button button--primary">{{section.settings.btnTxt}}</a>
-    {% endif %}
-</div>
-
-<div class="swiper swp-{{section.id}}">
-  <div class="swiper-wrapper">
-    {% for block in section.blocks %}
-      {%- if block.settings.video != null -%}
-        <div class="swiper-slide gmVdoSldWrap">
-            <div data-url="{{block.settings.video}}" data-target="blkTar{{block.id}}">
-              <svg class="gmSVG" data-sound="true" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="m 9 1.007812 c 0.296875 -0.003906 0.578125 0.125 0.769531 0.351563 l 3.230469 3.640625 h 1 c 1.09375 0 2 0.84375 2 2 v 2 c 0 1.089844 -0.910156 2 -2 2 h -1 l -3.230469 3.640625 c -0.210937 0.253906 -0.492187 0.363281 -0.769531 0.359375 z m -6.460938 0.960938 c 0.191407 -0.003906 0.386719 0.054688 0.558594 0.167969 c 0.457032 0.3125 0.578125 0.933593 0.269532 1.390625 c -1.824219 2.707031 -1.824219 6.238281 0 8.945312 c 0.308593 0.457032 0.1875 1.078125 -0.269532 1.390625 c -0.457031 0.308594 -1.078125 0.1875 -1.390625 -0.269531 c -1.136719 -1.691406 -1.707031 -3.640625 -1.707031 -5.59375 s 0.570312 -3.902344 1.707031 -5.59375 c 0.195313 -0.285156 0.511719 -0.4375 0.832031 -0.4375 z m 3.421876 2.019531 c 0.222656 -0.007812 0.453124 0.058594 0.644531 0.203125 c 0.261719 0.199219 0.394531 0.5 0.394531 0.804688 v 0.058594 c -0.011719 0.191406 -0.074219 0.375 -0.199219 0.535156 c -1.074219 1.429687 -1.074219 3.390625 0 4.816406 c 0.125 0.164062 0.1875 0.347656 0.199219 0.535156 v 0.0625 c 0 0.304688 -0.132812 0.605469 -0.394531 0.804688 c -0.441407 0.332031 -1.066407 0.242187 -1.398438 -0.199219 c -0.804687 -1.066406 -1.207031 -2.335937 -1.207031 -3.609375 s 0.402344 -2.542969 1.207031 -3.613281 c 0.183594 -0.246094 0.464844 -0.382813 0.753907 -0.398438 z m 0 0" fill="#2e3436"></path> </g></svg>
-              <svg class="gmSVG" data-sound="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g fill="#2e3436"> <path d="m 9 1.007812 c 0.296875 -0.003906 0.578125 0.125 0.769531 0.351563 l 3.230469 3.640625 h 1 c 1.09375 0 2 0.84375 2 2 v 2 c 0 1.089844 -0.910156 2 -2 2 h -1 l -3.230469 3.640625 c -0.210937 0.253906 -0.492187 0.363281 -0.769531 0.359375 z m 0 0"></path> <path d="m 6 5 c 0.265625 0 0.519531 0.105469 0.707031 0.292969 c 0.390625 0.390625 0.390625 1.023437 0 1.414062 l -1.292969 1.292969 l 1.292969 1.292969 c 0.390625 0.390625 0.390625 1.023437 0 1.414062 s -1.023437 0.390625 -1.414062 0 l -1.292969 -1.292969 l -1.292969 1.292969 c -0.390625 0.390625 -1.023437 0.390625 -1.414062 0 s -0.390625 -1.023437 0 -1.414062 l 1.292969 -1.292969 l -1.292969 -1.292969 c -0.390625 -0.390625 -0.390625 -1.023437 0 -1.414062 c 0.1875 -0.1875 0.441406 -0.292969 0.707031 -0.292969 s 0.519531 0.105469 0.707031 0.292969 l 1.292969 1.292969 l 1.292969 -1.292969 c 0.1875 -0.1875 0.441406 -0.292969 0.707031 -0.292969 z m 0 0"></path> </g> </g></svg>
-              <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" class="imgTar imgBlk blkTar{{block.id}}">
-                <g clip-path="url(#clip0_1_25)">
-                <path d="M25 0C11.1929 0 0 11.1929 0 25C0 38.8071 11.1929 50 25 50C38.8071 50 50 38.8071 50 25C50 11.1929 38.8071 0 25 0ZM18.1692 35.8735V14.1265L37.0027 25L18.1692 35.8735Z" fill="#0D0D0D"/>
-                </g>
-                <defs>
-                <clipPath id="clip0_1_25">
-                <rect width="50" height="50" fill="white"/>
-                </clipPath>
-                </defs>
-              </svg>
-              <img src="{{block.settings.imgPkr |  image_url: width: 200}}"  height="" width="100%" alt="{{block.settings.imgPkr.alt}}" class="blkTar{{block.id}} imgTar">
-              <img src="{{block.settings.slctPrdct.featured_image | image_url: width: 200}}" alt="{{block.settings.slctPrdct.featured_image.alt}}" class="prdctImg" height="" width="">
+<div class="sw-popup-slider color-{{ section.settings.color_scheme }} gradient ">
+    <div class="page-width gmVdoSld-{{section.id}}">
+        <div class="vdoSldCntWrap">
+            {% if section.settings.preTtl != blank %}
+                <span>{{section.settings.preTtl}}</span>
+            {% endif %}
+            {% if section.settings.ttl != blank %}
+                <h2 class="h1">{{section.settings.ttl}}</h2>
+            {% endif %}
+            {% if section.settings.subTtl != blank %}
+            <p class="body">{{section.settings.subTtl}}</p>
+            {% endif %}
+            {% if section.settings.btnUrl != blank %}
+                <a href="{{section.settings.btnUrl}}" role="link" class="button button--primary">{{section.settings.btnTxt}}</a>
+            {% endif %}
+            {% if product.available %}
+            {% if product.compare_at_price > product.price %}
+            <div class="product-pricing">
+                <span class="product-price--compare">
+                <s>{{ product.compare_at_price | money }}</s>
+                </span>
+                <span class="product-price">{{ product.price | money }}</span>
             </div>
-            <div class="gmPrdctWrap">
-              <div class="gmPrdctImg">
-                {% assign prdctl = block.settings.slctPrdct.title |  split: '-' %}
-                <p>{{prdctl[0]}}</p>
-                <a href="{{block.settings.slctPrdct.url}}">Shop Now - {{block.settings.slctPrdct.price | money_without_trailing_zeros}}</a>
-              </div>
+            {% else %}
+            <div class="product-pricing">
+                <span class="product-price">{{ product.price | money }}</span>
+            </div>
+            {% endif %}
+            <div class="product-pricing">
+                <span class="product-price">{{ product.price | money }}</span>
+                <span class="product-sold-out">Sold Out</span>
+            </div>
+            {% endif %}
+        </div>
+        <div class="swiper swp-{{section.id}}">
+            <div class="swiper-wrapper">
+                {% for block in section.blocks %}
+                {%- if block.settings.video != null -%}
+                <div class="swiper-slide gmVdoSldWrap">
+                    <div data-url="{{block.settings.video}}" data-target="blkTar{{block.id}}">
+                        <svg class="gmSVG" data-sound="true" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"
+                            fill="#000000">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path
+                                    d="m 9 1.007812 c 0.296875 -0.003906 0.578125 0.125 0.769531 0.351563 l 3.230469 3.640625 h 1 c 1.09375 0 2 0.84375 2 2 v 2 c 0 1.089844 -0.910156 2 -2 2 h -1 l -3.230469 3.640625 c -0.210937 0.253906 -0.492187 0.363281 -0.769531 0.359375 z m -6.460938 0.960938 c 0.191407 -0.003906 0.386719 0.054688 0.558594 0.167969 c 0.457032 0.3125 0.578125 0.933593 0.269532 1.390625 c -1.824219 2.707031 -1.824219 6.238281 0 8.945312 c 0.308593 0.457032 0.1875 1.078125 -0.269532 1.390625 c -0.457031 0.308594 -1.078125 0.1875 -1.390625 -0.269531 c -1.136719 -1.691406 -1.707031 -3.640625 -1.707031 -5.59375 s 0.570312 -3.902344 1.707031 -5.59375 c 0.195313 -0.285156 0.511719 -0.4375 0.832031 -0.4375 z m 3.421876 2.019531 c 0.222656 -0.007812 0.453124 0.058594 0.644531 0.203125 c 0.261719 0.199219 0.394531 0.5 0.394531 0.804688 v 0.058594 c -0.011719 0.191406 -0.074219 0.375 -0.199219 0.535156 c -1.074219 1.429687 -1.074219 3.390625 0 4.816406 c 0.125 0.164062 0.1875 0.347656 0.199219 0.535156 v 0.0625 c 0 0.304688 -0.132812 0.605469 -0.394531 0.804688 c -0.441407 0.332031 -1.066407 0.242187 -1.398438 -0.199219 c -0.804687 -1.066406 -1.207031 -2.335937 -1.207031 -3.609375 s 0.402344 -2.542969 1.207031 -3.613281 c 0.183594 -0.246094 0.464844 -0.382813 0.753907 -0.398438 z m 0 0"
+                                    fill="#2e3436"></path>
+                            </g>
+                        </svg>
+                        <svg class="gmSVG" data-sound="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"
+                            fill="#000000">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <g fill="#2e3436">
+                                    <path
+                                        d="m 9 1.007812 c 0.296875 -0.003906 0.578125 0.125 0.769531 0.351563 l 3.230469 3.640625 h 1 c 1.09375 0 2 0.84375 2 2 v 2 c 0 1.089844 -0.910156 2 -2 2 h -1 l -3.230469 3.640625 c -0.210937 0.253906 -0.492187 0.363281 -0.769531 0.359375 z m 0 0">
+                                    </path>
+                                    <path
+                                        d="m 6 5 c 0.265625 0 0.519531 0.105469 0.707031 0.292969 c 0.390625 0.390625 0.390625 1.023437 0 1.414062 l -1.292969 1.292969 l 1.292969 1.292969 c 0.390625 0.390625 0.390625 1.023437 0 1.414062 s -1.023437 0.390625 -1.414062 0 l -1.292969 -1.292969 l -1.292969 1.292969 c -0.390625 0.390625 -1.023437 0.390625 -1.414062 0 s -0.390625 -1.023437 0 -1.414062 l 1.292969 -1.292969 l -1.292969 -1.292969 c -0.390625 -0.390625 -0.390625 -1.023437 0 -1.414062 c 0.1875 -0.1875 0.441406 -0.292969 0.707031 -0.292969 s 0.519531 0.105469 0.707031 0.292969 l 1.292969 1.292969 l 1.292969 -1.292969 c 0.1875 -0.1875 0.441406 -0.292969 0.707031 -0.292969 z m 0 0">
+                                    </path>
+                                </g>
+                            </g>
+                        </svg>
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            class="imgTar imgBlk blkTar{{block.id}}">
+                            <g clip-path="url(#clip0_1_25)">
+                                <path
+                                    d="M25 0C11.1929 0 0 11.1929 0 25C0 38.8071 11.1929 50 25 50C38.8071 50 50 38.8071 50 25C50 11.1929 38.8071 0 25 0ZM18.1692 35.8735V14.1265L37.0027 25L18.1692 35.8735Z"
+                                    fill="#2E4B9F" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_1_25">
+                                    <rect width="50" height="50" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        <img src="{{block.settings.imgPkr |  image_url: width: 200}}" height="438px" width="100%"
+                            alt="{{block.settings.imgPkr.alt}}" class="blkTar{{block.id}} imgTar product-image">
+                    </div>
+                    {% if block.settings.slctPrdct != blank %}
+                    {% comment %} <a class="gmPrdctWrap" href="{{block.settings.slctPrdct.url}}">
+                        <div class="image-box">
+                            <img src="{{block.settings.slctPrdct.featured_image | image_url: width: 200}}"
+                                alt="{{block.settings.slctPrdct.featured_image.alt}}" class="prdctImg" height="" width="">
+                        </div>
+                        <div class="gmPrdctImg">
+                            {% assign prdctl = block.settings.slctPrdct.title | split: '|' %}
+                            <p class="text_trunc">{{ prdctl[0] }}</p>
+                            {% render 'price', product: block.settings.slctPrdct, show_badges: settings.badge_type %}
+                        </div>
+                    </a> {% endcomment %}
+                    <div class="gmPrdctWrap desk">
+                        <div class="image-box">
+                            <img src="{{block.settings.slctPrdct.featured_image | image_url: width: 200}}"
+                                alt="{{block.settings.slctPrdct.featured_image.alt}}" class="prdctImg" height="" width="">
+                        </div>
+                        <div class="gmPrdctImg">
+                            {% assign prdctl = block.settings.slctPrdct.title | split: '|' %}
+                            <p class="text_trunc">{{ prdctl[0] }}</p>
+                            {% render 'price', product: block.settings.slctPrdct, show_badges: settings.badge_type %}
+                            <a href="{{block.settings.slctPrdct.url}}">Shop Now</a>
+                        </div>
+                    </div>
+                    {% endif %}
+                </div>
+                {%- endif -%}
+                {% endfor %}
             </div>
         </div>
-      {%- endif -%}
-    {% endfor %}
-  </div>
-</div>
-</div>
+    </div>
 </div>
 <script>
      var swiper = new Swiper(".swp-{{section.id}}", {

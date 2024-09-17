@@ -1297,7 +1297,7 @@ button.shopify-payment-button__button--unbranded {
   background-color: rgba(var(--color-button), var(--alpha-button-background));
 }
 
-.button:before,
+/* .button:before,
 .shopify-challenge__button:before,
 .customer button:before,
 .shopify-payment-button__button--unbranded:before,
@@ -1329,7 +1329,7 @@ button.shopify-payment-button__button--unbranded {
   box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset)) rgba(var(--color-button-text), var(--border-opacity)),
     0 0 0 var(--buttons-border-width) rgba(var(--color-button), var(--alpha-button-background));
   transition: box-shadow var(--duration-short) ease;
-}
+} */
 
 .button:not([disabled]):hover::after,
 .shopify-challenge__button:hover::after,
@@ -4539,7 +4539,7 @@ sticky-header {
   text-decoration: none;
   color: #FFF;
   display: inline-block;
-  padding: 10px 12px;
+  padding: 8px 14px;
   border-radius: 50px;
   font-weight: 400;
   font-size: 12px;

@@ -1,6 +1,7 @@
 {
   "current": {
     "sale_price": "#707070",
+    "compers_color": "#bf0436",
     "theme_color": "#bf0436",
     "extended-megamenu-show-imgs": "yes",
     "extended-megamenu-featured-img": "shopify:\/\/shop_images\/Menu_Cover_2.jpg",
@@ -81,6 +82,7 @@
     "card_title_size": 18,
     "card_price_size": 13,
     "bold_font": false,
+    "fill_space": true,
     "card_text_alignment": "left",
     "card_color_scheme": "scheme-6a35cdea-138a-4dd6-b7b5-b066419a615e",
     "swatch_show": true,
@@ -219,6 +221,14 @@
     "content_for_index": [
 
     ],
+    "blocks": {
+      "14060646107696862457": {
+        "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/judgeme_core\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "disabled": false,
+        "settings": {
+        }
+      }
+    },
     "color_schemes": {
       "background-1": {
         "settings": {

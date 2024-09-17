@@ -18,6 +18,12 @@
       },
       {
         "type": "color",
+        "id": "compers_color",
+        "label": "Compers Price Color",
+        "default": "#d50000"
+      },
+      {
+        "type": "color",
         "id": "theme_color",
         "label": "Theme accent",
         "info": "Show on system status bar on mobile"

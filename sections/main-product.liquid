@@ -2109,7 +2109,7 @@ function updateCountdown() {
         const hiddenInput = document.querySelector('#{{ product_form_id }} input[name="id"]');
         const noScriptInputWrapper = document.createElement('div');
         const variantSwitcher =
-          document.querySelector('variant-radios[data-section="{{ section.id }}"]') ||
+          document.querySelector('variant-rs[data-section="{{ section.id }}"]') ||
           document.querySelector('variant-selects[data-section="{{ section.id }}"]');
         noScriptInputWrapper.innerHTML = document.querySelector(
           '.product-form__noscript-wrapper-{{ section.id }}'

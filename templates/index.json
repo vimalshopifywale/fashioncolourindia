@@ -11,31 +11,31 @@
         "collection_text_alignment": "center",
         "show_description": false,
         "description_style": "body",
-        "collection": "bluser-highlighter-bronzer",
+        "collection": "fashion-colour-24hr-longwear-liquid-foundation-with-skin-care",
         "products_to_show": 10,
         "columns_desktop": 4,
         "full_width": false,
         "show_view_all": false,
         "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "navigation_on_desk": true,
+        "enable_desktop_slider": true,
+        "navigation_on_desk": false,
         "color_scheme": "accent-1",
         "image_ratio": "adapt",
         "show_secondary_image": true,
-        "show_vendor": false,
+        "show_vendor": true,
         "show_rating": true,
-        "enable_quick_desc": true,
+        "enable_quick_desc": false,
         "quick_desc_legth": 90,
         "quick_desc_size": 14,
-        "enable_quick_add": false,
-        "show_secondary_add": true,
+        "enable_quick_add": true,
+        "show_secondary_add": false,
         "columns_mobile": "2",
         "swipe_on_mobile": false,
         "navigation_on_mobile": true,
-        "padding_top": 36,
-        "padding_bottom": 36,
-        "mobile_padding_top": 20,
-        "mobile_padding_bottom": 20
+        "padding_top": 100,
+        "padding_bottom": 100,
+        "mobile_padding_top": 52,
+        "mobile_padding_bottom": 52
       }
     },
     "gm_vdo_sld_PXcCY3": {
@@ -94,8 +94,8 @@
         "subtitle_font_size": 20,
         "subtitle_font_sizemob": 16,
         "ttl": "Real Reviews from Our Beauty Tribe",
-        "heading_font_size": 40,
-        "heading_font_sizemob": 24,
+        "heading_font_size": 16,
+        "heading_font_sizemob": 16,
         "subTtl": "",
         "btnTxt": "",
         "btnUrl": "",
@@ -106,10 +106,10 @@
         "mblSld": 1.8,
         "mblSpc": 20,
         "color_scheme": "accent-1",
-        "secPdgTop": 20,
-        "secPdgBtm": 20,
-        "mblPdgTop": 20,
-        "mblPdgBtm": 20
+        "secPdgTop": 10,
+        "secPdgBtm": 10,
+        "mblPdgTop": 10,
+        "mblPdgBtm": 10
       }
     },
     "testimonial_slider_PxwHpG": {
@@ -119,24 +119,79 @@
           "type": "icon",
           "settings": {
             "image": "shopify:\/\/shop_images\/customer-1.png",
-            "slide_radius": 0,
+            "img_star": "shopify:\/\/shop_images\/review-4-stars.png",
+            "slide_radius": 6,
             "link": "",
             "show_icon": true,
             "title": "Dev S.",
             "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,<\/p>"
           }
+        },
+        "icon_mNnhQV": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/customer-2.png",
+            "img_star": "shopify:\/\/shop_images\/review-3.4-stars.png",
+            "slide_radius": 6,
+            "link": "",
+            "show_icon": true,
+            "title": "Jayesh J.",
+            "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,<\/p>"
+          }
+        },
+        "icon_jHBmQc": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/customer-3.png",
+            "img_star": "shopify:\/\/shop_images\/review-3.4-stars.png",
+            "slide_radius": 6,
+            "link": "",
+            "show_icon": true,
+            "title": "Neha A.",
+            "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,<\/p>"
+          }
+        },
+        "icon_hwprNr": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/customer-4.png",
+            "img_star": "shopify:\/\/shop_images\/review-4-stars.png",
+            "slide_radius": 6,
+            "link": "",
+            "show_icon": true,
+            "title": "Ameer K.",
+            "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,<\/p>"
+          }
+        },
+        "icon_rxPmC8": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/customer-2.png",
+            "img_star": "shopify:\/\/shop_images\/review-4-stars.png",
+            "slide_radius": 12,
+            "link": "",
+            "show_icon": true,
+            "title": "Raj S.",
+            "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,<\/p>"
+          }
         }
       },
       "block_order": [
-        "icon_VM3cpX"
+        "icon_VM3cpX",
+        "icon_mNnhQV",
+        "icon_jHBmQc",
+        "icon_hwprNr",
+        "icon_rxPmC8"
       ],
       "settings": {
         "ttl": "Loved By 10,000+ Happy Customer",
+        "alignment": "center",
         "heading_font_size": 37,
         "heading_font_sizemob": 30,
+        "img_sign": "shopify:\/\/shop_images\/right.png",
         "icon_alignment": "center",
         "icon_size": 100,
-        "per_row": 3,
+        "per_row": 4,
         "gap": 20,
         "show_arrows": "true",
         "auto_rotate": false,
@@ -149,19 +204,117 @@
         "show_border": false,
         "content_border_color": "rgba(0,0,0,0)",
         "mobile_icon_alignment": "center",
-        "mobile_icon_size": 30,
+        "mobile_icon_size": 100,
         "mobile_per_row": "1",
         "base_width": 100,
         "margin_top": 0,
         "margin_bottom": 0,
-        "padding_top": 60,
-        "padding_bottom": 40
+        "padding_top": 100,
+        "padding_bottom": 100,
+        "padding_tops": 52,
+        "padding_bottoms": 52
+      }
+    },
+    "gm_slider_BnDdT8": {
+      "type": "gm-slider",
+      "blocks": {
+        "slide_bWpkep": {
+          "type": "slide",
+          "settings": {
+            "imgPkr": "shopify:\/\/shop_images\/beautiful.jpg",
+            "img_url": "https:\/\/www.instagram.com\/accounts\/login\/?hl=en",
+            "ttl": "",
+            "subTtl": ""
+          }
+        },
+        "slide_BimUUA": {
+          "type": "slide",
+          "settings": {
+            "imgPkr": "shopify:\/\/shop_images\/glow_blush.jpg",
+            "img_url": "https:\/\/www.instagram.com\/accounts\/login\/?hl=en",
+            "ttl": "",
+            "subTtl": ""
+          }
+        },
+        "slide_LaTDTj": {
+          "type": "slide",
+          "settings": {
+            "imgPkr": "shopify:\/\/shop_images\/glow-fresh.jpg",
+            "img_url": "https:\/\/www.instagram.com\/accounts\/login\/?hl=en",
+            "ttl": "",
+            "subTtl": ""
+          }
+        },
+        "slide_kr8zUt": {
+          "type": "slide",
+          "settings": {
+            "imgPkr": "shopify:\/\/shop_images\/women-eyes.jpg",
+            "img_url": "https:\/\/www.instagram.com\/accounts\/login\/?hl=en",
+            "ttl": "",
+            "subTtl": ""
+          }
+        },
+        "slide_pQikU3": {
+          "type": "slide",
+          "settings": {
+            "imgPkr": "shopify:\/\/shop_images\/womenmackup.jpg",
+            "img_url": "https:\/\/www.instagram.com\/accounts\/login\/?hl=en",
+            "ttl": "",
+            "subTtl": ""
+          }
+        },
+        "slide_jQ66fV": {
+          "type": "slide",
+          "settings": {
+            "imgPkr": "shopify:\/\/shop_images\/glow_blush.jpg",
+            "img_url": "https:\/\/www.instagram.com\/accounts\/login\/?hl=en",
+            "ttl": "",
+            "subTtl": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_bWpkep",
+        "slide_BimUUA",
+        "slide_LaTDTj",
+        "slide_kr8zUt",
+        "slide_pQikU3",
+        "slide_jQ66fV"
+      ],
+      "settings": {
+        "preTtl": "@fashioncolourofficial",
+        "subtitle_font_size": 20,
+        "subtitle_font_sizemob": 16,
+        "ttl": "Follow us on Instagram",
+        "heading_font_size": 37,
+        "heading_font_sizemob": 30,
+        "subTtl": "",
+        "btnTxt": "",
+        "btnUrl": "",
+        "chkBx": false,
+        "overlays_box": true,
+        "dskSld": 5,
+        "dskSpc": 14,
+        "tabSld": 3,
+        "tabSpc": 14,
+        "mblSld": 2,
+        "mblSpc": 14,
+        "sldAtply": 1.5,
+        "pagination": true,
+        "navigation": true,
+        "color_scheme": "scheme-6a35cdea-138a-4dd6-b7b5-b066419a615e",
+        "sldCol": "#ffffff",
+        "secPdgTop": 10,
+        "secPdgBtm": 100,
+        "secPdgTopMbl": 20,
+        "secPdgBtmMbl": 20
       }
     }
   },
   "order": [
     "featured_collection_W8newm",
     "gm_vdo_sld_PXcCY3",
-    "testimonial_slider_PxwHpG"
+    "testimonial_slider_PxwHpG",
+    "gm_slider_BnDdT8"
   ]
 }

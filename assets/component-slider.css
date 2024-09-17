@@ -139,9 +139,9 @@ slider-component.slider-component-full-width {
 }
 
 @media screen and (min-width: 990px) {
-  .slider-component-desktop.page-width {
+  /* .slider-component-desktop.page-width {
     max-width: none;
-  }
+  } */
 
   .slider--desktop {
     position: relative;
@@ -192,7 +192,8 @@ slider-component.slider-component-full-width {
   }
 
   .slider--desktop.grid--4-col-desktop .grid__item {
-    width: calc((100% - var(--desktop-margin-left-first-item)) / 4 - var(--grid-desktop-horizontal-spacing) * 3);
+    /* width: calc((100% - var(--desktop-margin-left-first-item)) / 4 - var(--grid-desktop-horizontal-spacing) * 3); */
+    width: calc((100% - var(--desktop-margin-left-first-item) - var(--grid-desktop-horizontal-spacing) * 3) / 4);
   }
 
   .slider--desktop.grid--3-col-desktop .grid__item {

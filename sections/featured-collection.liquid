@@ -19,6 +19,9 @@
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
   }
+  .collection-titel{
+    font-size: {{ section.settings.heading_font_size }}px;
+  }
 
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top }}px;
@@ -29,6 +32,9 @@
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.mobile_padding_top }}px;
     padding-bottom: {{ section.settings.mobile_padding_bottom }}px;
+  }
+  .collection-titel{
+    font-size: {{ section.settings.heading_font_sizemob }}px;
   }
 }
 {%- endstyle -%}
@@ -57,7 +63,7 @@
   <div class="collection section-{{ section.id }}-padding{% if section.settings.full_width %} collection--full-width{% endif %}">
     <div class="collection__title title-wrapper title-wrapper--no-top-margin page-width{% if show_mobile_slider %} title-wrapper--self-padded-tablet-down{% endif %}{% if show_desktop_slider %} collection__title--desktop-slider{% endif %}">
       {%- if section.settings.title != blank -%}
-        <h2 class="title inline-richtext {{ section.settings.collection_text_alignment }} {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+        <h2 class="collection-titel title inline-richtext {{ section.settings.collection_text_alignment }} {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
           {{ section.settings.title }}
         </h2>
       {%- endif -%}
@@ -185,6 +191,24 @@
       "id": "title",
       "default": "Featured collection",
       "label": "t:sections.featured-collection.settings.title.label"
+    },
+    {
+      "type": "range",
+      "id": "heading_font_size",
+      "label": "Desktop Heading Font Size",
+      "default": 24,
+      "min": 16,
+      "max": 72,
+      "step": 1
+    },
+    {
+      "type": "range",
+      "id": "heading_font_sizemob",
+      "label": "Mobile Heading Font Size",
+      "default": 24,
+      "min": 16,
+      "max": 72,
+      "step": 1
     },
     {
       "type": "select",

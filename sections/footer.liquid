@@ -126,7 +126,7 @@ window.addEventListener('DOMContentLoaded', () => {
   {% endif %}}
 </style>
 
-<footer class="footer color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
+<footer class="footer-main footer color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
   {%- liquid
     assign has_social_icons = true
     if settings.social_facebook_link == blank and settings.social_instagram_link == blank and settings.social_youtube_link == blank and settings.social_tiktok_link == blank and settings.social_twitter_link == blank and settings.social_pinterest_link == blank and settings.social_snapchat_link == blank and settings.social_tumblr_link == blank and settings.social_vimeo_link == blank
@@ -199,7 +199,7 @@ window.addEventListener('DOMContentLoaded', () => {
                         {%- endfor -%}
                       </ul>
                     {%- endif -%}
-                  {%- when 'brand_information' -%}
+                  {% comment %} {%- when 'brand_information' -%}
                     <div class="footer-block__brand-info">
                       {%- if settings.brand_image != blank -%}
                         {%- assign brand_image_height = settings.brand_image_width
@@ -229,7 +229,7 @@ window.addEventListener('DOMContentLoaded', () => {
                       {%- if block.settings.show_social and has_social_icons -%}
                         {%- render 'social-icons', class: 'footer__list-social' -%}
                       {%- endif -%}
-                    </div>
+                    </div> {% endcomment %}
                   {%- when 'image' -%}
                     <div class="footer-block__details-content footer-block-image {{ block.settings.alignment }}">
                       {%- if block.settings.image != blank -%}
@@ -302,7 +302,8 @@ window.addEventListener('DOMContentLoaded', () => {
                       id="Subscribe"
                       aria-label="{{ 'newsletter.button_label' | t }}"
                     >
-                      {% render 'icon-arrow' %}
+                      {% comment %} {% render 'icon-arrow' %} {% endcomment %}
+                    {{ 'newsletter.button_label' | t }}
                     </button>
                   </div>
                   {%- if form.errors -%}
@@ -448,11 +449,40 @@ window.addEventListener('DOMContentLoaded', () => {
       </div>
     </div>
     <div class="footer__content-bottom-wrapper page-width{% if section.settings.enable_country_selector == false and section.settings.enable_language_selector == false %} footer__content-bottom-wrapper--center{% endif %}">
-      <div class="footer__copyright caption">
-        <small class="copyright__content"
-          >&copy;{{ 'now' | date: '%Y' }}, {{ shop.name | link_to: routes.root_url -}}
-        </small>
-        <small class="copyright__content">{% unless section.settings.hide_shopify %}{{ powered_by_link }}{% endunless %} {{ section.settings.copyright }}<br>Made with ❤️ & ☕ by Growthx Media LLP</small>
+    <div class="footer__copyright caption">
+        <div class="footer-logobottom">
+            {%- if settings.brand_image != blank -%}
+            {%- assign brand_image_height = settings.brand_image_width
+            | divided_by: settings.brand_image.aspect_ratio
+            -%}
+            <div class="footer-block__image-wrapper" style="max-width: min(100%, {{ settings.brand_image_width }}px);">
+                {{
+                settings.brand_image
+                | image_url: width: 1100
+                | image_tag:
+                loading: 'lazy',
+                widths: '50, 100, 150, 200, 300, 400, 550, 800, 1100',
+                height: brand_image_height,
+                width: settings.brand_image_width
+                }}
+            </div>
+            {%- endif -%}
+            {%- if settings.brand_headline != blank -%}
+            <h2 class="footer-block__heading rte">{{ settings.brand_headline }}</h2>
+            {%- endif -%}
+            {%- if settings.brand_description != blank -%}
+            <div class="rte">{{ settings.brand_description }}</div>
+            {%- endif -%}
+            {%- if block.settings.show_social and has_social_icons -%}
+            {%- render 'social-icons', class: 'footer__list-social' -%}
+            {%- endif -%}
+        </div>
+        <div class="copyright-text">
+            <small class="copyright__content">&copy;{{ 'now' | date: '%Y' }}, {{ shop.name | link_to: routes.root_url -}}
+            </small>
+            <small class="copyright__content">{% unless section.settings.hide_shopify %}{{ powered_by_link }}{% endunless %} {{
+                section.settings.copyright }}<br>Made with ❤️ & ☕ by Growthx Media</small>
+        </div>
 
         {%- if section.settings.show_policy -%}
           <ul class="policies list-unstyled">
@@ -460,8 +490,7 @@ window.addEventListener('DOMContentLoaded', () => {
               {%- if policy != blank -%}
                 <li>
                   <small class="copyright__content"
-                    ><a href="{{ policy.url }}">{{ policy.title }}</a></small
-                  >
+                    ><a href="{{ policy.url }}">{{ policy.title }}</a></small>
                 </li>
               {%- endif -%}
             {%- endfor -%}
@@ -630,9 +659,9 @@ window.addEventListener('DOMContentLoaded', () => {
       "label": "t:sections.footer.settings.newsletter_enable.label"
     },
     {
-      "type": "inline_richtext",
+      "type": "richtext",
       "id": "newsletter_heading",
-      "default": "Subscribe to our emails",
+      "default": "<p>Subscribe to our emails</p>",
       "label": "t:sections.footer.settings.newsletter_heading.label"
     },
     {

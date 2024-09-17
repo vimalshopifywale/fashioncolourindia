@@ -4332,12 +4332,12 @@ h5,
   /* font-family: 'Axiforma Medium'; */
   font-weight: 500;
   color: #BF0436;
-  font-size: 20px;
+  /* font-size: 20px; */
 }
 
 .vdoSldCntWrap h2 {
   font-weight: 500;
-  font-size: 40px;
+  /* font-size: 40px; */
   margin: 17px 0 36px;
   line-height: 1;
 }
@@ -4500,7 +4500,7 @@ sticky-header {
   box-shadow: 0px 0px 16px #00000026;
 }
 
-img.prdctImg {
+/* img.prdctImg {
   position: absolute;
   width: 30%;
   bottom: 0;
@@ -4508,7 +4508,7 @@ img.prdctImg {
   transform: translate(-50%, 40%);
   border-radius: 10px;
   border: 2px solid white;
-}
+} */
 
 .gmVdoSldWrap>div {
   position: relative;
@@ -4520,14 +4520,17 @@ img.prdctImg {
 }
 
 .gmPrdctWrap {
-  padding: 30px 14px 14px 14px;
+  padding: 10px 12px;
 }
 
 .gmPrdctImg p {
+  height: 36px;
+  overflow: hidden;
   font-size: 16px;
-  text-align: center;
+  text-align: left;
+  line-height: normal;
   /* font-family: 'p22-mackinac-pro'; */
-  margin-bottom: 9px;
+  margin: 0 0 9px;
   font-weight: 500;
   /* color: #1b1b1d; */
 }
@@ -4538,7 +4541,6 @@ img.prdctImg {
   display: inline-block;
   padding: 10px 12px;
   border-radius: 50px;
-  margin-top: 9px;
   font-weight: 400;
   font-size: 12px;
   background: #BF0436;

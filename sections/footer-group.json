@@ -5,49 +5,72 @@
     "footer": {
       "type": "footer",
       "blocks": {
+        "link_list_zE9qXF": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Shop",
+            "menu": "footer-quick-links"
+          }
+        },
         "0dfe9e9f-d96e-442f-be6e-881afaba1771": {
           "type": "link_list",
           "settings": {
             "heading": "Ouick Links",
-            "menu": "quick-links"
+            "menu": "quick-links-footer"
+          }
+        },
+        "link_list_jN88G7": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Help",
+            "menu": "help"
           }
         },
         "link_list_dCTFw6": {
           "type": "link_list",
           "settings": {
-            "heading": "Policies",
-            "menu": ""
+            "heading": "More",
+            "menu": "more"
+          }
+        },
+        "brand_information_eyQKhy": {
+          "type": "brand_information",
+          "settings": {
+            "show_social": true
           }
         }
       },
       "block_order": [
+        "link_list_zE9qXF",
         "0dfe9e9f-d96e-442f-be6e-881afaba1771",
-        "link_list_dCTFw6"
+        "link_list_jN88G7",
+        "link_list_dCTFw6",
+        "brand_information_eyQKhy"
       ],
       "custom_css": [
-        ".footer {margin-top: -4px;}"
+
       ],
       "settings": {
-        "color_scheme": "inverse",
+        "color_scheme": "scheme-6c3ff99c-8da2-435f-9574-05cdd95811b2",
         "show_collapse": true,
-        "show_border": false,
+        "show_border": true,
         "show_body_font": "head",
         "newsletter_enable": true,
-        "newsletter_heading": "Subscribe to our emails",
+        "newsletter_heading": "<h4>Sign up for our newsletter<\/h4><p> Get <strong>15% off<\/strong> on your next order!<\/p>",
         "enable_follow_on_shop": true,
         "show_social": true,
         "enable_country_selector": false,
         "enable_language_selector": false,
-        "payment_enable": true,
+        "payment_enable": false,
         "hide_shopify": true,
-        "copyright": "All Rights Reserved.",
-        "show_bottom_text": true,
+        "copyright": "",
+        "show_bottom_text": false,
         "bottom_text": "",
         "color_bottom_text": "#d9d9d9",
-        "show_policy": false,
+        "show_policy": true,
         "margin_top": 0,
-        "padding_top": 60,
-        "padding_bottom": 12
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     }
   },

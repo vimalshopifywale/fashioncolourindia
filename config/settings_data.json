@@ -1,5 +1,7 @@
 {
   "current": {
+    "sale_price": "#707070",
+    "theme_color": "#bf0436",
     "extended-megamenu-show-imgs": "yes",
     "extended-megamenu-featured-img": "shopify:\/\/shop_images\/Menu_Cover_2.jpg",
     "extended-megamenu-url": "shopify:\/\/collections\/shop-all",
@@ -21,9 +23,11 @@
     "img_height": "50",
     "show_quantity_input": false,
     "btn_style": "primary",
-    "logo": "shopify:\/\/shop_images\/Logos.svg",
-    "logo_width": 150,
-    "logo_light": "shopify:\/\/shop_images\/SVG_file-01_1.svg",
+    "logo": "shopify:\/\/shop_images\/header-logo.png",
+    "logo_width": 70,
+    "second_logo": "shopify:\/\/shop_images\/header-logo-2.png",
+    "second_logo_url": "#",
+    "logo_widths": 55,
     "favicon": "shopify:\/\/shop_images\/Favicon_Revolife_india.svg",
     "type_header_font": "din_neuzeit_grotesk_n3",
     "type_header_italic_font": "din_neuzeit_grotesk_n3",
@@ -145,9 +149,9 @@
     "sale_badge_color_scheme": "accent-1",
     "sold_out_badge_color_scheme": "inverse",
     "brand_headline": "",
-    "brand_description": "<p>Revolife™ was founded to Empower Wellness with Natural Excellence. Discover the Strength of Purity & the Promise of a Healthier Tomorrow with Us.<\/p>",
-    "brand_image": "shopify:\/\/shop_images\/XMLID_526.svg",
-    "brand_image_width": 265,
+    "brand_description": "",
+    "brand_image": "shopify:\/\/shop_images\/Logos.png",
+    "brand_image_width": 150,
     "social_facebook_link": "#",
     "social_instagram_link": "#",
     "social_youtube_link": "#",
@@ -285,12 +289,12 @@
       "scheme-6a35cdea-138a-4dd6-b7b5-b066419a615e": {
         "settings": {
           "background": "#ffffff",
-          "background_gradient": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 75%)",
-          "text": "#333333",
-          "button": "#3d6332",
+          "background_gradient": "",
+          "text": "#0d0d0d",
+          "button": "#bf0436",
           "button_label": "#ffffff",
-          "secondary_button_label": "#3d6332",
-          "shadow": "#3d6332"
+          "secondary_button_label": "#bf0436",
+          "shadow": "#bf0436"
         }
       },
       "scheme-c3d90b13-073f-4176-a4d3-8e9a9cca6a92": {
@@ -328,13 +332,13 @@
       },
       "scheme-6c3ff99c-8da2-435f-9574-05cdd95811b2": {
         "settings": {
-          "background": "#fcfaf7",
+          "background": "#0d0d0d",
           "background_gradient": "",
-          "text": "#ffffff",
-          "button": "#212121",
+          "text": "#f2f2f2",
+          "button": "#bf0436",
           "button_label": "#ffffff",
-          "secondary_button_label": "#3d6332",
-          "shadow": "#3d6332"
+          "secondary_button_label": "#bf0436",
+          "shadow": "#bf0436"
         }
       }
     }

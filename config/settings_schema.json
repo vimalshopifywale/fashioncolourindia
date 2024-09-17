@@ -375,10 +375,31 @@
         "id": "logo_width",
         "min": 50,
         "max": 300,
-        "step": 10,
+        "step": 5,
         "default": 100,
         "unit": "px",
         "label": "t:settings_schema.logo.settings.logo_width.label"
+      },
+      {
+        "type": "image_picker",
+        "id": "second_logo",
+        "label": "Second Logo"
+      },
+      {
+        "type": "url",
+        "id": "second_logo_url",
+        "label": "Second Logo URL",
+        "default": "/"
+      },
+      {
+        "type": "range",
+        "id": "logo_widths",
+        "min": 50,
+        "max": 300,
+        "step": 5,
+        "default": 100,
+        "unit": "px",
+        "label": "Second Logo Width Exhaust"
       },
       {
         "type": "image_picker",

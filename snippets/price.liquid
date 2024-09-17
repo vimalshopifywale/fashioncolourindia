@@ -176,14 +176,14 @@
   {%- if show_badges -%}
     {% if settings.badge_type == 'amount' %}
       <span class="badge price__badge-sale color-{{ settings.sale_badge_color_scheme }}">
-        {%- render 'icon-badge' %} {{ settings.sale_message }} {{ save_amount }}
+         {{ settings.sale_message }} {{ save_amount }}
       </span>
       <span class="badge price__badge-sold-out color-{{ settings.sold_out_badge_color_scheme }}">
         {{ 'products.product.sold_out' | t }}
       </span>
     {% elsif settings.badge_type == 'percent' %}
       <span class="badge price__badge-sale color-{{ settings.sale_badge_color_scheme }}">
-        {%- render 'icon-badge' %} {{ settings.sale_message }} {{ percentage  }}%
+         {{ settings.sale_message }} {{ percentage  }}%
       </span
       >
       <span class="badge price__badge-sold-out color-{{ settings.sold_out_badge_color_scheme }}">

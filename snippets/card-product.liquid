@@ -17,7 +17,9 @@
   - horizontal_class: {Boolean} Add a card--horizontal class if set to true. Default: false (optional)
   - horizontal_quick_add: {Boolean} Changes the quick add button styles when set to true. Default: false (optional)
   - placeholder_image: {String} The placeholder image to use when no product exists. Default: 'product-apparel-2' (optional)
-
+  - swatch_options: {Boolean} Show swatches for product variants. Default: false
+  - swatch_limit: {Number} Limit the number of swatches shown. Default: 4 (optional)
+  - swatch_shape: {String} Shape of the swatches. Values are "circle" or "square". Default: "circle" (optional)
   Usage:
   {% render 'card-product', show_vendor: section.settings.show_vendor, show_quick_desc: section.settings.show_quick_desc %}
 {% endcomment %}
@@ -298,56 +300,10 @@
               {%- endif -%}
             {% endif %}
           </div>
-              {% if settings.swatch_show and settings.swatch_position == 'top' %}
-            {% if settings.swatchType == 'color' %}
-              {%- unless card_product.has_only_default_variant -%}
-                {%- for option in card_product.options_with_values -%}
-                  {% if settings.swatchType == 'color' and option.name == settings.optionName %}
-                    <div class="card__badge" style="width:100%;">
-                      {% render 'card-color-option', product: card_product, option: option %}
-                    </div>
-                  {% endif %}
-                {%- endfor -%}
-              {% endunless %}
-            {% elsif settings.swatchType == 'variantImage' %}
-              {%- unless card_product.has_only_default_variant -%}
-                {%- for option in card_product.options_with_values -%}
-                  {% if settings.swatchType == 'variantImage' and option.name == settings.optionName %}
-                    <div class="card__badge" style="width:100%;height:margin-bottom: -10px;">
-                      {% render 'card-image-swatches', product: card_product, option: option %}
-                    </div>
-                  {% endif %}
-                {%- endfor -%}
-              {% endunless %}
-            {% endif %}
-          {% endif %}
         </div>
       </div>
       <div class="card__content">
         <div class="card__information" style="overflow: hidden;">
-              {% if settings.swatch_show and settings.swatch_position == 'top' %}
-            {% if settings.swatchType == 'color' %}
-              {%- unless card_product.has_only_default_variant -%}
-                {%- for option in card_product.options_with_values -%}
-                  {% if settings.swatchType == 'color' and option.name == settings.optionName %}
-                    <div class="card__badge" style="width:100%;">
-                      {% render 'card-color-option', product: card_product, option: option %}
-                    </div>
-                  {% endif %}
-                {%- endfor -%}
-              {% endunless %}
-            {% elsif settings.swatchType == 'variantImage' %}
-              {%- unless card_product.has_only_default_variant -%}
-                {%- for option in card_product.options_with_values -%}
-                  {% if settings.swatchType == 'variantImage' and option.name == settings.optionName %}
-                    <div class="card__badge" style="width:100%;height:margin-bottom: -10px;">
-                      {% render 'card-image-swatches', product: card_product, option: option %}
-                    </div>
-                  {% endif %}
-                {%- endfor -%}
-              {% endunless %}
-            {% endif %}
-          {% endif %}
           {%- if show_rating -%}
             <div class="jdgm-widget jdgm-preview-badge" data-id="{{ card_product.metafields.loox.avg_rating }}">
               {{ card_product.metafields.judgeme.badge }}
@@ -421,7 +377,9 @@
                 {{ card_product.description | strip_html | truncate: section.settings.quick_desc_legth }}
               </div>
             {% endif %}
-
+            {% comment %} <div class="card-variant-wrap">
+              {% render 'product-variant-picker', product: card_product, block: block, product_form_id: product_form_id %}
+            </div> {% endcomment %}
             <div class="card-price">
                 {% render 'price', product: card_product, price_class: 'lm-card-price', show_compare_at_price: true,show_badges: true %}
                 {%- if card_product.quantity_price_breaks_configured? -%}
@@ -429,7 +387,60 @@
                     <span class="caption">{{ 'products.product.volume_pricing.note' | t }}</span>
                   </div>
                 {%- endif -%}
-
+                
+                {% if section.settings.show_swatch %}
+                  {% if settings.swatch_show and settings.swatch_position == 'top' %}
+                    {% if settings.swatchType == 'color' %}
+                        {%- unless card_product.has_only_default_variant -%}
+                          {%- for option in card_product.options_with_values -%}
+                            {% if settings.swatchType == 'color' and option.name == settings.optionName %}
+                              <div class="card-swatch" style="width:100%;">
+                                {% render 'card-color-option', product: card_product, option: option %}
+                              </div>
+                            {% endif %}
+                          {%- endfor -%}
+                        {% endunless %} 
+                        {% comment %} {%- unless card_product.has_only_default_variant -%}
+                        {%- for option in card_product.options_with_values -%}
+                        {% if settings.swatchType == 'color' and option.name == settings.optionName %}
+                        <div class="card-swatch" style="width:100%;">
+                          {% assign swatch_count = option.values.size %}
+                          {% assign max_swatch_display = 5 %}
+                          {% for value in option.values limit:max_swatch_display %}
+                          {% render 'card-color-option', product: card_product, option: option, value: value %}
+                          {% endfor %}
+                          {% if swatch_count > max_swatch_display %}
+                          <button id="show-more-swatches">+{{ swatch_count | minus: max_swatch_display }}</button>
+                          <div id="all-swatches" style="display:none;">
+                            {% for value in option.values offset:max_swatch_display %}
+                            {% render 'card-color-option', product: card_product, option: option, value: value %}
+                            {% endfor %}
+                          </div>
+                          {% endif %}
+                        </div>
+                        {% endif %}
+                        {%- endfor -%}
+                        {%- endunless %} {% endcomment %}
+                        
+                        <script>
+                          document.getElementById('show-more-swatches').addEventListener('click', function () {
+                            document.getElementById('all-swatches').style.display = 'block';
+                            this.style.display = 'none';
+                          });
+                        </script>
+                          {% elsif settings.swatchType == 'variantImage' %}
+                          {%- unless card_product.has_only_default_variant -%}
+                          {%- for option in card_product.options_with_values -%}
+                          {% if settings.swatchType == 'variantImage' and option.name == settings.optionName %}
+                          <div class="card-swatch" style="width:100%;height:margin-bottom: -10px;">
+                            {% render 'card-image-swatches', product: card_product, option: option %}
+                          </div>
+                          {% endif %}
+                        {%- endfor -%}
+                      {% endunless %}
+                    {% endif %}
+                  {% endif %}
+                {% endif %}
               {%- if show_quick_add -%}
                 <div class="quick-add no-js-hidden">
                   {%- liquid

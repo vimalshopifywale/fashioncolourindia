@@ -186,6 +186,12 @@
     }
 
 /* ===Collecction================================================================== */
+    .card-product-form__input input[type='radio']+label.color-swatch {
+        width: 30px !important;
+        height: 30px !important;
+    }
+
+/* ===Collecction================================================================== */
     .feature-collection .collection-titel{
         font-weight: 500;
     }
@@ -202,13 +208,15 @@
         padding: 14px 10px;
         border-radius: 6px;
     }
-    .feature-collection .price-item.price-item--sale.price-item--last {
+    .feature-collection .price-item.price-item--regular,
+    .feature-collection .price-item.price-item--sale.price-item--last{
         font-size: 17px;
+    }
+    .feature-collection .price-item.price-item--sale.price-item--last {
         font-weight: 300;
         line-height: 1;
     }
     .feature-collection .price-item.price-item--regular {
-        font-size: 17px;
         font-weight: 100;
         line-height: 1;
     }

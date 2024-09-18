@@ -21,20 +21,21 @@
       {% endif %}
       {{ block.shopify_attributes }}
     >
-      {%- for option in product.options_with_values -%}
+      {%- for option in product.options_with_values -%}        
       <fieldset class="js product-form__input">
             {%- liquid
-                assign optionNames = settings.optionName | split:","
+                assign optionNames = settings.optionName | remove: ' ' | remove: '-' | remove: '_' | downcase | split:","
                 assign useColor = false 
-                for optionColor in optionNames 
-                  if optionColor == option.name 
+                assign option_name = option.name | remove:' ' | downcase | remove: '-' | remove: '_'
+                for optionColor in optionNames
+                  if optionColor == option_name
                       assign useColor = true 
                       break
                   endif 
                 endfor
             -%}
           {%- if useColor -%}
-             <legend class="form__label ">{{ option.name }}: <span id="selected-{{ option.name | downcase | replace: ' ', '-' }}"> {{ option.selected_value }}</span></legend>
+             <legend class="form__label " color>{{ option.name }}: <span id="selected-{{ option.name | downcase | replace: ' ', '-' }}"> {{ option.selected_value }}</span></legend>
               {% render 'color-option', product: product, option: option, block: block %}
               {%- else -%}
               <legend class="form__label ">{{ option.name }}: <span id="selected-{{ option.name | downcase | replace: ' ', '-' }}"> {{ option.selected_value }}</span></legend>

@@ -193,7 +193,7 @@
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
-      margin-right: 5px;
+      /* margin-right: 5px; */
       padding:0;
     }
     .card-product-form__input input[type='radio'] + label.color-swatch:before{
@@ -237,7 +237,7 @@
       height: calc({{swatchSize}}px/ 0.66);
       {%- endif -%}
     }
-     .card-product-form__input input[type='radio'].disabled+label.color-swatch:before {
+     /* .card-product-form__input input[type='radio'].disabled+label.color-swatch:before {
       top: 50%;
       height: .1rem;
       clip-path: unset;
@@ -246,13 +246,13 @@
       border-radius: 0;
       box-shadow: none;
       border-color: #acacac;
-  }
+  } */
 </style>
 <fieldset
   class="card-product-form__input js"
-  style="padding: 2px;display: flex;flex-wrap: wrap;gap: 5px;height: calc({{swatchSize}}px + 16px);margin: 0; overflow: hidden;justify-content: var(--text-alignment);border: none;position: relative;"
+  style="padding: 2px;display: flex;flex-wrap: wrap;gap: 5px;margin: 0; overflow: hidden;justify-content: var(--text-alignment);border: none;position: relative;"
 >
-  {%- for value in option.values -%}
+  {%- for value in option.values limit:5 -%}
     {%- liquid
       assign option_disabled = true
 
@@ -324,7 +324,7 @@
       <span class="visually-hidden">{{ 'products.product.variant_sold_out_or_unavailable' | t }}</span>
     </label>
     {%- assign colorCodes = '' -%}
-  {%- endfor -%}
+  {%- endfor -%}  
 </fieldset>
 <script>
   document.querySelectorAll('input+label[data-{{ option.name | downcase | replace: ' ', '-'  }}]').forEach(el=>{

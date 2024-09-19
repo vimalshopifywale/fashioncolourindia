@@ -171,6 +171,11 @@
             align-items: center;
             padding-top: 36px;
           }
+          @media screen and (max-width: 767px){
+            .swiper-branding{
+              padding: 20px 0 0 !important;
+            }
+          }
         
           .swiper-branding span {
             font-size: 12px;
@@ -232,6 +237,7 @@
         padding-bottom:{{section.settings.secPdgBtm}}px;
     }
     .video-heading{
+      font-weight: 500;
       font-size: {{ section.settings.heading_font_size }}px;
     }
     .vdo-subtitel{
@@ -239,6 +245,7 @@
     }
     @media screen and (max-width:767px){
       .video-heading{
+        margin: 0 0 27px;
         font-size: {{ section.settings.heading_font_sizemob }}px;
       }
       .vdo-subtitel{

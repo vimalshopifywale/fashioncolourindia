@@ -28,7 +28,7 @@
   }
 
   .product__info-wrapper {
-    padding: 0 0 0 5rem;
+    padding: 0 0 0 3rem;
   }
 
   .product__info-wrapper--extra-padding {
@@ -59,7 +59,7 @@
   }
 
   .product--large:not(.product--no-media) .product__info-wrapper {
-    padding: 0 0 0 7rem;
+    padding: 0 0 0 3rem;
     max-width: 35%;
     width: calc(35% - var(--grid-desktop-horizontal-spacing) / 2);
   }
@@ -1131,9 +1131,9 @@ a.product__text {
     width: calc(16.6666666% - 0.8rem);
   }
 
-  .product--thumbnail_slider .slider-mobile-gutter .slider-button {
+  /* .product--thumbnail_slider .slider-mobile-gutter .slider-button {
     display: flex;
-  }
+  } */
 }
 
 @media screen and (min-width: 900px) {
@@ -1695,8 +1695,9 @@ span.gmCmPrc {
 /*Code By Growthx Media LLP*/
 
 .product__title h1{
-  font-weight:600;
-  color:#3D6332;
+  font-weight:500;
+  color:#0D0D0D;
+  line-height: normal;
 }
 
 .button--secondary,

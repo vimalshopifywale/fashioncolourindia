@@ -557,7 +557,6 @@ h3.card__heading.h3{
 
 @media (max-width:750px){
   h3.card__heading.h3{
-    font-weight:600;
     font-size:17px;
     color:#1b1b1d;
   }

@@ -30,9 +30,9 @@
         "quick_desc_size": 14,
         "enable_quick_add": true,
         "show_secondary_add": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "navigation_on_mobile": true,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "navigation_on_mobile": false,
         "padding_top": 100,
         "padding_bottom": 100,
         "mobile_padding_top": 52,
@@ -95,8 +95,8 @@
         "subtitle_font_size": 20,
         "subtitle_font_sizemob": 16,
         "ttl": "Real Reviews from Our Beauty Tribe",
-        "heading_font_size": 16,
-        "heading_font_sizemob": 16,
+        "heading_font_size": 37,
+        "heading_font_sizemob": 30,
         "subTtl": "",
         "btnTxt": "",
         "btnUrl": "",
@@ -104,7 +104,7 @@
         "dskSpc": 34,
         "tabSld": 4,
         "tabSpc": 20,
-        "mblSld": 1.8,
+        "mblSld": 1.2,
         "mblSpc": 20,
         "color_scheme": "accent-1",
         "secPdgTop": 10,
@@ -308,7 +308,7 @@
         "secPdgTop": 10,
         "secPdgBtm": 100,
         "secPdgTopMbl": 20,
-        "secPdgBtmMbl": 20
+        "secPdgBtmMbl": 50
       }
     }
   },

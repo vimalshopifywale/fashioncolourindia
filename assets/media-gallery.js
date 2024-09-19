@@ -106,3 +106,46 @@ if (!customElements.get('media-gallery')) {
     }
   );
 }
+
+// jQuery Vertical Slider Implementation
+$(document).ready(function () {
+  // Initialize the vertical thumbnail slider
+  const $thumbnails = $('[id^="GalleryThumbnails"]');
+
+  function initializeSwiper() {
+    const thumbnailSwiper = new Swiper(
+      '[id^="GalleryThumbnails"].swiper-container',
+      {
+        centeredSlides: true,
+        centeredSlidesBounds: true,
+        slidesPerView: 4,
+        watchOverflow: true,
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+        direction: window.innerWidth > 990 ? "vertical" : "horizontal",
+      },
+    );
+
+    // Store the Swiper instance in the media-gallery custom element for later use
+    const mediaGalleryElement = document.querySelector("media-gallery");
+    if (mediaGalleryElement) {
+      mediaGalleryElement.thumbnailsSwiper = thumbnailSwiper;
+    }
+
+    return thumbnailSwiper;
+  }
+
+  if ($thumbnails.length > 0) {
+    $thumbnails.addClass("swiper-container");
+    $thumbnails.find("ul").addClass("swiper-wrapper");
+    $thumbnails.find("li").addClass("swiper-slide");
+
+    let swiperInstance = initializeSwiper();
+
+    // Update Swiper configuration on window resize
+    $(window).on("resize", function () {
+      swiperInstance.destroy(true, true);
+      swiperInstance = initializeSwiper();
+    });
+  }
+});

@@ -2,7 +2,7 @@
   display: flex;
   position: relative;
   line-height: 1;
-  padding: 1.5rem 0;
+  padding: 22px 14px;
 }
 
 .accordion .summary__title {
@@ -22,8 +22,9 @@
 .accordion {
   margin-top: 2.5rem;
   margin-bottom: 0;
-  border-top: 0.1rem solid rgba(var(--color-foreground), 0.08);
-  border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.08);
+  /* border-top: 0.1rem solid rgba(var(--color-foreground), 0.08);
+  border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.08); */
+  border-bottom: 2px dotted #C3C3C3;
 }
 
 .accordion__title {
@@ -33,9 +34,11 @@
   margin: 0;
   word-break: break-word;
   font-family: var(--font-collapsible-family);
-  font-weight: var(--font-collapsible-weight);
+  /* font-weight: var(--font-collapsible-weight); */
   letter-spacing: var(--font-collapsible-spacing);
-  font-size: var(--font-collapsible-size);
+  /* font-size: var(--font-collapsible-size); */
+  font-size: 22px;
+  font-weight: 400;
 }
 
 .accordion .icon-accordion {

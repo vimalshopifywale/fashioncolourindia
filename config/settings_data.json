@@ -13,7 +13,7 @@
     "swatchStyle": "round",
     "swatchSize": 30,
     "swatchHeight": 40,
-    "color_scheme_main": "scheme-c83d469c-2a1d-4ae7-b1fc-e428dd6a108f",
+    "color_scheme_main": "accent-1",
     "sticky_position": "bottom",
     "sticky_position_mb": "bottom",
     "show_border": true,
@@ -50,7 +50,7 @@
     "spacing_sections": 0,
     "spacing_grid_horizontal": 20,
     "spacing_grid_vertical": 20,
-    "animations_reveal_on_scroll": false,
+    "animations_reveal_on_scroll": true,
     "animations_hover_elements": "none",
     "button_height": 4.7,
     "type_button_font": "inter_n5",
@@ -87,6 +87,7 @@
     "card_text_alignment": "left",
     "card_color_scheme": "scheme-6a35cdea-138a-4dd6-b7b5-b066419a615e",
     "swatch_show": true,
+    "swatches_limit": 4,
     "swatch_position": "top",
     "tag_show": false,
     "card_border_thickness": 1,
@@ -194,8 +195,9 @@
     "fsb_accent_color": "#000000",
     "upsell_main_color_scheme": "scheme-6a35cdea-138a-4dd6-b7b5-b066419a615e",
     "upsell_color_scheme": "scheme-6a35cdea-138a-4dd6-b7b5-b066419a615e",
-    "collection": "most-loved",
+    "collection": "fashion-colour-24hr-longwear-liquid-foundation-with-skin-care",
     "list_style_cart_drawer": "scroll",
+    "upsell_btn_style": "primary",
     "upsell_btn_text": "Add",
     "enable_cart_upsell": false,
     "toggle_color": "#c4ae78",
@@ -279,9 +281,9 @@
       },
       "accent-2": {
         "settings": {
-          "background": "rgba(0,0,0,0)",
+          "background": "#ffffff",
           "background_gradient": "",
-          "text": "#000000",
+          "text": "#0d0d0d",
           "button": "#ffffff",
           "button_label": "#000000",
           "secondary_button_label": "#000000",
@@ -313,12 +315,12 @@
       "scheme-c3d90b13-073f-4176-a4d3-8e9a9cca6a92": {
         "settings": {
           "background": "#ffffff",
-          "background_gradient": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 75%)",
-          "text": "#5e5e5e",
-          "button": "#212121",
+          "background_gradient": "",
+          "text": "#333333",
+          "button": "#bf0436",
           "button_label": "#ffffff",
-          "secondary_button_label": "#212121",
-          "shadow": "#212121"
+          "secondary_button_label": "#bf0436",
+          "shadow": "#bf0436"
         }
       },
       "scheme-c83d469c-2a1d-4ae7-b1fc-e428dd6a108f": {

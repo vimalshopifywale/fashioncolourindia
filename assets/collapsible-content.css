@@ -62,7 +62,7 @@
 
 @media screen and (min-width: 750px) {
   .collapsible-content__heading {
-    margin-bottom: 3rem;
+    margin-bottom: 24px;
   }
 }
 
@@ -130,7 +130,7 @@
 /*Code By Growthx Media LLP*/
 
 .collapsible-content__heading {
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .accordion p{

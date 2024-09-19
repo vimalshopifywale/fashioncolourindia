@@ -1173,6 +1173,16 @@
         "label": "Show color swatches"
       },
       {
+        "type": "range",
+        "id": "swatches_limit",
+        "label": "Select Swatches Limits to show",
+        "info": "Select 0(Zero) to Remove Swatches Limit",
+        "min": 0,
+        "max": 6,
+        "step": 1,
+        "default":6
+      },
+      {
         "type": "select",
         "id": "swatch_position",
         "label": "Swatch Position",

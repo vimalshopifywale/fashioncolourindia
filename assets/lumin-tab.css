@@ -3,7 +3,14 @@ ul.custom--tabs {
   max-width: var(--page-width);
   display: flex !important;
   flex-wrap: wrap !important;
-  gap: 20px;
+  gap: 38px;
+  margin: 0;
+}
+.custom__tab-content p span,
+.custom__tab-content p {
+  color: #555555;
+  font-weight: 400;
+  font-size: 20px;
 }
 .custom--tabs .tab__list {
   display: inline-block;
@@ -15,12 +22,12 @@ ul.custom--tabs {
 }
 .custom__tab-content.active {
   display: block;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 38px;
+  padding-bottom: 1px;
 }
 .tab__list h4.custom-tab {
   display: inline-block !important;
-  padding: 10px 15px !important;
+  padding: 0 0 17px !important;
   cursor: pointer !important;
   margin: 0px !important;
 }
@@ -35,7 +42,7 @@ ul.custom--tabs {
   margin-top: 0;
 }
 .lumin-tab-width {
-    padding:4rem;
+    padding:0 4rem;
   }
 @media only screen and (max-width: 576px) {
   ul.custom--tabs {
@@ -51,6 +58,6 @@ ul.custom--tabs {
   .custom__tab-content.active {
   }
   .lumin-tab-width {
-    padding:2rem;
+    padding: 0 2rem;
   }
 }

@@ -6,6 +6,15 @@
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
   }
+  .title{
+    font-size: {{section.settings.titel_desktop}}px;
+  }
+
+  @media screen (max-width:767px){
+    .title{
+      font-size: {{section.settings.titel_mob}}px;
+    }
+  }
 
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
@@ -25,7 +34,7 @@
 {%- endstyle -%}
 <style>.cls-1-{{ section.id }}{fill:{{ section.settings.checkmark_color }};}</style>
 
-<div class="gradient color-{{ section.settings.color_scheme }} content-for-grouping">
+<div class="sw-comparisontable gradient color-{{ section.settings.color_scheme }} content-for-grouping">
   <div class="page-width section-{{ section.id }}-padding">
     <div class="content-and-comparison-table{% if section.settings.layout == 'table_first' %} content-and-comparison-table--table-first{% elsif section.settings.layout == 'table_center' %} table_center{% endif %}{% if section.settings.title == blank and section.settings.text == blank %} content-and-comparison-table--no-content{% endif %}">
       <div class="content-container center">
@@ -184,6 +193,24 @@
             "id": "title",
             "default": "Comparison table",
             "label": "Heading"
+        },
+        {
+          "type": "range",
+          "id": "titel_desktop",
+          "label": "Desktop Titel Font Size",
+          "default": 16,
+          "min": 12,
+          "max": 48,
+          "step": 1
+        },
+        {
+          "type": "range",
+          "id": "titel_mob",
+          "label": "Mobile Titel Font Size",
+          "default": 16,
+          "min": 12,
+          "max": 48,
+          "step": 1
         },
         {
           "type": "select",

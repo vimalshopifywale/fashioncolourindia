@@ -249,10 +249,12 @@
   } */
 </style>
 <fieldset
-  class="card-product-form__input js"
-  style="padding: 2px;display: flex;flex-wrap: wrap;gap: 5px;margin: 0; overflow: hidden;justify-content: var(--text-alignment);border: none;position: relative;"
+  class="sw-swatches card-product-form__input js"
+  style="padding: 1px 0px 17px 1px;display: inline-flex;flex-wrap: wrap;align-items: center;gap: 6px;margin: 0;justify-content: var(--text-alignment);border: none;position: relative;"
 >
-  {%- for value in option.values limit:5 -%}
+{% if settings.swatches_limit > 0 %}
+ 
+  {%- for value in option.values limit: settings.swatches_limit -%}
     {%- liquid
       assign option_disabled = true
 
@@ -325,6 +327,82 @@
     </label>
     {%- assign colorCodes = '' -%}
   {%- endfor -%}  
+  <span class="swatch_count">+{{ option.values.size | minus: settings.swatches_limit }}</span>
+  {% else %}
+    {%- for value in option.values -%}
+    {%- liquid
+      assign option_disabled = true
+
+      for option1_name in variants_option1_arr
+        case option.position
+          when 1
+            if variants_option1_arr[forloop.index0] == value and variants_available_arr[forloop.index0]
+              assign option_disabled = false
+            endif
+          when 2
+            if option1_name == product.selected_or_first_available_variant.option1 and variants_option2_arr[forloop.index0] == value and variants_available_arr[forloop.index0]
+              assign option_disabled = false
+            endif
+          when 3
+            if option1_name == product.selected_or_first_available_variant.option1 and variants_option2_arr[forloop.index0] == product.selected_or_first_available_variant.option2 and variants_option3_arr[forloop.index0] == value and variants_available_arr[forloop.index0]
+              assign option_disabled = false
+            endif
+        endcase
+      endfor
+    -%}
+
+    <input
+      type="radio"
+      id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
+      name="{{ option.name }}"
+      value="{{ value | escape }}"
+      form="{{ card-product_form_id }}"
+      {% if option.selected_value == value %}
+        checked
+      {% endif %}
+      class="
+        hidden
+        {% if option_disabled %}
+          disabled
+        {% endif %}
+      "
+    >
+
+    {%- liquid
+      for colorData in swatchColors
+        assign colorDataArr = colorData | split: ':'
+        assign ruleName = colorDataArr[0] | strip
+        if value == ruleName
+          assign colorCodes = colorDataArr[1] | strip | split: '#'
+          assign colorNumber = 0 | plus: colorCodes.size
+          break
+        endif
+      endfor
+    -%}
+    <label
+      data-{{ option.name | downcase | replace: ' ', '-' }}="{{value}}"
+      style="
+        background: {{ value }};
+        {%- case colorNumber -%}
+
+            {%- when 2 -%}
+                background-color: #{{ colorCodes[1] }};
+            {%- when 3 -%}
+                background: linear-gradient(135deg, #{{ colorCodes[1] }} 50%, #{{ colorCodes[2] }} 50%);
+            {%- when 4 -%}
+                background: linear-gradient(to right,#{{ colorCodes[1] }} 33%,#{{ colorCodes[2] }} 33%,#{{ colorCodes[2] }} 66%, #{{ colorCodes[3] }} 66%);
+            {%- else -%}
+                background-image:url({{ colorCodes[0] | downcase | replace: ' ', '-' | file_img_url }});
+            {%- endcase -%} position: relative;
+      "
+      class="color-swatch {% case swatchStyle %}{% when "round" %}round{% when "square-round-corners" %}round-corners{% endcase %}"
+      for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
+    >
+      <span class="visually-hidden">{{ 'products.product.variant_sold_out_or_unavailable' | t }}</span>
+    </label>
+    {%- assign colorCodes = '' -%}
+  {%- endfor -%} 
+  {% endif %}
 </fieldset>
 <script>
   document.querySelectorAll('input+label[data-{{ option.name | downcase | replace: ' ', '-'  }}]').forEach(el=>{

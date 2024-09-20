@@ -186,8 +186,8 @@
         "tab_font": 28,
         "tab_font_align": "center",
         "tab_content_align": "left",
-        "tab_font_mb": 16,
-        "tab_font_mb_align": "center",
+        "tab_font_mb": 18,
+        "tab_font_mb_align": "left",
         "tab_content_align_mb": "left",
         "show_border": false,
         "padding_top": 0,
@@ -364,8 +364,8 @@
         "table_border_thickness": 0,
         "padding_top": 100,
         "padding_bottom": 100,
-        "padding_top_mobile": 28,
-        "padding_bottom_mobile": 28
+        "padding_top_mobile": 80,
+        "padding_bottom_mobile": 0
       }
     },
     "c0ef23cf-5481-4b47-9b78-3c28134c079a": {
@@ -438,18 +438,20 @@
         "image_ratio": "small",
         "desktop_layout": "image_second",
         "heading_size_row": "h3",
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "mobile_padding_top": 0,
-        "mobile_padding_bottom": 0,
+        "padding_top": 100,
+        "padding_bottom": 100,
+        "mobile_padding_top": 80,
+        "mobile_padding_bottom": 80,
         "border_enabled": false,
-        "mobile_heading_font_size": 18
+        "mobile_heading_font_size": 30
       }
     },
     "related-products": {
       "type": "related-products",
       "settings": {
-        "heading": "You may also like",
+        "heading": "You may also like...",
+        "heading_font_desktop": 37,
+        "heading_font_mob": 30,
         "heading_size": "h2",
         "collection_text_alignment": "left",
         "products_to_show": 4,
@@ -457,14 +459,18 @@
         "color_scheme": "accent-2",
         "image_ratio": "adapt",
         "show_secondary_image": true,
-        "show_vendor": true,
+        "show_vendor": false,
         "show_rating": true,
+        "show_swatch": true,
         "enable_quick_desc": false,
         "quick_desc_legth": 90,
         "quick_desc_size": 14,
+        "enable_quick_add": true,
         "columns_mobile": "1",
         "padding_top": 0,
-        "padding_bottom": 64
+        "padding_bottom": 64,
+        "padding_topmob": 0,
+        "padding_bottommob": 68
       }
     },
     "gm_slider_AgHwny": {
@@ -538,7 +544,7 @@
         "subtitle_font_size": 20,
         "subtitle_font_sizemob": 16,
         "ttl": "Follow us on Instagram",
-        "heading_font_size": 37,
+        "heading_font_size": 40,
         "heading_font_sizemob": 30,
         "subTtl": "",
         "btnTxt": "",
@@ -553,7 +559,7 @@
         "mblSpc": 14,
         "sldAtply": 1.5,
         "pagination": true,
-        "navigation": true,
+        "navigation": false,
         "color_scheme": "scheme-6a35cdea-138a-4dd6-b7b5-b066419a615e",
         "sldCol": "#ffffff",
         "secPdgTop": 10,

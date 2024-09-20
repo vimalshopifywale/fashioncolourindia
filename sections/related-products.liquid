@@ -11,6 +11,20 @@
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
   }
+  .related-products__heading{
+    font-weight: 500;
+    font-size: {{section.settings.heading_font_desktop}}px;
+  }
+
+  @media screen and (max-width:767px){
+    .related-products__heading{
+      font-size: {{section.settings.heading_font_mob}}px;
+    }
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_topmob }}px;
+      padding-bottom: {{ section.settings.padding_bottommob }}px;
+    }
+  }
 
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
@@ -20,7 +34,7 @@
   }
 {%- endstyle -%}
 
-<div class="color-{{ section.settings.color_scheme }} gradient no-js-hidden">
+<div class="feature-collection color-{{ section.settings.color_scheme }} gradient no-js-hidden">
   <product-recommendations
     class="related-products page-width section-{{ section.id }}-padding isolate{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
     data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit={{ section.settings.products_to_show }}"
@@ -43,7 +57,11 @@
               show_secondary_image: section.settings.show_secondary_image,
               show_vendor: section.settings.show_vendor,
               show_rating: section.settings.show_rating,
-              show_quick_desc: section.settings.enable_quick_desc
+              show_quick_desc: section.settings.enable_quick_desc,
+              show_quick_add: section.settings.enable_quick_add,
+              show_secondary_add: section.settings.show_secondary_add,
+              section_id: section.id,
+              swatch_show: section.settings.swatch_show
             %}
           </li>
         {% endunless %}
@@ -71,6 +89,24 @@
       "id": "heading",
       "default": "You may also like",
       "label": "t:sections.related-products.settings.heading.label"
+    },
+    {
+      "type": "range",
+      "id": "heading_font_desktop",
+      "label": "Desktop Heading Font Size",
+      "default": 24,
+      "min": 16,
+      "max": 72,
+      "step": 1
+    },
+    {
+      "type": "range",
+      "id": "heading_font_mob",
+      "label": "Mobile Heading Font Size",
+      "default": 24,
+      "min": 16,
+      "max": 72,
+      "step": 1
     },
     {
       "type": "select",
@@ -182,6 +218,13 @@
     },
     {
       "type": "checkbox",
+      "id": "show_swatch",
+      "default": false,
+      "label": "Show Swatches",
+      "info": "Add swatch check box tru then show."
+    },
+    {
+      "type": "checkbox",
       "id": "enable_quick_desc",
       "default": false,
       "label": "Show description",
@@ -206,6 +249,12 @@
         "unit": "px",
         "label": "Description size",
         "default": 14
+      },
+      {
+      "type": "checkbox",
+      "id": "enable_quick_add",
+      "default": false,
+      "label": "t:sections.featured-collection.settings.enable_quick_buy.label"
       },
     {
       "type": "header",
@@ -249,6 +298,26 @@
       "step": 4,
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    },
+    {
+    "type": "range",
+    "id": "padding_topmob",
+    "min": 0,
+    "max": 100,
+    "step": 4,
+    "unit": "px",
+    "label": "Mobile Top Padding",
+    "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottommob",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Mobile Bottom Padding",
       "default": 36
     }
   ]

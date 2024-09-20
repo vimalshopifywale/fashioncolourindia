@@ -19,6 +19,9 @@
    align-items: center;
    justify-content: space-between;
    }
+  #lumin-sticky-atc .product-form button[name="add"] {
+    font-weight: 500;
+  }
    @media (min-width: 990px) {
    #lumin-sticky-atc .page-width-inner {
    display: flex;

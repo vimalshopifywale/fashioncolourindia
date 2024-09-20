@@ -148,6 +148,33 @@ window.addEventListener('DOMContentLoaded', () => {
   -%}
     {%- unless only_empty_brand -%}
       <div class="footer__content-top page-width">
+        <div class="footer-logobottom footer-logotop">
+          {%- if settings.brand_image != blank -%}
+          {%- assign brand_image_height = settings.brand_image_width
+          | divided_by: settings.brand_image.aspect_ratio
+          -%}
+          <div class="footer-block__image-wrapper">
+            {{
+            settings.brand_image
+            | image_url: width: 1100
+            | image_tag:
+            loading: 'lazy',
+            widths: '50, 100, 150, 200, 300, 400, 550, 800, 1100',
+            height: brand_image_height,
+            width: settings.brand_image_width
+            }}
+          </div>
+          {%- endif -%}
+          {%- if settings.brand_headline != blank -%}
+          <h2 class="footer-block__heading rte">{{ settings.brand_headline }}</h2>
+          {%- endif -%}
+          {%- if settings.brand_description != blank -%}
+          <div class="rte">{{ settings.brand_description }}</div>
+          {%- endif -%}
+          {%- if block.settings.show_social and has_social_icons -%}
+          {%- render 'social-icons', class: 'footer__list-social' -%}
+          {%- endif -%}
+        </div>
         {%- if section.blocks.size > 0 -%}
           {%- liquid
             if section.blocks.size == 9
@@ -481,12 +508,12 @@ window.addEventListener('DOMContentLoaded', () => {
             <small class="copyright__content">&copy;{{ 'now' | date: '%Y' }}, {{ shop.name | link_to: routes.root_url -}}
             </small>
             <small class="copyright__content">{% unless section.settings.hide_shopify %}{{ powered_by_link }}{% endunless %} {{
-                section.settings.copyright }}<br>Made with ❤️ & ☕ by Growthx Media</small>
+                section.settings.copyright }}<br>Made with ❤️ & ☕ by <a href="https://growthxmedia.in">Growthx Media</a></small>
         </div>
 
         {%- if section.settings.show_policy -%}
           <ul class="policies list-unstyled">
-            {%- for policy in shop.policies -%}
+            {%- for policy in shop.policies limit:2 -%}
               {%- if policy != blank -%}
                 <li>
                   <small class="copyright__content"

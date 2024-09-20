@@ -139,19 +139,26 @@
   }
   .comparison-table__checkmark,
   .comparison-table__x {
-    width: 1.8rem;
-    height: 1.8rem;
+    width: 20px;
+    height: 20px;
   }
-  .content-and-comparison-table .content-container .title{
+  /* .content-and-comparison-table .content-container .title{
     font-size:23px;
-  }
+  } */
 
   .comparison-table .comparison-table__row-name h3 {
     font-size: 1.5rem;
-}
-.comparison-table th{
-  font-size: 1.2rem;
-}
+    text-align: left;
+  }
+  .comparison-table th{
+    font-size: 1.2rem;
+    padding: 14px 10px;
+  }
+  .table_center .comparison-table th:first-of-type,
+  .table_center .comparison-table td:first-of-type {
+    width: 76%;
+    padding: 10px 12px;
+  }
 }
 @media screen and (max-width: 500px) {
   .comparison-table__logo img {

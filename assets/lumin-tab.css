@@ -2,15 +2,20 @@ ul.custom--tabs {
   list-style-type: none;
   max-width: var(--page-width);
   display: flex !important;
-  flex-wrap: wrap !important;
+  white-space: nowrap;
   gap: 38px;
+  overflow-x: auto;
   margin: 0;
 }
 .custom__tab-content p span,
 .custom__tab-content p {
   color: #555555;
-  font-weight: 400;
+  font-weight: 200;
   font-size: 20px;
+  margin: 0;
+}
+.custom__tab-content p strong{
+  font-weight: 500;
 }
 .custom--tabs .tab__list {
   display: inline-block;
@@ -30,6 +35,7 @@ ul.custom--tabs {
   padding: 0 0 17px !important;
   cursor: pointer !important;
   margin: 0px !important;
+  font-weight: 400;
 }
 .active-always {
   display: block !important;
@@ -44,6 +50,11 @@ ul.custom--tabs {
 .lumin-tab-width {
     padding:0 4rem;
   }
+@media screen and (max-width: 749px){
+  .custom__tab-content p span{
+    font-size: 15px;
+  }
+}
 @media only screen and (max-width: 576px) {
   ul.custom--tabs {
   }
@@ -58,6 +69,12 @@ ul.custom--tabs {
   .custom__tab-content.active {
   }
   .lumin-tab-width {
-    padding: 0 2rem;
+    padding: 0;
+  }
+  .custom__tab-content.active{
+    padding: 26px 0 0;
+  }
+  ul.custom--tabs{
+    gap: 20px;
   }
 }

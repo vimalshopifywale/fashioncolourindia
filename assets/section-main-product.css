@@ -1075,9 +1075,9 @@ a.product__text {
     grid-template-columns: repeat(5, 1fr);
   }
 
-  .product--large .thumbnail-list {
+  /* .product--large .thumbnail-list {
     grid-template-columns: repeat(6, 1fr);
-  }
+  } */
 }
 
 @media screen and (max-width: 749px) {

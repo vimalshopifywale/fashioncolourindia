@@ -138,9 +138,11 @@
   font-weight: 500;
 }
 
-.accordion p{
+.accordion p,
+.accordion p strong{
 color:#5E5E5E;
 font-size:15px;
+font-weight: 400;
 }
 
 .accordion h3{

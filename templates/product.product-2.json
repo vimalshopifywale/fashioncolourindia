@@ -28,7 +28,7 @@
         "price": {
           "type": "price",
           "settings": {
-            "price_size": 17,
+            "price_size": 20,
             "sale_price_color": "#707070",
             "price_bold": false,
             "badge_hide": false,
@@ -354,7 +354,7 @@
         "us_label": "Fashion Colour",
         "others_label": "Them",
         "benefit_color_scheme": "accent-1",
-        "checkmark_color": "#ffffff",
+        "checkmark_color": "#bf0436",
         "icon_cells_color_scheme": "accent-2",
         "table_corner_radius": 0,
         "table_shadow_opacity": 15,
@@ -412,7 +412,7 @@
           "settings": {
             "heading": "Is the lip crayon suitable for all skin types?",
             "icon": "none",
-            "row_content": "<p>{{ product.metafields.custom.product_details_controller.value.product_fa_qs | metafield_tag: field: 'question' }}<\/p>",
+            "row_content": "{{ product.metafields.custom.product_details_controller.value.product_fa_qs | metafield_tag: field: 'question' }}",
             "page": ""
           }
         }

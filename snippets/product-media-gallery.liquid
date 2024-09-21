@@ -179,7 +179,12 @@
         aria-controls="GalleryThumbnails-{{ section.id }}"
         data-step="3"
       >
-        {% render 'icon-arro' %}
+        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 59 59" fill="none">
+          <circle cx="29.5" cy="29.5" r="29" fill="white" stroke="#DEDEDE" />
+          <path
+            d="M34.5564 39.5639C34.6969 39.4244 34.8085 39.2585 34.8847 39.0758C34.9608 38.893 35 38.697 35 38.499C35 38.301 34.9608 38.1049 34.8847 37.9222C34.8085 37.7394 34.6969 37.5735 34.5564 37.4341L27.6871 30.5649C27.5466 30.4255 27.435 30.2596 27.3588 30.0768C27.2827 29.894 27.2435 29.698 27.2435 29.5C27.2435 29.302 27.2827 29.106 27.3588 28.9232C27.435 28.7404 27.5466 28.5745 27.6871 28.4351L34.5564 21.5659C34.6969 21.4265 34.8085 21.2606 34.8847 21.0778C34.9608 20.8951 35 20.699 35 20.501C35 20.303 34.9608 20.107 34.8847 19.9242C34.8085 19.7415 34.6969 19.5756 34.5564 19.4361C34.2753 19.1568 33.8952 19 33.499 19C33.1027 19 32.7226 19.1568 32.4416 19.4361L25.5574 26.3204C24.7148 27.164 24.2415 28.3076 24.2415 29.5C24.2415 30.6924 24.7148 31.836 25.5574 32.6796L32.4416 39.5639C32.7226 39.8432 33.1027 40 33.499 40C33.8952 40 34.2753 39.8432 34.5564 39.5639Z"
+            fill="#363436" />
+        </svg>
       </button>
       <ul
         id="Slider-Thumbnails-{{ section.id }}{{ id_append }}"
@@ -235,7 +240,7 @@
             </button>
           </li>
         {%- endif -%}
-        {%- for media in product.media -%}
+        {% comment %} {%- for media in product.media -%}
           {%- unless media.id == product.selected_or_first_available_variant.featured_media.id -%}
             {%- liquid
               capture media_index
@@ -293,7 +298,53 @@
               </button>
             </li>
           {%- endunless -%}
-        {%- endfor -%}
+        {%- endfor -%} {% endcomment %}
+        {%- assign video_ids = 'video_box' -%}
+
+{%- for media in product.media -%}
+{%- if media.media_type == 'video' or media.media_type == 'external_video' -%}
+{%- assign video_ids = video_ids | append: media.id | append: ',' -%} 
+{%- endif -%}
+{%- endfor -%}
+        
+      {%- for media in product.media -%}
+      {%- unless media.id == product.selected_or_first_available_variant.featured_media.id -%}
+      <li id="Slide-Thumbnails-{{ section.id }}-{{ forloop.index }}{{ id_append }}"
+        class="thumbnail-list__item slider__slide{% if section.settings.hide_variants and variant_images contains media.src %} thumbnail-list_item--variant{% endif %}"
+        data-target="{{ section.id }}-{{ media.id }}" {% if video_ids contains media.id %} style="display: none;" {% endif %}>
+        {%- if media.media_type == 'model' -%}
+        <span class="thumbnail__badge" aria-hidden="true">
+          {%- render 'icon-3d-model' -%}
+        </span>
+        {%- elsif media.media_type == 'video' or media.media_type == 'external_video' -%}
+        <span class="thumbnail__badge" aria-hidden="true">
+          {%- render 'icon-play' -%}
+        </span>
+        {%- endif -%}
+      
+        {%- capture thumbnail_id -%}
+        Thumbnail-{{ section.id }}-{{ forloop.index }}{{ id_append }}
+        {%- endcapture -%}
+        <button class="thumbnail global-media-settings global-media-settings--no-shadow"
+          aria-label="{%- if media.media_type == 'image' -%}{{ 'products.product.media.load_image' | t: index: media_index }}{%- elsif media.media_type == 'model' -%}{{ 'products.product.media.load_model' | t: index: media_index }}{%- elsif media.media_type == 'video' or media.media_type == 'external_video' -%}{{ 'products.product.media.load_video' | t: index: media_index }}{%- endif -%}"
+          {% if media==product.selected_or_first_available_variant.featured_media or
+          product.selected_or_first_available_variant.featured_media==null and forloop.index==1 %} aria-current="true" {%
+          endif %} aria-controls="GalleryViewer-{{ section.id }}{{ id_append }}" aria-describedby="{{ thumbnail_id }}">
+          {{
+          media.preview_image
+          | image_url: width: 416
+          | image_tag:
+          loading: 'lazy',
+          sizes: sizes,
+          widths: '54, 74, 104, 162, 208, 324, 416',
+          id: thumbnail_id,
+          alt: media.alt
+          | escape
+          }}
+        </button>
+      </li>
+      {%- endunless -%}
+      {%- endfor -%}
       </ul>
       <button
         type="button"
@@ -303,7 +354,12 @@
         aria-controls="GalleryThumbnails-{{ section.id }}"
         data-step="3"
       >
-        {% render 'icon-arro' %}
+      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 59 59" fill="none">
+        <circle cx="29.5" cy="29.5" r="29" fill="white" stroke="#DEDEDE" />
+        <path
+          d="M34.5564 39.5639C34.6969 39.4244 34.8085 39.2585 34.8847 39.0758C34.9608 38.893 35 38.697 35 38.499C35 38.301 34.9608 38.1049 34.8847 37.9222C34.8085 37.7394 34.6969 37.5735 34.5564 37.4341L27.6871 30.5649C27.5466 30.4255 27.435 30.2596 27.3588 30.0768C27.2827 29.894 27.2435 29.698 27.2435 29.5C27.2435 29.302 27.2827 29.106 27.3588 28.9232C27.435 28.7404 27.5466 28.5745 27.6871 28.4351L34.5564 21.5659C34.6969 21.4265 34.8085 21.2606 34.8847 21.0778C34.9608 20.8951 35 20.699 35 20.501C35 20.303 34.9608 20.107 34.8847 19.9242C34.8085 19.7415 34.6969 19.5756 34.5564 19.4361C34.2753 19.1568 33.8952 19 33.499 19C33.1027 19 32.7226 19.1568 32.4416 19.4361L25.5574 26.3204C24.7148 27.164 24.2415 28.3076 24.2415 29.5C24.2415 30.6924 24.7148 31.836 25.5574 32.6796L32.4416 39.5639C32.7226 39.8432 33.1027 40 33.499 40C33.8952 40 34.2753 39.8432 34.5564 39.5639Z"
+          fill="#363436" />
+      </svg>
       </button>
     </slider-component>
   {%- endif -%}

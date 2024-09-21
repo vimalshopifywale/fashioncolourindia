@@ -26,6 +26,7 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
+    overflow: hidden;
   }
 
   .breadcrumbs__item {
@@ -35,6 +36,15 @@
   .breadcrumbs__item a {
     text-decoration: none;
     color: inherit;
+    font-weight: 400;
+  }
+  .breadcrumbs__list li:last-child.breadcrumbs__item a {
+    width: 200px;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    text-overflow: ellipsis;
+    vertical-align: top;
   }
   .breadcrumbs__item:hover a {
     text-decoration: underline;

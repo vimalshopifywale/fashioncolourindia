@@ -204,9 +204,8 @@
         border-radius: 0 0 0 16px;
     }
     .sw-comparisontable .comparison-table__checkmark {
-        padding: 7px;
         border-radius: 50px;
-        background: #BF0436;
+        /* background: #BF0436; */
     }
     .sw-comparisontable .comparison-table__x {
         border-radius: 50px;
@@ -277,12 +276,26 @@
         margin: 27px 0 ;
     } */
     .sw-product .sw-variantbox {
-        border-top: 1px solid #CDCDCD;  
+        border-top: 1px solid #CDCDCD;
         border-left: 1px solid #CDCDCD;
         border-right: 1px solid #CDCDCD;
-        padding: 23px 10px 0;
-        border-radius: 16px 16px 0px 0;
+        padding: 23px 10px 15px;
+        border-radius: 16px 16px 0 0;
         margin: 27px 0 0;
+    }
+    .sw-productbtn {
+        margin: 0 !important;
+    }
+    .sw-product .lm-feature-image_Hbm4K8{
+        padding: 15px 10px 14px;
+        border-left: 1px solid #CDCDCD;
+        border-right: 1px solid #CDCDCD;
+        border-bottom: 1px solid #CDCDCD;
+        border-radius: 0 0 16px 16px;
+        margin: 0 auto;
+    }
+    .sw-product .lm-feature-image_Hbm4K8 img{
+        vertical-align: top;
     }
     .sw-product .sw-variantbox .form__label span{
         font-weight: 400;
@@ -293,18 +306,18 @@
         border: 2px solid #BF0436;
         border-radius: 6px;
         font-size: 20px;
-        font-weight: 500;
+        font-weight: 600;
         margin-bottom: 12px;
     }
     .sw-product .shopify-payment-button__button.shopify-payment-button__button--unbranded {
         border-radius: 6px;
         font-size: 20px;
-        font-weight: 500;
+        font-weight: 600;
     }
     .sw-product .product-form {
         border-left: 1px solid #CDCDCD;
         border-right: 1px solid #CDCDCD;
-        padding: 27px 10px 0;
+        padding: 0 10px 0;
     }
 
 /* ===Collecction================================================================== */
@@ -593,6 +606,24 @@
         }
     }
     @media screen and (max-width:990px){
+        .sw-product .slider-button.slider-button--next svg{
+            transform: rotate(180deg);
+        }
+        .sw-product .slider-button.slider-button--next {
+            right: 0;
+        }
+        .sw-product .slider-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            display: block !important;
+            border-radius: 50px;
+            box-shadow: 0px 0px 25px 0px #0000000F;
+        }
+        .sw-product .thumbnail-slider .thumbnail-list.slider {
+            padding: 1px 0;
+            z-index: -1;
+        }
         .menu-title {
             padding: 11px 30px;
             margin: 0;
@@ -603,6 +634,7 @@
             width: 100%;
             height: auto;
             order: unset;
+            z-index: 1;
         }
         .sw-product .grid__item.product__media-wrapper media-gallery{
             flex-flow: row wrap;
@@ -643,6 +675,10 @@
         }
     }
     @media screen and (max-width:749px){
+        .custom__tab-content p strong {
+            font-weight: 400;
+            font-size: 16px;
+        }
         .header__heading-logo-wrapper{
             margin-left: auto;
         }
@@ -658,7 +694,7 @@
         ul.policies.list-unstyled {
             order: -1;
             width: 100%;
-            margin: 0 auto 20px;
+            margin: 0 auto 0;
         }
         .footer-logobottom.footer-logotop {
             display: block;
@@ -693,28 +729,10 @@
         .sw-comparisontable .comparison-table td:nth-child(2),
         .sw-comparisontable .color-accent-2:last-child{
             width: auto;
-        }
-        .sw-comparisontable .comparison-table__checkmark{
-            padding: 4px;
+            padding: 10px 12px;
         }
         .sw-comparisontable .comparison-table__x span {
             width: 12px;
-        }
-        .sw-product .thumbnail-slider .thumbnail-list.slider{
-            padding: 1px 0;
-        }
-        .sw-product .slider-button.slider-button--next {
-            right: 0;
-        }
-        .sw-product .slider-button {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            display: block !important;
-            border-radius: 50px;
-            background: #FFF;
-            box-shadow:0px 0px 25px 0px #0000000F;
-            z-index: 3;
         }
         .sw-product .product__info-wrapper.grid__item {
             margin-top: 30px;
@@ -742,6 +760,7 @@
         .footer-main .footer-block__heading{
             padding: 20px 0 10px !important ;
             font-size: 18px;
+            font-weight: 400;
         }
     }
     @media screen and (max-width:575px){

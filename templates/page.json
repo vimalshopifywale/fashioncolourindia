@@ -6,9 +6,77 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "collapsible_content_e7JFUX": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_gYJQ6H": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_wjRc9a": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_irVUJF": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_ABeXJF": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_gYJQ6H",
+        "collapsible_row_wjRc9a",
+        "collapsible_row_irVUJF",
+        "collapsible_row_ABeXJF"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Collapsible content",
+        "chkbx": false,
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "background-2",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "heading_size_row": "h3",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "mobile_padding_top": 20,
+        "mobile_padding_bottom": 20,
+        "border_enabled": false,
+        "mobile_heading_font_size": 18
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "collapsible_content_e7JFUX"
   ]
 }

@@ -30,13 +30,82 @@
         "quick_desc_size": 14,
         "enable_quick_add": true,
         "show_secondary_add": false,
-        "columns_mobile": "1",
-        "swipe_on_mobile": true,
-        "navigation_on_mobile": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "navigation_on_mobile": true,
         "padding_top": 100,
         "padding_bottom": 100,
         "mobile_padding_top": 52,
         "mobile_padding_bottom": 52
+      }
+    },
+    "tabs_collection_Fxmxky": {
+      "type": "tabs-collection",
+      "blocks": {
+        "tab_N9xHNU": {
+          "type": "tab",
+          "settings": {
+            "heading": "Heading",
+            "collection": "",
+            "description": "",
+            "collection_text_alignment": "left",
+            "show_description": false,
+            "description_style": "body"
+          }
+        },
+        "tab_dhTHNc": {
+          "type": "tab",
+          "settings": {
+            "heading": "Heading",
+            "collection": "",
+            "description": "",
+            "collection_text_alignment": "left",
+            "show_description": false,
+            "description_style": "body"
+          }
+        },
+        "tab_RUeXC3": {
+          "type": "tab",
+          "settings": {
+            "heading": "Heading",
+            "collection": "",
+            "description": "",
+            "collection_text_alignment": "left",
+            "show_description": false,
+            "description_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "tab_N9xHNU",
+        "tab_dhTHNc",
+        "tab_RUeXC3"
+      ],
+      "settings": {
+        "tabs_color_scheme": "background-2",
+        "tab_font": 16,
+        "tab_font_align": "center",
+        "tab_font_mb": 14,
+        "tab_font_mb_align": "center",
+        "show_border": false,
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_desc": false,
+        "quick_desc_legth": 90,
+        "quick_desc_size": 14,
+        "enable_quick_add": false,
+        "show_secondary_add": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "gm_vdo_sld_PXcCY3": {
@@ -45,41 +114,121 @@
         "slide_pNznWQ": {
           "type": "slide",
           "settings": {
-            "imgPkr": "shopify:\/\/shop_images\/Video-216.gif",
-            "video": "shopify:\/\/products\/fashion-colour-platinum-liquid-blusher-5gm",
-            "slctPrdct": "fashion-colour-24hr-longwear-liquid-foundation-with-skin-care"
+            "imgPkr": "shopify:\/\/shop_images\/Video-343.gif",
+            "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/87aeb31898b04b06b1c29e7ecc7cb73b.mp4",
+            "slctPrdct": "fashion-colour-platinum-liquid-blusher-5gm"
           }
         },
         "slide_AYQAtb": {
           "type": "slide",
           "settings": {
-            "imgPkr": "shopify:\/\/shop_images\/fashion-mattelliquid.png",
-            "video": "shopify:\/\/collections\/eyeliner-pencil",
+            "imgPkr": "shopify:\/\/shop_images\/Video-279_1.gif",
+            "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/6f307cdceb7645aaa1364839f0ce8a83.mp4",
             "slctPrdct": "fashion-colour-24hr-longwear-liquid-foundation-with-skin-care"
           }
         },
         "slide_hAYdLL": {
           "type": "slide",
           "settings": {
-            "imgPkr": "shopify:\/\/shop_images\/fashion-mattelliquid.png",
-            "video": "shopify:\/\/collections\/bluser-highlighter-bronzer",
-            "slctPrdct": "fashion-colour-non-transfer-matt-waterproof-lipstick"
+            "imgPkr": "shopify:\/\/shop_images\/Video-163.gif",
+            "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/5cd6f98388f64e3b9a3f0208728128f8.mp4",
+            "slctPrdct": "fashion-colour-24hr-longwear-liquid-foundation-with-skin-care"
           }
         },
         "slide_n84eCd": {
           "type": "slide",
           "settings": {
-            "imgPkr": "shopify:\/\/shop_images\/fashion-mattelliquid.png",
-            "video": "shopify:\/\/products\/fashion-colour-lip-crayon-waterproof-long-lasting",
-            "slctPrdct": "fashion-colour-non-transfer-matt-waterproof-lipstick"
+            "imgPkr": "shopify:\/\/shop_images\/9206bbd4ed4a46c98b58984cbffc25e2.gif",
+            "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/9206bbd4ed4a46c98b58984cbffc25e2.mp4",
+            "slctPrdct": "fashion-colour-24hr-longwear-liquid-foundation-with-skin-care"
           }
         },
         "slide_JQcXGN": {
           "type": "slide",
           "settings": {
-            "imgPkr": "shopify:\/\/shop_images\/fashion-platinum-mackup.png",
-            "video": "shopify:\/\/products\/fashion-colour-lip-crayon-waterproof-long-lasting",
-            "slctPrdct": "fashion-colour-non-transfer-matt-waterproof-lipstick"
+            "imgPkr": "shopify:\/\/shop_images\/Video-737.gif",
+            "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/5cf6239fd2224b958231de5d8cd50210.mp4",
+            "slctPrdct": "fashion-colour-platinum-liquid-blusher-5gm"
+          }
+        },
+        "slide_n8pNjA": {
+          "type": "slide",
+          "settings": {
+            "imgPkr": "shopify:\/\/shop_images\/b45b08d40d594c5fa2e39b29842b5567.gif",
+            "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/b45b08d40d594c5fa2e39b29842b5567.mp4",
+            "slctPrdct": "fashion-colour-cc-cream"
+          }
+        },
+        "slide_8xcpdc": {
+          "type": "slide",
+          "settings": {
+            "imgPkr": "shopify:\/\/shop_images\/Video-782.gif",
+            "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/d350405d3d5445a394328ef16308ab82.mp4",
+            "slctPrdct": "platinum-loose-powder-loose-baking-and-setting-powder"
+          }
+        },
+        "slide_ReqE9L": {
+          "type": "slide",
+          "settings": {
+            "imgPkr": "shopify:\/\/shop_images\/Video-216.gif",
+            "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/edf40843961b46939ff2ade844983a6c.mp4",
+            "slctPrdct": "fashion-colour-24hr-longwear-liquid-foundation-with-skin-care"
+          }
+        },
+        "slide_TJbpPQ": {
+          "type": "slide",
+          "settings": {
+            "imgPkr": "shopify:\/\/shop_images\/Video-647.gif",
+            "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/5b310592708b476fbae889a5e702a890.mp4",
+            "slctPrdct": "fashion-colour-tinted-moisturizer-full-coverage-cream-spf15"
+          }
+        },
+        "slide_GFWYAJ": {
+          "type": "slide",
+          "settings": {
+            "imgPkr": "shopify:\/\/shop_images\/Video-640.gif",
+            "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/58db45be9ae145c9b9866d5043cc7a55.mp4",
+            "slctPrdct": "colorful-non-transfer-lipstick-2g"
+          }
+        },
+        "slide_TnTjgt": {
+          "type": "slide",
+          "settings": {
+            "imgPkr": "shopify:\/\/shop_images\/AQPvlHORaFZgwlw0EDFLVK-POjuNAJERss-ZlnOarfAMLD7kt5p5krx3bLyb9vPRBJS7yzuZ52Yn7nUmwfbn38Oq.gif",
+            "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/51edd91a614d4e0cbecac727d5b7d680.mp4",
+            "slctPrdct": "fashion-colour-platinum-eyeshadow-palette"
+          }
+        },
+        "slide_ipWwiY": {
+          "type": "slide",
+          "settings": {
+            "imgPkr": "shopify:\/\/shop_images\/AQOMtyxwv7H2Y9nh7F5x5AscCslX77j4gQTAoDn-CgMDyvRJdWVhfdiQkheRquXG2GhUGi1Bdv3VeO-Yv0MZhV.gif",
+            "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/6aafd81000924532ac9998a57daa6cbe.mp4",
+            "slctPrdct": "platinum-loose-powder-loose-baking-and-setting-powder"
+          }
+        },
+        "slide_cgTrH4": {
+          "type": "slide",
+          "settings": {
+            "imgPkr": "shopify:\/\/shop_images\/0a184ab891624a008c554d7e3bd91490.gif",
+            "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/0a184ab891624a008c554d7e3bd91490.mp4",
+            "slctPrdct": "tinted-magic-lip-balm-3gm"
+          }
+        },
+        "slide_bzz4rp": {
+          "type": "slide",
+          "settings": {
+            "imgPkr": "shopify:\/\/shop_images\/Video-450_2.gif",
+            "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/a34b3ff95882402ab626751cb64930e5.mp4",
+            "slctPrdct": "fashion-colour-cc-cream"
+          }
+        },
+        "slide_rHQiYr": {
+          "type": "slide",
+          "settings": {
+            "imgPkr": "shopify:\/\/shop_images\/Video-194.gif",
+            "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/cbd7a14bc3bf4c14953ee5432c2c0c60.mp4",
+            "slctPrdct": "fashion-colour-moisturizing-primer"
           }
         }
       },
@@ -88,15 +237,25 @@
         "slide_AYQAtb",
         "slide_hAYdLL",
         "slide_n84eCd",
-        "slide_JQcXGN"
+        "slide_JQcXGN",
+        "slide_n8pNjA",
+        "slide_8xcpdc",
+        "slide_ReqE9L",
+        "slide_TJbpPQ",
+        "slide_GFWYAJ",
+        "slide_TnTjgt",
+        "slide_ipWwiY",
+        "slide_cgTrH4",
+        "slide_bzz4rp",
+        "slide_rHQiYr"
       ],
       "settings": {
         "preTtl": "Our Products in Action",
         "subtitle_font_size": 20,
         "subtitle_font_sizemob": 16,
         "ttl": "Real Reviews from Our Beauty Tribe",
-        "heading_font_size": 37,
-        "heading_font_sizemob": 30,
+        "heading_font_size": 16,
+        "heading_font_sizemob": 16,
         "subTtl": "",
         "btnTxt": "",
         "btnUrl": "",
@@ -104,13 +263,80 @@
         "dskSpc": 34,
         "tabSld": 4,
         "tabSpc": 20,
-        "mblSld": 1.2,
+        "mblSld": 1.8,
         "mblSpc": 20,
         "color_scheme": "accent-1",
         "secPdgTop": 10,
         "secPdgBtm": 10,
         "mblPdgTop": 10,
         "mblPdgBtm": 10
+      }
+    },
+    "collapsible_content_ytea84": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_xbTNaf": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_y8HCVb": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_mJiYkm": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_kJ9HKd": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_xbTNaf",
+        "collapsible_row_y8HCVb",
+        "collapsible_row_mJiYkm",
+        "collapsible_row_kJ9HKd"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Collapsible content",
+        "chkbx": false,
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "background-2",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "heading_size_row": "h3",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "mobile_padding_top": 20,
+        "mobile_padding_bottom": 20,
+        "border_enabled": false,
+        "mobile_heading_font_size": 18
       }
     },
     "testimonial_slider_PxwHpG": {
@@ -222,8 +448,8 @@
         "slide_bWpkep": {
           "type": "slide",
           "settings": {
-            "imgPkr": "shopify:\/\/shop_images\/beautiful.jpg",
-            "img_url": "https:\/\/www.instagram.com\/accounts\/login\/?hl=en",
+            "imgPkr": "shopify:\/\/shop_images\/459570578_18455707981040959_4240917642604049776_n.jpg",
+            "img_url": "https:\/\/www.instagram.com\/p\/C_4u1wCvWPH\/",
             "ttl": "",
             "subTtl": ""
           }
@@ -231,8 +457,8 @@
         "slide_BimUUA": {
           "type": "slide",
           "settings": {
-            "imgPkr": "shopify:\/\/shop_images\/glow_blush.jpg",
-            "img_url": "https:\/\/www.instagram.com\/accounts\/login\/?hl=en",
+            "imgPkr": "shopify:\/\/shop_images\/Snapinsta.app_435475274_18425631031040959_548475629733840636_n_1024.jpg",
+            "img_url": "https:\/\/www.instagram.com\/p\/C5ad9vzxe45\/?img_index=3",
             "ttl": "",
             "subTtl": ""
           }
@@ -240,8 +466,8 @@
         "slide_LaTDTj": {
           "type": "slide",
           "settings": {
-            "imgPkr": "shopify:\/\/shop_images\/glow-fresh.jpg",
-            "img_url": "https:\/\/www.instagram.com\/accounts\/login\/?hl=en",
+            "imgPkr": "shopify:\/\/shop_images\/SaveClip.App_460644640_18456491767040959_7836400184949531475_n.jpg",
+            "img_url": "https:\/\/www.instagram.com\/p\/DADDhYwPJer\/",
             "ttl": "",
             "subTtl": ""
           }
@@ -249,8 +475,8 @@
         "slide_kr8zUt": {
           "type": "slide",
           "settings": {
-            "imgPkr": "shopify:\/\/shop_images\/women-eyes.jpg",
-            "img_url": "https:\/\/www.instagram.com\/accounts\/login\/?hl=en",
+            "imgPkr": "shopify:\/\/shop_images\/SaveClip.App_458384373_18454178872040959_2339893394990115624_n.jpg",
+            "img_url": "https:\/\/www.instagram.com\/p\/C_kSju-RTXJ\/",
             "ttl": "",
             "subTtl": ""
           }
@@ -258,8 +484,8 @@
         "slide_pQikU3": {
           "type": "slide",
           "settings": {
-            "imgPkr": "shopify:\/\/shop_images\/womenmackup.jpg",
-            "img_url": "https:\/\/www.instagram.com\/accounts\/login\/?hl=en",
+            "imgPkr": "shopify:\/\/shop_images\/SnapInsta.io_439314910_18427912174040959_5884374809014697499_n.jpg",
+            "img_url": "https:\/\/www.instagram.com\/p\/C58khHXRs1r\/",
             "ttl": "",
             "subTtl": ""
           }
@@ -267,8 +493,44 @@
         "slide_jQ66fV": {
           "type": "slide",
           "settings": {
-            "imgPkr": "shopify:\/\/shop_images\/glow_blush.jpg",
-            "img_url": "https:\/\/www.instagram.com\/accounts\/login\/?hl=en",
+            "imgPkr": "shopify:\/\/shop_images\/Discover_Fashion_Colour_s_curated_lip_shades._Make_every_moment_memorable_...._fashioncolour_cosmetics_makeupartist_professionalmua_mua_makeup_wakeupandmakeup_beauty.jpg",
+            "img_url": "https:\/\/www.instagram.com\/p\/C3j8LGMMr0m\/",
+            "ttl": "",
+            "subTtl": ""
+          }
+        },
+        "slide_khERPR": {
+          "type": "slide",
+          "settings": {
+            "imgPkr": "shopify:\/\/shop_images\/Banish_Stubborn_Holi_Colors_Effortlessly_With_Our_Clean_It_Zero_Gentle_Makeup_Remover_Balm_Let_Your_Skin_Revel_In_The_Joy_Of_Effortless_Cleansing_Post-Celebrations._Shop_Now_Link_in_B.jpg",
+            "img_url": "https:\/\/www.instagram.com\/p\/C4vIYRLRgiD\/",
+            "ttl": "",
+            "subTtl": ""
+          }
+        },
+        "slide_e8AdKb": {
+          "type": "slide",
+          "settings": {
+            "imgPkr": "shopify:\/\/shop_images\/SnapInsta.io_425352915_1583302332421054_3019058165801313718_n.jpg",
+            "img_url": "https:\/\/www.instagram.com\/p\/C3FM-R_RGu2\/",
+            "ttl": "",
+            "subTtl": ""
+          }
+        },
+        "slide_8hk6nh": {
+          "type": "slide",
+          "settings": {
+            "imgPkr": "shopify:\/\/shop_images\/A_flush_of_love_on_your_cheeks_Celebrate_love_with_our_exquisite_collection_link_in_bio_...._fashioncolour_cosmetics_makeupartist_professionalmua_mua_makeup_wakeupandmakeup_beauty.jpg",
+            "img_url": "https:\/\/www.instagram.com\/p\/C3PSxyGskFa\/",
+            "ttl": "",
+            "subTtl": ""
+          }
+        },
+        "slide_FpnUJ6": {
+          "type": "slide",
+          "settings": {
+            "imgPkr": "shopify:\/\/shop_images\/457670550_18453079177040959_1722093851528496731_n.jpg",
+            "img_url": "https:\/\/www.instagram.com\/p\/C_VtVV-Pxa7\/",
             "ttl": "",
             "subTtl": ""
           }
@@ -280,7 +542,11 @@
         "slide_LaTDTj",
         "slide_kr8zUt",
         "slide_pQikU3",
-        "slide_jQ66fV"
+        "slide_jQ66fV",
+        "slide_khERPR",
+        "slide_e8AdKb",
+        "slide_8hk6nh",
+        "slide_FpnUJ6"
       ],
       "settings": {
         "preTtl": "@fashioncolourofficial",
@@ -308,13 +574,15 @@
         "secPdgTop": 10,
         "secPdgBtm": 100,
         "secPdgTopMbl": 20,
-        "secPdgBtmMbl": 50
+        "secPdgBtmMbl": 20
       }
     }
   },
   "order": [
     "featured_collection_W8newm",
+    "tabs_collection_Fxmxky",
     "gm_vdo_sld_PXcCY3",
+    "collapsible_content_ytea84",
     "testimonial_slider_PxwHpG",
     "gm_slider_BnDdT8"
   ]

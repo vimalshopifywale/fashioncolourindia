@@ -1,0 +1,464 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "collapsible_content_e7JFUX": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_gYJQ6H": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_wjRc9a": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_irVUJF": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_ABeXJF": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_gYJQ6H",
+        "collapsible_row_wjRc9a",
+        "collapsible_row_irVUJF",
+        "collapsible_row_ABeXJF"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Collapsible content",
+        "desktop_heading_font_size": 18,
+        "chkbx": false,
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "background-2",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "heading_size_row": "h3",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "mobile_padding_top": 20,
+        "mobile_padding_bottom": 20,
+        "border_enabled": false,
+        "mobile_heading_font_size": 18
+      }
+    },
+    "gm_vdo_sld_6XRi8i": {
+      "type": "gm-vdoSld",
+      "blocks": {
+        "slide_GYiraM": {
+          "type": "slide",
+          "settings": {
+            "imgPkr": "shopify:\/\/shop_images\/AQN3taaUhmpWpABCcLer06fX4ov4itI9ORPEYv28rLJVzMSor3GsqWq-pb1bWOtVrjLe2VVIoEzLQ6KT-PQEpdO2_1.gif",
+            "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/cd0542c6c7364cb6b28dd67233e4a884.mp4",
+            "slctPrdct": "fashion-colour-tinted-moisturizer-full-coverage-cream-spf15"
+          }
+        },
+        "slide_VaJ6eV": {
+          "type": "slide",
+          "settings": {
+            "imgPkr": "shopify:\/\/shop_images\/ee66a05666b7446e9643af29a3c5099f.gif",
+            "video": "https:\/\/cdn.shopify.com\/s\/files\/1\/0668\/3364\/5708\/files\/ee66a05666b7446e9643af29a3c5099f.gif?v=1726770360",
+            "slctPrdct": "platinum-matte-no-transfer-lipstick-3-8gm"
+          }
+        },
+        "slide_9Eq6UQ": {
+          "type": "slide",
+          "settings": {
+            "imgPkr": "shopify:\/\/shop_images\/Video-258.gif",
+            "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/57844746d35a44caac8993f236b37b27.mp4",
+            "slctPrdct": "glamorous-concealer-palette-32gm"
+          }
+        },
+        "slide_PDd4G4": {
+          "type": "slide",
+          "settings": {
+            "imgPkr": "shopify:\/\/shop_images\/Video-658.gif",
+            "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/e8c2286178504a8cab2267ed5f80eb78.mp4",
+            "slctPrdct": "fashion-colour-moisturizing-primer"
+          }
+        },
+        "slide_wDPj49": {
+          "type": "slide",
+          "settings": {
+            "imgPkr": "shopify:\/\/shop_images\/Video-418.gif",
+            "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/de304905a2504355bd691be70e469fd1.mp4",
+            "slctPrdct": "15-pcs-professional-makeup-artist-brush-set-for-face-eyes-lips"
+          }
+        },
+        "slide_NUWEzN": {
+          "type": "slide",
+          "settings": {
+            "imgPkr": "shopify:\/\/shop_images\/Video-569.gif",
+            "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/2fd10021ce084a0db841e29d4c8df414.mp4",
+            "slctPrdct": "big-eye-waterproof-curl-mascara-blue-i-waterproof-non-fading-smudge-proof-and-volume-base-film-8ml"
+          }
+        },
+        "slide_kHHe3V": {
+          "type": "slide",
+          "settings": {
+            "imgPkr": "shopify:\/\/shop_images\/Video-783.gif",
+            "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/a435915b0bc94816b44bac7df196c9d9.mp4",
+            "slctPrdct": "fashion-colour-platinum-double-head-mascara-10ml"
+          }
+        },
+        "slide_GxJkRp": {
+          "type": "slide",
+          "settings": {
+            "imgPkr": "shopify:\/\/shop_images\/Video-956_1.gif",
+            "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/913107945cdb431e9fd58c815251efc0.mp4",
+            "slctPrdct": "fashion-colour-clean-it-zero-gentle-makeup-remover-balm-100gm"
+          }
+        },
+        "slide_mwTUdM": {
+          "type": "slide",
+          "settings": {
+            "imgPkr": "shopify:\/\/shop_images\/Video-131.gif",
+            "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/735b7bafc5294302adea34ffde82ebe7.mp4",
+            "slctPrdct": "platinum-loose-powder-loose-baking-and-setting-powder"
+          }
+        },
+        "slide_hRXG7p": {
+          "type": "slide",
+          "settings": {
+            "imgPkr": "shopify:\/\/shop_images\/Video-462.gif",
+            "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/24a482c4576647be822a49a74ce7de20.mp4",
+            "slctPrdct": "fashion-colour-flushed-blush-velvet-touch-creamy-texture-liquid-blush-15gm"
+          }
+        },
+        "slide_tGU3pY": {
+          "type": "slide",
+          "settings": {
+            "imgPkr": "shopify:\/\/shop_images\/Video-571.gif",
+            "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/21d4ad5112d24ce595789bd257bf5b1e.mp4",
+            "slctPrdct": "fashion-colour-platinum-gold-serum"
+          }
+        },
+        "slide_GXbVDk": {
+          "type": "slide",
+          "settings": {
+            "imgPkr": "shopify:\/\/shop_images\/Video-311.gif",
+            "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/4b27d271fff648fe8ad8e3c849e363cf.mp4",
+            "slctPrdct": "fashion-colour-non-transfer-matt-waterproof-lipstick"
+          }
+        },
+        "slide_GQaQAy": {
+          "type": "slide",
+          "settings": {
+            "imgPkr": "shopify:\/\/shop_images\/Video-538.gif",
+            "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/638b88c989c34f4b9cb4ac9bfa372a72.mp4",
+            "slctPrdct": "fashion-colour-moisturizing-primer"
+          }
+        },
+        "slide_fHzLxh": {
+          "type": "slide",
+          "settings": {
+            "imgPkr": "shopify:\/\/shop_images\/Video-641_1.gif",
+            "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/9a5c8875ee09445288634f7da75d4dc1.mp4",
+            "slctPrdct": "fashion-colour-platinum-waterproof-mascara-super-dense-double-effect-silicon-brush"
+          }
+        },
+        "slide_GWw7hN": {
+          "type": "slide",
+          "settings": {
+            "imgPkr": "shopify:\/\/shop_images\/Video-292_1.gif",
+            "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/c525a186f6a142629cdcecdcbfd393e0.mp4",
+            "slctPrdct": "platinum-multi-use-concealer-ii-lightweight-ii-full-coverage-15gm"
+          }
+        }
+      },
+      "block_order": [
+        "slide_GYiraM",
+        "slide_VaJ6eV",
+        "slide_9Eq6UQ",
+        "slide_PDd4G4",
+        "slide_wDPj49",
+        "slide_NUWEzN",
+        "slide_kHHe3V",
+        "slide_GxJkRp",
+        "slide_mwTUdM",
+        "slide_hRXG7p",
+        "slide_tGU3pY",
+        "slide_GXbVDk",
+        "slide_GQaQAy",
+        "slide_fHzLxh",
+        "slide_GWw7hN"
+      ],
+      "settings": {
+        "preTtl": "Our Products in Action",
+        "subtitle_font_size": 16,
+        "subtitle_font_sizemob": 16,
+        "ttl": "Real Reviews from Our Beauty Tribe",
+        "heading_font_size": 24,
+        "heading_font_sizemob": 24,
+        "subTtl": "",
+        "btnTxt": "View all",
+        "btnUrl": "",
+        "dskSld": 4.8,
+        "dskSpc": 20,
+        "tabSld": 4.8,
+        "tabSpc": 20,
+        "mblSld": 1.8,
+        "mblSpc": 20,
+        "color_scheme": "scheme-6c3ff99c-8da2-435f-9574-05cdd95811b2",
+        "secPdgTop": 20,
+        "secPdgBtm": 20,
+        "mblPdgTop": 20,
+        "mblPdgBtm": 20
+      }
+    },
+    "gm_slider_GmA69m": {
+      "type": "gm-slider",
+      "blocks": {
+        "slide_CnwirW": {
+          "type": "slide",
+          "settings": {
+            "imgPkr": "shopify:\/\/shop_images\/459570578_18455707981040959_4240917642604049776_n.jpg",
+            "img_url": "https:\/\/www.instagram.com\/p\/C_4u1wCvWPH\/",
+            "ttl": "",
+            "subTtl": ""
+          }
+        },
+        "slide_iNBBz8": {
+          "type": "slide",
+          "settings": {
+            "imgPkr": "shopify:\/\/shop_images\/Snapinsta.app_435475274_18425631031040959_548475629733840636_n_1024.jpg",
+            "img_url": "https:\/\/www.instagram.com\/p\/C5ad9vzxe45\/?img_index=3",
+            "ttl": "",
+            "subTtl": ""
+          }
+        },
+        "slide_fUFimc": {
+          "type": "slide",
+          "settings": {
+            "imgPkr": "shopify:\/\/shop_images\/SaveClip.App_460644640_18456491767040959_7836400184949531475_n.jpg",
+            "img_url": "https:\/\/www.instagram.com\/p\/DADDhYwPJer\/",
+            "ttl": "",
+            "subTtl": ""
+          }
+        },
+        "slide_Bn787e": {
+          "type": "slide",
+          "settings": {
+            "imgPkr": "shopify:\/\/shop_images\/SaveClip.App_458384373_18454178872040959_2339893394990115624_n.jpg",
+            "img_url": "https:\/\/www.instagram.com\/p\/C_kSju-RTXJ\/",
+            "ttl": "",
+            "subTtl": ""
+          }
+        },
+        "slide_yzAWTf": {
+          "type": "slide",
+          "settings": {
+            "imgPkr": "shopify:\/\/shop_images\/Discover_Fashion_Colour_s_curated_lip_shades._Make_every_moment_memorable_...._fashioncolour_cosmetics_makeupartist_professionalmua_mua_makeup_wakeupandmakeup_beauty.jpg",
+            "img_url": "https:\/\/www.instagram.com\/p\/C3j8LGMMr0m\/",
+            "ttl": "",
+            "subTtl": ""
+          }
+        },
+        "slide_jtqKmQ": {
+          "type": "slide",
+          "settings": {
+            "imgPkr": "shopify:\/\/shop_images\/SnapInsta.io_439314910_18427912174040959_5884374809014697499_n.jpg",
+            "img_url": "https:\/\/www.instagram.com\/p\/C58khHXRs1r\/",
+            "ttl": "",
+            "subTtl": ""
+          }
+        },
+        "slide_6j8Lzd": {
+          "type": "slide",
+          "settings": {
+            "imgPkr": "shopify:\/\/shop_images\/Banish_Stubborn_Holi_Colors_Effortlessly_With_Our_Clean_It_Zero_Gentle_Makeup_Remover_Balm_Let_Your_Skin_Revel_In_The_Joy_Of_Effortless_Cleansing_Post-Celebrations._Shop_Now_Link_in_B.jpg",
+            "img_url": "https:\/\/www.instagram.com\/p\/C4vIYRLRgiD\/",
+            "ttl": "",
+            "subTtl": ""
+          }
+        },
+        "slide_NnAXCF": {
+          "type": "slide",
+          "settings": {
+            "imgPkr": "shopify:\/\/shop_images\/SnapInsta.io_425352915_1583302332421054_3019058165801313718_n.jpg",
+            "img_url": "https:\/\/www.instagram.com\/p\/C3FM-R_RGu2\/",
+            "ttl": "",
+            "subTtl": ""
+          }
+        },
+        "slide_pEDEYf": {
+          "type": "slide",
+          "settings": {
+            "imgPkr": "shopify:\/\/shop_images\/A_flush_of_love_on_your_cheeks_Celebrate_love_with_our_exquisite_collection_link_in_bio_...._fashioncolour_cosmetics_makeupartist_professionalmua_mua_makeup_wakeupandmakeup_beauty.jpg",
+            "img_url": "https:\/\/www.instagram.com\/p\/C3PSxyGskFa\/",
+            "ttl": "",
+            "subTtl": ""
+          }
+        },
+        "slide_ypwaCn": {
+          "type": "slide",
+          "settings": {
+            "imgPkr": "shopify:\/\/shop_images\/457670550_18453079177040959_1722093851528496731_n.jpg",
+            "img_url": "https:\/\/www.instagram.com\/p\/C_VtVV-Pxa7\/",
+            "ttl": "",
+            "subTtl": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_CnwirW",
+        "slide_iNBBz8",
+        "slide_fUFimc",
+        "slide_Bn787e",
+        "slide_yzAWTf",
+        "slide_jtqKmQ",
+        "slide_6j8Lzd",
+        "slide_NnAXCF",
+        "slide_pEDEYf",
+        "slide_ypwaCn"
+      ],
+      "settings": {
+        "preTtl": "@fashioncolourofficial",
+        "subtitle_font_size": 20,
+        "subtitle_font_sizemob": 16,
+        "ttl": "Follow us on Instagram",
+        "heading_font_size": 37,
+        "heading_font_sizemob": 30,
+        "subTtl": "",
+        "btnTxt": "",
+        "btnUrl": "",
+        "chkBx": false,
+        "overlays_box": false,
+        "dskSld": 4.8,
+        "dskSpc": 20,
+        "tabSld": 4.8,
+        "tabSpc": 20,
+        "mblSld": 1.8,
+        "mblSpc": 20,
+        "sldAtply": 1.5,
+        "pagination": true,
+        "navigation": true,
+        "color_scheme": "scheme-6c3ff99c-8da2-435f-9574-05cdd95811b2",
+        "sldCol": "#ffffff",
+        "secPdgTop": 20,
+        "secPdgBtm": 20,
+        "secPdgTopMbl": 20,
+        "secPdgBtmMbl": 20
+      }
+    },
+    "multicolumn_QQRBC6": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_gTpqTd": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_2_0ef5d115-cc02-4f05-ac0f-8f6a5e2bb9ef.svg",
+            "title": "Cruelty Free",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "image_width_desktop": 100,
+            "image_width_mobile": 100
+          }
+        },
+        "column_Twbmze": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_4541.svg",
+            "title": "Paraben Free",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "image_width_desktop": 100,
+            "image_width_mobile": 100
+          }
+        },
+        "column_PzEcei": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_1_5e753f28-cd8e-4f27-bb16-7f142b9e77d2.svg",
+            "title": "100% Vegan",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "image_width_desktop": 100,
+            "image_width_mobile": 100
+          }
+        },
+        "column_McyMLw": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_4542.svg",
+            "title": "Derma Tested",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "image_width_desktop": 100,
+            "image_width_mobile": 100
+          }
+        }
+      },
+      "block_order": [
+        "column_gTpqTd",
+        "column_Twbmze",
+        "column_PzEcei",
+        "column_McyMLw"
+      ],
+      "settings": {
+        "title": "Unrivaled Quality, Timeless Luxury",
+        "heading_size": "h1",
+        "heading_center": "center",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-6c3ff99c-8da2-435f-9574-05cdd95811b2",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "navigation_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "mobile_padding_top": 20,
+        "mobile_padding_bottom": 20
+      }
+    }
+  },
+  "order": [
+    "main",
+    "collapsible_content_e7JFUX",
+    "gm_vdo_sld_6XRi8i",
+    "gm_slider_GmA69m",
+    "multicolumn_QQRBC6"
+  ]
+}

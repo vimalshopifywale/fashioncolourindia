@@ -39,6 +39,75 @@
         "mobile_padding_bottom": 52
       }
     },
+    "tabs_collection_Fxmxky": {
+      "type": "tabs-collection",
+      "blocks": {
+        "tab_N9xHNU": {
+          "type": "tab",
+          "settings": {
+            "heading": "Skin Care",
+            "collection": "skin-care",
+            "description": "",
+            "collection_text_alignment": "left",
+            "show_description": false,
+            "description_style": "body"
+          }
+        },
+        "tab_dhTHNc": {
+          "type": "tab",
+          "settings": {
+            "heading": "Hair Care",
+            "collection": "hair-care",
+            "description": "",
+            "collection_text_alignment": "left",
+            "show_description": false,
+            "description_style": "body"
+          }
+        },
+        "tab_RUeXC3": {
+          "type": "tab",
+          "settings": {
+            "heading": "Serum & Toner",
+            "collection": "serum-toner",
+            "description": "",
+            "collection_text_alignment": "left",
+            "show_description": false,
+            "description_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "tab_N9xHNU",
+        "tab_dhTHNc",
+        "tab_RUeXC3"
+      ],
+      "settings": {
+        "tabs_color_scheme": "background-2",
+        "tab_font": 16,
+        "tab_font_align": "center",
+        "tab_font_mb": 14,
+        "tab_font_mb_align": "center",
+        "show_border": false,
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_desc": false,
+        "quick_desc_legth": 90,
+        "quick_desc_size": 14,
+        "enable_quick_add": false,
+        "show_secondary_add": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "gm_vdo_sld_PXcCY3": {
       "type": "gm-vdoSld",
       "blocks": {
@@ -209,36 +278,54 @@
         "collapsible_row_xbTNaf": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
+            "heading": "Is the packaging travel-friendly?",
+            "icon": "none",
+            "row_content": "<p>Yes, the palette is compact and lightweight, making it perfect for travel or on-the-go touch-ups.<\/p>",
             "page": ""
           }
         },
         "collapsible_row_y8HCVb": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
+            "heading": "Are your products suitable for all skin types?",
+            "icon": "none",
+            "row_content": "<p>Yes, our products are formulated to be suitable for all skin types, including sensitive, oily, combination, and dry skin. We recommend checking the product details for specific recommendations or concerns.<br\/><\/p>",
             "page": ""
           }
         },
         "collapsible_row_mJiYkm": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
+            "heading": "How do I choose the right foundation shade?",
+            "icon": "none",
+            "row_content": "<p>To choose the right foundation shade, identify your undertone (cool, warm, or neutral) and select a shade that matches your neck and face. Our store also offers a shade-matching guide to help you find your perfect match.<br\/><br\/><\/p>",
             "page": ""
           }
         },
         "collapsible_row_kJ9HKd": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
+            "heading": "Are your products vegan and cruelty-free?",
+            "icon": "none",
+            "row_content": "<p>Yes, all of our products are 100% vegan and cruelty-free. We are committed to creating beauty products that are ethically produced and free from animal testing.<br\/><\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_FqF3gQ": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What are the key ingredients in your skincare products?",
+            "icon": "none",
+            "row_content": "<p>Our skincare products contain a blend of natural and effective ingredients, such as Vitamin C, hyaluronic acid, and botanical extracts, all designed to nourish and rejuvenate your skin. For specific ingredients, please refer to each product's ingredient list.<br\/><\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_gDgGVw": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Do you test your products on animals?",
+            "icon": "none",
+            "row_content": "<p>No, we are a cruelty-free brand and do not test any of our products on animals. We are proud to uphold ethical and sustainable practices in the beauty industry.<\/p>",
             "page": ""
           }
         }
@@ -247,7 +334,9 @@
         "collapsible_row_xbTNaf",
         "collapsible_row_y8HCVb",
         "collapsible_row_mJiYkm",
-        "collapsible_row_kJ9HKd"
+        "collapsible_row_kJ9HKd",
+        "collapsible_row_FqF3gQ",
+        "collapsible_row_gDgGVw"
       ],
       "settings": {
         "caption": "",
@@ -277,61 +366,121 @@
         "icon_VM3cpX": {
           "type": "icon",
           "settings": {
-            "image": "shopify:\/\/shop_images\/customer-1.png",
+            "image": "shopify:\/\/shop_images\/Rectangle_5.png",
             "img_star": "shopify:\/\/shop_images\/review-4-stars.png",
             "slide_radius": 6,
             "link": "",
             "show_icon": true,
-            "title": "Dev S.",
-            "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,<\/p>"
+            "title": "Anamika Roy",
+            "text": "<p>This powder is so lightweight, yet it keeps my makeup in place all day long. My skin stays matte without feeling heavy<\/p>"
           }
         },
         "icon_mNnhQV": {
           "type": "icon",
           "settings": {
-            "image": "shopify:\/\/shop_images\/customer-2.png",
+            "image": "shopify:\/\/shop_images\/Rectangle_5_1.png",
             "img_star": "shopify:\/\/shop_images\/review-3.4-stars.png",
             "slide_radius": 6,
             "link": "",
             "show_icon": true,
-            "title": "Jayesh J.",
-            "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,<\/p>"
+            "title": "Riya Nayak",
+            "text": "<p>The powder is super light and blends well with my skin tone. It doesn’t feel heavy, and it keeps my makeup in place all day. Perfect for everyday use<\/p>"
           }
         },
         "icon_jHBmQc": {
           "type": "icon",
           "settings": {
-            "image": "shopify:\/\/shop_images\/customer-3.png",
+            "image": "shopify:\/\/shop_images\/Rectangle_5_2.png",
             "img_star": "shopify:\/\/shop_images\/review-3.4-stars.png",
             "slide_radius": 6,
             "link": "",
             "show_icon": true,
-            "title": "Neha A.",
-            "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,<\/p>"
+            "title": "Pooja Sahu",
+            "text": "<p>I have super sensitive skin, and this balm worked like a charm. It gently removed all my makeup without any irritation. Highly recommend<\/p>"
           }
         },
         "icon_hwprNr": {
           "type": "icon",
           "settings": {
-            "image": "shopify:\/\/shop_images\/customer-4.png",
+            "image": "shopify:\/\/shop_images\/Rectangle_5_3.png",
             "img_star": "shopify:\/\/shop_images\/review-4-stars.png",
             "slide_radius": 6,
             "link": "",
             "show_icon": true,
-            "title": "Ameer K.",
-            "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,<\/p>"
+            "title": "Tanya Nair",
+            "text": "<p>After using this serum, my skin feels more firm and looks glowing all day long. It’s great for dull skin<\/p>"
           }
         },
         "icon_rxPmC8": {
           "type": "icon",
           "settings": {
-            "image": "shopify:\/\/shop_images\/customer-2.png",
+            "image": "shopify:\/\/shop_images\/Rectangle_5_4.png",
             "img_star": "shopify:\/\/shop_images\/review-4-stars.png",
             "slide_radius": 12,
             "link": "",
             "show_icon": true,
-            "title": "Raj S.",
-            "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,<\/p>"
+            "title": "Aarti Malhotra",
+            "text": "<p>This foundation gives me a natural look and lasts all day without needing touch-ups. Plus, it feels great on the skin<\/p>"
+          }
+        },
+        "icon_iDPHWb": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_5_5.png",
+            "img_star": "shopify:\/\/shop_images\/review-4-stars_4b610f89-a8a2-44f4-93f3-93bc356d87dc.png",
+            "slide_radius": 0,
+            "link": "",
+            "show_icon": true,
+            "title": "Sakshi Gupta",
+            "text": "<p>I love the creamy texture of this blush. It’s easy to apply and blend, and the color looks very natural on my skin<\/p>"
+          }
+        },
+        "icon_49k9rj": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_5_6_f72c4610-d121-4217-8edb-963eca3627cd.png",
+            "img_star": "shopify:\/\/shop_images\/review-4-stars_4b610f89-a8a2-44f4-93f3-93bc356d87dc.png",
+            "slide_radius": 0,
+            "link": "",
+            "show_icon": true,
+            "title": "Aditi Verma",
+            "text": "<p>I love that this lip crayon doesn’t dry out my lips like some other long-lasting lip products. The texture is so smooth<\/p>"
+          }
+        },
+        "icon_gc6Byh": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_5_7.png",
+            "img_star": "shopify:\/\/shop_images\/review-4-stars_4b610f89-a8a2-44f4-93f3-93bc356d87dc.png",
+            "slide_radius": 0,
+            "link": "",
+            "show_icon": true,
+            "title": "Sonia Pathak",
+            "text": "<p>I use this every day for a natural look. It blends beautifully and lasts all day without needing a touch-up<\/p>"
+          }
+        },
+        "icon_eUTfqX": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_5_9.png",
+            "img_star": "shopify:\/\/shop_images\/review-4-stars_4b610f89-a8a2-44f4-93f3-93bc356d87dc.png",
+            "slide_radius": 0,
+            "link": "",
+            "show_icon": true,
+            "title": "Jagrati Sindhe",
+            "text": "<p>I’m amazed at how this lipstick doesn’t transfer at all! Even after hours of wear, the color stays put and looks fresh<\/p>"
+          }
+        },
+        "icon_y8xtjr": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_5_10.png",
+            "img_star": "shopify:\/\/shop_images\/review-4-stars_4b610f89-a8a2-44f4-93f3-93bc356d87dc.png",
+            "slide_radius": 0,
+            "link": "",
+            "show_icon": true,
+            "title": "Priyal Jain",
+            "text": "<p>This mist is incredibly soothing. My sensitive skin feels calm and hydrated instantly<\/p>"
           }
         }
       },
@@ -340,7 +489,12 @@
         "icon_mNnhQV",
         "icon_jHBmQc",
         "icon_hwprNr",
-        "icon_rxPmC8"
+        "icon_rxPmC8",
+        "icon_iDPHWb",
+        "icon_49k9rj",
+        "icon_gc6Byh",
+        "icon_eUTfqX",
+        "icon_y8xtjr"
       ],
       "settings": {
         "ttl": "Loved By 10,000+ Happy Customer",
@@ -508,13 +662,84 @@
         "secPdgTopMbl": 20,
         "secPdgBtmMbl": 20
       }
+    },
+    "tabs_collection_GW6L9C": {
+      "type": "tabs-collection",
+      "blocks": {
+        "tab_9XpJyT": {
+          "type": "tab",
+          "settings": {
+            "heading": "Heading",
+            "collection": "",
+            "description": "",
+            "collection_text_alignment": "left",
+            "show_description": false,
+            "description_style": "body"
+          }
+        },
+        "tab_mWrWpk": {
+          "type": "tab",
+          "settings": {
+            "heading": "Heading",
+            "collection": "",
+            "description": "",
+            "collection_text_alignment": "left",
+            "show_description": false,
+            "description_style": "body"
+          }
+        },
+        "tab_cMLHpD": {
+          "type": "tab",
+          "settings": {
+            "heading": "Heading",
+            "collection": "",
+            "description": "",
+            "collection_text_alignment": "left",
+            "show_description": false,
+            "description_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "tab_9XpJyT",
+        "tab_mWrWpk",
+        "tab_cMLHpD"
+      ],
+      "settings": {
+        "tabs_color_scheme": "",
+        "tab_font": 16,
+        "tab_font_align": "center",
+        "tab_font_mb": 14,
+        "tab_font_mb_align": "center",
+        "show_border": false,
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_desc": false,
+        "quick_desc_legth": 90,
+        "quick_desc_size": 14,
+        "enable_quick_add": false,
+        "show_secondary_add": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "featured_collection_W8newm",
+    "tabs_collection_Fxmxky",
     "gm_vdo_sld_PXcCY3",
     "collapsible_content_ytea84",
     "testimonial_slider_PxwHpG",
-    "gm_slider_BnDdT8"
+    "gm_slider_BnDdT8",
+    "tabs_collection_GW6L9C"
   ]
 }

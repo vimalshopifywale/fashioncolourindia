@@ -4,8 +4,8 @@
     "theme_name": "Growthx Media",
     "theme_version": "1.0.1",
     "theme_author": "Growthx Media",
-    "theme_documentation_url": "https://growthxmedia.co/",
-    "theme_support_url": "https://growthxmedia.co/"
+    "theme_documentation_url": "https:\/\/growthxmedia.co\/",
+    "theme_support_url": "https:\/\/growthxmedia.co\/"
   },
   {
     "name": "Extra Settings",
@@ -395,7 +395,7 @@
         "type": "url",
         "id": "second_logo_url",
         "label": "Second Logo URL",
-        "default": "/"
+        "default": "\/"
       },
       {
         "type": "range",
@@ -1180,7 +1180,7 @@
         "min": 0,
         "max": 6,
         "step": 1,
-        "default":6
+        "default": 6
       },
       {
         "type": "select",
@@ -2108,7 +2108,7 @@
         "type": "checkbox",
         "id": "mfBdgs",
         "label": "Check to show Badge",
-        "default":true
+        "default": true
       }
     ]
   },
@@ -2298,7 +2298,7 @@
         "type": "text",
         "id": "crtTxt",
         "label": "Enter Cart Title Text",
-        "default":"Lorem Ipsum"
+        "default": "Lorem Ipsum"
       },
       {
         "type": "image_picker",

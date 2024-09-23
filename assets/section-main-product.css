@@ -495,8 +495,8 @@ a.product__text {
 .product__media-list video {
   border-radius: calc(var(--media-radius) - var(--media-border-width));
   width: 100%;
-  height: auto;
-
+  height: 650px;
+  object-fit: cover;
 }
 
 @media screen and (max-width: 749px) {
@@ -1056,10 +1056,10 @@ a.product__text {
     display: none;
   }
 
-  .thumbnail-list {
+  /* .thumbnail-list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-  }
+  } */
 }
 
 .thumbnail-list_item--variant:not(:first-child) {

@@ -11,7 +11,10 @@
     {%- endif -%}
     <link rel="stylesheet" href="https://use.typekit.net/bmd6bre.css">
 
-    {%- unless settings.type_header_font.system? and settings.type_body_font.system? and settings.type_menu_font.system? -%}
+    {%- unless settings.type_header_font.system?
+      and settings.type_body_font.system?
+      and settings.type_menu_font.system?
+    -%}
       <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
     {%- endunless -%}
     <title>
@@ -26,7 +29,7 @@
     {% endif %}
 
     {% render 'meta-tags' %}
-    
+
     <script src="{{ 'constants.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'pubsub.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
@@ -34,7 +37,7 @@
       <script src="{{ 'animations.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
 
-    <script type="text/javascript"  src="{{ 'jquery.js' | asset_url }}"></script>
+    <script type="text/javascript" src="{{ 'jquery.js' | asset_url }}"></script>
     <script src="{{ 'swiper-bundle.min.js' |  asset_url}}"></script>
     {{ content_for_header }}
 
@@ -42,7 +45,6 @@
       assign body_font_bold = settings.type_body_font | font_modify: 'weight', 'bold'
       assign body_font_italic = settings.type_body_font | font_modify: 'style', 'italic'
       assign body_font_bold_italic = body_font_bold | font_modify: 'style', 'italic'
-      
     %}
 
     {% style %}
@@ -361,8 +363,6 @@
     {{ 'base.css' | asset_url | stylesheet_tag }}
     {{ 'custom.css' | asset_url | stylesheet_tag }}
     {{ 'lumin.css' | asset_url | stylesheet_tag }}
-    
-
 
     {%- unless settings.type_body_font.system? -%}
       <link rel="preload" as="font" href="{{ settings.type_body_font | font_url }}" type="font/woff2" crossorigin>
@@ -373,7 +373,7 @@
     {%- unless settings.type_menu_font.system? -%}
       <link rel="preload" as="font" href="{{ settings.type_menu_font | font_url }}" type="font/woff2" crossorigin>
     {%- endunless -%}
-     {%- unless settings.type_button_font.system? -%}
+    {%- unless settings.type_button_font.system? -%}
       <link rel="preload" as="font" href="{{ settings.type_button_font | font_url }}" type="font/woff2" crossorigin>
     {%- endunless -%}
 
@@ -394,26 +394,26 @@
         onload="this.media='all'"
       >
     {%- endif -%}
-     
+
     <script>
       document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
       if (Shopify.designMode) {
         document.documentElement.classList.add('shopify-design-mode');
       }
     </script>
-	<script src="{{ 'popup.js' | asset_url }}" defer="defer"></script>
-      
-     {% if settings.fsb_enable %}
+    <script src="{{ 'popup.js' | asset_url }}" defer="defer"></script>
+
+    {% if settings.fsb_enable %}
       {{ 'lumin-freeshipping-bar.css' | asset_url | stylesheet_tag }}
 
       {% if settings.fsb_ajax %}
         <script src="{{ 'lumin-freeshipping-bar.js' | asset_url }}" defer="defer"></script>
         <script>
-          document.addEventListener('DOMContentLoaded', function() {
+          document.addEventListener('DOMContentLoaded', function () {
             const freeshippingBar = new HCFsb({
               selector: '#fsb', // Selector of the HTML template (Snippet)
               events: ['fsb:product:added', 'fsb:cart:update'], //Events used to update the FSB
-              placeholder: '(x)' //Placeholder character to replace the goal/remaining amount in the FSB headline
+              placeholder: '(x)', //Placeholder character to replace the goal/remaining amount in the FSB headline
             });
             freeshippingBar.attachEvents();
           });
@@ -433,14 +433,14 @@
 
     {% comment %} {% render 'transition-cover' %} {% endcomment %}
     <div class="transition-body">
-    {% sections 'header-group' %}
-    {% sections 'popup-group' %}
+      {% sections 'header-group' %}
+      {% sections 'popup-group' %}
 
-    <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
-      {{ content_for_layout }}
-    </main>
+      <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
+        {{ content_for_layout }}
+      </main>
 
-    {% sections 'footer-group' %}
+      {% sections 'footer-group' %}
     </div>
 
     <ul hidden>
@@ -487,12 +487,17 @@
         recipientFormExpanded: `{{ 'recipient.form.expanded' | t }}`,
         recipientFormCollapsed: `{{ 'recipient.form.collapsed' | t }}`,
       };
-      document.querySelectorAll('.play-button').forEach(button => {
-        button.addEventListener('click', function () {
-          const videoContainer = this.nextElementSibling; // The video container
-          videoContainer.style.display = 'block'; // Show the video
-          const video = videoContainer.querySelector('video');
-          video.play(); // Play the video
+      $(document).ready(function () {
+        const triggerButton = document.querySelector('[sw-video-trigger]');
+        const videoSlide = document.querySelectorAll('.hide-video');
+        const firstVideoClick = document.querySelectorAll('.thumbnail-slider li.sw-video')[0];
+
+        triggerButton.addEventListener('click', function () {
+          triggerButton.style.display = 'none';
+          videoSlide.forEach((el) => {
+            el.classList.remove('hide-video');
+          });
+          firstVideoClick.querySelector('button').click();
         });
       });
     </script>

@@ -502,6 +502,7 @@
         height: 100%;
         display: flex;
         align-items: center;
+        border-radius: 6px;
         justify-content: center;
         background: rgb(0 0 0 / 50%);
         transition: all .3s ease 0s;
@@ -803,7 +804,7 @@
             font-size: 14px;
         }
         .footer-main .footer-block--newsletter{
-            justify-content: center;
+            /* justify-content: center; */
             padding: 0 0 60px;
         }
         .footer-main .footer__content-top .grid{
@@ -811,7 +812,7 @@
         }
         .footer-main .footer-block__heading{
             padding: 20px 0 10px !important ;
-            font-size: 18px;
+            font-size: 22px;
             font-weight: 400;
         }
     }
@@ -832,7 +833,7 @@
         }
         .footer-main .newsletter-form__field-wrapper label,
         .footer-main .footer-block__details-content li a{
-            font-size: 14px;
+            font-size: 16px;
         }
         .footer-main .newsletter-form__button{
             font-size: 14px;

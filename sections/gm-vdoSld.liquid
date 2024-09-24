@@ -236,7 +236,7 @@
         padding-top:{{section.settings.secPdgTop}}px;
         padding-bottom:{{section.settings.secPdgBtm}}px;
     }
-    .video-heading{
+    .gmVdoSld-{{section.id}} .video-heading{
       font-weight: 500;
       font-size: {{ section.settings.heading_font_size }}px;
     }
@@ -244,7 +244,7 @@
       font-size: {{ section.settings.subtitle_font_size }}px;
     }
     @media screen and (max-width:767px){
-      .video-heading{
+      .gmVdoSld-{{section.id}} .video-heading{
         margin: 0 0 27px;
         font-size: {{ section.settings.heading_font_sizemob }}px;
       }

@@ -1,150 +1,234 @@
-<style>
-    .collection-section-{{section.id}}{
-        background-color: {{section.settings.bgCol}};
-        padding-top:{{section.settings.secPdgTop}}px;
-        padding-bottom:{{section.settings.secPdgBtm}}px;
-    }
-    .subtitel {
-      font-size: {{ section.settings.subtitle_font_size }}px;
-      font-weight: 500;
-      width: 100%;
-      display: inline-block;
-    }
-    .tabbing-text{
-        font-size: {{section.settings.text_font_size}}px;
-    }
-    @media screen and (max-width: 767px){
-        .collection-section-{{section.id}} {
-            padding-top: {{section.settings.mblPdgTop}}px;
-            padding-bottom: {{section.settings.mblPdgBtm}}px;
-        }
-        .subtitel {
-            font-size: {{ section.settings.subtitle_font_sizes }}px;
-        }
-        .tabbing-text{
-            font-size: {{section.settings.text_font_sizes}}px;
-        }
-    }
-    .collection-content .products-grid {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 20px;
-    }
-    @media (max-width: 992px) {
-        .collection-content .products-grid {
-            grid-template-columns: repeat(3, 1fr);
-        }
-    }
-
-    @media (max-width: 768px) {
-        .collection-content .products-grid {
-            grid-template-columns: repeat(2, 1fr);
-        }
-    }
-
-    @media (max-width: 480px) {
-        .collection-content .products-grid {
-            grid-template-columns: 1fr;
-        }
-    }
-    .collection-tabs-section .product-card {
-      flex: 1 1 calc(25% - 20px);
-      box-sizing: border-box;
-    }
-    .collection-tabs-section .product-card img {
-      max-width: 100%;
-      height: auto;
-    }
-    .collection-content {
-      display: none;
-    }
-    .collection-content.active{
-        display: block;
-    }
-    .tabs {
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      list-style: none;
-      gap: 20px;
-  }
-  .tabs li a {
-    text-decoration: none;
-  }
-    /* Additional styling as needed */
-</style>
-
-<!-- Section Wrapper -->
-<div class="collection-tabs collection-section-{{section.id}} color-{{ section.settings.color_scheme }} gradient">
+<!-- Section Liquid -->
+<section class="custom-collection-section collection-section-{{section.id}} color-{{ section.settings.color_scheme }} gradient">
   <div class="page-width">
+    <!-- Tabbing -->
     <span class="subtitel" style="text-align: {{ section.settings.heading_alignment }};">
-      {{ section.settings.heading }}
+      {{- section.settings.heading -}}
     </span>
-    <!-- Tabs for Collections -->
-    <ul class="tabs">
+    <div class="collection-tabs">
+      <ul>
+        {% for block in section.blocks %}
+          <li>
+            <a
+              href="#tab-{{ block.id }}"
+              class="{% if forloop.first %}active{% endif %} tabbing-text"
+              data-tab="{{ block.id }}"
+            >
+              {{ block.settings.tab_title }}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+    <!-- Products for each tab -->
+    <div class="collection-contents">
       {% for block in section.blocks %}
-        <li>
-          <a
-            href="#tab-{{ block.id }}"
-            {% if forloop.first %}
-              class="active tabbing-text"
-            {% endif %}
-            data-tab="tab-{{ block.id }}"
-          >
-            {{ block.settings.tab_title }}
-          </a>
-        </li>
-      {% endfor %}
-    </ul>
-
-    <!-- Collection Displays -->
-    {% for block in section.blocks %}
-      {% assign collection = collections[block.settings.collection] %}
-      {% if collection %}
-        <div class="collection-content {% if forloop.first %}active{% endif %}" id="tab-{{ block.id }}">
-          <div class="products-grid">
-            {% for product in collection.products limit: 4 %}
-              <div class="product-card">
-                <a href="{{ product.url }}">
-                  <img src="{{ product.featured_image | img_url: 'medium' }}" alt="{{ product.title }}">
-                  <p>{{ product.title }}</p>
+        <div class="tab-content {% if forloop.first %}active{% endif %}" id="tab-{{ block.id }}">
+          <div class="collection-items">
+            {% if block.settings.product1_image %}
+              <div class="collection-item">
+                <a href="{{ block.settings.product1_link }}">
+                  <img
+                    src="{{ block.settings.product1_image | img_url: 'medium' }}"
+                    alt="{{ block.settings.product1_title }}"
+                  >
+                  <h3 class="text-color">
+                    {{ block.settings.product1_title }}
+                  </h3>
+                  <p class="text-color">
+                    {{ block.settings.product1_subtitle }}
+                  </p>
                 </a>
               </div>
-            {% endfor %}
+            {% endif %}
+
+            {% if block.settings.product2_image %}
+              <div class="collection-item">
+                <a href="{{ block.settings.product2_link }}">
+                  <img
+                    src="{{ block.settings.product2_image | img_url: 'medium' }}"
+                    alt="{{ block.settings.product2_title }}"
+                  >
+                  <h3 class="text-color">
+                    {{ block.settings.product2_title }}
+                  </h3>
+                  <p class="text-color">
+                    {{ block.settings.product2_subtitle }}
+                  </p>
+                </a>
+              </div>
+            {% endif %}
+
+            {% if block.settings.product3_image %}
+              <div class="collection-item">
+                <a href="{{ block.settings.product3_link }}">
+                  <img
+                    src="{{ block.settings.product3_image | img_url: 'medium' }}"
+                    alt="{{ block.settings.product3_title }}"
+                  >
+                  <h3 class="text-color">
+                    {{ block.settings.product3_title }}
+                  </h3>
+                  <p class="text-color">
+                    {{ block.settings.product3_subtitle }}
+                  </p>
+                </a>
+              </div>
+            {% endif %}
+
+            {% if block.settings.product4_image %}
+              <div class="collection-item">
+                <a href="{{ block.settings.product4_link }}">
+                  <img
+                    src="{{ block.settings.product4_image | img_url: '600x' }}"
+                    alt="{{ block.settings.product4_title }}"
+                  >
+                  <h3 class="text-color">
+                    {{ block.settings.product4_title }}
+                  </h3>
+                  <p class="text-color">
+                    {{ block.settings.product4_subtitle }}
+                  </p>
+                </a>
+              </div>
+            {% endif %}
           </div>
         </div>
-      {% endif %}
-    {% endfor %}
+      {% endfor %}
+    </div>
   </div>
-</div>
+</section>
 
-<!-- Add JavaScript to handle tab switching -->
+<style>
+    .text-color,.tabbing-text{
+        color: {{ section.settings.content_text }};
+    }
+    .collection-section-{{section.id}}{
+          background-color: {{section.settings.bgCol}};
+          padding-top:{{section.settings.secPdgTop}}px;
+          padding-bottom:{{section.settings.secPdgBtm}}px;
+      }
+      .subtitel {
+        font-size: {{ section.settings.subtitle_font_size }}px;
+        font-weight: 500;
+        width: 100%;
+        display: inline-block;
+      }
+      .tabbing-text{
+          font-size: {{section.settings.text_font_size}}px;
+      }
+      @media screen and (max-width: 767px){
+          .collection-section-{{section.id}} {
+              padding-top: {{section.settings.mblPdgTop}}px;
+              padding-bottom: {{section.settings.mblPdgBtm}}px;
+          }
+          .subtitel {
+              font-size: {{ section.settings.subtitle_font_sizes }}px;
+          }
+          .tabbing-text{
+              font-size: {{section.settings.text_font_sizes}}px;
+          }
+      }
+    .custom-collection-section {
+      text-align: center;
+    }
+
+    /* Tabbing style */
+    .collection-tabs ul {
+      list-style: none;
+      padding: 0;
+      margin: 17px 0 41px;
+    }
+
+    .collection-tabs ul li {
+      display: inline-block;
+      margin: 0 15px;
+    }
+
+    .collection-tabs ul li a {
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .collection-tabs ul li a.active {
+      color: #bf0436;
+      border-bottom: 1px solid #BF0436;
+    }
+
+    /* Collection items */
+    .collection-items {
+      display: flex;
+      gap: 42px;
+    }
+
+    .collection-item {
+      text-align: center;
+      width: 25%;
+    }
+
+    .collection-item img {
+      max-width: 100%;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      vertical-align: top;
+    }
+    .collection-item a {
+      height: 100%;
+      width: 100%;
+      text-decoration: none;
+      display: inline-block;
+  }
+
+    .collection-item h3 {
+      font-size: 16px;
+      margin: 0;
+    }
+    .collection-item p {
+      font-size: 24px;
+      margin: 19px 0 0;
+      font-weight: 500;
+      line-height: 1;
+  }
+    /* Tab content style */
+    .tab-content {
+      display: none;
+    }
+    .tab-content.active {
+      display: block;
+    }
+</style>
+
 <script>
   document.addEventListener('DOMContentLoaded', function () {
-    var tabs = document.querySelectorAll('.tabs li a');
-    var contentAreas = document.querySelectorAll('.collection-content');
+    const tabs = document.querySelectorAll('.collection-tabs a');
+    const contents = document.querySelectorAll('.tab-content');
 
     tabs.forEach(function (tab) {
-      tab.addEventListener('click', function (event) {
-        event.preventDefault();
+      tab.addEventListener('click', function (e) {
+        e.preventDefault();
+
         tabs.forEach(function (t) {
           t.classList.remove('active');
         });
-        contentAreas.forEach(function (c) {
-          c.classList.remove('active');
-        });
+
         tab.classList.add('active');
-        document.getElementById(tab.getAttribute('data-tab')).classList.add('active');
+
+        contents.forEach(function (content) {
+          content.classList.remove('active');
+        });
+
+        const target = document.querySelector('#tab-' + tab.getAttribute('data-tab'));
+        target.classList.add('active');
       });
     });
   });
 </script>
 
+<!-- Schema -->
 {% schema %}
 {
-  "name": "Collection Tabs Section",
-  "class": "our-collection",
+  "name": "Our Collection Tabs",
   "settings": [
     {
       "type": "text",
@@ -195,6 +279,12 @@
       "id": "color_scheme",
       "label": "Color scheme",
       "default": "background-1"
+    },
+    {
+      "type": "color",
+      "id": "content_text",
+      "label": "Color scheme content",
+      "default": "#0D0D0D"
     },
     {
       "type": "range",
@@ -261,19 +351,95 @@
   ],
   "blocks": [
     {
-      "type": "collection_tab",
-      "name": "Collection Tab",
+      "type": "tab",
+      "name": "Tab",
       "settings": [
         {
           "type": "text",
           "id": "tab_title",
           "label": "Tab Title",
-          "default": "Tab"
+          "default": "Face"
         },
         {
-          "type": "collection",
-          "id": "collection",
-          "label": "Select Collection"
+          "type": "image_picker",
+          "id": "product1_image",
+          "label": "Product 1 Image"
+        },
+        {
+          "type": "text",
+          "id": "product1_title",
+          "label": "Product 1 Title",
+          "default": "Product 1"
+        },
+        {
+          "type": "text",
+          "id": "product1_subtitle",
+          "label": "Product 1 Subtitle"
+        },
+        {
+          "type": "url",
+          "id": "product1_link",
+          "label": "Product 1 Link"
+        },
+        {
+          "type": "image_picker",
+          "id": "product2_image",
+          "label": "Product 2 Image"
+        },
+        {
+          "type": "text",
+          "id": "product2_title",
+          "label": "Product 2 Title"
+        },
+        {
+          "type": "text",
+          "id": "product2_subtitle",
+          "label": "Product 2 Subtitle"
+        },
+        {
+          "type": "url",
+          "id": "product2_link",
+          "label": "Product 2 Link"
+        },
+        {
+          "type": "image_picker",
+          "id": "product3_image",
+          "label": "Product 3 Image"
+        },
+        {
+          "type": "text",
+          "id": "product3_title",
+          "label": "Product 3 Title"
+        },
+        {
+          "type": "text",
+          "id": "product3_subtitle",
+          "label": "Product 3 Subtitle"
+        },
+        {
+          "type": "url",
+          "id": "product3_link",
+          "label": "Product 3 Link"
+        },
+        {
+          "type": "image_picker",
+          "id": "product4_image",
+          "label": "Product 4 Image"
+        },
+        {
+          "type": "text",
+          "id": "product4_title",
+          "label": "Product 4 Title"
+        },
+        {
+          "type": "text",
+          "id": "product4_subtitle",
+          "label": "Product 4 Subtitle"
+        },
+        {
+          "type": "url",
+          "id": "product4_link",
+          "label": "Product 4 Link"
         }
       ]
     }
@@ -281,37 +447,7 @@
   "presets": [
     {
       "name": "Our Collection Tabs",
-      "category": "Collection",
-      "blocks": [
-        {
-          "type": "collection_tab",
-          "settings": {
-            "tab_title": "Face",
-            "collection": "face-collection-handle"
-          }
-        },
-        {
-          "type": "collection_tab",
-          "settings": {
-            "tab_title": "Lips",
-            "collection": "lips-collection-handle"
-          }
-        },
-        {
-          "type": "collection_tab",
-          "settings": {
-            "tab_title": "Nails",
-            "collection": "nails-collection-handle"
-          }
-        },
-        {
-          "type": "collection_tab",
-          "settings": {
-            "tab_title": "Eyes",
-            "collection": "eyes-collection-handle"
-          }
-        }
-      ]
+      "category": "Collection"
     }
   ]
 }

@@ -167,6 +167,7 @@ font-weight: 400;
 
 .accordion p{
   font-size: 14px;
+  padding: 0 8px;
   }
 
   .collapsible-content__heading {

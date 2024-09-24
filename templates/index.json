@@ -1,5 +1,62 @@
 {
   "sections": {
+    "hero_slider_X6V3zi": {
+      "type": "hero-slider",
+      "blocks": {
+        "slide_grcGHt": {
+          "type": "slide",
+          "settings": {
+            "review-text": "10,000+ Happy Customers",
+            "image_1": "shopify:\/\/shop_images\/review-4-stars_4b610f89-a8a2-44f4-93f3-93bc356d87dc.png",
+            "image_2": "shopify:\/\/shop_images\/hero-banner.png",
+            "img_2_dsk_wdth": 530,
+            "img_2_mbl_wdth": 500,
+            "image": "shopify:\/\/shop_images\/rosa-rafael-pxax5WuM7eY-unsplash.jpg",
+            "image_mob": "shopify:\/\/shop_images\/rosa-rafael-pxax5WuM7eY-unsplash.jpg",
+            "caption": "Fashion Colour 24Hr Longwear Liquid",
+            "block_cap_size": 43,
+            "block_cap_sizes": 30,
+            "heading": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
+            "block_head_size-2": 20,
+            "block_head_size-mobile": 20,
+            "block_head_line": 1.4,
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "Shop Bestseller",
+            "link": "shopify:\/\/collections",
+            "button_label1": "Bundle & Save",
+            "bg_color": "#ffffff",
+            "link2": "shopify:\/\/collections\/bluser-highlighter-bronzer",
+            "link-2": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "left",
+            "image_overlay_opacity": 50,
+            "color_scheme": "accent-2",
+            "text_alignment_mobile": "left",
+            "mobile_box_align": "center",
+            "mobile_text_spacing": 0
+          }
+        }
+      },
+      "block_order": [
+        "slide_grcGHt"
+      ],
+      "settings": {
+        "layout": "full_bleed",
+        "banner_border": 10,
+        "slide_height": "medium",
+        "slider_visual": "counter",
+        "auto_rotate": true,
+        "hide_navigation": true,
+        "change_slides_speed": 9,
+        "show_text_below": false,
+        "accessibility_info": "Slideshow about our brand",
+        "padding_top": 52,
+        "padding_bottom": 52
+      }
+    },
     "featured_collection_W8newm": {
       "type": "featured-collection",
       "settings": {
@@ -11,7 +68,7 @@
         "collection_text_alignment": "center",
         "show_description": false,
         "description_style": "body",
-        "collection": "fashion-colour-24hr-longwear-liquid-foundation-with-skin-care",
+        "collection": "bestsellers",
         "products_to_show": 10,
         "columns_desktop": 4,
         "full_width": false,
@@ -31,12 +88,82 @@
         "enable_quick_add": true,
         "show_secondary_add": false,
         "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "navigation_on_mobile": true,
+        "swipe_on_mobile": true,
+        "navigation_on_mobile": false,
         "padding_top": 100,
         "padding_bottom": 100,
-        "mobile_padding_top": 52,
-        "mobile_padding_bottom": 52
+        "mobile_padding_top": 80,
+        "mobile_padding_bottom": 68
+      }
+    },
+    "tabs_collection_Fxmxky": {
+      "type": "tabs-collection",
+      "blocks": {
+        "tab_N9xHNU": {
+          "type": "tab",
+          "settings": {
+            "heading": "Skin Care",
+            "collection": "skin-care",
+            "description": "",
+            "collection_text_alignment": "left",
+            "show_description": false,
+            "description_style": "body"
+          }
+        },
+        "tab_dhTHNc": {
+          "type": "tab",
+          "settings": {
+            "heading": "Hair Care",
+            "collection": "hair-care",
+            "description": "",
+            "collection_text_alignment": "left",
+            "show_description": false,
+            "description_style": "body"
+          }
+        },
+        "tab_RUeXC3": {
+          "type": "tab",
+          "settings": {
+            "heading": "Serum & Toner",
+            "collection": "serum-toner",
+            "description": "",
+            "collection_text_alignment": "left",
+            "show_description": false,
+            "description_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "tab_N9xHNU",
+        "tab_dhTHNc",
+        "tab_RUeXC3"
+      ],
+      "disabled": true,
+      "settings": {
+        "tabs_color_scheme": "background-2",
+        "tab_font": 16,
+        "tab_font_align": "center",
+        "tab_font_mb": 14,
+        "tab_font_mb_align": "center",
+        "show_border": false,
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_desc": false,
+        "quick_desc_legth": 90,
+        "quick_desc_size": 14,
+        "enable_quick_add": false,
+        "show_secondary_add": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "gm_vdo_sld_PXcCY3": {
@@ -185,22 +312,92 @@
         "subtitle_font_size": 20,
         "subtitle_font_sizemob": 16,
         "ttl": "Real Reviews from Our Beauty Tribe",
-        "heading_font_size": 16,
-        "heading_font_sizemob": 16,
+        "heading_font_size": 37,
+        "heading_font_sizemob": 30,
         "subTtl": "",
         "btnTxt": "",
         "btnUrl": "",
         "dskSld": 4,
         "dskSpc": 34,
-        "tabSld": 4,
-        "tabSpc": 20,
-        "mblSld": 1.8,
-        "mblSpc": 20,
+        "tabSld": 3,
+        "tabSpc": 16,
+        "mblSld": 1.2,
+        "mblSpc": 16,
         "color_scheme": "accent-1",
         "secPdgTop": 10,
         "secPdgBtm": 10,
         "mblPdgTop": 10,
         "mblPdgBtm": 10
+      }
+    },
+    "tabs_collection_GW6L9C": {
+      "type": "tabs-collection",
+      "blocks": {
+        "tab_9XpJyT": {
+          "type": "tab",
+          "settings": {
+            "heading": "Heading",
+            "collection": "",
+            "description": "",
+            "collection_text_alignment": "left",
+            "show_description": false,
+            "description_style": "body"
+          }
+        },
+        "tab_mWrWpk": {
+          "type": "tab",
+          "settings": {
+            "heading": "Heading",
+            "collection": "",
+            "description": "",
+            "collection_text_alignment": "left",
+            "show_description": false,
+            "description_style": "body"
+          }
+        },
+        "tab_cMLHpD": {
+          "type": "tab",
+          "settings": {
+            "heading": "Heading",
+            "collection": "",
+            "description": "",
+            "collection_text_alignment": "left",
+            "show_description": false,
+            "description_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "tab_9XpJyT",
+        "tab_mWrWpk",
+        "tab_cMLHpD"
+      ],
+      "disabled": true,
+      "settings": {
+        "tabs_color_scheme": "",
+        "tab_font": 16,
+        "tab_font_align": "center",
+        "tab_font_mb": 14,
+        "tab_font_mb_align": "center",
+        "show_border": false,
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_desc": false,
+        "quick_desc_legth": 90,
+        "quick_desc_size": 14,
+        "enable_quick_add": false,
+        "show_secondary_add": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "collapsible_content_ytea84": {
@@ -209,36 +406,54 @@
         "collapsible_row_xbTNaf": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
+            "heading": "Is the packaging travel-friendly?",
+            "icon": "none",
+            "row_content": "<p>Yes, the palette is compact and lightweight, making it perfect for travel or on-the-go touch-ups.<\/p>",
             "page": ""
           }
         },
         "collapsible_row_y8HCVb": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
+            "heading": "Are your products suitable for all skin types?",
+            "icon": "none",
+            "row_content": "<p>Yes, our products are formulated to be suitable for all skin types, including sensitive, oily, combination, and dry skin. We recommend checking the product details for specific recommendations or concerns.<br\/><\/p>",
             "page": ""
           }
         },
         "collapsible_row_mJiYkm": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
+            "heading": "How do I choose the right foundation shade?",
+            "icon": "none",
+            "row_content": "<p>To choose the right foundation shade, identify your undertone (cool, warm, or neutral) and select a shade that matches your neck and face. Our store also offers a shade-matching guide to help you find your perfect match.<br\/><br\/><\/p>",
             "page": ""
           }
         },
         "collapsible_row_kJ9HKd": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
+            "heading": "Are your products vegan and cruelty-free?",
+            "icon": "none",
+            "row_content": "<p>Yes, all of our products are 100% vegan and cruelty-free. We are committed to creating beauty products that are ethically produced and free from animal testing.<br\/><\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_FqF3gQ": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What are the key ingredients in your skincare products?",
+            "icon": "none",
+            "row_content": "<p>Our skincare products contain a blend of natural and effective ingredients, such as Vitamin C, hyaluronic acid, and botanical extracts, all designed to nourish and rejuvenate your skin. For specific ingredients, please refer to each product's ingredient list.<br\/><\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_gDgGVw": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Do you test your products on animals?",
+            "icon": "none",
+            "row_content": "<p>No, we are a cruelty-free brand and do not test any of our products on animals. We are proud to uphold ethical and sustainable practices in the beauty industry.<\/p>",
             "page": ""
           }
         }
@@ -247,28 +462,30 @@
         "collapsible_row_xbTNaf",
         "collapsible_row_y8HCVb",
         "collapsible_row_mJiYkm",
-        "collapsible_row_kJ9HKd"
+        "collapsible_row_kJ9HKd",
+        "collapsible_row_FqF3gQ",
+        "collapsible_row_gDgGVw"
       ],
       "settings": {
         "caption": "",
         "heading": "Collapsible content",
-        "desktop_heading_font_size": 18,
+        "desktop_heading_font_size": 37,
         "chkbx": false,
         "heading_size": "h1",
         "heading_alignment": "center",
-        "layout": "none",
+        "layout": "section",
         "color_scheme": "background-2",
         "container_color_scheme": "",
         "open_first_collapsible_row": false,
         "image_ratio": "adapt",
         "desktop_layout": "image_second",
         "heading_size_row": "h3",
-        "padding_top": 36,
-        "padding_bottom": 36,
-        "mobile_padding_top": 20,
-        "mobile_padding_bottom": 20,
+        "padding_top": 100,
+        "padding_bottom": 0,
+        "mobile_padding_top": 80,
+        "mobile_padding_bottom": 0,
         "border_enabled": false,
-        "mobile_heading_font_size": 18
+        "mobile_heading_font_size": 30
       }
     },
     "testimonial_slider_PxwHpG": {
@@ -277,61 +494,121 @@
         "icon_VM3cpX": {
           "type": "icon",
           "settings": {
-            "image": "shopify:\/\/shop_images\/customer-1.png",
-            "img_star": "shopify:\/\/shop_images\/review-4-stars.png",
+            "image": "shopify:\/\/shop_images\/Rectangle_5.png",
+            "img_star": "shopify:\/\/shop_images\/Group_1_1.svg",
             "slide_radius": 6,
             "link": "",
             "show_icon": true,
-            "title": "Dev S.",
-            "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,<\/p>"
+            "title": "Anamika Roy",
+            "text": "<p>This powder is so lightweight, yet it keeps my makeup in place all day long. My skin stays matte without feeling heavy<\/p>"
           }
         },
         "icon_mNnhQV": {
           "type": "icon",
           "settings": {
-            "image": "shopify:\/\/shop_images\/customer-2.png",
-            "img_star": "shopify:\/\/shop_images\/review-3.4-stars.png",
+            "image": "shopify:\/\/shop_images\/Rectangle_5_1.png",
+            "img_star": "shopify:\/\/shop_images\/Group_1_1.svg",
             "slide_radius": 6,
             "link": "",
             "show_icon": true,
-            "title": "Jayesh J.",
-            "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,<\/p>"
+            "title": "Riya Nayak",
+            "text": "<p>The powder is super light and blends well with my skin tone. It doesn’t feel heavy, and it keeps my makeup in place all day. Perfect for everyday use<\/p>"
           }
         },
         "icon_jHBmQc": {
           "type": "icon",
           "settings": {
-            "image": "shopify:\/\/shop_images\/customer-3.png",
-            "img_star": "shopify:\/\/shop_images\/review-3.4-stars.png",
+            "image": "shopify:\/\/shop_images\/Rectangle_5_2.png",
+            "img_star": "shopify:\/\/shop_images\/Group_1_1.svg",
             "slide_radius": 6,
             "link": "",
             "show_icon": true,
-            "title": "Neha A.",
-            "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,<\/p>"
+            "title": "Pooja Sahu",
+            "text": "<p>I have super sensitive skin, and this balm worked like a charm. It gently removed all my makeup without any irritation. Highly recommend<\/p>"
           }
         },
         "icon_hwprNr": {
           "type": "icon",
           "settings": {
-            "image": "shopify:\/\/shop_images\/customer-4.png",
-            "img_star": "shopify:\/\/shop_images\/review-4-stars.png",
+            "image": "shopify:\/\/shop_images\/Rectangle_5_3.png",
+            "img_star": "shopify:\/\/shop_images\/Group_1_1.svg",
             "slide_radius": 6,
             "link": "",
             "show_icon": true,
-            "title": "Ameer K.",
-            "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,<\/p>"
+            "title": "Tanya Nair",
+            "text": "<p>After using this serum, my skin feels more firm and looks glowing all day long. It’s great for dull skin<\/p>"
           }
         },
         "icon_rxPmC8": {
           "type": "icon",
           "settings": {
-            "image": "shopify:\/\/shop_images\/customer-2.png",
-            "img_star": "shopify:\/\/shop_images\/review-4-stars.png",
+            "image": "shopify:\/\/shop_images\/Rectangle_5_4.png",
+            "img_star": "shopify:\/\/shop_images\/Group_1_1.svg",
             "slide_radius": 12,
             "link": "",
             "show_icon": true,
-            "title": "Raj S.",
-            "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,<\/p>"
+            "title": "Aarti Malhotra",
+            "text": "<p>This foundation gives me a natural look and lasts all day without needing touch-ups. Plus, it feels great on the skin<\/p>"
+          }
+        },
+        "icon_iDPHWb": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_5_5.png",
+            "img_star": "shopify:\/\/shop_images\/Group_1_1.svg",
+            "slide_radius": 0,
+            "link": "",
+            "show_icon": true,
+            "title": "Sakshi Gupta",
+            "text": "<p>I love the creamy texture of this blush. It’s easy to apply and blend, and the color looks very natural on my skin<\/p>"
+          }
+        },
+        "icon_49k9rj": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_5_6_f72c4610-d121-4217-8edb-963eca3627cd.png",
+            "img_star": "shopify:\/\/shop_images\/Group_1_1.svg",
+            "slide_radius": 0,
+            "link": "",
+            "show_icon": true,
+            "title": "Aditi Verma",
+            "text": "<p>I love that this lip crayon doesn’t dry out my lips like some other long-lasting lip products. The texture is so smooth<\/p>"
+          }
+        },
+        "icon_gc6Byh": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_5_7.png",
+            "img_star": "shopify:\/\/shop_images\/Group_1_1.svg",
+            "slide_radius": 0,
+            "link": "",
+            "show_icon": true,
+            "title": "Sonia Pathak",
+            "text": "<p>I use this every day for a natural look. It blends beautifully and lasts all day without needing a touch-up<\/p>"
+          }
+        },
+        "icon_eUTfqX": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_5_9.png",
+            "img_star": "shopify:\/\/shop_images\/Group_1_1.svg",
+            "slide_radius": 0,
+            "link": "",
+            "show_icon": true,
+            "title": "Jagrati Sindhe",
+            "text": "<p>I’m amazed at how this lipstick doesn’t transfer at all! Even after hours of wear, the color stays put and looks fresh<\/p>"
+          }
+        },
+        "icon_y8xtjr": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_5_10.png",
+            "img_star": "shopify:\/\/shop_images\/Group_1_1.svg",
+            "slide_radius": 0,
+            "link": "",
+            "show_icon": true,
+            "title": "Priyal Jain",
+            "text": "<p>This mist is incredibly soothing. My sensitive skin feels calm and hydrated instantly<\/p>"
           }
         }
       },
@@ -340,14 +617,19 @@
         "icon_mNnhQV",
         "icon_jHBmQc",
         "icon_hwprNr",
-        "icon_rxPmC8"
+        "icon_rxPmC8",
+        "icon_iDPHWb",
+        "icon_49k9rj",
+        "icon_gc6Byh",
+        "icon_eUTfqX",
+        "icon_y8xtjr"
       ],
       "settings": {
         "ttl": "Loved By 10,000+ Happy Customer",
         "alignment": "center",
         "heading_font_size": 37,
         "heading_font_sizemob": 30,
-        "img_sign": "shopify:\/\/shop_images\/right.png",
+        "img_sign": "shopify:\/\/shop_images\/checked_1_1.svg",
         "icon_alignment": "center",
         "icon_size": 100,
         "per_row": 4,
@@ -370,8 +652,8 @@
         "margin_bottom": 0,
         "padding_top": 100,
         "padding_bottom": 100,
-        "padding_tops": 52,
-        "padding_bottoms": 52
+        "padding_tops": 64,
+        "padding_bottoms": 76
       }
     },
     "gm_slider_BnDdT8": {
@@ -485,8 +767,8 @@
         "subtitle_font_size": 20,
         "subtitle_font_sizemob": 16,
         "ttl": "Follow us on Instagram",
-        "heading_font_size": 37,
-        "heading_font_sizemob": 30,
+        "heading_font_size": 32,
+        "heading_font_sizemob": 28,
         "subTtl": "",
         "btnTxt": "",
         "btnUrl": "",
@@ -504,15 +786,18 @@
         "color_scheme": "scheme-6a35cdea-138a-4dd6-b7b5-b066419a615e",
         "sldCol": "#ffffff",
         "secPdgTop": 10,
-        "secPdgBtm": 100,
-        "secPdgTopMbl": 20,
-        "secPdgBtmMbl": 20
+        "secPdgBtm": 80,
+        "secPdgTopMbl": 5,
+        "secPdgBtmMbl": 60
       }
     }
   },
   "order": [
+    "hero_slider_X6V3zi",
     "featured_collection_W8newm",
+    "tabs_collection_Fxmxky",
     "gm_vdo_sld_PXcCY3",
+    "tabs_collection_GW6L9C",
     "collapsible_content_ytea84",
     "testimonial_slider_PxwHpG",
     "gm_slider_BnDdT8"

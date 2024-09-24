@@ -25,11 +25,11 @@
     "img_height": "50",
     "show_quantity_input": false,
     "btn_style": "primary",
-    "logo": "shopify:\/\/shop_images\/header-logo.png",
-    "logo_width": 70,
-    "second_logo": "shopify:\/\/shop_images\/header-logo-2.png",
+    "logo": "shopify:\/\/shop_images\/black_logo_1.svg",
+    "logo_width": 85,
+    "second_logo": "shopify:\/\/shop_images\/platinum_logo_1_8cafcd20-06ce-4948-99b1-2e07abb8d0bb.svg",
     "second_logo_url": "shopify:\/\/pages\/platinum",
-    "logo_widths": 55,
+    "logo_widths": 60,
     "favicon": "shopify:\/\/shop_images\/Favicon_Revolife_india.svg",
     "type_header_font": "din_neuzeit_grotesk_n3",
     "type_header_italic_font": "din_neuzeit_grotesk_n3",
@@ -155,15 +155,15 @@
     "mfBdgs": true,
     "brand_headline": "",
     "brand_description": "",
-    "brand_image": "shopify:\/\/shop_images\/Logos.png",
-    "brand_image_width": 150,
-    "social_facebook_link": "#",
-    "social_instagram_link": "#",
-    "social_youtube_link": "#",
+    "brand_image": "shopify:\/\/shop_images\/Logos_22be9c92-1ca9-4306-9b1f-7d13f76b65a9.svg",
+    "brand_image_width": 205,
+    "social_facebook_link": "https:\/\/www.facebook.com\/fashioncolour01",
+    "social_instagram_link": "https:\/\/www.instagram.com\/fashioncolourofficial\/",
+    "social_youtube_link": "",
     "social_tiktok_link": "",
-    "social_twitter_link": "#",
+    "social_twitter_link": "https:\/\/x.com\/FashionColour01",
     "social_snapchat_link": "",
-    "social_pinterest_link": "",
+    "social_pinterest_link": "https:\/\/in.pinterest.com\/fashioncolourin\/",
     "social_tumblr_link": "",
     "social_vimeo_link": "",
     "predictive_search_enabled": true,
@@ -249,7 +249,7 @@
           "background": "#ffffff",
           "background_gradient": "",
           "text": "#0d0d0d",
-          "button": "#000000",
+          "button": "#ffffff",
           "button_label": "#0d0d0d",
           "secondary_button_label": "#0d0d0d",
           "shadow": "#171515"
@@ -281,11 +281,11 @@
         "settings": {
           "background": "rgba(0,0,0,0)",
           "background_gradient": "",
-          "text": "#000000",
-          "button": "#ffffff",
-          "button_label": "#000000",
-          "secondary_button_label": "#000000",
-          "shadow": "#000000"
+          "text": "#ffffff",
+          "button": "#bf0436",
+          "button_label": "#ffffff",
+          "secondary_button_label": "#bf0436",
+          "shadow": "#bf0436"
         }
       },
       "scheme-78d2e301-66be-46b4-8bf3-c85455b81fc4": {
@@ -352,17 +352,6 @@
           "button_label": "#ffffff",
           "secondary_button_label": "#bf0436",
           "shadow": "#bf0436"
-        }
-      },
-      "scheme-29bf3958-bf11-4df3-a381-d694c7c2fec4": {
-        "settings": {
-          "background": "#0d0d0d",
-          "background_gradient": "",
-          "text": "#ffffff",
-          "button": "#000000",
-          "button_label": "#bf0436",
-          "secondary_button_label": "#bf0436",
-          "shadow": "#ffffff"
         }
       }
     }

@@ -43,10 +43,10 @@
       padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
     }
 
-    @media screen and (min-width: 750px) {
+    @media screen and (max-width: 750px) {
       .section-{{ section.id }}-padding {
-        padding-top: {{ section.settings.padding_top }}px;
-        padding-bottom: {{ section.settings.padding_bottom }}px;
+        padding-top: {{ section.settings.padding_tops | times: 0.75 | round: 0 }}px;
+      padding-bottom: {{ section.settings.padding_bottoms | times: 0.75 | round: 0 }}px;
       }
     }
   {%- endstyle -%}
@@ -562,6 +562,11 @@
                         margin: {{block.settings.margin_top}}px 0 {{block.settings.margin_bottom}}px 0;
                         align-items: flex-start;
                         }
+                        @media screen and (max-width: 750px){
+                          .ship-wrapper{
+                            margin-bottom: 0;
+                          }
+                        }
                 </style>
                 {% assign ship_text = block.settings.text %}
                 {% assign countdown = countdown | prepend: '<span id="countdown">' | append: '</span>' %}
@@ -715,6 +720,7 @@ function updateCountdown() {
                   }
 
                   @media screen and (min-width: 750px) {
+
                     .block-{{ block.id }}-padding {
                       padding-top: {{ block.settings.padding_top }}px;
                       padding-bottom: {{ block.settings.padding_bottom }}px;
@@ -6053,6 +6059,30 @@ function updateCountdown() {
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 36
+    },
+    {
+      "type": "header",
+      "content": "Mobile Padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_tops",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Mobile Padding Top",
+      "default": 8
+    },
+    {
+      "type": "range",
+      "id": "padding_bottoms",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Mobile Padding Bottom",
+      "default": 8
     }
   ]
 }

@@ -32,9 +32,10 @@ ul.custom--tabs {
 }
 .tab__list h4.custom-tab {
   display: inline-block !important;
-  padding: 0 0 17px !important;
+  padding: 0 0 10px !important;
   cursor: pointer !important;
   margin: 0px !important;
+  line-height: 1;
   font-weight: 400;
 }
 .active-always {
@@ -51,8 +52,9 @@ ul.custom--tabs {
     padding:0 4rem;
   }
 @media screen and (max-width: 749px){
-  .custom__tab-content p span{
-    font-size: 15px;
+  .custom__tab-content p span,
+    .custom__tab-content p{
+    font-size: 17px;
   }
 }
 @media only screen and (max-width: 576px) {

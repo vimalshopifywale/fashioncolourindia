@@ -98,9 +98,9 @@
         "column_ydHFrw": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/customer-support_1_1_1.svg",
+            "image": "shopify:\/\/shop_images\/Group_1_4.svg",
             "title": "",
-            "text": "<p><strong>Phone:<\/strong><a href=\"tel:+91-8625851801\" title=\"tel:+91-8625851801\"><strong> <\/strong>+91 8625851801<\/a><\/p><p><strong>Email: <\/strong><a href=\"mailto:support@revolife.in\" target=\"_blank\" title=\"mailto:support@revolife.in\">support@revolife.in<\/a><\/p>",
+            "text": "<p><strong>Phone :<\/strong><a href=\"tel:+91-8712777777\" title=\"tel:+91-8712777777\"><strong> <\/strong><\/a><a href=\"tel:+91 8712777777\" title=\"tel:+91 8712777777\">+91 8712777777<\/a><\/p><p><strong>Email :        <\/strong><a href=\"mailto:customercare@fashioncolour.in\" title=\"mailto:customercare@fashioncolour.in\">customercare@fashioncolour.in<\/a><\/p>",
             "link_label": "",
             "link": "",
             "image_width_desktop": 100,
@@ -110,9 +110,9 @@
         "column_djjgtC": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/clock_2.svg",
-            "title": "",
-            "text": "<p><strong>Support Team:<\/strong><\/p><p>Monday - Friday ( 10am to 7pm)<\/p>",
+            "image": "shopify:\/\/shop_images\/Group_3_3.svg",
+            "title": "<strong>Support Team :<\/strong>",
+            "text": "<p><\/p><p>Monday - Friday ( 10am to 7pm)<\/p>",
             "link_label": "",
             "link": "",
             "image_width_desktop": 100,
@@ -122,9 +122,9 @@
         "column_th4LBx": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/location-pin_2_1.svg",
-            "title": "",
-            "text": "<p><strong>Address:<\/strong><\/p><p><strong>Lorem Ipsum<\/strong>is simply dummy text<\/p>",
+            "image": "shopify:\/\/shop_images\/Group_6_2.svg",
+            "title": "<strong>Address :<\/strong>",
+            "text": "<p><\/p><p>Color Couture LLP<\/p><p>NDM1,Netaji Subhash Place, Pitampura, Delhi-110034<\/p>",
             "link_label": "",
             "link": "",
             "image_width_desktop": 100,

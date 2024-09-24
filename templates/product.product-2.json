@@ -45,7 +45,7 @@
           "settings": {
           }
         },
-        "gm_feature_3AEnTB": {
+        "gm_feature_J8bMkf": {
           "type": "gm-feature",
           "settings": {
             "text": "",
@@ -73,8 +73,8 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/payment_getway_800x_1fdd630c-9d0f-4e1b-9d19-947cee56cff5.svg",
-            "image_size": 75,
-            "icon_mobile_size": 50,
+            "image_size": 100,
+            "icon_mobile_size": 100,
             "image_border": 0,
             "img_position": "center",
             "padding_top": 0,
@@ -109,7 +109,7 @@
         "ad73ef22-d96e-41c5-b4e1-ed8d9daf2239",
         "price",
         "description",
-        "gm_feature_3AEnTB",
+        "gm_feature_J8bMkf",
         "variant_picker",
         "buy_buttons",
         "image_Hbm4K8",
@@ -133,7 +133,9 @@
         "hide_variants": false,
         "enable_video_looping": false,
         "padding_top": 12,
-        "padding_bottom": 100
+        "padding_bottom": 100,
+        "padding_tops": 12,
+        "padding_bottoms": 70
       }
     },
     "tabs_XLgmRt": {
@@ -175,25 +177,33 @@
       "settings": {
         "tabs_color_scheme": "accent-1",
         "layout": "none",
-        "container_color_scheme": "",
+        "container_color_scheme": "accent-1",
         "tab_font": 28,
         "tab_font_align": "center",
         "tab_content_align": "left",
-        "tab_font_mb": 14,
-        "tab_font_mb_align": "center",
+        "tab_font_mb": 18,
+        "tab_font_mb_align": "left",
         "tab_content_align_mb": "left",
         "show_border": false,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "comparison_table_XH6XXt": {
       "type": "comparison-table",
       "blocks": {
+        "row_c7wtiK": {
+          "type": "row",
+          "settings": {
+            "benefit": "Innovative Formulas",
+            "us": true,
+            "others": false
+          }
+        },
         "row_dwJHnA": {
           "type": "row",
           "settings": {
-            "benefit": "Effective",
+            "benefit": "Trend-Driven Shades",
             "us": true,
             "others": false
           }
@@ -201,7 +211,7 @@
         "row_F3drHV": {
           "type": "row",
           "settings": {
-            "benefit": "Long Lasting",
+            "benefit": "Quality Ingredients",
             "us": true,
             "others": false
           }
@@ -209,29 +219,39 @@
         "row_g7rhKx": {
           "type": "row",
           "settings": {
-            "benefit": "Cost",
-            "us": false,
-            "others": true
+            "benefit": "Affordability and Value",
+            "us": true,
+            "others": false
           }
         },
         "row_DG9rn7": {
           "type": "row",
           "settings": {
-            "benefit": "Real Results",
+            "benefit": "Brand Identity and Reputation",
+            "us": true,
+            "others": false
+          }
+        },
+        "row_HQkeQQ": {
+          "type": "row",
+          "settings": {
+            "benefit": "Product Range",
             "us": true,
             "others": false
           }
         }
       },
       "block_order": [
+        "row_c7wtiK",
         "row_dwJHnA",
         "row_F3drHV",
         "row_g7rhKx",
-        "row_DG9rn7"
+        "row_DG9rn7",
+        "row_HQkeQQ"
       ],
       "settings": {
         "title": "Why Choose Us",
-        "titel_desktop": 40,
+        "titel_desktop": 37,
         "titel_mob": 30,
         "heading_size": "h1",
         "text": "",
@@ -243,21 +263,21 @@
         "color_scheme": "background-1",
         "logo_width": 90,
         "mobile_logo_width": 60,
-        "us_label": "",
-        "others_label": "Others",
+        "us_label": "Fashion Colour",
+        "others_label": "Them",
         "benefit_color_scheme": "accent-1",
-        "checkmark_color": "#cec4b0",
+        "checkmark_color": "#bf0436",
         "icon_cells_color_scheme": "background-1",
         "table_corner_radius": 10,
         "table_shadow_opacity": 15,
-        "table_shadow_horizontal_offset": 3,
-        "table_shadow_vertical_offset": 3,
+        "table_shadow_horizontal_offset": 1,
+        "table_shadow_vertical_offset": 1,
         "table_shadow_blur": 0,
         "table_border_thickness": 1,
-        "padding_top": 44,
-        "padding_bottom": 60,
-        "padding_top_mobile": 28,
-        "padding_bottom_mobile": 28
+        "padding_top": 100,
+        "padding_bottom": 100,
+        "padding_top_mobile": 80,
+        "padding_bottom_mobile": 80
       }
     },
     "c0ef23cf-5481-4b47-9b78-3c28134c079a": {
@@ -266,36 +286,45 @@
         "template--15124688076883__c0ef23cf-5481-4b47-9b78-3c28134c079a-collapsible_row-1": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "What if it doesn’t work for me?",
+            "heading": "What is the Fashion Colour Lip Crayon?",
             "icon": "none",
-            "row_content": "<p>Enjoy the Flexibility of a 30-Day Return Period for Our Products.<\/p>",
+            "row_content": "{{ product.metafields.custom.product_details_controller.value.product_fa_qs | metafield_tag: field: 'question' }}<p>What is the Fashion Colour Lip Crayon?<\/p><p><\/p>",
             "page": ""
           }
         },
         "template--15124688076883__c0ef23cf-5481-4b47-9b78-3c28134c079a-collapsible_row-2": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Guarentee?",
+            "heading": "What are the benefits of this lip crayon?",
             "icon": "none",
-            "row_content": "<p>Shop with <strong>Confidence<\/strong> Knowing that Our Products are Guaranteed to Meet Your Expectations.<\/p>",
+            "row_content": "{{ product.metafields.custom.product_details_controller.value.product_fa_qs | metafield_tag: field: 'question' }}",
             "page": ""
           }
         },
         "template--15124688076883__c0ef23cf-5481-4b47-9b78-3c28134c079a-collapsible_row-3": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Okay, but why have I never heard of this before?",
+            "heading": "How do I apply the lip crayon?",
             "icon": "none",
-            "row_content": "",
+            "row_content": "{{ product.metafields.custom.product_details_controller.value.product_fa_qs | metafield_tag: field: 'question' }}",
             "page": ""
           }
         },
         "template--15124688076883__c0ef23cf-5481-4b47-9b78-3c28134c079a-collapsible_row-4": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Do you provide tracking information?",
+            "heading": "Is the lip crayon suitable for all skin types?",
             "icon": "none",
-            "row_content": "<p>Yes, Every order includes a tracking number which will be provided via email or text once your order is fulfilled.<\/p>",
+            "row_content": "{{ product.metafields.custom.product_details_controller.value.product_fa_qs | metafield_tag: field: 'question' }}",
+            "page": ""
+          }
+        },
+        "collapsible_row_HHTMbX": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How long does the lip crayon last?",
+            "icon": "none",
+            "row_content": "{{ product.metafields.custom.product_details_controller.value.product_fa_qs | metafield_tag: field: 'question' }}",
             "page": ""
           }
         }
@@ -304,36 +333,37 @@
         "template--15124688076883__c0ef23cf-5481-4b47-9b78-3c28134c079a-collapsible_row-1",
         "template--15124688076883__c0ef23cf-5481-4b47-9b78-3c28134c079a-collapsible_row-2",
         "template--15124688076883__c0ef23cf-5481-4b47-9b78-3c28134c079a-collapsible_row-3",
-        "template--15124688076883__c0ef23cf-5481-4b47-9b78-3c28134c079a-collapsible_row-4"
+        "template--15124688076883__c0ef23cf-5481-4b47-9b78-3c28134c079a-collapsible_row-4",
+        "collapsible_row_HHTMbX"
       ],
       "settings": {
-        "caption": "FAQ",
-        "heading": "Revive Q&A",
-        "desktop_heading_font_size": 18,
+        "caption": "",
+        "heading": "Frequently Asked Questions",
+        "desktop_heading_font_size": 40,
         "chkbx": false,
         "heading_size": "h1",
         "heading_alignment": "center",
         "layout": "section",
         "color_scheme": "background-1",
-        "container_color_scheme": "accent-2",
-        "open_first_collapsible_row": true,
+        "container_color_scheme": "accent-1",
+        "open_first_collapsible_row": false,
         "image_ratio": "small",
         "desktop_layout": "image_second",
         "heading_size_row": "h3",
-        "padding_top": 36,
-        "padding_bottom": 36,
-        "mobile_padding_top": 20,
-        "mobile_padding_bottom": 20,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "mobile_padding_top": 0,
+        "mobile_padding_bottom": 0,
         "border_enabled": false,
-        "mobile_heading_font_size": 18
+        "mobile_heading_font_size": 30
       }
     },
     "related-products": {
       "type": "related-products",
       "settings": {
         "heading": "You may also like",
-        "heading_font_desktop": 24,
-        "heading_font_mob": 24,
+        "heading_font_desktop": 37,
+        "heading_font_mob": 30,
         "heading_size": "h2",
         "collection_text_alignment": "left",
         "products_to_show": 4,
@@ -343,200 +373,130 @@
         "show_secondary_image": true,
         "show_vendor": true,
         "show_rating": true,
-        "show_swatch": false,
+        "show_swatch": true,
         "enable_quick_desc": false,
         "quick_desc_legth": 90,
         "quick_desc_size": 14,
-        "enable_quick_add": false,
-        "columns_mobile": "2",
-        "padding_top": 36,
+        "enable_quick_add": true,
+        "columns_mobile": "1",
+        "padding_top": 100,
         "padding_bottom": 100,
-        "padding_topmob": 36,
-        "padding_bottommob": 36
+        "padding_topmob": 80,
+        "padding_bottommob": 80
       }
     },
-    "our_collection_DCaBHD": {
+    "our_collection_TJDeFG": {
       "type": "our-collection",
       "blocks": {
-        "collection_tab_FDwkzw": {
-          "type": "collection_tab",
+        "tab_Jtjnpr": {
+          "type": "tab",
           "settings": {
             "tab_title": "Face",
-            "collection": "face-powder-compact"
+            "product1_image": "shopify:\/\/shop_images\/453519475_806540405021384_8591192359653799592_n-removebg-preview_1.png",
+            "product1_title": "",
+            "product1_subtitle": "Concealer & Primer",
+            "product1_link": "shopify:\/\/collections\/concealer-and-primer",
+            "product2_image": "shopify:\/\/shop_images\/453519475_806540405021384_8591192359653799592_n-removebg-preview_1.png",
+            "product2_title": "",
+            "product2_subtitle": "Foundation",
+            "product2_link": "shopify:\/\/collections\/foundation",
+            "product3_image": "shopify:\/\/shop_images\/453519475_806540405021384_8591192359653799592_n-removebg-preview_1.png",
+            "product3_title": "",
+            "product3_subtitle": "Face Powder\/Compact",
+            "product3_link": "shopify:\/\/collections\/face-powder-compact",
+            "product4_image": "shopify:\/\/shop_images\/453519475_806540405021384_8591192359653799592_n-removebg-preview_1.png",
+            "product4_title": "",
+            "product4_subtitle": "Serum & Toner",
+            "product4_link": "#Serum & Toner"
           }
         },
-        "collection_tab_nECaRE": {
-          "type": "collection_tab",
+        "tab_C8b8yX": {
+          "type": "tab",
           "settings": {
             "tab_title": "Lips",
-            "collection": "lipstick"
+            "product1_image": "shopify:\/\/shop_images\/453519475_806540405021384_8591192359653799592_n-removebg-preview_1.png",
+            "product1_title": "",
+            "product1_subtitle": "Concealer & Primer",
+            "product1_link": "shopify:\/\/collections\/concealer-and-primer",
+            "product2_image": "shopify:\/\/shop_images\/453519475_806540405021384_8591192359653799592_n-removebg-preview_1.png",
+            "product2_title": "",
+            "product2_subtitle": "Foundation",
+            "product2_link": "shopify:\/\/collections\/foundation",
+            "product3_image": "shopify:\/\/shop_images\/453519475_806540405021384_8591192359653799592_n-removebg-preview_1.png",
+            "product3_title": "",
+            "product3_subtitle": "Face Powder\/Compact",
+            "product3_link": "shopify:\/\/collections\/face-powder-compact",
+            "product4_image": "shopify:\/\/shop_images\/453519475_806540405021384_8591192359653799592_n-removebg-preview_1.png",
+            "product4_title": "",
+            "product4_subtitle": "Serum & Toner",
+            "product4_link": "#Serum & Toner"
           }
         },
-        "collection_tab_BnWJLA": {
-          "type": "collection_tab",
+        "tab_Y6nGtc": {
+          "type": "tab",
           "settings": {
             "tab_title": "Nails",
-            "collection": "nails"
+            "product1_image": "shopify:\/\/shop_images\/453519475_806540405021384_8591192359653799592_n-removebg-preview_1.png",
+            "product1_title": "",
+            "product1_subtitle": "Concealer & Primer",
+            "product1_link": "shopify:\/\/collections\/concealer-and-primer",
+            "product2_image": "shopify:\/\/shop_images\/453519475_806540405021384_8591192359653799592_n-removebg-preview_1.png",
+            "product2_title": "",
+            "product2_subtitle": "Foundation",
+            "product2_link": "shopify:\/\/collections\/foundation",
+            "product3_image": "shopify:\/\/shop_images\/453519475_806540405021384_8591192359653799592_n-removebg-preview_1.png",
+            "product3_title": "",
+            "product3_subtitle": "Face Powder\/Compact",
+            "product3_link": "shopify:\/\/collections\/face-powder-compact",
+            "product4_image": "shopify:\/\/shop_images\/453519475_806540405021384_8591192359653799592_n-removebg-preview_1.png",
+            "product4_title": "",
+            "product4_subtitle": "Serum & Toner",
+            "product4_link": "#Serum & Toner"
           }
         },
-        "collection_tab_iWTXBy": {
-          "type": "collection_tab",
+        "tab_jbg4j7": {
+          "type": "tab",
           "settings": {
-            "tab_title": "Eyes",
-            "collection": "eyeshadow"
+            "tab_title": "Nails",
+            "product1_image": "shopify:\/\/shop_images\/453519475_806540405021384_8591192359653799592_n-removebg-preview_1.png",
+            "product1_title": "",
+            "product1_subtitle": "Concealer & Primer",
+            "product1_link": "shopify:\/\/collections\/concealer-and-primer",
+            "product2_image": "shopify:\/\/shop_images\/453519475_806540405021384_8591192359653799592_n-removebg-preview_1.png",
+            "product2_title": "",
+            "product2_subtitle": "Foundation",
+            "product2_link": "shopify:\/\/collections\/foundation",
+            "product3_image": "shopify:\/\/shop_images\/453519475_806540405021384_8591192359653799592_n-removebg-preview_1.png",
+            "product3_title": "",
+            "product3_subtitle": "Face Powder\/Compact",
+            "product3_link": "shopify:\/\/collections\/face-powder-compact",
+            "product4_image": "shopify:\/\/shop_images\/453519475_806540405021384_8591192359653799592_n-removebg-preview_1.png",
+            "product4_title": "",
+            "product4_subtitle": "Serum & Toner",
+            "product4_link": "#Serum & Toner"
           }
         }
       },
       "block_order": [
-        "collection_tab_FDwkzw",
-        "collection_tab_nECaRE",
-        "collection_tab_BnWJLA",
-        "collection_tab_iWTXBy"
+        "tab_Jtjnpr",
+        "tab_C8b8yX",
+        "tab_Y6nGtc",
+        "tab_jbg4j7"
       ],
+      "disabled": true,
       "settings": {
         "heading": "Our Collection",
         "heading_alignment": "center",
         "subtitle_font_size": 20,
+        "subtitle_font_sizes": 16,
         "color_scheme": "",
+        "content_text": "#0d0d0d",
+        "text_font_size": 36,
+        "text_font_sizes": 16,
         "secPdgTop": 10,
         "secPdgBtm": 100,
         "mblPdgTop": 10,
         "mblPdgBtm": 80
-      }
-    },
-    "gm_slider_DmVVR7": {
-      "type": "gm-slider",
-      "blocks": {
-        "slide_xJVca6": {
-          "type": "slide",
-          "settings": {
-            "imgPkr": "shopify:\/\/shop_images\/459570578_18455707981040959_4240917642604049776_n.jpg",
-            "img_url": "https:\/\/www.instagram.com\/p\/C_4u1wCvWPH",
-            "ttl": "",
-            "subTtl": ""
-          }
-        },
-        "slide_ix6brG": {
-          "type": "slide",
-          "settings": {
-            "imgPkr": "shopify:\/\/shop_images\/Snapinsta.app_435475274_18425631031040959_548475629733840636_n_1024.jpg",
-            "img_url": "https:\/\/www.instagram.com\/p\/C_4u1wCvWPH",
-            "ttl": "",
-            "subTtl": ""
-          }
-        },
-        "slide_LfyzUE": {
-          "type": "slide",
-          "settings": {
-            "imgPkr": "shopify:\/\/shop_images\/SaveClip.App_460644640_18456491767040959_7836400184949531475_n.jpg",
-            "img_url": "https:\/\/www.instagram.com\/p\/C_4u1wCvWPH",
-            "ttl": "",
-            "subTtl": ""
-          }
-        },
-        "slide_zCRUXP": {
-          "type": "slide",
-          "settings": {
-            "imgPkr": "shopify:\/\/shop_images\/SaveClip.App_458384373_18454178872040959_2339893394990115624_n.jpg",
-            "img_url": "https:\/\/www.instagram.com\/p\/C_4u1wCvWPH",
-            "ttl": "",
-            "subTtl": ""
-          }
-        },
-        "slide_GJAV3Y": {
-          "type": "slide",
-          "settings": {
-            "imgPkr": "shopify:\/\/shop_images\/SnapInsta.io_439314910_18427912174040959_5884374809014697499_n.jpg",
-            "img_url": "https:\/\/www.instagram.com\/p\/C_4u1wCvWPH",
-            "ttl": "",
-            "subTtl": ""
-          }
-        },
-        "slide_tAfheF": {
-          "type": "slide",
-          "settings": {
-            "imgPkr": "shopify:\/\/shop_images\/Discover_Fashion_Colour_s_curated_lip_shades._Make_every_moment_memorable_...._fashioncolour_cosmetics_makeupartist_professionalmua_mua_makeup_wakeupandmakeup_beauty.jpg",
-            "img_url": "https:\/\/www.instagram.com\/p\/C_4u1wCvWPH",
-            "ttl": "",
-            "subTtl": ""
-          }
-        },
-        "slide_hNN4BP": {
-          "type": "slide",
-          "settings": {
-            "imgPkr": "shopify:\/\/shop_images\/Banish_Stubborn_Holi_Colors_Effortlessly_With_Our_Clean_It_Zero_Gentle_Makeup_Remover_Balm_Let_Your_Skin_Revel_In_The_Joy_Of_Effortless_Cleansing_Post-Celebrations._Shop_Now_Link_in_B.jpg",
-            "img_url": "https:\/\/www.instagram.com\/p\/C_4u1wCvWPH",
-            "ttl": "",
-            "subTtl": ""
-          }
-        },
-        "slide_bPnBmW": {
-          "type": "slide",
-          "settings": {
-            "imgPkr": "shopify:\/\/shop_images\/SnapInsta.io_425352915_1583302332421054_3019058165801313718_n.jpg",
-            "img_url": "https:\/\/www.instagram.com\/p\/C_4u1wCvWPH",
-            "ttl": "",
-            "subTtl": ""
-          }
-        },
-        "slide_xfN3Nd": {
-          "type": "slide",
-          "settings": {
-            "imgPkr": "shopify:\/\/shop_images\/A_flush_of_love_on_your_cheeks_Celebrate_love_with_our_exquisite_collection_link_in_bio_...._fashioncolour_cosmetics_makeupartist_professionalmua_mua_makeup_wakeupandmakeup_beauty.jpg",
-            "img_url": "https:\/\/www.instagram.com\/p\/C_4u1wCvWPH",
-            "ttl": "",
-            "subTtl": ""
-          }
-        },
-        "slide_Bjwd6X": {
-          "type": "slide",
-          "settings": {
-            "imgPkr": "shopify:\/\/shop_images\/457670550_18453079177040959_1722093851528496731_n.jpg",
-            "img_url": "https:\/\/www.instagram.com\/p\/C_4u1wCvWPH",
-            "ttl": "",
-            "subTtl": ""
-          }
-        }
-      },
-      "block_order": [
-        "slide_xJVca6",
-        "slide_ix6brG",
-        "slide_LfyzUE",
-        "slide_zCRUXP",
-        "slide_GJAV3Y",
-        "slide_tAfheF",
-        "slide_hNN4BP",
-        "slide_bPnBmW",
-        "slide_xfN3Nd",
-        "slide_Bjwd6X"
-      ],
-      "settings": {
-        "preTtl": "@fashioncolourofficial",
-        "subtitle_font_size": 20,
-        "subtitle_font_sizemob": 16,
-        "ttl": "Follow us on Instagram",
-        "heading_font_size": 37,
-        "heading_font_sizemob": 30,
-        "subTtl": "",
-        "btnTxt": "",
-        "btnUrl": "",
-        "chkBx": false,
-        "overlays_box": false,
-        "dskSld": 5,
-        "dskSpc": 14,
-        "tabSld": 3,
-        "tabSpc": 14,
-        "mblSld": 2,
-        "mblSpc": 14,
-        "sldAtply": 1.5,
-        "pagination": true,
-        "navigation": true,
-        "color_scheme": "scheme-6a35cdea-138a-4dd6-b7b5-b066419a615e",
-        "sldCol": "#ffffff",
-        "secPdgTop": 20,
-        "secPdgBtm": 20,
-        "secPdgTopMbl": 20,
-        "secPdgBtmMbl": 20
       }
     }
   },
@@ -547,7 +507,6 @@
     "comparison_table_XH6XXt",
     "c0ef23cf-5481-4b47-9b78-3c28134c079a",
     "related-products",
-    "our_collection_DCaBHD",
-    "gm_slider_DmVVR7"
+    "our_collection_TJDeFG"
   ]
 }

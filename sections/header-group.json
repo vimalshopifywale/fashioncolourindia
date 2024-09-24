@@ -56,7 +56,7 @@
         "color_scheme": "inverse",
         "padding_desktop": 8,
         "padding_mobile": 8,
-        "padding_item_desktop": 52,
+        "padding_item_desktop": 24,
         "padding_item_mobile": 4,
         "padding_top": 0,
         "padding_bottom": 0
@@ -86,7 +86,7 @@
         "menu_hover": false,
         "sticky_header_type": "always",
         "show_line_separator": false,
-        "color_scheme": "scheme-29bf3958-bf11-4df3-a381-d694c7c2fec4",
+        "color_scheme": "scheme-6c3ff99c-8da2-435f-9574-05cdd95811b2",
         "menu_color_scheme": "background-2",
         "transparent_header": false,
         "content_color": "#ffffff",

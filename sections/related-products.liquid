@@ -11,13 +11,13 @@
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
   }
-  .related-products__heading{
+  .section-{{ section.id }}-padding .related-products__heading{
     font-weight: 500;
     font-size: {{section.settings.heading_font_desktop}}px;
   }
 
   @media screen and (max-width:767px){
-    .related-products__heading{
+    .section-{{ section.id }}-padding .related-products__heading{
       font-size: {{section.settings.heading_font_mob}}px;
     }
     .section-{{ section.id }}-padding {
@@ -49,22 +49,22 @@
       >
         {% for recommendation in recommendations.products %}
           {% unless recommendation.tags contains 'gm-hide' %}
-          <li class="grid__item">
-            {% render 'card-product',
-              card_product: recommendation,
-              media_aspect_ratio: section.settings.image_ratio,
-              image_shape: section.settings.image_shape,
-              show_secondary_image: section.settings.show_secondary_image,
-              show_vendor: section.settings.show_vendor,
-              show_rating: section.settings.show_rating,
-              show_quick_desc: section.settings.enable_quick_desc,
-              show_quick_add: section.settings.enable_quick_add,
-              show_secondary_add: section.settings.show_secondary_add,
-              section_id: section.id,
-              swatch_show: section.settings.swatch_show
-            %}
-          </li>
-        {% endunless %}
+            <li class="grid__item">
+              {% render 'card-product',
+                card_product: recommendation,
+                media_aspect_ratio: section.settings.image_ratio,
+                image_shape: section.settings.image_shape,
+                show_secondary_image: section.settings.show_secondary_image,
+                show_vendor: section.settings.show_vendor,
+                show_rating: section.settings.show_rating,
+                show_quick_desc: section.settings.enable_quick_desc,
+                show_quick_add: section.settings.enable_quick_add,
+                show_secondary_add: section.settings.show_secondary_add,
+                section_id: section.id,
+                swatch_show: section.settings.swatch_show
+              %}
+            </li>
+          {% endunless %}
         {% endfor %}
       </ul>
     {% endif %}
@@ -129,25 +129,25 @@
       "label": "t:sections.all.heading_size.label"
     },
     {
-        "type": "select",
-        "id": "collection_text_alignment",
-        "options": [
-          {
-            "value": "left",
-            "label": "t:settings_schema.global.settings.text_alignment.options__1.label"
-          },
-          {
-            "value": "center",
-            "label": "t:settings_schema.global.settings.text_alignment.options__2.label"
-          },
-          {
-            "value": "right",
-            "label": "t:settings_schema.global.settings.text_alignment.options__3.label"
-          }
-        ],
-        "default": "left",
-        "label": "t:settings_schema.global.settings.text_alignment.label"
-      },
+      "type": "select",
+      "id": "collection_text_alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "t:settings_schema.global.settings.text_alignment.options__1.label"
+        },
+        {
+          "value": "center",
+          "label": "t:settings_schema.global.settings.text_alignment.options__2.label"
+        },
+        {
+          "value": "right",
+          "label": "t:settings_schema.global.settings.text_alignment.options__3.label"
+        }
+      ],
+      "default": "left",
+      "label": "t:settings_schema.global.settings.text_alignment.label"
+    },
     {
       "type": "range",
       "id": "products_to_show",
@@ -231,31 +231,31 @@
       "info": "90 characters max"
     },
     {
-        "type": "range",
-        "id": "quick_desc_legth",
-        "min": 30,
-        "max": 300,
-        "step": 10,
-        "unit": "n",
-        "label": "Description Characters Count",
-        "default": 90
-      },
-     {
-        "type": "range",
-        "id": "quick_desc_size",
-        "min": 8,
-        "max": 40,
-        "step": 1,
-        "unit": "px",
-        "label": "Description size",
-        "default": 14
-      },
-      {
+      "type": "range",
+      "id": "quick_desc_legth",
+      "min": 30,
+      "max": 300,
+      "step": 10,
+      "unit": "n",
+      "label": "Description Characters Count",
+      "default": 90
+    },
+    {
+      "type": "range",
+      "id": "quick_desc_size",
+      "min": 8,
+      "max": 40,
+      "step": 1,
+      "unit": "px",
+      "label": "Description size",
+      "default": 14
+    },
+    {
       "type": "checkbox",
       "id": "enable_quick_add",
       "default": false,
       "label": "t:sections.featured-collection.settings.enable_quick_buy.label"
-      },
+    },
     {
       "type": "header",
       "content": "t:sections.related-products.settings.header_mobile.content"
@@ -301,14 +301,14 @@
       "default": 36
     },
     {
-    "type": "range",
-    "id": "padding_topmob",
-    "min": 0,
-    "max": 100,
-    "step": 4,
-    "unit": "px",
-    "label": "Mobile Top Padding",
-    "default": 36
+      "type": "range",
+      "id": "padding_topmob",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Mobile Top Padding",
+      "default": 36
     },
     {
       "type": "range",

@@ -136,6 +136,11 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
   padding-left: 3rem;
   padding-right: 3rem;
 }
+@media screen and (max-width: 749px){
+  .page-width-desktop {
+      padding: 0 15px;
+    }
+}
 
 @media screen and (min-width: 750px) {
   .page-width {
@@ -1106,7 +1111,7 @@ summary::-webkit-details-marker {
   }
 
   .grid--peek .grid__item {
-    min-width: 80%;
+    min-width: 100%;
   }
 
   .grid--peek.slider .grid__item:first-of-type {
@@ -1125,6 +1130,7 @@ summary::-webkit-details-marker {
   .slider--tablet.grid--peek.grid--2-col-tablet-down .grid__item,
   .grid--peek .grid__item {
     width: calc(50% - var(--grid-mobile-horizontal-spacing) - 3rem);
+    margin: 0;
   }
 
   .slider--tablet.grid--peek.grid--1-col-tablet-down .grid__item,
@@ -4361,6 +4367,9 @@ h5,
   .vdoSldCntWrap {
     max-width: unset;
   }
+  .vdoSldCntWrap{
+    margin: auto auto 28px;
+  }
 }
 
 .gmVdoSldWrap .imgBlk  {
@@ -4539,7 +4548,7 @@ sticky-header {
   line-height: normal;
   /* font-family: 'p22-mackinac-pro'; */
   margin: 0 0 9px;
-  font-weight: 500;
+  font-weight: 400;
   /* color: #1b1b1d; */
 }
 

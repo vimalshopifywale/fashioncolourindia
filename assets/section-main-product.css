@@ -1081,10 +1081,10 @@ a.product__text {
 }
 
 @media screen and (max-width: 749px) {
-  .product__media-item {
+  /* .product__media-item {
     display: flex;
     align-items: center;
-  }
+  } */
 
   .product__modal-opener {
     width: 100%;

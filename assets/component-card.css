@@ -551,12 +551,12 @@
   /* font-family: 'p22-mackinac-pro' !important; */
 }
 
-h3.card__heading.h3{
+.card__heading{
   font-weight:500;
 }
 
 @media (max-width:750px){
-  h3.card__heading.h3{
+  .card__heading{
     font-size:17px;
     color:#1b1b1d;
   }

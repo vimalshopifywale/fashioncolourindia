@@ -4446,6 +4446,8 @@ cart-drawer.is-empty .carText{
   align-items: center;
   text-align: center;
   gap: 16px;
+  border-radius: 6px !important;
+  overflow: hidden;
 }
 
 .sldWrap>img {

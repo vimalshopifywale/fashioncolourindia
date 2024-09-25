@@ -159,6 +159,12 @@
     .hero-slider .slideshow__text.banner__box.banner__box-slide_grcGHt.content-container.content-container--full-width-mobile.color-accent-2.gradient.slideshow__text--left.slideshow__text-mobile--left {
         padding: 0 35px 0 0;
     }
+    .hero-slider .slideshow__text.banner__box,
+    .hero-slider .hero-banner {
+        width: 50%;
+        max-width: 100%;
+        padding: 0 15px;
+    }
 
 /* ===Sw_Popup_Slider================================================================== */
     .sw-popup-slider .product-image{
@@ -278,6 +284,13 @@
     }
 
 
+/* ===Contact_Page================================================================== */
+    .inline-richtext strong,
+    .multicolumn-card__info .rte strong {
+        font-weight: 400;
+    }
+
+
 /* ===Sw_Product_Page================================================================== */
     .sw-product .slider-mobile-gutter.sw-sliderpreview ul li{
         position: relative;
@@ -334,7 +347,7 @@
     }
     .sw-product .product__description p{
         color: #555555;
-        font-weight: 400;
+        font-weight: 300;
         font-size: 15px;
         font-family: 'sofia_Pro';
     }
@@ -607,11 +620,15 @@
         line-height: 1;
         margin-bottom: 16px;
     }
-    .footer-main .footer-block__details-content li a{
+    .footer-main .footer-block__details-content li a {
         font-size: 17px;
-        font-weight: 400;
+        font-weight: 200;
         line-height: 1;
-        padding: 0 0 16px;
+        padding: 0;
+        margin-bottom: 13px;
+    }
+    .footer-main .icon.icon-twitter.icon-xtwitter {
+        padding: 2px;
     }
     .footer-main .footer-block__details-content li:last-child a{
         padding: 0;
@@ -671,6 +688,10 @@
     .footer-logobottom.footer-logotop {
         display: none;
     }
+    .footer-main .footer-block__details-content li {
+        margin: 0;
+        line-height: 1;
+    }
 
 /* ===Responsive_View================================================================== */
     @media screen and (max-width:1280px){
@@ -687,6 +708,9 @@
         }
     }
     @media screen and (max-width:990px){
+        #cartdrawer.secondary-main {
+            margin-top: 40px;
+        }
         .sw-product .thumbnail-slider ul li {
             height: auto !important;
         }
@@ -710,10 +734,11 @@
             flex-wrap: nowrap;
         }
         .menu-title {
-            padding: 11px 30px;
+            padding: 0 30px 10px;
             margin: 0;
             font-weight: 500;
             font-size: 24px;
+            text-align: left;
         }
         .sw-product .thumbnail-slider {
             width: 100%;
@@ -734,9 +759,11 @@
         .submenu-open .menu-opening[open] .icon-caret {
             transform: rotate(0deg) !important;
         }
-        .sw-menudrawer ul li a {
-            padding: 11px 30px !important;
-            font-weight: 400 !important;
+        .sw-menudrawer ul li a,
+        .sw-menudrawer ul.menu-drawer__menu.list-menu li details summary {
+            padding: 10px 30px !important;
+            line-height: 1;
+            font-weight: 300 !important;
         }
         .sw-menudrawer .menu-drawer__utility-links {
             display: none;
@@ -760,6 +787,16 @@
         }
     }
     @media screen and (max-width:749px){
+        .hero-slider .hero-banner img{
+            width: 100% !important;
+            margin-top: 40px;
+        }
+        .hero-slider .slideshow__text.banner__box,
+        .hero-slider .hero-banner {
+            width: 100%;
+            max-width: 100%;
+            padding: 0;
+        }
         .sw-product .product-media-container.media-type-video.media-fit-contain.global-media-settings.gradient {
             position: relative;
             padding-bottom: 100.25%;
@@ -873,15 +910,18 @@
             margin: 0;
         }
         .footer-main .footer-block__heading{
-            padding: 20px 0 10px !important ;
-            font-size: 22px;
-            font-weight: 400;
+            padding: 15px 0 !important;
+            font-size: 18px;
+            font-weight: 300 !important;
         }
     }
     @media screen and (max-width:575px){
+        .sw-header .header__icons {
+            margin-left: 0;
+        }
     .bgslider-button .banner__buttons .button {
             font-size: 16px;
-            padding: 10px 15px;
+            padding: 10px 16px;
         }
         .gmPrdctImg p{
             margin: 0;

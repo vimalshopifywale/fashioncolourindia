@@ -182,15 +182,11 @@
   .lumin-slide--{{ section.id }} .flickity-prev-next-button.previous {
     left: -20px;
   }
-<<<<<<< HEAD
-=======
-    
-}
-  
+
     .lumin-slide__image__wrapper svg{
       display: block;
     }
-  
+
     .lumin-slide__image__wrapper img{
       object-fit: cover;
       top: 0;
@@ -203,15 +199,15 @@
     }
     #lumin-slide--{{ section.id }} .video-heading{
       margin: 0 0 38px;
+      font-weight: 500;
       font-size: {{ section.settings.heading_font_size }}px;
     }
     @media screen and (max-width:767px){
       #lumin-slide--{{ section.id }} .video-heading{
         font-size: {{ section.settings.heading_font_sizemob }}px;
       }
-    } 
-</style>
->>>>>>> c86b9f6491c0889f62bcdd6bb8784d13f3809830
+    }
+
 
 
 
@@ -577,7 +573,7 @@
       "type": "range",
       "id": "heading_font_size",
       "label": "Desktop Heading Font Size",
-      "default": 24,
+      "default": 40,
       "min": 16,
       "max": 72,
       "step": 1
@@ -586,7 +582,7 @@
       "type": "range",
       "id": "heading_font_sizemob",
       "label": "Mobile Heading Font Size",
-      "default": 24,
+      "default": 30,
       "min": 16,
       "max": 72,
       "step": 1

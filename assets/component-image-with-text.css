@@ -156,6 +156,9 @@
   .image-with-text.collapse-borders:not(.image-with-text--overlap) .image-with-text__content {
     border-top: 0;
   }
+  .image-with-text__content{
+    padding: 30px 0 0 0;
+  }
 }
 
 .image-with-text__content--mobile-right > * {
@@ -428,7 +431,7 @@
 
 h2.image-with-text__heading.inline-richtext.h1 {
   color: #231F20;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .image-with-text__text p {

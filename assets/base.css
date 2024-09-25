@@ -1059,6 +1059,10 @@ summary::-webkit-details-marker {
   .grid--3-col-desktop .grid__item {
     width: calc(33.33% - var(--grid-desktop-horizontal-spacing) * 2 / 3);
     max-width: calc(33.33% - var(--grid-desktop-horizontal-spacing) * 2 / 3);
+    flex: 1 1 calc(25% - 20px);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
   }
 
   .grid--2-col-desktop .grid__item {
@@ -1115,7 +1119,8 @@ summary::-webkit-details-marker {
   }
 
   .grid--peek.slider .grid__item:first-of-type {
-    margin-left: 1.5rem;
+    margin-left: 0;
+    /* margin-left: 1.5rem; */
   }
 
   /* Fix to show some space at the end of our sliders in all browsers */
@@ -1294,6 +1299,7 @@ button.shopify-payment-button__button--unbranded {
   padding: 0 3rem;
   cursor: pointer;
   font: inherit;
+  border-radius: 6px;
   font-size: 1.5rem;
   text-decoration: none;
   color: rgb(var(--color-button-text));
@@ -2561,6 +2567,13 @@ product-info .loading__spinner:not(.hidden)~*,
   .header--mobile-left {
     grid-template-columns: auto 2fr 1fr;
   }
+}
+
+@media screen and (max-width: 575px){
+  .header--mobile-left .header__heading,
+    .header--mobile-left .header__heading-link {
+      margin: 0 auto;
+    }
 }
 
 @media screen and (min-width: 990px) {
@@ -4535,7 +4548,7 @@ sticky-header {
 
 .gmVdoSldWrap {
   background-color: white;
-  border-radius: 8px;
+  border-radius: 12px;
 }
 
 .gmPrdctWrap {

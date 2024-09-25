@@ -16,7 +16,10 @@
         {% render 'icon-close' %}
       </span>
     </summary>
-    <div id="menu-drawer" class="sw-menudrawer gradient menu-drawer motion-reduce color-{{ section.settings.menu_color_scheme }}">
+    <div
+      id="menu-drawer"
+      class="sw-menudrawer gradient menu-drawer motion-reduce color-{{ section.settings.menu_color_scheme }}"
+    >
       <div class="menu-drawer__inner-container">
         <div class="menu-drawer__navigation-container">
           <nav class="menu-drawer__navigation">
@@ -124,38 +127,54 @@
               {%- endfor -%}
             </ul>
             {% for block in section.blocks %}
-            {% if block.type == 'secondary_menus' and block.settings.secondary_menu %}
-            <div id="cartdrawer" class="secondary-main">
-              <ul class="menu list-menu list-menu--inline" role="list">
-                {% for link in block.settings.secondary_menu.links %}
-                <li class="menu-link">
-                  <a id="HeaderMenu-bestsellers" class="header__menu-item list-menu__item link link--text focus-inset"
-                    href="{{link.url}}">{{link.title}}</a>
-                  {% if link.links.size > 0 %}
-                  <ul class="menu dropdown-child">
-                    {% for child_link in link.links %}
-                    <li class="menu-link">
-                      <a id="HeaderMenu-bestsellers" class="header__menu-item list-menu__item link link--text focus-inset"
-                        href="{{child_link.url}}">{{child_link.title}}</a>
-                      {% if child_link.links.size > 0 %}
-                      <ul class="menu dropdown-grandchild">
-                        {% for grandchild_link in child_link.links %}
-                        <li class="menu-link">
-                          <a id="HeaderMenu-bestsellers" class="header__menu-item list-menu__item link link--text focus-inset"
-                            href="{{grandchild_link.url}}">{{grandchild_link.title}}</a>
-                        </li>
-                        {% endfor %}
-                      </ul>
-                      {% endif %}
-                    </li>
+              {% if block.type == 'secondary_menus' and block.settings.secondary_menu %}
+                <div id="cartdrawer" class="secondary-main">
+                  <h3 class="menu-title">Quick Links</h3>
+                  <ul class="menu list-menu list-menu--inline" role="list">
+                    {% for link in block.settings.secondary_menu.links %}
+                      <li class="menu-link">
+                        <a
+                          id="HeaderMenu-bestsellers"
+                          class="header__menu-item list-menu__item link link--text focus-inset"
+                          href="{{link.url}}"
+                        >
+                          {{- link.title -}}
+                        </a>
+                        {% if link.links.size > 0 %}
+                          <ul class="menu dropdown-child">
+                            {% for child_link in link.links %}
+                              <li class="menu-link">
+                                <a
+                                  id="HeaderMenu-bestsellers"
+                                  class="header__menu-item list-menu__item link link--text focus-inset"
+                                  href="{{child_link.url}}"
+                                >
+                                  {{- child_link.title -}}
+                                </a>
+                                {% if child_link.links.size > 0 %}
+                                  <ul class="menu dropdown-grandchild">
+                                    {% for grandchild_link in child_link.links %}
+                                      <li class="menu-link">
+                                        <a
+                                          id="HeaderMenu-bestsellers"
+                                          class="header__menu-item list-menu__item link link--text focus-inset"
+                                          href="{{grandchild_link.url}}"
+                                        >
+                                          {{- grandchild_link.title -}}
+                                        </a>
+                                      </li>
+                                    {% endfor %}
+                                  </ul>
+                                {% endif %}
+                              </li>
+                            {% endfor %}
+                          </ul>
+                        {% endif %}
+                      </li>
                     {% endfor %}
                   </ul>
-                  {% endif %}
-                </li>
-                {% endfor %}
-              </ul>
-            </div>
-            {% endif %}
+                </div>
+              {% endif %}
             {% endfor %}
           </nav>
           <div class="menu-drawer__utility-links">

@@ -45,15 +45,6 @@
           "settings": {
           }
         },
-        "gm_feature_J8bMkf": {
-          "type": "gm-feature",
-          "settings": {
-            "text": "",
-            "text_size": 16,
-            "padding_top": 8,
-            "padding_bottom": 8
-          }
-        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -73,12 +64,12 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/payment_getway_800x_1fdd630c-9d0f-4e1b-9d19-947cee56cff5.svg",
-            "image_size": 100,
+            "image_size": 75,
             "icon_mobile_size": 100,
             "image_border": 0,
             "img_position": "center",
             "padding_top": 0,
-            "padding_bottom": 36
+            "padding_bottom": 0
           }
         },
         "264e37ac-8ac8-475c-9f10-973d46bb217d": {
@@ -99,8 +90,8 @@
             "border_radius": 0,
             "padding_top": 0,
             "padding_bottom": 0,
-            "margin_top": 16,
-            "margin_bottom": 16
+            "margin_top": 20,
+            "margin_bottom": 0
           }
         }
       },
@@ -109,7 +100,6 @@
         "ad73ef22-d96e-41c5-b4e1-ed8d9daf2239",
         "price",
         "description",
-        "gm_feature_J8bMkf",
         "variant_picker",
         "buy_buttons",
         "image_Hbm4K8",
@@ -135,7 +125,7 @@
         "padding_top": 12,
         "padding_bottom": 100,
         "padding_tops": 12,
-        "padding_bottoms": 70
+        "padding_bottoms": 20
       }
     },
     "tabs_XLgmRt": {
@@ -146,7 +136,7 @@
           "settings": {
             "heading": "Description",
             "description": true,
-            "tab_content": "{{ product.metafields.custom.product_details_controller.value.description | metafield_tag }}",
+            "tab_content": "<p>Some text here<\/p>",
             "page": ""
           }
         },
@@ -185,7 +175,7 @@
         "tab_font_mb_align": "left",
         "tab_content_align_mb": "left",
         "show_border": false,
-        "padding_top": 0,
+        "padding_top": 36,
         "padding_bottom": 0
       }
     },
@@ -232,7 +222,7 @@
             "others": false
           }
         },
-        "row_HQkeQQ": {
+        "row_PGyN7k": {
           "type": "row",
           "settings": {
             "benefit": "Product Range",
@@ -247,11 +237,11 @@
         "row_F3drHV",
         "row_g7rhKx",
         "row_DG9rn7",
-        "row_HQkeQQ"
+        "row_PGyN7k"
       ],
       "settings": {
         "title": "Why Choose Us",
-        "titel_desktop": 37,
+        "titel_desktop": 40,
         "titel_mob": 30,
         "heading_size": "h1",
         "text": "",
@@ -263,15 +253,15 @@
         "color_scheme": "background-1",
         "logo_width": 90,
         "mobile_logo_width": 60,
-        "us_label": "Fashion Colour",
+        "us_label": "Fashion  Colour",
         "others_label": "Them",
         "benefit_color_scheme": "accent-1",
         "checkmark_color": "#bf0436",
         "icon_cells_color_scheme": "background-1",
         "table_corner_radius": 10,
         "table_shadow_opacity": 15,
-        "table_shadow_horizontal_offset": 1,
-        "table_shadow_vertical_offset": 1,
+        "table_shadow_horizontal_offset": 3,
+        "table_shadow_vertical_offset": 3,
         "table_shadow_blur": 0,
         "table_border_thickness": 1,
         "padding_top": 100,
@@ -288,7 +278,7 @@
           "settings": {
             "heading": "What is the Fashion Colour Lip Crayon?",
             "icon": "none",
-            "row_content": "{{ product.metafields.custom.product_details_controller.value.product_fa_qs | metafield_tag: field: 'question' }}<p>What is the Fashion Colour Lip Crayon?<\/p><p><\/p>",
+            "row_content": "{{ product.metafields.custom.product_details_controller.value.product_fa_qs | metafield_tag: field: 'question' }}",
             "page": ""
           }
         },
@@ -319,12 +309,12 @@
             "page": ""
           }
         },
-        "collapsible_row_HHTMbX": {
+        "collapsible_row_LejpVY": {
           "type": "collapsible_row",
           "settings": {
             "heading": "How long does the lip crayon last?",
             "icon": "none",
-            "row_content": "{{ product.metafields.custom.product_details_controller.value.product_fa_qs | metafield_tag: field: 'question' }}",
+            "row_content": "<p>{{ product.metafields.custom.product_details_controller.value.product_fa_qs | metafield_tag: field: 'question' }}<\/p>",
             "page": ""
           }
         }
@@ -334,22 +324,26 @@
         "template--15124688076883__c0ef23cf-5481-4b47-9b78-3c28134c079a-collapsible_row-2",
         "template--15124688076883__c0ef23cf-5481-4b47-9b78-3c28134c079a-collapsible_row-3",
         "template--15124688076883__c0ef23cf-5481-4b47-9b78-3c28134c079a-collapsible_row-4",
-        "collapsible_row_HHTMbX"
+        "collapsible_row_LejpVY"
       ],
       "settings": {
         "caption": "",
         "heading": "Frequently Asked Questions",
         "desktop_heading_font_size": 40,
         "chkbx": false,
+        "faq_position": "first",
+        "show_button": true,
         "heading_size": "h1",
-        "heading_alignment": "center",
+        "heading_alignment": "left",
         "layout": "section",
-        "color_scheme": "background-1",
+        "color_scheme": "accent-1",
         "container_color_scheme": "accent-1",
         "open_first_collapsible_row": false,
         "image_ratio": "small",
         "desktop_layout": "image_second",
         "heading_size_row": "h3",
+        "button_label": "More FAQs",
+        "button_link": "shopify:\/\/pages\/faqs",
         "padding_top": 0,
         "padding_bottom": 0,
         "mobile_padding_top": 0,
@@ -385,10 +379,10 @@
         "padding_bottommob": 80
       }
     },
-    "our_collection_TJDeFG": {
+    "our_collection_YGYzgA": {
       "type": "our-collection",
       "blocks": {
-        "tab_Jtjnpr": {
+        "tab_CdEbPa": {
           "type": "tab",
           "settings": {
             "tab_title": "Face",
@@ -407,32 +401,39 @@
             "product4_image": "shopify:\/\/shop_images\/453519475_806540405021384_8591192359653799592_n-removebg-preview_1.png",
             "product4_title": "",
             "product4_subtitle": "Serum & Toner",
-            "product4_link": "#Serum & Toner"
+            "product4_link": "shopify:\/\/collections\/serum-toner",
+            "product5_image": "shopify:\/\/shop_images\/453519475_806540405021384_8591192359653799592_n-removebg-preview_1.png",
+            "product5_title": "",
+            "product5_subtitle": "Serum & Toners",
+            "product5_link": "shopify:\/\/collections\/serum-toner"
           }
         },
-        "tab_C8b8yX": {
+        "tab_T4ArmF": {
           "type": "tab",
           "settings": {
             "tab_title": "Lips",
-            "product1_image": "shopify:\/\/shop_images\/453519475_806540405021384_8591192359653799592_n-removebg-preview_1.png",
+            "product1_image": "shopify:\/\/shop_images\/Card.png",
             "product1_title": "",
             "product1_subtitle": "Concealer & Primer",
             "product1_link": "shopify:\/\/collections\/concealer-and-primer",
-            "product2_image": "shopify:\/\/shop_images\/453519475_806540405021384_8591192359653799592_n-removebg-preview_1.png",
+            "product2_image": "shopify:\/\/shop_images\/Card.png",
             "product2_title": "",
             "product2_subtitle": "Foundation",
             "product2_link": "shopify:\/\/collections\/foundation",
-            "product3_image": "shopify:\/\/shop_images\/453519475_806540405021384_8591192359653799592_n-removebg-preview_1.png",
+            "product3_image": "shopify:\/\/shop_images\/Card.png",
             "product3_title": "",
             "product3_subtitle": "Face Powder\/Compact",
             "product3_link": "shopify:\/\/collections\/face-powder-compact",
-            "product4_image": "shopify:\/\/shop_images\/453519475_806540405021384_8591192359653799592_n-removebg-preview_1.png",
+            "product4_image": "shopify:\/\/shop_images\/Card.png",
             "product4_title": "",
             "product4_subtitle": "Serum & Toner",
-            "product4_link": "#Serum & Toner"
+            "product4_link": "shopify:\/\/collections\/serum-toner",
+            "product5_title": "",
+            "product5_subtitle": "",
+            "product5_link": ""
           }
         },
-        "tab_Y6nGtc": {
+        "tab_ExNDhU": {
           "type": "tab",
           "settings": {
             "tab_title": "Nails",
@@ -451,52 +452,224 @@
             "product4_image": "shopify:\/\/shop_images\/453519475_806540405021384_8591192359653799592_n-removebg-preview_1.png",
             "product4_title": "",
             "product4_subtitle": "Serum & Toner",
-            "product4_link": "#Serum & Toner"
+            "product4_link": "shopify:\/\/collections\/serum-toner",
+            "product5_title": "",
+            "product5_subtitle": "",
+            "product5_link": ""
           }
         },
-        "tab_jbg4j7": {
+        "tab_LtUGGx": {
           "type": "tab",
           "settings": {
-            "tab_title": "Nails",
-            "product1_image": "shopify:\/\/shop_images\/453519475_806540405021384_8591192359653799592_n-removebg-preview_1.png",
+            "tab_title": "Eyes",
+            "product1_image": "shopify:\/\/shop_images\/Card.png",
             "product1_title": "",
             "product1_subtitle": "Concealer & Primer",
             "product1_link": "shopify:\/\/collections\/concealer-and-primer",
-            "product2_image": "shopify:\/\/shop_images\/453519475_806540405021384_8591192359653799592_n-removebg-preview_1.png",
+            "product2_image": "shopify:\/\/shop_images\/Card.png",
             "product2_title": "",
             "product2_subtitle": "Foundation",
             "product2_link": "shopify:\/\/collections\/foundation",
-            "product3_image": "shopify:\/\/shop_images\/453519475_806540405021384_8591192359653799592_n-removebg-preview_1.png",
+            "product3_image": "shopify:\/\/shop_images\/Card.png",
             "product3_title": "",
             "product3_subtitle": "Face Powder\/Compact",
             "product3_link": "shopify:\/\/collections\/face-powder-compact",
-            "product4_image": "shopify:\/\/shop_images\/453519475_806540405021384_8591192359653799592_n-removebg-preview_1.png",
+            "product4_image": "shopify:\/\/shop_images\/Card.png",
             "product4_title": "",
             "product4_subtitle": "Serum & Toner",
-            "product4_link": "#Serum & Toner"
+            "product4_link": "shopify:\/\/collections\/serum-toner",
+            "product5_title": "",
+            "product5_subtitle": "",
+            "product5_link": ""
+          }
+        },
+        "tab_yhb4iq": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "",
+            "product1_image": "shopify:\/\/shop_images\/Card.png",
+            "product1_title": "",
+            "product1_subtitle": "Concealer & Primer",
+            "product1_link": "shopify:\/\/collections\/concealer-and-primer",
+            "product2_image": "shopify:\/\/shop_images\/Card.png",
+            "product2_title": "",
+            "product2_subtitle": "Foundation",
+            "product2_link": "shopify:\/\/collections\/foundation",
+            "product3_image": "shopify:\/\/shop_images\/Card.png",
+            "product3_title": "",
+            "product3_subtitle": "Face Powder\/Compact",
+            "product3_link": "shopify:\/\/collections\/face-powder-compact",
+            "product4_image": "shopify:\/\/shop_images\/Card.png",
+            "product4_title": "",
+            "product4_subtitle": "Serum & Toner",
+            "product4_link": "shopify:\/\/collections\/serum-toner",
+            "product5_title": "",
+            "product5_subtitle": "",
+            "product5_link": ""
           }
         }
       },
       "block_order": [
-        "tab_Jtjnpr",
-        "tab_C8b8yX",
-        "tab_Y6nGtc",
-        "tab_jbg4j7"
+        "tab_CdEbPa",
+        "tab_T4ArmF",
+        "tab_ExNDhU",
+        "tab_LtUGGx",
+        "tab_yhb4iq"
       ],
-      "disabled": true,
       "settings": {
         "heading": "Our Collection",
         "heading_alignment": "center",
         "subtitle_font_size": 20,
         "subtitle_font_sizes": 16,
-        "color_scheme": "",
+        "color_scheme": "accent-1",
         "content_text": "#0d0d0d",
         "text_font_size": 36,
-        "text_font_sizes": 16,
+        "text_font_sizes": 20,
+        "dskSld": 4,
+        "dskSpc": 42,
+        "tabSld": 4.8,
+        "tabSpc": 20,
+        "mblSld": 1.2,
+        "mblSpc": 16,
         "secPdgTop": 10,
         "secPdgBtm": 100,
         "mblPdgTop": 10,
         "mblPdgBtm": 80
+      }
+    },
+    "gm_slider_H73iEy": {
+      "type": "gm-slider",
+      "blocks": {
+        "slide_4bY9Bg": {
+          "type": "slide",
+          "settings": {
+            "imgPkr": "shopify:\/\/shop_images\/459570578_18455707981040959_4240917642604049776_n.jpg",
+            "img_url": "https:\/\/www.instagram.com\/p\/C_4u1wCvWPH\/",
+            "ttl": "",
+            "subTtl": ""
+          }
+        },
+        "slide_9mkmKd": {
+          "type": "slide",
+          "settings": {
+            "imgPkr": "shopify:\/\/shop_images\/Snapinsta.app_435475274_18425631031040959_548475629733840636_n_1024.jpg",
+            "img_url": "https:\/\/www.instagram.com\/p\/C_4u1wCvWPH\/",
+            "ttl": "",
+            "subTtl": ""
+          }
+        },
+        "slide_fG84By": {
+          "type": "slide",
+          "settings": {
+            "imgPkr": "shopify:\/\/shop_images\/SaveClip.App_460644640_18456491767040959_7836400184949531475_n.jpg",
+            "img_url": "https:\/\/www.instagram.com\/p\/C_4u1wCvWPH\/",
+            "ttl": "",
+            "subTtl": ""
+          }
+        },
+        "slide_HgHEjF": {
+          "type": "slide",
+          "settings": {
+            "imgPkr": "shopify:\/\/shop_images\/SaveClip.App_458384373_18454178872040959_2339893394990115624_n.jpg",
+            "img_url": "https:\/\/www.instagram.com\/p\/C_4u1wCvWPH\/",
+            "ttl": "",
+            "subTtl": ""
+          }
+        },
+        "slide_p6A9gU": {
+          "type": "slide",
+          "settings": {
+            "imgPkr": "shopify:\/\/shop_images\/SnapInsta.io_439314910_18427912174040959_5884374809014697499_n.jpg",
+            "img_url": "https:\/\/www.instagram.com\/p\/C_4u1wCvWPH\/",
+            "ttl": "",
+            "subTtl": ""
+          }
+        },
+        "slide_ckGVXp": {
+          "type": "slide",
+          "settings": {
+            "imgPkr": "shopify:\/\/shop_images\/Discover_Fashion_Colour_s_curated_lip_shades._Make_every_moment_memorable_...._fashioncolour_cosmetics_makeupartist_professionalmua_mua_makeup_wakeupandmakeup_beauty.jpg",
+            "img_url": "https:\/\/www.instagram.com\/p\/C_4u1wCvWPH\/",
+            "ttl": "",
+            "subTtl": ""
+          }
+        },
+        "slide_xnfKba": {
+          "type": "slide",
+          "settings": {
+            "imgPkr": "shopify:\/\/shop_images\/Banish_Stubborn_Holi_Colors_Effortlessly_With_Our_Clean_It_Zero_Gentle_Makeup_Remover_Balm_Let_Your_Skin_Revel_In_The_Joy_Of_Effortless_Cleansing_Post-Celebrations._Shop_Now_Link_in_B.jpg",
+            "img_url": "https:\/\/www.instagram.com\/p\/C_4u1wCvWPH\/",
+            "ttl": "",
+            "subTtl": ""
+          }
+        },
+        "slide_PNXQXX": {
+          "type": "slide",
+          "settings": {
+            "imgPkr": "shopify:\/\/shop_images\/SnapInsta.io_425352915_1583302332421054_3019058165801313718_n.jpg",
+            "img_url": "https:\/\/www.instagram.com\/p\/C_4u1wCvWPH\/",
+            "ttl": "",
+            "subTtl": ""
+          }
+        },
+        "slide_xiFEEK": {
+          "type": "slide",
+          "settings": {
+            "imgPkr": "shopify:\/\/shop_images\/A_flush_of_love_on_your_cheeks_Celebrate_love_with_our_exquisite_collection_link_in_bio_...._fashioncolour_cosmetics_makeupartist_professionalmua_mua_makeup_wakeupandmakeup_beauty.jpg",
+            "img_url": "https:\/\/www.instagram.com\/p\/C_4u1wCvWPH\/",
+            "ttl": "",
+            "subTtl": ""
+          }
+        },
+        "slide_iWRGCP": {
+          "type": "slide",
+          "settings": {
+            "imgPkr": "shopify:\/\/shop_images\/457670550_18453079177040959_1722093851528496731_n.jpg",
+            "img_url": "https:\/\/www.instagram.com\/p\/C_4u1wCvWPH\/",
+            "ttl": "",
+            "subTtl": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_4bY9Bg",
+        "slide_9mkmKd",
+        "slide_fG84By",
+        "slide_HgHEjF",
+        "slide_p6A9gU",
+        "slide_ckGVXp",
+        "slide_xnfKba",
+        "slide_PNXQXX",
+        "slide_xiFEEK",
+        "slide_iWRGCP"
+      ],
+      "settings": {
+        "preTtl": "@fashioncolourofficial",
+        "subtitle_font_size": 20,
+        "subtitle_font_sizemob": 16,
+        "ttl": "Follow us on Instagram",
+        "heading_font_size": 37,
+        "heading_font_sizemob": 30,
+        "subTtl": "",
+        "btnTxt": "",
+        "btnUrl": "",
+        "chkBx": false,
+        "overlays_box": true,
+        "dskSld": 5,
+        "dskSpc": 14,
+        "tabSld": 3,
+        "tabSpc": 14,
+        "mblSld": 2,
+        "mblSpc": 14,
+        "sldAtply": 1.5,
+        "pagination": true,
+        "navigation": true,
+        "color_scheme": "",
+        "sldCol": "#ffffff",
+        "secPdgTop": 0,
+        "secPdgBtm": 100,
+        "secPdgTopMbl": 0,
+        "secPdgBtmMbl": 80
       }
     }
   },
@@ -507,6 +680,7 @@
     "comparison_table_XH6XXt",
     "c0ef23cf-5481-4b47-9b78-3c28134c079a",
     "related-products",
-    "our_collection_TJDeFG"
+    "our_collection_YGYzgA",
+    "gm_slider_H73iEy"
   ]
 }

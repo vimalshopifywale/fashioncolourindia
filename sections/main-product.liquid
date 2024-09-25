@@ -39,14 +39,14 @@
 
   {%- style -%}
     .section-{{ section.id }}-padding {
-      padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-      padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+      padding-top: {{ section.settings.padding_top}}px;
+      padding-bottom: {{ section.settings.padding_bottom}}px;
     }
 
     @media screen and (max-width: 750px) {
       .section-{{ section.id }}-padding {
-        padding-top: {{ section.settings.padding_tops | times: 0.75 | round: 0 }}px;
-      padding-bottom: {{ section.settings.padding_bottoms | times: 0.75 | round: 0 }}px;
+        padding-top: {{ section.settings.padding_tops}}px;
+      padding-bottom: {{ section.settings.padding_bottoms}}px;
       }
     }
   {%- endstyle -%}
@@ -114,7 +114,7 @@
                 {% render 'gm-bundle', block: block %}
               {%- when 'auto_tabs' -%}
                 {%- style -%}
-                  .block-{{ block.id }}-padding {
+                  /* .block-{{ block.id }}-padding {
                     padding-top: {{ block.settings.padding_top | times: 0.75 | round: 0 }}px;
                     padding-bottom: {{ block.settings.padding_bottom | times: 0.75 | round: 0 }}px;
                   }
@@ -124,7 +124,7 @@
                       padding-top: {{ block.settings.padding_top }}px;
                       padding-bottom: {{ block.settings.padding_bottom }}px;
                     }
-                  }
+                  } */
                 {%- endstyle -%}
                 {% assign scheme1 = settings.color_schemes | first %}
                 <div
@@ -6048,7 +6048,7 @@ function updateCountdown() {
       "step": 4,
       "unit": "px",
       "label": "t:sections.all.padding.padding_top",
-      "default": 36
+      "default": 12
     },
     {
       "type": "range",
@@ -6058,7 +6058,7 @@ function updateCountdown() {
       "step": 4,
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
-      "default": 36
+      "default": 100
     },
     {
       "type": "header",
@@ -6072,7 +6072,7 @@ function updateCountdown() {
       "step": 2,
       "unit": "px",
       "label": "Mobile Padding Top",
-      "default": 8
+      "default": 12
     },
     {
       "type": "range",
@@ -6082,7 +6082,7 @@ function updateCountdown() {
       "step": 2,
       "unit": "px",
       "label": "Mobile Padding Bottom",
-      "default": 8
+      "default": 20
     }
   ]
 }

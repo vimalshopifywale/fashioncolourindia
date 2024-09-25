@@ -86,14 +86,6 @@
             "slctPrdct": "fashion-colour-tinted-moisturizer-full-coverage-cream-spf15"
           }
         },
-        "slide_VaJ6eV": {
-          "type": "slide",
-          "settings": {
-            "imgPkr": "shopify:\/\/shop_images\/ee66a05666b7446e9643af29a3c5099f.gif",
-            "video": "https:\/\/cdn.shopify.com\/s\/files\/1\/0668\/3364\/5708\/files\/ee66a05666b7446e9643af29a3c5099f.gif?v=1726770360",
-            "slctPrdct": "platinum-matte-no-transfer-lipstick-3-8gm"
-          }
-        },
         "slide_9Eq6UQ": {
           "type": "slide",
           "settings": {
@@ -201,7 +193,6 @@
       },
       "block_order": [
         "slide_GYiraM",
-        "slide_VaJ6eV",
         "slide_9Eq6UQ",
         "slide_PDd4G4",
         "slide_wDPj49",
@@ -366,7 +357,7 @@
         "sldAtply": 1.5,
         "pagination": true,
         "navigation": true,
-        "color_scheme": "scheme-6c3ff99c-8da2-435f-9574-05cdd95811b2",
+        "color_scheme": "scheme-5c4b9096-d9cf-4a7d-9a25-cd8bc84f69c3",
         "sldCol": "#ffffff",
         "secPdgTop": 20,
         "secPdgBtm": 20,

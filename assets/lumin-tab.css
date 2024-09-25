@@ -5,7 +5,7 @@ ul.custom--tabs {
   white-space: nowrap;
   gap: 38px;
   overflow-x: auto;
-  margin: 0;
+  margin: 0 auto;
 }
 .custom__tab-content p span,
 .custom__tab-content p {
@@ -40,6 +40,13 @@ ul.custom--tabs {
 }
 .active-always {
   display: block !important;
+}
+.tab--subtitel{
+    display: block;
+    font-weight: 500;
+    line-height: 1;
+    margin-bottom: 20px;
+  color: rgb(var(--color-button)) !important;
 }
 .tab__list h4.custom-tab.active {
   color: rgb(var(--color-button)) !important;
@@ -78,5 +85,6 @@ ul.custom--tabs {
   }
   ul.custom--tabs{
     gap: 20px;
+    padding: 0;
   }
 }

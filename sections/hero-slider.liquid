@@ -32,6 +32,10 @@
 {% endif %}
 
 <style>
+  .padding--{{ section.id }}{
+      padding-top: {{section.settings.padding_top}}px;
+      padding-bottom: {{section.settings.padding_bottom}}px !important;
+  }
     .growth-slide {
        z-index:2;
        margin-top: -24px;
@@ -44,7 +48,11 @@
     .growth-slide {
        max-width: 100%;
        left: 0;
-           }
+    }
+    .padding--{{ section.id }}{
+      padding-top: {{section.settings.padding_topmob}}px;
+      padding-bottom: {{section.settings.padding_bottommob}}px !important;
+  }
   }
    .growth-slide .slider-button {
        height:20px;
@@ -144,8 +152,8 @@
     <style>
       @media screen and (max-width: 750px) {
         .slidshow-{{ section.id }} .slideshow__slide.grid__item{
-          padding-top: {{section.settings.padding_top}}px;
-          padding-bottom: {{section.settings.padding_bottom}}px;
+          padding-top: {{section.settings.padding_topmob}}px;
+          padding-bottom: {{section.settings.padding_bottommob}}px;
         }
       }
     </style>
@@ -168,7 +176,7 @@
         }
       </style>
       <div
-        class="slideshow__slide grid__item grid--1-col slider__slide"
+        class="slideshow__slide grid__item grid--1-col slider__slide padding--{{ section.id }}"
         id="Slide-{{ section.id }}-{{ forloop.index }}"
         {% if block.settings['link-2'] %}
           onclick="location.href='{{ block.settings.link-2  }}';" style="cursor: pointer;"
@@ -248,6 +256,8 @@
                     font-size:{{ block.settings.block_head_size-2 }}px !important;
                     line-height:{{ block.settings.block_head_line }};
                     margin-bottom:10px;
+                    font-weight: 200;
+                    letter-spacing: 1.0px;
                 }
                   @media screen and (max-width: 600px){
                     .lm-slide-head-{{block.id}} {
@@ -529,6 +539,10 @@
       "default": "Slideshow about our brand"
     },
     {
+      "type": "header",
+      "content": "Desktop padding"
+    },
+    {
       "type": "range",
       "id": "padding_top",
       "min": 0,
@@ -541,11 +555,35 @@
     {
       "type": "range",
       "id": "padding_bottom",
-      "min": 40,
+      "min": 0,
       "max": 100,
       "step": 4,
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
+      "default": 40
+    },
+    {
+      "type": "header",
+      "content": "Mobile padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_topmob",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Mobile Top Padding",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottommob",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Mobile Bottom Padding",
       "default": 40
     }
   ],
@@ -564,12 +602,12 @@
         {
           "type": "image_picker",
           "id": "image_1",
-          "label": "Select an image"
+          "label": "Select a Star image"
         },
         {
           "type": "image_picker",
           "id": "image_2",
-          "label": "Select a Right image"
+          "label": "Select a Product image"
         },
         {
           "type": "range",

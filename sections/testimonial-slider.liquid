@@ -176,17 +176,17 @@
   }
 
   .lumin-slide--{{ section.id }} .flickity-prev-next-button.next {
-    right: 10px;
+    right: -20px;
   }
 
   .lumin-slide--{{ section.id }} .flickity-prev-next-button.previous {
-    left: 10px;
+    left: -20px;
   }
-
+    
     .lumin-slide__image__wrapper svg{
       display: block;
     }
-
+  
     .lumin-slide__image__wrapper img{
       object-fit: cover;
       top: 0;
@@ -199,23 +199,13 @@
     }
     #lumin-slide--{{ section.id }} .video-heading{
       margin: 0 0 38px;
-      font-weight: 500;
       font-size: {{ section.settings.heading_font_size }}px;
-    }
-
-    @media screen and (max-width:1024px){
-      .lumin-slide--{{ section.id }} .lumin-slide__flex-item:not(.flickity-enabled){
-        margin-right: calc( ({{ section.settings.per_rows }} * {{ section.settings.gaps }}px) / ({{ section.settings.per_rows }} - 1));
-        width: calc(100% / {{ section.settings.per_rows }} - {{ section.settings.gaps }}px);
-        display: inline-flex;
-        flex: 0 0 calc(100% / {{ section.settings.per_rows }} - {{ section.settings.gaps }}px);
-      }
     }
     @media screen and (max-width:767px){
       #lumin-slide--{{ section.id }} .video-heading{
         font-size: {{ section.settings.heading_font_sizemob }}px;
       }
-    }
+    } 
 
 
 
@@ -312,13 +302,13 @@
       visibility: visible;
     }
 
-    /* .lumin-slide--{{ section.id }} .flickity-prev-next-button.next {
+    .lumin-slide--{{ section.id }} .flickity-prev-next-button.next {
       right: -10px;
     }
 
     .lumin-slide--{{ section.id }} .flickity-prev-next-button.previous {
       left: -10px;
-    } */
+    }
 
   }
 
@@ -582,7 +572,7 @@
       "type": "range",
       "id": "heading_font_size",
       "label": "Desktop Heading Font Size",
-      "default": 40,
+      "default": 24,
       "min": 16,
       "max": 72,
       "step": 1
@@ -591,7 +581,7 @@
       "type": "range",
       "id": "heading_font_sizemob",
       "label": "Mobile Heading Font Size",
-      "default": 30,
+      "default": 24,
       "min": 16,
       "max": 72,
       "step": 1
@@ -631,37 +621,14 @@
       "type": "range",
       "id": "per_row",
       "label": "Icons per slide",
-      "default": 4,
+      "default": 3,
       "min": 2,
-      "step": 0.1,
+      "step": 1,
       "max": 8
     },
     {
       "type": "range",
       "id": "gap",
-      "min": 0,
-      "max": 40,
-      "label": "Spacing gap",
-      "unit": "px",
-      "step": 1,
-      "default": 20
-    },
-    {
-      "type": "header",
-      "content": "Middle Size"
-    },
-    {
-      "type": "range",
-      "id": "per_rows",
-      "label": "Icons per slide",
-      "default": 4,
-      "min": 2,
-      "step": 0.1,
-      "max": 8
-    },
-    {
-      "type": "range",
-      "id": "gaps",
       "min": 0,
       "max": 40,
       "label": "Spacing gap",
@@ -817,7 +784,7 @@
     },
     {
       "type": "header",
-      "content": "Marging Desktop"
+      "content": "t:sections.all.padding.section_padding_heading"
     },
     {
       "type": "range",
@@ -840,10 +807,6 @@
       "default": 0
     },
     {
-      "type": "header",
-      "content": "Desktop Padding"
-    },
-    {
       "type": "range",
       "id": "padding_top",
       "min": 0,
@@ -862,10 +825,6 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 40
-    },
-    {
-      "type": "header",
-      "content": "Mobile Padding"
     },
     {
       "type": "range",

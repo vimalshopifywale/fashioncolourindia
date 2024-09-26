@@ -1,78 +1,54 @@
 <div class="instagram-main color-{{ section.settings.color_scheme }} gradient ">
-  <div class="page-width gmSld-{{section.id}}">
-    <div class="vdoSldCntWrap">
-      {% if section.settings.preTtl != blank %}
-        <span class="vdo-subtitel">{{ section.settings.preTtl }}</span>
-      {% endif %}
-      {% if section.settings.ttl != blank %}
-        <h2 class="h1 video-heading">{{ section.settings.ttl }}</h2>
-      {% endif %}
-      {% if section.settings.subTtl != blank %}
-        <p class="body">{{ section.settings.subTtl }}</p>
-      {% endif %}
-      {% if section.settings.btnUrl != blank %}
-        <a href="{{section.settings.btnUrl}}" role="link" class="button button--primary">
-          {{- section.settings.btnTxt -}}
-        </a>
-      {% endif %}
-    </div>
 
-    <div class="swiper swp-{{section.id}}">
-      <div class="swiper-wrapper">
-        {% if section.settings.chkBx %}
-          {% for item in product.metafields.custom.product_details_controller.value.gm_ingredients.value %}
-            <div
-              class="swiper-slide vdoSldWrap"
-              style="background-color: {{section.settings.sldCol}}; border-radius:14px;"
-            >
-              <div class="sldWrap">
+
+<div class="page-width gmSld-{{section.id}}">
+<div class="vdoSldCntWrap">
+    {% if section.settings.preTtl != blank %}
+        <span class="vdo-subtitel">{{section.settings.preTtl}}</span>
+    {% endif %}
+    {% if section.settings.ttl != blank %}
+        <h2 class="h1 video-heading">{{section.settings.ttl}}</h2>
+    {% endif %}
+  {% if section.settings.subTtl != blank %}
+    <p class="body">{{section.settings.subTtl}}</p>
+  {% endif %}
+  {% if section.settings.btnUrl != blank %}
+        <a href="{{section.settings.btnUrl}}" role="link" class="button button--primary">{{section.settings.btnTxt}}</a>
+    {% endif %}
+</div>
+
+<div class="swiper swp-{{section.id}}">
+  <div class="swiper-wrapper">
+    {% if section.settings.chkBx %}
+        {% for item in product.metafields.custom.product_details_controller.value.gm_ingredients.value %}
+          <div class="swiper-slide vdoSldWrap" style="background-color: {{section.settings.sldCol}}; border-radius:14px;">
+            <div class="sldWrap">
                 {% if item.ingredients_icon.value != blank %}
-                  <img
-                    src="{{item.ingredients_icon.value |  image_url: width: 200}}"
-                    alt="{{item.ingredients_icon.value.alt}}"
-                    style="max-width: 100px;"
-                    width=""
-                    height=""
-                  >
+                    <img src="{{item.ingredients_icon.value |  image_url: width: 200}}" alt="{{item.ingredients_icon.value.alt}}" style="max-width: 100px;" width="" height="">
                 {% endif %}
                 {% if item.ingredients_name.value != blank %}
-                  <p>{{ item.ingredients_name.value }}</p>
+                    <p>{{item.ingredients_name.value}}</p>
                 {% endif %}
                 {% if item.gm_ingredients_description.value != blank %}
-                  <span>{{ item.gm_ingredients_description.value }}</span>
+                    <span>{{item.gm_ingredients_description.value}}</span>
                 {% endif %}
-              </div>
             </div>
-          {% endfor %}
+          </div>
+        {% endfor %}     
         {% else %}
-          {% for block in section.blocks %}
-            <div class="swiper-slide" style="background-color: {{section.settings.sldCol}}; border-radius:14px;">
-              <div class="sldWrap">
-                {% if block.settings.img_url != blank %}
-                  <a href="{{block.settings.img_url}}" class="insta-box">
-                    {% if block.settings.imgPkr != blank %}
-                      <img
-                        src="{{block.settings.imgPkr |  image_url: width: 500}}"
-                        alt="{{block.settings.imgPkr.alt}}"
-                        width=""
-                        height=""
-                      >
-                    {% endif %}
-                    {% if section.settings.overlays_box == true %}
+        
+        {% for block in section.blocks %}
+          <div class="swiper-slide" style="background-color: {{section.settings.sldCol}}; border-radius:14px;">
+          <div class="sldWrap">
+              {% if block.settings.img_url !=blank %}
+                <a href="{{block.settings.img_url}}" class="insta-box">
+                  {% if block.settings.imgPkr != blank %}
+                    <img src="{{block.settings.imgPkr |  image_url: width: 500}}" alt="{{block.settings.imgPkr.alt}}" width="" height="">
+                  {% endif %}
+                  {% if section.settings.overlays_box == true %}
                       <div class="ovelay-box">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          xmlns:xlink="http://www.w3.org/1999/xlink"
-                          version="1.1"
-                          id="Capa_1"
-                          x="0px"
-                          y="0px"
-                          viewBox="0 0 24 24"
-                          style="enable-background:new 0 0 24 24;"
-                          xml:space="preserve"
-                          width="512"
-                          height="512"
-                        >
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px"
+                          y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve" width="512" height="512">
                           <g>
                             <path
                               d="M12,2.162c3.204,0,3.584,0.012,4.849,0.07c1.308,0.06,2.655,0.358,3.608,1.311c0.962,0.962,1.251,2.296,1.311,3.608   c0.058,1.265,0.07,1.645,0.07,4.849c0,3.204-0.012,3.584-0.07,4.849c-0.059,1.301-0.364,2.661-1.311,3.608   c-0.962,0.962-2.295,1.251-3.608,1.311c-1.265,0.058-1.645,0.07-4.849,0.07s-3.584-0.012-4.849-0.07   c-1.291-0.059-2.669-0.371-3.608-1.311c-0.957-0.957-1.251-2.304-1.311-3.608c-0.058-1.265-0.07-1.645-0.07-4.849   c0-3.204,0.012-3.584,0.07-4.849c0.059-1.296,0.367-2.664,1.311-3.608c0.96-0.96,2.299-1.251,3.608-1.311   C8.416,2.174,8.796,2.162,12,2.162 M12,0C8.741,0,8.332,0.014,7.052,0.072C5.197,0.157,3.355,0.673,2.014,2.014   C0.668,3.36,0.157,5.198,0.072,7.052C0.014,8.332,0,8.741,0,12c0,3.259,0.014,3.668,0.072,4.948c0.085,1.853,0.603,3.7,1.942,5.038   c1.345,1.345,3.186,1.857,5.038,1.942C8.332,23.986,8.741,24,12,24c3.259,0,3.668-0.014,4.948-0.072   c1.854-0.085,3.698-0.602,5.038-1.942c1.347-1.347,1.857-3.184,1.942-5.038C23.986,15.668,24,15.259,24,12   c0-3.259-0.014-3.668-0.072-4.948c-0.085-1.855-0.602-3.698-1.942-5.038c-1.343-1.343-3.189-1.858-5.038-1.942   C15.668,0.014,15.259,0,12,0z" />
@@ -82,69 +58,66 @@
                           </g>
                         </svg>
                       </div>
-                    {% endif %}
-                  </a>
+                  {% endif %}
+                  </a>  
                 {% endif %}
                 {% if block.settings.ttl != blank %}
-                  <p>{{ block.settings.ttl }}</p>
+                    <p>{{block.settings.ttl}}</p>
                 {% endif %}
                 {% if block.settings.subTtl != blank %}
-                  <span>{{ block.settings.subTtl }}</span>
+                    <span>{{block.settings.subTtl}}</span>
                 {% endif %}
-              </div>
             </div>
-          {% endfor %}
-        {% endif %}
-      </div>
-      <div
-        class="swiper-button-next gmCstm swNxt{{section.id | remove: '-' |  remove: '_'  }}"
-        {{ section.blocks.length }}
-      >
-        <svg xmlns="http://www.w3.org/2000/svg" width="59" height="59" viewBox="0 0 59 59" fill="none">
-          <circle cx="29.5" cy="29.5" r="29" fill="white" stroke="#DEDEDE"/>
-          <path d="M34.5564 39.5639C34.6969 39.4244 34.8085 39.2585 34.8847 39.0758C34.9608 38.893 35 38.697 35 38.499C35 38.301 34.9608 38.1049 34.8847 37.9222C34.8085 37.7394 34.6969 37.5735 34.5564 37.4341L27.6871 30.5649C27.5466 30.4255 27.435 30.2596 27.3588 30.0768C27.2827 29.894 27.2435 29.698 27.2435 29.5C27.2435 29.302 27.2827 29.106 27.3588 28.9232C27.435 28.7404 27.5466 28.5745 27.6871 28.4351L34.5564 21.5659C34.6969 21.4265 34.8085 21.2606 34.8847 21.0778C34.9608 20.8951 35 20.699 35 20.501C35 20.303 34.9608 20.107 34.8847 19.9242C34.8085 19.7415 34.6969 19.5756 34.5564 19.4361C34.2753 19.1568 33.8952 19 33.499 19C33.1027 19 32.7226 19.1568 32.4416 19.4361L25.5574 26.3204C24.7148 27.164 24.2415 28.3076 24.2415 29.5C24.2415 30.6924 24.7148 31.836 25.5574 32.6796L32.4416 39.5639C32.7226 39.8432 33.1027 40 33.499 40C33.8952 40 34.2753 39.8432 34.5564 39.5639Z" fill="#363436"/>
-        </svg>
-      </div>
-      <div class="swiper-button-prev gmCstm swPrv{{section.id | remove: '-' |  remove: '_'  }}">
-        <svg xmlns="http://www.w3.org/2000/svg" width="59" height="59" viewBox="0 0 59 59" fill="none">
-          <circle cx="29.5" cy="29.5" r="29" fill="white" stroke="#DEDEDE"/>
-          <path d="M34.5564 39.5639C34.6969 39.4244 34.8085 39.2585 34.8847 39.0758C34.9608 38.893 35 38.697 35 38.499C35 38.301 34.9608 38.1049 34.8847 37.9222C34.8085 37.7394 34.6969 37.5735 34.5564 37.4341L27.6871 30.5649C27.5466 30.4255 27.435 30.2596 27.3588 30.0768C27.2827 29.894 27.2435 29.698 27.2435 29.5C27.2435 29.302 27.2827 29.106 27.3588 28.9232C27.435 28.7404 27.5466 28.5745 27.6871 28.4351L34.5564 21.5659C34.6969 21.4265 34.8085 21.2606 34.8847 21.0778C34.9608 20.8951 35 20.699 35 20.501C35 20.303 34.9608 20.107 34.8847 19.9242C34.8085 19.7415 34.6969 19.5756 34.5564 19.4361C34.2753 19.1568 33.8952 19 33.499 19C33.1027 19 32.7226 19.1568 32.4416 19.4361L25.5574 26.3204C24.7148 27.164 24.2415 28.3076 24.2415 29.5C24.2415 30.6924 24.7148 31.836 25.5574 32.6796L32.4416 39.5639C32.7226 39.8432 33.1027 40 33.499 40C33.8952 40 34.2753 39.8432 34.5564 39.5639Z" fill="#363436"/>
-        </svg>
-      </div>
-    </div>
-    <div class="swiper-pagination gmPag swPag{{section.id | remove: '-' |  remove: '_'  }}"></div>
+          </div>
+        {% endfor %}     
+    {% endif %}
   </div>
+  <div class="swiper-button-next gmCstm swNxt{{section.id | remove: '-' |  remove: '_'  }}" {{section.blocks.length}}>
+    <svg xmlns="http://www.w3.org/2000/svg" width="59" height="59" viewBox="0 0 59 59" fill="none">
+      <circle cx="29.5" cy="29.5" r="29" fill="white" stroke="#DEDEDE"/>
+      <path d="M34.5564 39.5639C34.6969 39.4244 34.8085 39.2585 34.8847 39.0758C34.9608 38.893 35 38.697 35 38.499C35 38.301 34.9608 38.1049 34.8847 37.9222C34.8085 37.7394 34.6969 37.5735 34.5564 37.4341L27.6871 30.5649C27.5466 30.4255 27.435 30.2596 27.3588 30.0768C27.2827 29.894 27.2435 29.698 27.2435 29.5C27.2435 29.302 27.2827 29.106 27.3588 28.9232C27.435 28.7404 27.5466 28.5745 27.6871 28.4351L34.5564 21.5659C34.6969 21.4265 34.8085 21.2606 34.8847 21.0778C34.9608 20.8951 35 20.699 35 20.501C35 20.303 34.9608 20.107 34.8847 19.9242C34.8085 19.7415 34.6969 19.5756 34.5564 19.4361C34.2753 19.1568 33.8952 19 33.499 19C33.1027 19 32.7226 19.1568 32.4416 19.4361L25.5574 26.3204C24.7148 27.164 24.2415 28.3076 24.2415 29.5C24.2415 30.6924 24.7148 31.836 25.5574 32.6796L32.4416 39.5639C32.7226 39.8432 33.1027 40 33.499 40C33.8952 40 34.2753 39.8432 34.5564 39.5639Z" fill="#363436"/>
+    </svg>
+  </div>
+  <div class="swiper-button-prev gmCstm swPrv{{section.id | remove: '-' |  remove: '_'  }}">
+    <svg xmlns="http://www.w3.org/2000/svg" width="59" height="59" viewBox="0 0 59 59" fill="none">
+      <circle cx="29.5" cy="29.5" r="29" fill="white" stroke="#DEDEDE"/>
+      <path d="M34.5564 39.5639C34.6969 39.4244 34.8085 39.2585 34.8847 39.0758C34.9608 38.893 35 38.697 35 38.499C35 38.301 34.9608 38.1049 34.8847 37.9222C34.8085 37.7394 34.6969 37.5735 34.5564 37.4341L27.6871 30.5649C27.5466 30.4255 27.435 30.2596 27.3588 30.0768C27.2827 29.894 27.2435 29.698 27.2435 29.5C27.2435 29.302 27.2827 29.106 27.3588 28.9232C27.435 28.7404 27.5466 28.5745 27.6871 28.4351L34.5564 21.5659C34.6969 21.4265 34.8085 21.2606 34.8847 21.0778C34.9608 20.8951 35 20.699 35 20.501C35 20.303 34.9608 20.107 34.8847 19.9242C34.8085 19.7415 34.6969 19.5756 34.5564 19.4361C34.2753 19.1568 33.8952 19 33.499 19C33.1027 19 32.7226 19.1568 32.4416 19.4361L25.5574 26.3204C24.7148 27.164 24.2415 28.3076 24.2415 29.5C24.2415 30.6924 24.7148 31.836 25.5574 32.6796L32.4416 39.5639C32.7226 39.8432 33.1027 40 33.499 40C33.8952 40 34.2753 39.8432 34.5564 39.5639Z" fill="#363436"/>
+    </svg>
+  </div>
+  </div>
+  <div class="swiper-pagination gmPag swPag{{section.id | remove: '-' |  remove: '_'  }}"></div>
+</div>
 </div>
 <script>
-  var swiper = new Swiper(".swp-{{section.id}}", {
-   slidesPerView: {{section.settings.mblSld}},
-   spaceBetween: {{section.settings.mblSpc}},
-   loop:true,
-   {% if section.settings.sldAtply != 0 %}
-   autoplay: {
-     delay: {{section.settings.sldAtply |  times: 1000}},
-     disableOnInteraction: false,
-   },
-   {% endif %}
-   pagination: {
-     el: ".swPag{{section.id | remove: '-' |  remove: '_'  }}",
-     clickable: true,
-   },
-   navigation: {
-     nextEl: ".swNxt{{section.id | remove: '-' |  remove: '_'  }}",
-     prevEl: ".swPrv{{section.id | remove: '-' |  remove: '_'  }}",
-   },
-   breakpoints: {
-     640: {
-       slidesPerView: {{section.settings.tabSld}},
-       spaceBetween: {{section.settings.tabSpc}},
-     },
-     1024: {
-       slidesPerView: {{section.settings.dskSld}},
-       spaceBetween: {{section.settings.dskSpc}},
-     },
-   },
-  });
+     var swiper = new Swiper(".swp-{{section.id}}", {
+      slidesPerView: {{section.settings.mblSld}},
+      spaceBetween: {{section.settings.mblSpc}},
+      loop:true,
+      {% if section.settings.sldAtply != 0 %}
+      autoplay: {
+        delay: {{section.settings.sldAtply |  times: 1000}},
+        disableOnInteraction: false,
+      },
+      {% endif %}
+      pagination: {
+        el: ".swPag{{section.id | remove: '-' |  remove: '_'  }}",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swNxt{{section.id | remove: '-' |  remove: '_'  }}",
+        prevEl: ".swPrv{{section.id | remove: '-' |  remove: '_'  }}",
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: {{section.settings.tabSld}},
+          spaceBetween: {{section.settings.tabSpc}},
+        },
+        1024: {
+          slidesPerView: {{section.settings.dskSld}},
+          spaceBetween: {{section.settings.dskSpc}},
+        },
+      },
+     });
 </script>
 <style>
     .gmSld-{{section.id}}{
@@ -175,243 +148,235 @@
     }
 </style>
 
+
 {% schema %}
-{
-  "name": "GM Slider",
-  "class": "gmSld",
-  "blocks": [
-    {
-      "type": "slide",
-      "name": "slide",
-      "settings": [
+  {
+    "name": "GM Slider",
+    "class": "gmSld",
+    "blocks": [
+      {
+        "type": "slide",
+        "name": "slide",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "imgPkr",
+            "label": "Upload Image"
+          },
+          {
+            "type": "url",
+            "id": "img_url",
+            "label": "Image Upload URl"
+          },
         {
-          "type": "image_picker",
-          "id": "imgPkr",
-          "label": "Upload Image"
-        },
+            "type": "text",
+            "id": "ttl",
+            "label": "Enter Slide Title"
+          },
         {
-          "type": "url",
-          "id": "img_url",
-          "label": "Image Upload URl"
-        },
-        {
-          "type": "text",
-          "id": "ttl",
-          "label": "Enter Slide Title"
-        },
-        {
-          "type": "textarea",
-          "id": "subTtl",
-          "label": "Enter Slide Description"
+            "type": "textarea",
+            "id": "subTtl",
+            "label": "Enter Slide Description"
         }
-      ]
-    }
-  ],
-  "settings": [
-    {
-      "type": "text",
-      "id": "preTtl",
-      "label": "Enter Sub-Title"
+        ]
+      }
+    ],
+    "settings": [
+      {
+        "type": "text",
+        "id": "preTtl",
+        "label": "Enter Sub-Title"
+      },
+      {
+        "type": "range",
+        "id": "subtitle_font_size",
+        "label": "Desktop Subtitle Font Size",
+        "default": 16,
+        "min": 12,
+        "max": 48,
+        "step": 1
+      },
+      {
+        "type": "range",
+        "id": "subtitle_font_sizemob",
+        "label": "Mobile Subtitle Font Size",
+        "default": 16,
+        "min": 12,
+        "max": 48,
+        "step": 1
+      },
+      {
+        "type": "text",
+        "id": "ttl",
+        "label": "Enter Title"
+      },
+      {
+        "type": "range",
+        "id": "heading_font_size",
+        "label": "Desktop Heading Font Size",
+        "default": 24,
+        "min": 16,
+        "max": 72,
+        "step": 1
+      },
+      {
+        "type": "range",
+        "id": "heading_font_sizemob",
+        "label": "Mobile Heading Font Size",
+        "default": 24,
+        "min": 16,
+        "max": 72,
+        "step": 1
+      },
+      {
+        "type": "textarea",
+        "id": "subTtl",
+        "label": "Enter Title"
     },
-    {
-      "type": "range",
-      "id": "subtitle_font_size",
-      "label": "Desktop Subtitle Font Size",
-      "default": 20,
-      "min": 12,
-      "max": 48,
-      "step": 1
-    },
-    {
-      "type": "range",
-      "id": "subtitle_font_sizemob",
-      "label": "Mobile Subtitle Font Size",
-      "default": 16,
-      "min": 12,
-      "max": 48,
-      "step": 1
-    },
-    {
-      "type": "text",
-      "id": "ttl",
-      "label": "Enter Title"
-    },
-    {
-      "type": "range",
-      "id": "heading_font_size",
-      "label": "Desktop Heading Font Size",
-      "default": 40,
-      "min": 16,
-      "max": 72,
-      "step": 1
-    },
-    {
-      "type": "range",
-      "id": "heading_font_sizemob",
-      "label": "Mobile Heading Font Size",
-      "default": 24,
-      "min": 16,
-      "max": 72,
-      "step": 1
-    },
-    {
-      "type": "textarea",
-      "id": "subTtl",
-      "label": "Enter Title"
-    },
-    {
-      "type": "text",
-      "id": "btnTxt",
-      "label": "Enter Button Text",
-      "info": "Leave Blank to Hide Button"
-    },
-    {
-      "type": "url",
-      "id": "btnUrl",
-      "label": "Select Button URL"
-    },
-    {
-      "type": "checkbox",
-      "id": "chkBx",
-      "label": "Check to Fetch Data From Metafield",
-      "default": false
-    },
-    {
-      "type": "checkbox",
-      "id": "overlays_box",
-      "label": "Overlay Show",
-      "info": "Overlay Icons Display To Check Box Fill",
-      "default": false
-    },
-    {
-      "type": "range",
-      "id": "dskSld",
-      "label": "Slides to show on Desktop Screen",
-      "min": 4,
-      "max": 8,
-      "step": 0.2,
-      "default": 5
-    },
-    {
-      "type": "range",
-      "id": "dskSpc",
-      "label": "Space Between two Slides on Desktop Screen",
-      "min": 2,
-      "max": 50,
-      "step": 2,
-      "default": 14
-    },
-    {
-      "type": "range",
-      "id": "tabSld",
-      "label": "Slides to show on Small Screen",
-      "min": 3,
-      "max": 7,
-      "step": 0.2,
-      "default": 3
-    },
-    {
-      "type": "range",
-      "id": "tabSpc",
-      "label": "Space Between two Slides on Small Screen",
-      "min": 2,
-      "max": 50,
-      "step": 2,
-      "default": 14
-    },
-    {
-      "type": "range",
-      "id": "mblSld",
-      "label": "Slides to show on Mobile Screen",
-      "min": 1,
-      "max": 3,
-      "step": 0.2,
-      "default": 2
-    },
-    {
-      "type": "range",
-      "id": "mblSpc",
-      "label": "Space Between two Slides on Mobile Screen",
-      "min": 2,
-      "max": 50,
-      "step": 2,
-      "default": 14
-    },
-    {
-      "type": "range",
-      "id": "sldAtply",
-      "label": "Autoplay Speed",
-      "info": "Select 0 to turn off Autoplay",
-      "min": 0,
-      "max": 5,
-      "step": 0.1,
-      "default": 1.5
-    },
-    {
-      "type": "checkbox",
-      "id": "pagination",
-      "label": "Check to show Pagination on Mobile",
-      "default": true
-    },
-    {
-      "type": "checkbox",
-      "id": "navigation",
-      "label": "Check to show Navigation on Desktop",
-      "default": true
-    },
-    {
+      {
+        "type": "text",
+        "id": "btnTxt",
+        "label": "Enter Button Text",
+        "info": "Leave Blank to Hide Button"
+      }, {
+        "type": "url",
+        "id": "btnUrl",
+        "label": "Select Button URL"
+      },
+      {
+        "type": "checkbox",
+        "id": "chkBx",
+        "label": "Check to Fetch Data From Metafield",
+        "default":false
+      },
+      {
+        "type": "checkbox",
+        "id": "overlays_box",
+        "label": "Overlay Show",
+        "info": "Overlay Icons Display To Check Box Fill",
+        "default":false
+      },
+      {
+        "type": "range",
+        "id": "dskSld",
+        "label": "Slides to show on Desktop Screen",
+        "min": 4,
+        "max": 8,
+        "step": 0.2,
+        "default": 4.8
+      }, {
+        "type": "range",
+        "id": "dskSpc",
+        "label": "Space Between two Slides on Desktop Screen",
+        "min": 2,
+        "max": 50,
+        "step": 2,
+        "default": 20
+      }, {
+        "type": "range",
+        "id": "tabSld",
+        "label": "Slides to show on Small Screen",
+        "min": 3,
+        "max": 7,
+        "step": 0.2,
+        "default": 4.8
+      }, {
+        "type": "range",
+        "id": "tabSpc",
+        "label": "Space Between two Slides on Small Screen",
+        "min": 2,
+        "max": 50,
+        "step": 2,
+        "default": 20
+      }, {
+        "type": "range",
+        "id": "mblSld",
+        "label": "Slides to show on Mobile Screen",
+        "min": 1,
+        "max": 3,
+        "step": 0.2,
+        "default": 1.8
+      }, {
+        "type": "range",
+        "id": "mblSpc",
+        "label": "Space Between two Slides on Mobile Screen",
+        "min": 2,
+        "max": 50,
+        "step": 2,
+        "default": 20
+      }, {
+        "type": "range",
+        "id": "sldAtply",
+        "label": "Autoplay Speed",
+        "info": "Select 0 to turn off Autoplay",
+        "min": 0,
+        "max": 5,
+        "step": 0.1,
+        "default": 1.5
+      },{
+        "type": "checkbox",
+        "id": "pagination",
+        "label": "Check to show Pagination on Mobile",
+        "default":true
+      },
+      {
+        "type": "checkbox",
+        "id": "navigation",
+        "label": "Check to show Navigation on Desktop",
+        "default":true
+      },
+      {
       "type": "color_scheme",
       "id": "color_scheme",
       "label": "Color scheme",
       "default": "background-3"
     },
-    {
-      "type": "color",
-      "id": "sldCol",
-      "label": "Select Background Color of Slide",
-      "default": "#ffffff"
+      {
+        "type": "color",
+        "id": "sldCol",
+        "label": "Select Background Color of Slide",
+        "default":"#ffffff"
+      },
+      {
+        "type": "range",
+        "id": "secPdgTop",
+        "label": "Padding Top",
+        "min": 10,
+        "max": 100,
+        "step": 5,
+        "default": 20
+      }, {
+        "type": "range",
+        "id": "secPdgBtm",
+        "label": "Padding bottom",
+        "min": 10,
+        "max": 100,
+        "step": 5,
+        "default": 20
+      },
+      {
+        "type": "range",
+        "id": "secPdgTopMbl",
+        "label": "Padding Top (Mobile)",
+        "min": 5,
+        "max": 100,
+        "step": 5,
+        "default": 20
     },
     {
-      "type": "range",
-      "id": "secPdgTop",
-      "label": "Padding Top",
-      "min": 0,
-      "max": 100,
-      "step": 5,
-      "default": 0
+        "type": "range",
+        "id": "secPdgBtmMbl",
+        "label": "Padding Bottom (Mobile)",
+        "min": 5,
+        "max": 100,
+        "step": 5,
+        "default": 20
     },
-    {
-      "type": "range",
-      "id": "secPdgBtm",
-      "label": "Padding bottom",
-      "min": 0,
-      "max": 100,
-      "step": 5,
-      "default": 100
-    },
-    {
-      "type": "range",
-      "id": "secPdgTopMbl",
-      "label": "Padding Top (Mobile)",
-      "min": 0,
-      "max": 100,
-      "step": 5,
-      "default": 0
-    },
-    {
-      "type": "range",
-      "id": "secPdgBtmMbl",
-      "label": "Padding Bottom (Mobile)",
-      "min": 0,
-      "max": 100,
-      "step": 5,
-      "default": 80
-    }
-  ],
-  "presets": [
-    {
-      "name": "GM Slider"
-    }
-  ]
-}
+    ],
+    "presets": [
+      {
+        "name": "GM Slider"
+      }
+    ]
+  }
 {% endschema %}

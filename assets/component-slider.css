@@ -178,8 +178,7 @@ slider-component.slider-component-full-width {
   }
 
   .slider-component-full-width .slider--desktop .slider__slide:first-child {
-    margin-left: 0;
-    /* margin-left: 1.5rem; */
+    margin-left: 1.5rem;
     scroll-margin-left: 1.5rem;
   }
 
@@ -194,7 +193,7 @@ slider-component.slider-component-full-width {
 
   .slider--desktop.grid--4-col-desktop .grid__item {
     /* width: calc((100% - var(--desktop-margin-left-first-item)) / 4 - var(--grid-desktop-horizontal-spacing) * 3); */
-    /* width: calc((100% - var(--desktop-margin-left-first-item) - var(--grid-desktop-horizontal-spacing) * 3) / 4); */
+    width: calc((100% - var(--desktop-margin-left-first-item) - var(--grid-desktop-horizontal-spacing) * 3) / 4);
   }
 
   .slider--desktop.grid--3-col-desktop .grid__item {

@@ -23,13 +23,10 @@
     <!-- Products for each tab -->
     <div class="collection-contents">
       {% for block in section.blocks %}
-        <div
-          class="tab-content swiper swp-{{section.id}} {% if forloop.first %}active{% endif %}"
-          id="tab-{{ block.id }}"
-        >
-          <div class="collection-items swiper-wrapper">
+        <div class="tab-content {% if forloop.first %}active{% endif %}" id="tab-{{ block.id }}">
+          <div class="collection-items">
             {% if block.settings.product1_image %}
-              <div class="swiper-slide collection-item">
+              <div class="collection-item">
                 <a href="{{ block.settings.product1_link }}">
                   <img
                     src="{{ block.settings.product1_image | img_url: 'medium' }}"
@@ -46,7 +43,7 @@
             {% endif %}
 
             {% if block.settings.product2_image %}
-              <div class="swiper-slide collection-item">
+              <div class="collection-item">
                 <a href="{{ block.settings.product2_link }}">
                   <img
                     src="{{ block.settings.product2_image | img_url: 'medium' }}"
@@ -63,7 +60,7 @@
             {% endif %}
 
             {% if block.settings.product3_image %}
-              <div class="swiper-slide collection-item">
+              <div class="collection-item">
                 <a href="{{ block.settings.product3_link }}">
                   <img
                     src="{{ block.settings.product3_image | img_url: 'medium' }}"
@@ -80,7 +77,7 @@
             {% endif %}
 
             {% if block.settings.product4_image %}
-              <div class="swiper-slide collection-item">
+              <div class="collection-item">
                 <a href="{{ block.settings.product4_link }}">
                   <img
                     src="{{ block.settings.product4_image | img_url: '600x' }}"
@@ -91,22 +88,6 @@
                   </h3>
                   <p class="text-color">
                     {{ block.settings.product4_subtitle }}
-                  </p>
-                </a>
-              </div>
-            {% endif %}
-            {% if block.settings.product5_image %}
-              <div class="swiper-slide collection-item">
-                <a href="{{ block.settings.product5_link }}">
-                  <img
-                    src="{{ block.settings.product5_image | img_url: '600x' }}"
-                    alt="{{ block.settings.product5_title }}"
-                  >
-                  <h3 class="text-color">
-                    {{ block.settings.product5_title }}
-                  </h3>
-                  <p class="text-color">
-                    {{ block.settings.product5_subtitle }}
                   </p>
                 </a>
               </div>
@@ -132,7 +113,6 @@
         font-weight: 500;
         width: 100%;
         display: inline-block;
-        color:rgb(var(--color-button))!important;
       }
       .tabbing-text{
           font-size: {{section.settings.text_font_size}}px;
@@ -176,10 +156,10 @@
     }
 
     /* Collection items */
-    /* .collection-items {
+    .collection-items {
       display: flex;
       gap: 42px;
-    } */
+    }
 
     .collection-item {
       text-align: center;
@@ -210,23 +190,12 @@
       font-weight: 500;
       line-height: 1;
   }
-  .collection-contents img {
-      width: 100%;
-  }
     /* Tab content style */
     .tab-content {
       display: none;
     }
     .tab-content.active {
       display: block;
-    }
-    @media screen and (max-width: 750px){
-      .collection-tabs ul li {
-        margin: 0 5px;
-      }
-      .collection-item p{
-        font-size: 18px;
-      }
     }
 </style>
 
@@ -254,21 +223,6 @@
       });
     });
   });
-  var swiper = new Swiper(".swp-{{section.id}}", {
-      slidesPerView: {{section.settings.mblSld}},
-    spaceBetween: {{section.settings.mblSpc}},
-    loop:true,
-    breakpoints: {
-      640: {
-        slidesPerView: {{section.settings.tabSld}},
-        spaceBetween: {{section.settings.tabSpc}},
-      },
-      1024: {
-        slidesPerView: {{section.settings.dskSld}},
-        spaceBetween: {{section.settings.dskSpc}},
-      },
-    },
-   });
 </script>
 
 <!-- Schema -->
@@ -333,10 +287,6 @@
       "default": "#0D0D0D"
     },
     {
-      "type": "header",
-      "content": "Tabbing Font Size"
-    },
-    {
       "type": "range",
       "id": "text_font_size",
       "label": "Desktop Tabbing Heading Font Size",
@@ -353,64 +303,6 @@
       "min": 12,
       "max": 48,
       "step": 1
-    },
-    {
-      "type": "header",
-      "content": "Slide Settings"
-    },
-    {
-      "type": "range",
-      "id": "dskSld",
-      "label": "Slides to show on Desktop Screen",
-      "min": 4,
-      "max": 8,
-      "step": 0.2,
-      "default": 4
-    },
-    {
-      "type": "range",
-      "id": "dskSpc",
-      "label": "Space Between two Slides on Desktop Screen",
-      "min": 2,
-      "max": 50,
-      "step": 2,
-      "default": 42
-    },
-    {
-      "type": "range",
-      "id": "tabSld",
-      "label": "Slides to show on Small Screen",
-      "min": 3,
-      "max": 7,
-      "step": 0.2,
-      "default": 3.2
-    },
-    {
-      "type": "range",
-      "id": "tabSpc",
-      "label": "Space Between two Slides on Small Screen",
-      "min": 2,
-      "max": 50,
-      "step": 2,
-      "default": 20
-    },
-    {
-      "type": "range",
-      "id": "mblSld",
-      "label": "Slides to show on Mobile Screen",
-      "min": 1,
-      "max": 3,
-      "step": 0.2,
-      "default": 1.2
-    },
-    {
-      "type": "range",
-      "id": "mblSpc",
-      "label": "Space Between two Slides on Mobile Screen",
-      "min": 2,
-      "max": 50,
-      "step": 2,
-      "default": 16
     },
     {
       "type": "header",
@@ -548,26 +440,6 @@
           "type": "url",
           "id": "product4_link",
           "label": "Product 4 Link"
-        },
-        {
-          "type": "image_picker",
-          "id": "product5_image",
-          "label": "Product 5 Image"
-        },
-        {
-          "type": "text",
-          "id": "product5_title",
-          "label": "Product 5 Title"
-        },
-        {
-          "type": "text",
-          "id": "product5_subtitle",
-          "label": "Product 5 Subtitle"
-        },
-        {
-          "type": "url",
-          "id": "product5_link",
-          "label": "Product 5 Link"
         }
       ]
     }

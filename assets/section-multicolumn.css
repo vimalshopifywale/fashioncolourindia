@@ -9,11 +9,6 @@
 .multicolumn .title-wrapper-with-link {
   margin-top: 0;
 }
-.multicolumn-list__item{
-  flex: 1 1 calc(25% - 20px);
-  display: flex;
-  flex-direction: column;
-}
 
 @media screen and (max-width: 749px) {
   .multicolumn .title-wrapper-with-link {
@@ -201,9 +196,6 @@
 .multicolumn-card {
   position: relative;
   box-sizing: border-box;
-  flex: 1 1 auto;
-  display: flex;
-  flex-direction: column;
 }
 
 .multicolumn-card > .multicolumn-card__image-wrapper--full-width:not(.multicolumn-card-spacing) {

@@ -15,99 +15,6 @@
   }
 } */
 
-.sw-faqbtn.button.button--primary {
-  display: none;
-}
-.sw-faqbtn.button.button--primary.button--extra {
-  display: inline-block;
-  text-align: center;
-}
-
-.sw-collapsible .faq-position--first .collapsible-content__header,
-.sw-collapsible .faq-position--first .grid,
-.sw-collapsible .faq-position--second .collapsible-content__header,
-.sw-collapsible .faq-position--second .grid {
-  width: 50%;
-}
-.faq-position--first,
-.faq-position--second {
-  display: flex;
-  max-width: 100% !important;
-}
-.faq-position--second .grid {
-  order: -1;
-}
-.sw-collapsible .faq-position--first .collapsible-content__header h2,
-.sw-collapsible .faq-position--second .collapsible-content__header h2 {
-  width: 70%;
-}
-.sw-collapsible .faq-position--second .collapsible-content__header h2 {
-  margin-left: auto;
-}
-.faq-position--center .collapsible-content__header .sw-faqbtn.button.button--primary {
-  display: none;
-}
-.tabbing-btn.responsive-button {
-  display: block;
-  text-align: center;
-  margin: 10px auto 0;
-}
-.tabbing-btn{
-  display: none;
-}
-
-.sw-faqbtn{
-  font-size: 16px;
-  min-height: auto;
-  line-height: 1;
-  padding: 14px 10px;
-  font-weight: 200;
-}
-.sw-collapsible .collapsible-content.collapsible-section-layout {
-  padding: 0;
-}
-@media screen and (max-width: 992px){
-  .sw-collapsible .faq-position--first .collapsible-content__header h2,
-  .sw-collapsible .faq-position--second .collapsible-content__header h2 {
-    width: 100%;
-  }
-  .sw-collapsible .collapsible-content {
-    padding: 0;
-  }
-}
-@media screen and (max-width: 575px){
-  .faq-position--first,
-    .faq-position--second{
-      flex-wrap: wrap;
-    }
-    .sw-collapsible .faq-position--first .collapsible-content__header,
-    .sw-collapsible .faq-position--first .grid,
-    .sw-collapsible .faq-position--second .collapsible-content__header,
-    .sw-collapsible .faq-position--second .grid{
-      width: 100%;
-    }
-    .sw-collapsible .faq-position--first .collapsible-content__header h2,
-    .sw-collapsible .faq-position--second .collapsible-content__header h2{
-      text-align: center;
-    }
-    .tabbing-btn .sw-faqbtn.button,
-    .tabbing-btn{
-      display: block;
-      text-align: center;
-      margin: 10px auto 0px;
-    }
-    .sw-faqbtn.button,
-    .tabbing-btn{
-      display: none;
-    }
-    .accordion{
-      margin-top: 0;
-    }
-    .collapsible-content__header .sw-faqbtn.button.button--primary.button--extra {
-      display: none;
-    }
-}
-
 /* Needed for gradient continuity with or without animation so that transparent PNG images come up as we would expect */
 .collapsible-content__media {
   background: transparent;
@@ -144,8 +51,8 @@
 
 .collapsible-content-wrapper-narrow {
   margin: 0 auto;
-  /* padding-right: 1.5rem;
-  padding-left: 1.5rem; */
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
   max-width: 73.4rem;
 }
 
@@ -233,9 +140,9 @@
 
 .accordion p,
 .accordion p strong{
-  color:#5E5E5E;
-  font-size:15px;
-  font-weight: 400;
+color:#5E5E5E;
+font-size:15px;
+font-weight: 400;
 }
 
 .accordion h3{
@@ -257,28 +164,27 @@
 	max-width: none;
   padding-right: 15px;
 }
-.accordion details[open] summary {
-    margin-bottom: 6px;
-  }
 
 .accordion p{
-    font-size: 14px;
-    line-height: normal;
+  font-size: 14px;
+  padding: 0 8px;
+  }
+
+  .collapsible-content__heading {
+    margin-bottom: 0;
   }
 
   .accordion h3{
-    font-size:16px;
-    width: 92.99%;
+    font-size:15px;
   }
 
-  /* .accordion__content {
+  .accordion__content {
     margin-bottom: 0.5rem;
-} */
+}
 .accordion{
-  border: 0.7px dashed #C3C3C3 !important;
+  border: 2px dashed #C3C3C3 !important;
   margin-bottom: 15px;
   border-radius: 6px;
-  padding: 15px 10px;
 }
 
 }

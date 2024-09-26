@@ -418,6 +418,7 @@
 .footer-block__image-wrapper img {
   display: block;
   height: auto;
+  width: 151px;
   max-width: 100%;
 }
 

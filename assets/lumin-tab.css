@@ -27,8 +27,9 @@ ul.custom--tabs {
 }
 .custom__tab-content.active {
   display: block;
-  padding-top: 38px;
-  padding-bottom: 1px;
+  /* padding-top: 38px;
+  padding-bottom: 1px; */
+  padding: 38px 0 1px;
 }
 .tab__list h4.custom-tab {
   display: inline-block !important;

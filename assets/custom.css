@@ -26,9 +26,12 @@
         padding: 44px 0;
     }
     .sw-header .header__menu-item .icon-caret {
-        right: 0;
+        right: -2px;
         top: 40%;
         color: #0D0D0D;
+    }
+    summary#HeaderMenu-makeup {
+        margin-right: 10px;
     }
     .sw-header ul.mega-menu__list.page-width {
         gap: 68px;
@@ -69,11 +72,11 @@
     .middel-header nav .header__menu-item {
         font-size: 16px;
         font-weight: 400;
-        padding: 12px 17px 16px 17px;
+        padding: 12px 14px 17px 14px;
     }
     .secondary-main ul li a.header__menu-item {
         font-size: 18px;
-        font-weight: 400;
+        font-weight: 300;
     }
     .middel-header nav.header__inline-menu {
         text-align: center;
@@ -87,6 +90,7 @@
     }
     .sw-header #HeaderMenu-new-in {
         padding-left: 22px;
+        margin-left: 10px;
     }
     .sw-header #HeaderMenu-new-in:before {
         content: '';
@@ -101,8 +105,8 @@
     .sw-header #HeaderMenu-trending:after{
         content: '';
         position: absolute;
-        right: 0;
-        top: 5px;
+        right: 1px;
+        top: 8px;
         width: 20px;
         height: 20px;
         background-repeat: no-repeat;
@@ -163,7 +167,10 @@
     .hero-slider .hero-banner {
         width: 50%;
         max-width: 100%;
-        padding: 0 15px;
+        padding: 0;
+    }
+    .hero-slider .slideshow__text.banner__box {
+        padding: 0 15px 0 0;
     }
 
 /* ===Sw_Popup_Slider================================================================== */
@@ -266,7 +273,7 @@
     }     
 
 /* ===Sw_Collapsible================================================================== */
-    .sw-collapsible .icon.icon-caret {
+    /* .sw-collapsible .icon.icon-caret {
         width: 21px;
         height: 21px;
         color: #FFF;
@@ -275,12 +282,14 @@
         background: #BF0436;
         border-radius: 50px;
         box-shadow: 0px 0px 25px 0px #0000000F;
-    }
+    } */
     .sw-collapsible .accordion details .accordion__content ul li{
         font-weight: 400;
     }
     .sw-collapsible .accordion details .accordion__content ul{
-        margin-bottom: 20px;
+        padding: 0;
+        margin: 0;
+        list-style: none;
     }
 
 
@@ -507,7 +516,7 @@
         font-weight: 400;
         line-height: normal !important;
         margin: 0;
-        padding: 0 50px;
+        padding: 0 30px;
     }
     .testimonial-slider .lumin-slide__small-heading img {
         width: auto !important;
@@ -567,7 +576,7 @@
 /* ===Footer================================================================== */
     .footer-main .footer__content-top .grid {
         float: left;
-        width: 65%;
+        width: 55%;
         gap: 68px;
         padding: 70px 0;
     }
@@ -708,6 +717,10 @@
         }
     }
     @media screen and (max-width:990px){
+        .menu-drawer__submenu ul.menu-drawer__menu.list-menu li a {
+            padding: 4px 30px !important;
+            font-size: 16px;
+        }
         #cartdrawer.secondary-main {
             margin-top: 40px;
         }
@@ -789,7 +802,7 @@
     @media screen and (max-width:749px){
         .hero-slider .hero-banner img{
             width: 100% !important;
-            margin-top: 40px;
+            margin-top: 60px;
         }
         .hero-slider .slideshow__text.banner__box,
         .hero-slider .hero-banner {
@@ -860,20 +873,15 @@
         .sw-product .product-form__submit{
             font-size: 14px;
         }
-        .sw-collapsible .accordion details .accordion__content ul {
-            margin: 0;
-            list-style: none;
-            padding: 0 10px;
-        }
         .sw-collapsible .accordion details .accordion__content ul li {
             font-weight: 200;
             font-size: 14px;
         }
-        .sw-collapsible .icon.icon-caret{
+        /* .sw-collapsible .icon.icon-caret{
             width: 16px;
             height: 16px;
             top: 40%;
-        }
+        } */
         .sw-comparisontable .table_center .comparison-table th:first-of-type, 
         .sw-comparisontable .table_center .comparison-table td:first-of-type{
             width: 75%;

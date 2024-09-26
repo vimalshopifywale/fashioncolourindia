@@ -87,7 +87,7 @@
               disabled
             {% endif %}
           >
-            <span>
+            <span style="margin-right: 6px;">
               {%- if product.selected_or_first_available_variant.available == false or quantity_rule_soldout -%}
                 {{ 'products.product.sold_out' | t }}
               {%- else -%}

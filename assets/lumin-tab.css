@@ -5,7 +5,7 @@ ul.custom--tabs {
   white-space: nowrap;
   gap: 38px;
   overflow-x: auto;
-  margin: 0;
+  margin: 0 auto;
 }
 .custom__tab-content p span,
 .custom__tab-content p {
@@ -58,8 +58,6 @@ ul.custom--tabs {
   }
 }
 @media only screen and (max-width: 576px) {
-  ul.custom--tabs {
-  }
   .custom--tabs .tab__list .custom-tab {
     width: 100%;
     border-bottom: none !important;

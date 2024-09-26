@@ -912,6 +912,13 @@
         "content": "t:settings_schema.variant_pills.paragraph"
       },
       {
+        "type": "checkbox",
+        "id": "variant_pipe_color",
+        "label": "Check to Get Color From Variant Title",
+        "info": "If Variant Title Containes '|' than after pipe symbole use as color hex code, if variant title doesn't contain pipe than title use as color name",
+        "default":true
+      },
+      {
         "type": "header",
         "content": "t:settings_schema.global.settings.header__border.content"
       },

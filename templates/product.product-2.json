@@ -671,9 +671,9 @@
         "navigation": true,
         "color_scheme": "",
         "sldCol": "#ffffff",
-        "secPdgTop": 0,
+        "secPdgTop": 10,
         "secPdgBtm": 100,
-        "secPdgTopMbl": 0,
+        "secPdgTopMbl": 5,
         "secPdgBtmMbl": 80
       }
     }

@@ -10,7 +10,7 @@
   {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
 {% endcomment %}
 {%- unless product.has_only_default_variant -%}
-  {%- if block.settings.picker_type == 'button' -%}
+  {%- if block.settings.picker_type == 'button' or block.settings.picker_type == 'gm-variant' -%}
     <variant-radios
       id="variant-radios-{{ section.id }}"
       class="no-js-hidden sw-variantbox"
@@ -23,6 +23,12 @@
     >
       {%- for option in product.options_with_values -%}        
       <fieldset class="js product-form__input">
+        {% if settings.variant_pipe_color %}
+            {% liquid
+             assign raw_option_name = option.name |  split: '|' 
+             assign useColor = true 
+            %}
+          {% else %}
             {%- liquid
                 assign optionNames = settings.optionName | remove: ' ' | remove: '-' | remove: '_' | downcase | split:","
                 assign useColor = false 
@@ -34,11 +40,20 @@
                   endif 
                 endfor
             -%}
+        {% endif %}
+        {% if settings.variant_pipe_color %}
+          {% assign option_name = raw_option_name[0] %}
+          {% assign raw_option_selected = option.selected_value | split: '|' %}
+          {% assign option_selected = raw_option_selected[0] %}
+        {% else %}
+          {% assign option_selected = option.selected_value %}
+        {% assign option_name = option.name %}
+        {% endif %}
           {%- if useColor -%}
-             <legend class="form__label " color>{{ option.name }}: <span id="selected-{{ option.name | downcase | replace: ' ', '-' }}"> {{ option.selected_value }}</span></legend>
+             <legend class="form__label " color>{{ option_name }}: <span id="selected-{{ option.name | downcase | replace: ' ', '-' |  remove: '|'  }}"> {{ option_selected }}</span></legend>
               {% render 'color-option', product: product, option: option, block: block %}
-              {%- else -%}
-              <legend class="form__label ">{{ option.name }}: <span id="selected-{{ option.name | downcase | replace: ' ', '-' }}"> {{ option.selected_value }}</span></legend>
+            {%- else -%}
+              <legend class="form__label ">{{ option.name }}: <span id="selected-{{ option.name | downcase | replace: ' ', '-' |  remove: '|'  }}"> {{ option_selected }}</span></legend>
             {% render 'product-variant-options', product: product, option: option, block: block %}
           {%- endif -%}
           </fieldset>

@@ -324,8 +324,8 @@
         "color_scheme": "accent-1",
         "secPdgTop": 30,
         "secPdgBtm": 30,
-        "mblPdgTop": 0,
-        "mblPdgBtm": 0
+        "mblPdgTop": 10,
+        "mblPdgBtm": 10
       }
     },
     "tabs_collection_GW6L9C": {
@@ -640,7 +640,7 @@
         "img_sign": "shopify:\/\/shop_images\/checked_1_1.svg",
         "icon_alignment": "center",
         "icon_size": 100,
-        "per_row": 4.5,
+        "per_row": 4,
         "gap": 20,
         "per_rows": 3.5,
         "gaps": 15,
@@ -795,9 +795,9 @@
         "navigation": true,
         "color_scheme": "scheme-6a35cdea-138a-4dd6-b7b5-b066419a615e",
         "sldCol": "#ffffff",
-        "secPdgTop": 0,
+        "secPdgTop": 10,
         "secPdgBtm": 100,
-        "secPdgTopMbl": 0,
+        "secPdgTopMbl": 5,
         "secPdgBtmMbl": 80
       }
     },

@@ -189,7 +189,12 @@
                                   <div class="product-option">
                                     <dt>{{ option.name }}:</dt>
                                     <dd>
-                                      {{ option.value -}}
+                                      {% if option.value contains '|' %}
+                                        {% assign val_print = option.value |  split: '|' %}
+                                        {{ val_print[0] }}
+                                        {% else %}
+                                        {{ option.value -}}
+                                      {% endif %}
                                       {%- unless forloop.last %}, {% endunless %}
                                     </dd>
                                   </div>

@@ -19,79 +19,32 @@
           </li>
         {% endfor %}
       </ul>
-    </div>
-    <!-- Products for each tab -->
+    </div>    
     <div class="collection-contents">
       {% for block in section.blocks %}
         <div class="tab-content {% if forloop.first %}active{% endif %}" id="tab-{{ block.id }}">
           <div class="collection-items">
-            {% if block.settings.product1_image %}
-              <div class="collection-item">
-                <a href="{{ block.settings.product1_link }}">
-                  <img
-                    src="{{ block.settings.product1_image | img_url: 'medium' }}"
-                    alt="{{ block.settings.product1_title }}"
-                  >
-                  <h3 class="text-color">
-                    {{ block.settings.product1_title }}
-                  </h3>
-                  <p class="text-color">
-                    {{ block.settings.product1_subtitle }}
-                  </p>
-                </a>
-              </div>
-            {% endif %}
-
-            {% if block.settings.product2_image %}
-              <div class="collection-item">
-                <a href="{{ block.settings.product2_link }}">
-                  <img
-                    src="{{ block.settings.product2_image | img_url: 'medium' }}"
-                    alt="{{ block.settings.product2_title }}"
-                  >
-                  <h3 class="text-color">
-                    {{ block.settings.product2_title }}
-                  </h3>
-                  <p class="text-color">
-                    {{ block.settings.product2_subtitle }}
-                  </p>
-                </a>
-              </div>
-            {% endif %}
-
-            {% if block.settings.product3_image %}
-              <div class="collection-item">
-                <a href="{{ block.settings.product3_link }}">
-                  <img
-                    src="{{ block.settings.product3_image | img_url: 'medium' }}"
-                    alt="{{ block.settings.product3_title }}"
-                  >
-                  <h3 class="text-color">
-                    {{ block.settings.product3_title }}
-                  </h3>
-                  <p class="text-color">
-                    {{ block.settings.product3_subtitle }}
-                  </p>
-                </a>
-              </div>
-            {% endif %}
-
-            {% if block.settings.product4_image %}
-              <div class="collection-item">
-                <a href="{{ block.settings.product4_link }}">
-                  <img
-                    src="{{ block.settings.product4_image | img_url: '600x' }}"
-                    alt="{{ block.settings.product4_title }}"
-                  >
-                  <h3 class="text-color">
-                    {{ block.settings.product4_title }}
-                  </h3>
-                  <p class="text-color">
-                    {{ block.settings.product4_subtitle }}
-                  </p>
-                </a>
-              </div>
-            {% endif %}
+            {% for i in (1..15) %}
+              {% liquid
+                assign slide_link = 'link_' | append: forloop.index
+                assign slide_title = 'title_' | append: forloop.index
+                assign slide_sub_title = 'sub_title_' | append: forloop.index
+                assign slide_image = 'image_' | append: forloop.index
+              %}
+              {% if block.settings[slide_image] %}
+                <div class="collection-item">
+                  <a href="{{ block.settings[slide_link] }}">
+                    <img src="{{ block.settings[slide_image] | image_url: width: 600 }}" alt="{{ block.settings[slide_image].alt }}" width="" height="">
+                    <h3 class="text-color">
+                      {{ block.settings[slide_title] }}
+                    </h3>
+                    <p class="text-color">
+                      {{ block.settings[slide_sub_title] }}
+                    </p>
+                  </a>
+                </div>
+              {% endif %}
+            {% endfor %}
           </div>
         </div>
       {% endfor %}
@@ -361,85 +314,364 @@
           "default": "Face"
         },
         {
-          "type": "image_picker",
-          "id": "product1_image",
-          "label": "Product 1 Image"
-        },
-        {
-          "type": "text",
-          "id": "product1_title",
-          "label": "Product 1 Title",
-          "default": "Product 1"
-        },
-        {
-          "type": "text",
-          "id": "product1_subtitle",
-          "label": "Product 1 Subtitle"
-        },
-        {
-          "type": "url",
-          "id": "product1_link",
-          "label": "Product 1 Link"
+          "type": "header",
+          "content": "Slide 1"
         },
         {
           "type": "image_picker",
-          "id": "product2_image",
-          "label": "Product 2 Image"
+          "id": "image_1",
+          "label": "Select Image"
         },
         {
           "type": "text",
-          "id": "product2_title",
-          "label": "Product 2 Title"
+          "id": "title_1",
+          "label": "Enter Title"
         },
         {
           "type": "text",
-          "id": "product2_subtitle",
-          "label": "Product 2 Subtitle"
+          "id": "sub_title_1",
+          "label": "Enter Subtitle"
         },
         {
           "type": "url",
-          "id": "product2_link",
-          "label": "Product 2 Link"
+          "id": "link_1",
+          "label": "Select URL"
+        },
+        {
+          "type": "header",
+          "content": "Slide 2"
         },
         {
           "type": "image_picker",
-          "id": "product3_image",
-          "label": "Product 3 Image"
+          "id": "image_2",
+          "label": "Select Image"
         },
         {
           "type": "text",
-          "id": "product3_title",
-          "label": "Product 3 Title"
+          "id": "title_2",
+          "label": "Enter Title"
         },
         {
           "type": "text",
-          "id": "product3_subtitle",
-          "label": "Product 3 Subtitle"
+          "id": "sub_title_2",
+          "label": "Enter Subtitle"
         },
         {
           "type": "url",
-          "id": "product3_link",
-          "label": "Product 3 Link"
+          "id": "link_2",
+          "label": "Select URL"
+        },
+        {
+          "type": "header",
+          "content": "Slide 3"
         },
         {
           "type": "image_picker",
-          "id": "product4_image",
-          "label": "Product 4 Image"
+          "id": "image_3",
+          "label": "Select Image"
         },
         {
           "type": "text",
-          "id": "product4_title",
-          "label": "Product 4 Title"
+          "id": "title_3",
+          "label": "Enter Title"
         },
         {
           "type": "text",
-          "id": "product4_subtitle",
-          "label": "Product 4 Subtitle"
+          "id": "sub_title_3",
+          "label": "Enter Subtitle"
         },
         {
           "type": "url",
-          "id": "product4_link",
-          "label": "Product 4 Link"
+          "id": "link_3",
+          "label": "Select URL"
+        },
+        {
+          "type": "header",
+          "content": "Slide 4"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_4",
+          "label": "Select Image"
+        },
+        {
+          "type": "text",
+          "id": "title_4",
+          "label": "Enter Title"
+        },
+        {
+          "type": "text",
+          "id": "sub_title_4",
+          "label": "Enter Subtitle"
+        },
+        {
+          "type": "url",
+          "id": "link_4",
+          "label": "Select URL"
+        },
+        {
+          "type": "header",
+          "content": "Slide 5"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_5",
+          "label": "Select Image"
+        },
+        {
+          "type": "text",
+          "id": "title_5",
+          "label": "Enter Title"
+        },
+        {
+          "type": "text",
+          "id": "sub_title_5",
+          "label": "Enter Subtitle"
+        },
+        {
+          "type": "url",
+          "id": "link_5",
+          "label": "Select URL"
+        },
+        {
+          "type": "header",
+          "content": "Slide 6"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_6",
+          "label": "Select Image"
+        },
+        {
+          "type": "text",
+          "id": "title_6",
+          "label": "Enter Title"
+        },
+        {
+          "type": "text",
+          "id": "sub_title_6",
+          "label": "Enter Subtitle"
+        },
+        {
+          "type": "url",
+          "id": "link_6",
+          "label": "Select URL"
+        },
+        {
+          "type": "header",
+          "content": "Slide 7"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_7",
+          "label": "Select Image"
+        },
+        {
+          "type": "text",
+          "id": "title_7",
+          "label": "Enter Title"
+        },
+        {
+          "type": "text",
+          "id": "sub_title_7",
+          "label": "Enter Subtitle"
+        },
+        {
+          "type": "url",
+          "id": "link_7",
+          "label": "Select URL"
+        },
+        {
+          "type": "header",
+          "content": "Slide 8"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_8",
+          "label": "Select Image"
+        },
+        {
+          "type": "text",
+          "id": "title_8",
+          "label": "Enter Title"
+        },
+        {
+          "type": "text",
+          "id": "sub_title_8",
+          "label": "Enter Subtitle"
+        },
+        {
+          "type": "url",
+          "id": "link_8",
+          "label": "Select URL"
+        },
+        {
+          "type": "header",
+          "content": "Slide 9"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_9",
+          "label": "Select Image"
+        },
+        {
+          "type": "text",
+          "id": "title_9",
+          "label": "Enter Title"
+        },
+        {
+          "type": "text",
+          "id": "sub_title_9",
+          "label": "Enter Subtitle"
+        },
+        {
+          "type": "url",
+          "id": "link_9",
+          "label": "Select URL"
+        },
+        {
+          "type": "header",
+          "content": "Slide 10"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_10",
+          "label": "Select Image"
+        },
+        {
+          "type": "text",
+          "id": "title_10",
+          "label": "Enter Title"
+        },
+        {
+          "type": "text",
+          "id": "sub_title_10",
+          "label": "Enter Subtitle"
+        },
+        {
+          "type": "url",
+          "id": "link_10",
+          "label": "Select URL"
+        },
+        {
+          "type": "header",
+          "content": "Slide 11"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_11",
+          "label": "Select Image"
+        },
+        {
+          "type": "text",
+          "id": "title_11",
+          "label": "Enter Title"
+        },
+        {
+          "type": "text",
+          "id": "sub_title_11",
+          "label": "Enter Subtitle"
+        },
+        {
+          "type": "url",
+          "id": "link_11",
+          "label": "Select URL"
+        },
+        {
+          "type": "header",
+          "content": "Slide 12"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_12",
+          "label": "Select Image"
+        },
+        {
+          "type": "text",
+          "id": "title_12",
+          "label": "Enter Title"
+        },
+        {
+          "type": "text",
+          "id": "sub_title_12",
+          "label": "Enter Subtitle"
+        },
+        {
+          "type": "url",
+          "id": "link_12",
+          "label": "Select URL"
+        },
+        {
+          "type": "header",
+          "content": "Slide 13"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_13",
+          "label": "Select Image"
+        },
+        {
+          "type": "text",
+          "id": "title_13",
+          "label": "Enter Title"
+        },
+        {
+          "type": "text",
+          "id": "sub_title_13",
+          "label": "Enter Subtitle"
+        },
+        {
+          "type": "url",
+          "id": "link_13",
+          "label": "Select URL"
+        },
+        {
+          "type": "header",
+          "content": "Slide 14"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_14",
+          "label": "Select Image"
+        },
+        {
+          "type": "text",
+          "id": "title_14",
+          "label": "Enter Title"
+        },
+        {
+          "type": "text",
+          "id": "sub_title_14",
+          "label": "Enter Subtitle"
+        },
+        {
+          "type": "url",
+          "id": "link_14",
+          "label": "Select URL"
+        },
+        {
+          "type": "header",
+          "content": "Slide 15"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_15",
+          "label": "Select Image"
+        },
+        {
+          "type": "text",
+          "id": "title_15",
+          "label": "Enter Title"
+        },
+        {
+          "type": "text",
+          "id": "sub_title_15",
+          "label": "Enter Subtitle"
+        },
+        {
+          "type": "url",
+          "id": "link_15",
+          "label": "Select URL"
         }
       ]
     }

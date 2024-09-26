@@ -82,7 +82,7 @@
             "image_ani": "none",
             "text_size": 14,
             "text_style": "body",
-            "text": "Order in <strong>(timer) <\/strong>to Get By <strong>(date) <\/strong>|<strong> <\/strong>30-day returns on all orders",
+            "text": "Estimated Delivery Date: <strong>(date)<\/strong> | Free Shipping Order",
             "date_locale": "en-US",
             "ship_bg": "#ffffff",
             "show_border": false,
@@ -331,9 +331,6 @@
         "heading": "Frequently Asked Questions",
         "desktop_heading_font_size": 40,
         "chkbx": false,
-        "faq_position": "first",
-        "show_button": true,
-        "responsive_btn": true,
         "heading_size": "h1",
         "heading_alignment": "left",
         "layout": "section",
@@ -343,8 +340,6 @@
         "image_ratio": "small",
         "desktop_layout": "image_second",
         "heading_size_row": "h3",
-        "button_label": "More FAQs",
-        "button_link": "shopify:\/\/pages\/faqs",
         "padding_top": 0,
         "padding_bottom": 0,
         "mobile_padding_top": 0,
@@ -378,168 +373,6 @@
         "padding_bottom": 100,
         "padding_topmob": 80,
         "padding_bottommob": 80
-      }
-    },
-    "our_collection_YGYzgA": {
-      "type": "our-collection",
-      "blocks": {
-        "tab_CdEbPa": {
-          "type": "tab",
-          "settings": {
-            "tab_title": "Face",
-            "product1_image": "shopify:\/\/shop_images\/453519475_806540405021384_8591192359653799592_n-removebg-preview_1.png",
-            "product1_title": "",
-            "product1_subtitle": "Concealer & Primer",
-            "product1_link": "shopify:\/\/collections\/concealer-and-primer",
-            "product2_image": "shopify:\/\/shop_images\/453519475_806540405021384_8591192359653799592_n-removebg-preview_1.png",
-            "product2_title": "",
-            "product2_subtitle": "Foundation",
-            "product2_link": "shopify:\/\/collections\/foundation",
-            "product3_image": "shopify:\/\/shop_images\/453519475_806540405021384_8591192359653799592_n-removebg-preview_1.png",
-            "product3_title": "",
-            "product3_subtitle": "Face Powder\/Compact",
-            "product3_link": "shopify:\/\/collections\/face-powder-compact",
-            "product4_image": "shopify:\/\/shop_images\/453519475_806540405021384_8591192359653799592_n-removebg-preview_1.png",
-            "product4_title": "",
-            "product4_subtitle": "Serum & Toner",
-            "product4_link": "shopify:\/\/collections\/serum-toner",
-            "product5_image": "shopify:\/\/shop_images\/453519475_806540405021384_8591192359653799592_n-removebg-preview_1.png",
-            "product5_title": "",
-            "product5_subtitle": "Serum & Toners",
-            "product5_link": "shopify:\/\/collections\/serum-toner"
-          }
-        },
-        "tab_T4ArmF": {
-          "type": "tab",
-          "settings": {
-            "tab_title": "Lips",
-            "product1_image": "shopify:\/\/shop_images\/Card.png",
-            "product1_title": "",
-            "product1_subtitle": "Concealer & Primer",
-            "product1_link": "shopify:\/\/collections\/concealer-and-primer",
-            "product2_image": "shopify:\/\/shop_images\/Card.png",
-            "product2_title": "",
-            "product2_subtitle": "Foundation",
-            "product2_link": "shopify:\/\/collections\/foundation",
-            "product3_image": "shopify:\/\/shop_images\/Card.png",
-            "product3_title": "",
-            "product3_subtitle": "Face Powder\/Compact",
-            "product3_link": "shopify:\/\/collections\/face-powder-compact",
-            "product4_image": "shopify:\/\/shop_images\/Card.png",
-            "product4_title": "",
-            "product4_subtitle": "Serum & Toner",
-            "product4_link": "shopify:\/\/collections\/serum-toner",
-            "product5_image": "shopify:\/\/shop_images\/Card.png",
-            "product5_title": "",
-            "product5_subtitle": "Bluser, Highlighter & Bronzer",
-            "product5_link": "shopify:\/\/collections\/bluser-highlighter-bronzer"
-          }
-        },
-        "tab_ExNDhU": {
-          "type": "tab",
-          "settings": {
-            "tab_title": "Nails",
-            "product1_image": "shopify:\/\/shop_images\/453519475_806540405021384_8591192359653799592_n-removebg-preview_1.png",
-            "product1_title": "",
-            "product1_subtitle": "Concealer & Primer",
-            "product1_link": "shopify:\/\/collections\/concealer-and-primer",
-            "product2_image": "shopify:\/\/shop_images\/453519475_806540405021384_8591192359653799592_n-removebg-preview_1.png",
-            "product2_title": "",
-            "product2_subtitle": "Foundation",
-            "product2_link": "shopify:\/\/collections\/foundation",
-            "product3_image": "shopify:\/\/shop_images\/453519475_806540405021384_8591192359653799592_n-removebg-preview_1.png",
-            "product3_title": "",
-            "product3_subtitle": "Face Powder\/Compact",
-            "product3_link": "shopify:\/\/collections\/face-powder-compact",
-            "product4_image": "shopify:\/\/shop_images\/453519475_806540405021384_8591192359653799592_n-removebg-preview_1.png",
-            "product4_title": "",
-            "product4_subtitle": "Serum & Toner",
-            "product4_link": "shopify:\/\/collections\/serum-toner",
-            "product5_image": "shopify:\/\/shop_images\/453519475_806540405021384_8591192359653799592_n-removebg-preview_1.png",
-            "product5_title": "",
-            "product5_subtitle": "Serum & Toners",
-            "product5_link": "shopify:\/\/collections\/serum-toner"
-          }
-        },
-        "tab_LtUGGx": {
-          "type": "tab",
-          "settings": {
-            "tab_title": "Eyes",
-            "product1_image": "shopify:\/\/shop_images\/Card.png",
-            "product1_title": "",
-            "product1_subtitle": "Concealer & Primer",
-            "product1_link": "shopify:\/\/collections\/concealer-and-primer",
-            "product2_image": "shopify:\/\/shop_images\/Card.png",
-            "product2_title": "",
-            "product2_subtitle": "Foundation",
-            "product2_link": "shopify:\/\/collections\/foundation",
-            "product3_image": "shopify:\/\/shop_images\/Card.png",
-            "product3_title": "",
-            "product3_subtitle": "Face Powder\/Compact",
-            "product3_link": "shopify:\/\/collections\/face-powder-compact",
-            "product4_image": "shopify:\/\/shop_images\/Card.png",
-            "product4_title": "",
-            "product4_subtitle": "Serum & Toner",
-            "product4_link": "shopify:\/\/collections\/serum-toner",
-            "product5_image": "shopify:\/\/shop_images\/Card.png",
-            "product5_title": "",
-            "product5_subtitle": "Bluser, Highlighter & Bronzer",
-            "product5_link": "shopify:\/\/collections\/bluser-highlighter-bronzer"
-          }
-        },
-        "tab_yhb4iq": {
-          "type": "tab",
-          "settings": {
-            "tab_title": "",
-            "product1_image": "shopify:\/\/shop_images\/Card.png",
-            "product1_title": "",
-            "product1_subtitle": "Concealer & Primer",
-            "product1_link": "shopify:\/\/collections\/concealer-and-primer",
-            "product2_image": "shopify:\/\/shop_images\/Card.png",
-            "product2_title": "",
-            "product2_subtitle": "Foundation",
-            "product2_link": "shopify:\/\/collections\/foundation",
-            "product3_image": "shopify:\/\/shop_images\/Card.png",
-            "product3_title": "",
-            "product3_subtitle": "Face Powder\/Compact",
-            "product3_link": "shopify:\/\/collections\/face-powder-compact",
-            "product4_image": "shopify:\/\/shop_images\/Card.png",
-            "product4_title": "",
-            "product4_subtitle": "Serum & Toner",
-            "product4_link": "shopify:\/\/collections\/serum-toner",
-            "product5_image": "shopify:\/\/shop_images\/Card.png",
-            "product5_title": "",
-            "product5_subtitle": "Bluser, Highlighter & Bronzer",
-            "product5_link": "shopify:\/\/collections\/bluser-highlighter-bronzer"
-          }
-        }
-      },
-      "block_order": [
-        "tab_CdEbPa",
-        "tab_T4ArmF",
-        "tab_ExNDhU",
-        "tab_LtUGGx",
-        "tab_yhb4iq"
-      ],
-      "settings": {
-        "heading": "Our Collection",
-        "heading_alignment": "center",
-        "subtitle_font_size": 20,
-        "subtitle_font_sizes": 16,
-        "color_scheme": "accent-1",
-        "content_text": "#0d0d0d",
-        "text_font_size": 36,
-        "text_font_sizes": 20,
-        "dskSld": 4,
-        "dskSpc": 42,
-        "tabSld": 4.8,
-        "tabSpc": 20,
-        "mblSld": 1.2,
-        "mblSpc": 16,
-        "secPdgTop": 10,
-        "secPdgBtm": 100,
-        "mblPdgTop": 10,
-        "mblPdgBtm": 80
       }
     },
     "gm_slider_H73iEy": {
@@ -672,9 +505,9 @@
         "color_scheme": "",
         "sldCol": "#ffffff",
         "secPdgTop": 10,
-        "secPdgBtm": 100,
+        "secPdgBtm": 50,
         "secPdgTopMbl": 5,
-        "secPdgBtmMbl": 80
+        "secPdgBtmMbl": 35
       }
     }
   },
@@ -685,7 +518,6 @@
     "comparison_table_XH6XXt",
     "c0ef23cf-5481-4b47-9b78-3c28134c079a",
     "related-products",
-    "our_collection_YGYzgA",
     "gm_slider_H73iEy"
   ]
 }

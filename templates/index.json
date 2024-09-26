@@ -54,9 +54,7 @@
         "show_text_below": false,
         "accessibility_info": "Slideshow about our brand",
         "padding_top": 100,
-        "padding_bottom": 100,
-        "padding_topmob": 40,
-        "padding_bottommob": 40
+        "padding_bottom": 100
       }
     },
     "featured_collection_W8newm": {
@@ -98,79 +96,21 @@
         "mobile_padding_bottom": 80
       }
     },
-    "tabs_collection_Fxmxky": {
-      "type": "tabs-collection",
-      "blocks": {
-        "tab_N9xHNU": {
-          "type": "tab",
-          "settings": {
-            "heading": "Skin Care",
-            "collection": "skin-care",
-            "description": "",
-            "collection_text_alignment": "left",
-            "show_description": false,
-            "description_style": "body"
-          }
-        },
-        "tab_dhTHNc": {
-          "type": "tab",
-          "settings": {
-            "heading": "Hair Care",
-            "collection": "hair-care",
-            "description": "",
-            "collection_text_alignment": "left",
-            "show_description": false,
-            "description_style": "body"
-          }
-        },
-        "tab_RUeXC3": {
-          "type": "tab",
-          "settings": {
-            "heading": "Serum & Toner",
-            "collection": "serum-toner",
-            "description": "",
-            "collection_text_alignment": "left",
-            "show_description": false,
-            "description_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "tab_N9xHNU",
-        "tab_dhTHNc",
-        "tab_RUeXC3"
-      ],
+    "our_collection_7jxwER": {
+      "type": "our-collection",
       "settings": {
-        "preTtl": "Our Collection",
-        "tab_font_aligns": "center",
-        "subtitle_font_size": 20,
+        "heading": "Our Collection",
+        "heading_alignment": "center",
+        "subtitle_font_size": 16,
         "subtitle_font_sizes": 16,
-        "tabs_color_scheme": "scheme-ba713329-d431-438f-8af7-80240302db4e",
-        "tab_font": 30,
-        "tab_font_align": "center",
-        "tab_font_mb": 18,
-        "tab_font_mb_align": "left",
-        "show_border": false,
-        "products_to_show": 4,
-        "columns_desktop": 4,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "outline",
-        "color_scheme": "accent-1",
-        "image_ratio": "adapt",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": true,
-        "enable_quick_desc": false,
-        "quick_desc_legth": 90,
-        "quick_desc_size": 14,
-        "enable_quick_add": false,
-        "show_secondary_add": false,
-        "columns_mobile": "1",
-        "padding_top": 0,
-        "padding_bottom": 100,
-        "padding_topmob": 0,
-        "padding_bottommob": 80
+        "color_scheme": "",
+        "content_text": "#0D0D0D",
+        "text_font_size": 16,
+        "text_font_sizes": 16,
+        "secPdgTop": 20,
+        "secPdgBtm": 20,
+        "mblPdgTop": 20,
+        "mblPdgBtm": 20
       }
     },
     "gm_vdo_sld_PXcCY3": {
@@ -371,10 +311,6 @@
         "tab_cMLHpD"
       ],
       "settings": {
-        "preTtl": "Our Collection",
-        "tab_font_aligns": "center",
-        "subtitle_font_size": 20,
-        "subtitle_font_sizes": 16,
         "tabs_color_scheme": "accent-1",
         "tab_font": 30,
         "tab_font_align": "center",
@@ -398,9 +334,7 @@
         "show_secondary_add": false,
         "columns_mobile": "1",
         "padding_top": 100,
-        "padding_bottom": 100,
-        "padding_topmob": 80,
-        "padding_bottommob": 80
+        "padding_bottom": 100
       }
     },
     "collapsible_content_ytea84": {
@@ -474,9 +408,6 @@
         "heading": "Frequently Asked Questions",
         "desktop_heading_font_size": 37,
         "chkbx": false,
-        "faq_position": "first",
-        "show_button": true,
-        "responsive_btn": true,
         "heading_size": "h1",
         "heading_alignment": "left",
         "layout": "none",
@@ -486,8 +417,6 @@
         "image_ratio": "adapt",
         "desktop_layout": "image_second",
         "heading_size_row": "h3",
-        "button_label": "More FAQs",
-        "button_link": "shopify:\/\/pages\/faqs",
         "padding_top": 0,
         "padding_bottom": 0,
         "mobile_padding_top": 0,
@@ -642,8 +571,6 @@
         "icon_size": 100,
         "per_row": 4,
         "gap": 20,
-        "per_rows": 3.5,
-        "gaps": 15,
         "show_arrows": "true",
         "auto_rotate": false,
         "change_slides_speed": 2,
@@ -848,17 +775,77 @@
         "padding_top": 0,
         "padding_bottom": 100
       }
+    },
+    "our_collection_ibg3Dw": {
+      "type": "our-collection",
+      "blocks": {
+        "tab_9ct68F": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "Face",
+            "product1_title": "Product 1",
+            "product1_subtitle": "",
+            "product1_link": "",
+            "product2_title": "",
+            "product2_subtitle": "",
+            "product2_link": "",
+            "product3_title": "",
+            "product3_subtitle": "",
+            "product3_link": "",
+            "product4_title": "",
+            "product4_subtitle": "",
+            "product4_link": ""
+          }
+        },
+        "tab_DhE6JL": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "Face",
+            "product1_title": "Product 1",
+            "product1_subtitle": "",
+            "product1_link": "",
+            "product2_title": "",
+            "product2_subtitle": "",
+            "product2_link": "",
+            "product3_title": "",
+            "product3_subtitle": "",
+            "product3_link": "",
+            "product4_title": "",
+            "product4_subtitle": "",
+            "product4_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "tab_9ct68F",
+        "tab_DhE6JL"
+      ],
+      "settings": {
+        "heading": "Our Collection",
+        "heading_alignment": "center",
+        "subtitle_font_size": 16,
+        "subtitle_font_sizes": 16,
+        "color_scheme": "",
+        "content_text": "#0d0d0d",
+        "text_font_size": 16,
+        "text_font_sizes": 16,
+        "secPdgTop": 20,
+        "secPdgBtm": 20,
+        "mblPdgTop": 20,
+        "mblPdgBtm": 20
+      }
     }
   },
   "order": [
     "hero_slider_hAr9Q9",
     "featured_collection_W8newm",
-    "tabs_collection_Fxmxky",
+    "our_collection_7jxwER",
     "gm_vdo_sld_PXcCY3",
     "tabs_collection_GW6L9C",
     "collapsible_content_ytea84",
     "testimonial_slider_PxwHpG",
     "gm_slider_BnDdT8",
-    "video_text_HAg4FY"
+    "video_text_HAg4FY",
+    "our_collection_ibg3Dw"
   ]
 }

@@ -139,7 +139,7 @@
 
   .banner__content.banner__content--middle-center {
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
   }
 
   .banner__content.banner__content--middle-right {

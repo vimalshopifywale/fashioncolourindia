@@ -4537,6 +4537,12 @@ sticky-header {
   background-color: white;
   border-radius: 8px;
 }
+.gmVdoSldWrap[dark-mode]{
+  background-color: unset;
+}
+.gmVdoSldWrap[dark-mode] .gmPrdctWrap{
+  background-color: white;
+}
 
 .gmPrdctWrap {
   padding: 10px 12px;
@@ -4553,8 +4559,14 @@ sticky-header {
   font-weight: 400;
   /* color: #1b1b1d; */
 }
-
-.gmPrdctImg a {
+.gmVdoSldWrap[dark-mode] .gmPrdctImg p{
+  color: #212121;
+}
+svg.svg-invert path {
+  fill: white;
+  opacity: 1;
+}
+.gmPrdctImg a,.collap_btn {
   text-decoration: none;
   color: #FFF;
   display: inline-block;
@@ -4568,7 +4580,10 @@ sticky-header {
   /* border: 1px solid #3d6332; */
   /* font-family: 'p22-mackinac-pro'; */
 }
-
+.collap_btn{
+  font-size: 18px;
+  font-weight: 300;
+}
 .gmPrdctImg {
   text-align: center;
 }

@@ -2,7 +2,15 @@
   display: flex;
   position: relative;
   line-height: 1;
-  padding: 22px 14px;
+  justify-content: space-between;
+  align-items: flex-start;
+  /* padding: 22px 14px; */
+}
+.accordion summary svg{
+  position: unset;
+}
+.accordion > details {
+  padding: 18px 14px !important;
 }
 
 .accordion .summary__title {
@@ -57,7 +65,8 @@
   margin-bottom: 0rem;
   word-break: break-word;
   overflow-x: auto;
-  padding: 0 0.6rem;
+  /* padding: 0 0.6rem; */
+  padding-top: 6px;
 }
 
 .accordion__content img {

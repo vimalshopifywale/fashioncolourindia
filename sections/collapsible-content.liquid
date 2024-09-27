@@ -15,6 +15,32 @@
       padding-top: {{ section.settings.padding_top }}px;
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
+    
+  }
+ .collap_btn{
+    display:none;
+  }
+  .collap_btn.mbl{
+    display:inline-block;
+  }
+  @media screen and (min-width: 680px){
+    .gm_left_wrap {
+      max-width: unset;
+      display: flex;
+      justify-content: space-between;
+  }
+  .gm_left_wrap h2 {
+    margin-bottom: 12px;
+}
+.collap_btn{
+    display:inline-block;
+  }
+  .collab_btn_wrap{
+    display:none;
+  }
+.collapsible-content__header{
+  width: {{ section.settings.header_text_width }}%;
+}
   }
   /* Mobile Padding */
 @media (max-width: 767px) {
@@ -33,12 +59,13 @@
     border: 0.7px solid #C3C3C3;
   }
   {% endif %}
+  
 {%- endstyle -%}
 
 <div class="page-width sw-collapsible color-{{ section.settings.color_scheme }} gradient">
   <div class="collapsible-content collapsible-{{ section.settings.layout }}-layout isolate{% if section.settings.layout == 'section' %} page-width{% elsif section.settings.layout == 'none' %} content-container content-container--full-width{% endif %}">
     <div class="collapsible-content__wrapper section-{{ section.id }}-padding{% if section.settings.layout == 'section' %} content-container color-{{ section.settings.container_color_scheme }} gradient{% endif %}">
-      <div class="{% if section.settings.image == blank %}collapsible-content-wrapper-narrow{% else %}page-width{% endif %}">
+      <div class="{% if section.settings.image == blank %}collapsible-content-wrapper-narrow{% else %}page-width{% endif %} {{ section.settings.header_alignment }}" >
         <div
           class="collapsible-content__header{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
           style="text-align: {{ section.settings.heading_alignment }};"
@@ -54,6 +81,9 @@
             </h2>
           {%- else -%}
             <h2 class="visually-hidden">{{ 'accessibility.collapsible_content_title' | t }}</h2>
+          {% endif %}
+          {% if section.settings.btn_url != blank and section.settings.btn_text != blank %}
+            <a href="{{ section.settings.btn_url }}" class="collap_btn">{{ section.settings.btn_text }}</a>
           {% endif %}
         </div>
         <div class="grid grid--1-col grid--2-col-tablet collapsible-content__grid{% if section.settings.desktop_layout == 'image_second' %} collapsible-content__grid--reverse{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
@@ -90,7 +120,7 @@
           {% endif %}
           <div class="grid__item">
             {% if section.settings.chkbx %}
-              {%- for item in product.metafields.custom.product_details_controller.value.gm_fa_qs.value -%}
+              {%- for item in product.metafields.custom.product_details_controller.value.product_fa_qs.value -%}
   
                 <div
                   class="accordion{% if section.settings.layout == 'row' %} content-container color-{{ section.settings.container_color_scheme }} gradient{% endif %}"
@@ -103,7 +133,7 @@
                   >
                     <summary id="Summary-{{ forloop.index }}-{{ section.id }}">
                       <h3 class="accordion__title inline-richtext {{ section.settings.heading_size_row }}">
-                        {{ item.gm_question.value }}
+                        {{ item.question.value }}
                       </h3>
                       {% render 'icon-caret' %}
                     </summary>
@@ -113,7 +143,7 @@
                       role="region"
                       aria-labelledby="Summary-{{ forloop.index }}-{{ section.id }}"
                     >
-                      {{ item.gm_answer | metafield_tag }}
+                      {{ item.answer | metafield_tag }}
                     </div>
                   </details>
                 </div>
@@ -155,6 +185,11 @@
             {% endif %}
           </div>
         </div>
+        {% if section.settings.btn_url != blank and section.settings.btn_text != blank %}
+          <div class="collab_btn_wrap" style="text-align: {{ section.settings.heading_alignment }};">
+            <a href="{{ section.settings.btn_url }}" class="collap_btn mbl">{{ section.settings.btn_text }}</a>
+          </div>
+        {% endif %}
       </div>
     </div>
   </div>
@@ -179,6 +214,42 @@
       "id": "heading",
       "label": "t:sections.collapsible_content.settings.heading.label",
       "default": "Collapsible content"
+    },
+    {
+      "type": "select",
+      "id": "header_alignment",
+      "label": "Header Alignment",
+      "default":"gm_left_wrap",
+      "options": [
+        {
+          "label":"Left",
+          "value": "gm_left_wrap"
+        },
+        {
+          "label":"Top",
+          "value": "top"
+        }
+      ]
+    },
+    {
+      "type": "range",
+      "id": "header_text_width",
+      "label": "Header Box Width",
+      "default": 24,
+      "min": 10,
+      "max": 90,
+      "step": 1,
+      "unit": "%"
+    },
+    {
+      "type": "text",
+      "id": "btn_text",
+      "label": "Button Text"
+    },
+    {
+      "type": "url",
+      "id": "btn_url",
+      "label": "Button URL"
     },
     {
       "type": "range",

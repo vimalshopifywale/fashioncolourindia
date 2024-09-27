@@ -138,7 +138,8 @@
         "column_th4LBx"
       ],
       "custom_css": [
-        ".content-container {border: 0.7px solid #c3c3c3; background-color: #fff; border-radius: 15px; padding: 40px 0;}"
+        ".content-container {border: 0.7px solid #c3c3c3; background-color: #fff; border-radius: 15px; padding: 40px 0; height: 100%;}",
+        ".content-container strong{font-weight:500;}"
       ],
       "settings": {
         "title": "",

@@ -98,13 +98,13 @@
                         --table-shadow-blur-radius: {{ section.settings.table_shadow_blur | divided_by: 10.0 }}rem;"
           >
           {% if section.settings.chkBx %}
-            {% for item in product.metafields.custom.product_details_controller.value.gm_comparision_with_other.value %}
+            {% for item in product.metafields.custom.product_details_controller.value.compare_points.value %}
               <tr>
                 <td align="center" class="comparison-table__row-name gradient color-{{ section.settings.benefit_color_scheme }}">
-                  <h3>{{ item.gm_comparision_point.value }}</h3>
+                  <h3>{{ item.title.value }}</h3>
                 </td>
                 <td align="center" class="color-{{ section.settings.icon_cells_color_scheme }}">
-                  {%- if item.gm_revo_life_india.value -%}
+                  {%- if item.fashion_color.value -%}
                     {% comment %} <svg
                       class="comparison-table__checkmark"
                       id="Layer_3"
@@ -131,7 +131,7 @@
                   {%- endif -%}
                 </td>
                 <td align="center" class="color-{{ section.settings.icon_cells_color_scheme }}">
-                  {%- if item.gm_other.value -%}
+                  {%- if item.other.value -%}
                     {% comment %} <svg
                       class="comparison-table__checkmark"
                       id="Layer_3"

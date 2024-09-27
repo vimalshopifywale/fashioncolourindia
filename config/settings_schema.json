@@ -916,7 +916,7 @@
         "id": "variant_pipe_color",
         "label": "Check to Get Color From Variant Title",
         "info": "If Variant Title Containes '|' than after pipe symbole use as color hex code, if variant title doesn't contain pipe than title use as color name",
-        "default":true
+        "default": true
       },
       {
         "type": "header",

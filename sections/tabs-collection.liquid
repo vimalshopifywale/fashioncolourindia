@@ -42,9 +42,23 @@
    text-align: {{ section.settings.tab_content_align_mb }};
     }
   }
+  .section-{{ section.id }}-padding .vdo-subtitel{
+      font-size: {{ section.settings.subtitle_font_size }}px;
+      text-align:center;
+      font-weight: 500;
+      color: #BF0436;
+    }
+    @media screen and (max-width:767px){
+      .section-{{ section.id }}-padding .vdo-subtitel{
+        font-size: {{ section.settings.subtitle_font_sizemob }}px;
+      }
+    }
 </style>
 
 <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.tabs_color_scheme }}">
+  {% if section.settings.preTtl != blank %}
+        <p class="vdo-subtitel">{{ section.settings.preTtl }}</p>
+      {% endif %}
   <ul class="custom--tabs page-width lumin-tab-{{ section.id }}">
     {% for block in section.blocks %}
       {% assign collection = collections[block.settings.collection] %}
@@ -186,6 +200,30 @@
   "groups": ["header", "custom.popup", "footer"]
   },
   "settings": [
+    {
+      "type": "text",
+      "id": "preTtl",
+      "label": "Enter Sub-Title",
+      "default": "OUR MISSION"
+    },
+    {
+      "type": "range",
+      "id": "subtitle_font_size",
+      "label": "Desktop Subtitle Font Size",
+      "default": 16,
+      "min": 12,
+      "max": 48,
+      "step": 1
+    },
+    {
+      "type": "range",
+      "id": "subtitle_font_sizemob",
+      "label": "Mobile Subtitle Font Size",
+      "default": 16,
+      "min": 12,
+      "max": 48,
+      "step": 1
+    },
       {
         "type": "color_scheme",
         "id": "tabs_color_scheme",

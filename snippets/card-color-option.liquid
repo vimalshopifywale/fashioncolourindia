@@ -256,9 +256,15 @@
     {%- for value in option.values limit: settings.swatches_limit -%}
       {% liquid 
         if settings.variant_pipe_color
+        if value contains '~'
+          assign gm_value = value | split: '~'
+          assign fnl_value = gm_value[0]
+          assign fnl_color = shop.metaobjects.swatch_images[gm_value[1]].swatch_image | image_url: width:40 | prepend: 'url(' | append: ')'
+        elsif value contains '|'
           assign gm_value = value | split: '|'
           assign fnl_value = gm_value[0]
           assign fnl_color = gm_value[1] | prepend: '#' 
+        endif
         else 
           assign fnl_value = value
           assign fnl_color = value
@@ -316,7 +322,7 @@
       <label
         data-{{ option.name | downcase | replace: ' ', '-' }}="{{fnl_value}}"
         style="
-          background: {{ fnl_color }};
+          background: {{ fnl_color }} !important;
           {%- case colorNumber -%}
 
               {%- when 2 -%}

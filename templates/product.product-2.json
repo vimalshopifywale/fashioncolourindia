@@ -330,7 +330,7 @@
         "caption": "",
         "heading": "Frequently Asked Questions",
         "desktop_heading_font_size": 40,
-        "chkbx": false,
+        "chkbx": true,
         "heading_size": "h1",
         "heading_alignment": "left",
         "layout": "section",

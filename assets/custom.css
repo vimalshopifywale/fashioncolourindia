@@ -468,7 +468,7 @@
 
 /* ===Testimonial_Slider================================================================== */
     .testimonial-slider .review-box img {
-        object-fit: none !important;
+        object-fit: contain !important;
         height: auto !important;
         bottom: -25px !important;
         top: auto !important;
@@ -490,11 +490,11 @@
         margin: 17px 0 8px !important;
     }
     .lumin-slide__text.lumin-slide__rte p{
-        font-size: 14px !important;
-        font-weight: 400;
+        font-size: 18px !important;
+        font-weight: 300;
         line-height: normal !important;
         margin: 0;
-        padding: 0 50px;
+        padding: 0 12px;
     }
     .testimonial-slider .lumin-slide__small-heading img {
         width: auto !important;
@@ -609,7 +609,7 @@
     }
     .footer-main .footer-block__details-content li a{
         font-size: 17px;
-        font-weight: 400;
+        font-weight: 200;
         line-height: 1;
         padding: 0 0 16px;
     }
@@ -899,10 +899,13 @@
         }
         .footer-main .newsletter-form__field-wrapper label,
         .footer-main .footer-block__details-content li a{
-            font-size: 16px;
+            font-size: 17px;
         }
         .footer-main .newsletter-form__button{
             font-size: 14px;
             padding: 10px 7px;
+        }
+        .footer-main .footer-block__newsletter p{
+            font-size: 16px;
         }
     }

@@ -641,7 +641,7 @@
         "auto_rotate": false,
         "change_slides_speed": 2,
         "text_size": 100,
-        "heading_color": "#474747",
+        "heading_color": "#0d0d0d",
         "text_color": "#5e5e5e",
         "color_scheme": "scheme-c3d90b13-073f-4176-a4d3-8e9a9cca6a92",
         "color_scheme_main": "scheme-6a35cdea-138a-4dd6-b7b5-b066419a615e",

@@ -32,6 +32,10 @@
   .gm_left_wrap h2 {
     margin-bottom: 12px;
 }
+.gm_left_wrap .collapsible-content__header > div{
+  position: sticky;
+    top: 150px;
+}
 .collap_btn{
     display:inline-block;
   }
@@ -41,6 +45,12 @@
 .collapsible-content__header{
   width: {{ section.settings.header_text_width }}%;
 }
+.collapsible-content__header+div{
+  width: {{ 110 |  minus: section.settings.header_text_width }}%;
+}
+  }
+  .collab_btn_wrap{
+    margin-top:10px;
   }
   /* Mobile Padding */
 @media (max-width: 767px) {
@@ -70,6 +80,7 @@
           class="collapsible-content__header{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
           style="text-align: {{ section.settings.heading_alignment }};"
         >
+        <div>
           {%- if section.settings.caption != blank -%}
             <p class="caption-with-letter-spacing">
               {{ section.settings.caption | escape }}
@@ -85,6 +96,7 @@
           {% if section.settings.btn_url != blank and section.settings.btn_text != blank %}
             <a href="{{ section.settings.btn_url }}" class="collap_btn">{{ section.settings.btn_text }}</a>
           {% endif %}
+        </div>
         </div>
         <div class="grid grid--1-col grid--2-col-tablet collapsible-content__grid{% if section.settings.desktop_layout == 'image_second' %} collapsible-content__grid--reverse{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
           {%- if section.settings.image != blank -%}
@@ -135,7 +147,9 @@
                       <h3 class="accordion__title inline-richtext {{ section.settings.heading_size_row }}">
                         {{ item.question.value }}
                       </h3>
-                      {% render 'icon-caret' %}
+                      <span class="gm_faq_icon">
+                        {% render 'icon-caret' %}
+                      </span>
                     </summary>
                     <div
                       class="accordion__content rte"
@@ -168,7 +182,9 @@
                     <h3 class="accordion__title inline-richtext {{ section.settings.heading_size_row }}">
                       {{ block.settings.heading | default: block.settings.page.title }}
                     </h3>
-                    {% render 'icon-caret' %}
+                    <span class="gm_faq_icon">
+                        {% render 'icon-caret' %}
+                      </span>
                   </summary>
                   <div
                     class="accordion__content rte"

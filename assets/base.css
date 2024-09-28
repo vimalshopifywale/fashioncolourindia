@@ -955,6 +955,9 @@ summary::-webkit-details-marker {
   flex-grow: 1;
   flex-shrink: 0;
 }
+.grid__item > .accordion:last-of-type{
+  border-bottom: unset !important;
+}
 
 @media screen and (min-width: 750px) {
   .grid__item {

@@ -167,7 +167,8 @@ font-weight: 400;
 
 .accordion p{
   font-size: 14px;
-  padding: 0 8px;
+  /* padding: 0 8px; */
+  font-weight: 300;
   }
 
   .collapsible-content__heading {
@@ -175,15 +176,15 @@ font-weight: 400;
   }
 
   .accordion h3{
-    font-size:15px;
+    font-size:18px;
   }
 
   .accordion__content {
     margin-bottom: 0.5rem;
 }
 .accordion{
-  border: 2px dashed #C3C3C3 !important;
-  margin-bottom: 15px;
+  /* border: 2px dashed #C3C3C3 !important; */
+  /* margin-bottom: 15px; */
   border-radius: 6px;
 }
 

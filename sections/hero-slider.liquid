@@ -167,6 +167,9 @@
                   font-size:{{ block.settings.block_cap_sizes }}px;
               }
           }
+          #Slide-{{ section.id }}-{{ forloop.index }} video{
+            object-fit: {{ block.settings.video_size }};
+          }
         </style>
         <div
           class="slideshow__slide grid__item grid--1-col slider__slide"
@@ -184,7 +187,7 @@
             <div class="slideshow__media banner__media media{% if block.settings.image == blank %} placeholder{% endif %}">
               {%- if block.settings.image -%}
                 {%- assign height = block.settings.image.width | divided_by: block.settings.image.aspect_ratio | round -%}
-                {{ block.settings.image | image_url: width: 3840 | image_tag: loading: 'lazy', height: height, sizes: '100vw', widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840' }}
+                {{ block.settings.image | video_tag: autoplay: true, loop: true, muted: true }}
               {%- else -%}
                 {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
               {%- endif -%}
@@ -197,102 +200,96 @@
                   | divided_by: block.settings.image_mob.aspect_ratio
                   | round
                 -%}
-                {{
-                  block.settings.image_mob
-                  | image_url: width: 3840
-                  | image_tag:
-                    loading: 'lazy',
-                    height: height,
-                    sizes: '100vw',
-                    widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'
-                }}
+                {{ block.settings.image_mob | video_tag: autoplay: true, loop: true, muted: true }}
               {%- else -%}
                 {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
               {%- endif -%}
             </div>
           </div>
           <div class="slideshow__text-wrapper banner--content-align-mobile-bottom banner__content banner__content--{{ block.settings.mobile_box_align }} banner__content--{{ block.settings.box_align }} page-width{% if block.settings.show_text_box == false %} banner--desktop-transparent{% endif %}">
-            <div class="slideshow__text banner__box banner__box-{{block.id}}  content-container content-container--full-width-mobile color-{{ block.settings.color_scheme }} gradient slideshow__text--{{ block.settings.text_alignment }} slideshow__text-mobile--{{ block.settings.text_alignment_mobile }}">
-              {% if block.settings.image_1 != blank and block.settings['review-text'] != blank %}
-                <p class="review-box">
-                  <img
-                    src="{{ block.settings.image_1 | image_url: height: 20 }}"
-                    width=""
-                    height=""
-                    alt="Selected image 1"
+            {% if block.settings.image_1 != blank or block.settings['review-text'] != blank or block.settings.caption != blank or block.settings.heading != blank or block.settings.subheading != blank or block.settings.button_label != blank or block.settings.button_label1 != blank %}
+              <div class="slideshow__text banner__box banner__box-{{block.id}}  content-container content-container--full-width-mobile color-{{ block.settings.color_scheme }} gradient slideshow__text--{{ block.settings.text_alignment }} slideshow__text-mobile--{{ block.settings.text_alignment_mobile }}">
+                {% if block.settings.image_1 != blank and block.settings['review-text'] != blank %}
+                  <p class="review-box">
+                    <img
+                      src="{{ block.settings.image_1 | image_url: height: 20 }}"
+                      width=""
+                      height=""
+                      alt="Selected image 1"
+                    >
+                    {{- block.settings['review-text'] }}
+                  </p>
+                {% elsif block.settings['review-text'] != blank %}
+                  <p>
+                    {{- block.settings['review-text'] }}
+                  </p>
+                {% endif %}
+                {%- if block.settings.caption != blank -%}
+                  <h1
+                    class="inline-richtext h2"
                   >
-                  {{- block.settings['review-text'] }}
-                </p>
-              {% elsif block.settings['review-text'] != blank %}
-                <p>
-                  {{- block.settings['review-text'] }}
-                </p>
-              {% endif %}
-              {%- if block.settings.caption != blank -%}
-                <h1
-                  class="inline-richtext h2"
-                >
-                  {{ block.settings.caption }}
-                </h1>
-              {%- endif -%}
-              {%- if block.settings.heading != blank -%}
-                <style>
-                  .lm-slide-head-{{block.id}} {
-                      font-size:{{ block.settings.block_head_size-2 }}px !important;
-                      line-height:{{ block.settings.block_head_line }};
-                      margin-bottom:10px;
-                  }
-                    @media screen and (max-width: 600px){
-                      .lm-slide-head-{{block.id}} {
-                      font-size:{{ block.settings.block_head_size-mobile }}px !important;
-                  }
+                    {{ block.settings.caption }}
+                  </h1>
+                {%- endif -%}
+                {%- if block.settings.heading != blank -%}
+                  <style>
+                    .lm-slide-head-{{block.id}} {
+                        font-size:{{ block.settings.block_head_size-2 }}px !important;
+                        line-height:{{ block.settings.block_head_line }};
+                        margin-bottom:10px;
                     }
-                            @media only screen and (max-width: 749px) {
-                    .banner__content--flex-start>.banner__box-{{block.id}} {
-                      margin: {{block.settings.mobile_text_spacing}}px 0;
+                      @media screen and (max-width: 600px){
+                        .lm-slide-head-{{block.id}} {
+                        font-size:{{ block.settings.block_head_size-mobile }}px !important;
                     }
-                            }
-                </style>
-                <h2 class="banner__heading inline-richtext lm-slide-head-{{block.id}} {{ block.settings.block_head_size }}">
-                  {{ block.settings.heading }}
-                </h2>
-              {%- endif -%}
-              {%- if block.settings.subheading != blank -%}
-                <div class="banner__text" {{ block.shopify_attributes }}>
-                  <span>{{ block.settings.subheading }}</span>
+                      }
+                              @media only screen and (max-width: 749px) {
+                      .banner__content--flex-start>.banner__box-{{block.id}} {
+                        margin: {{block.settings.mobile_text_spacing}}px 0;
+                      }
+                              }
+                  </style>
+                  <h2 class="banner__heading inline-richtext lm-slide-head-{{block.id}} {{ block.settings.block_head_size }}">
+                    {{ block.settings.heading }}
+                  </h2>
+                {%- endif -%}
+                {%- if block.settings.subheading != blank -%}
+                  <div class="banner__text" {{ block.shopify_attributes }}>
+                    <span>{{ block.settings.subheading }}</span>
+                  </div>
+                {%- endif -%}
+                <div class="bgslider-button">
+                  {%- if block.settings.button_label != blank -%}
+                    <div class="banner__buttons">
+                      <a
+                        {% if block.settings.link %}
+                          href="{{ block.settings.link }}"
+                        {% else %}
+                          role="link" aria-disabled="true"
+                        {% endif %}
+                        class="button button--primary"
+                      >
+                        {{- block.settings.button_label | escape -}}
+                      </a>
+                    </div>
+                  {%- endif -%}
+                  {%- if block.settings.button_label1 != blank -%}
+                    <div class="banner__buttons">
+                      <a
+                        {% if block.settings.link2 %}
+                          href="{{ block.settings.link2 }}"
+                        {% else %}
+                          role="link2" aria-disabled="true"
+                        {% endif %}
+                        class="button button--secondary"
+                      >
+                        {{- block.settings.button_label1 | escape -}}
+                      </a>
+                    </div>
+                  {%- endif -%}
                 </div>
-              {%- endif -%}
-              <div class="bgslider-button">
-                {%- if block.settings.button_label != blank -%}
-                  <div class="banner__buttons">
-                    <a
-                      {% if block.settings.link %}
-                        href="{{ block.settings.link }}"
-                      {% else %}
-                        role="link" aria-disabled="true"
-                      {% endif %}
-                      class="button button--primary"
-                    >
-                      {{- block.settings.button_label | escape -}}
-                    </a>
-                  </div>
-                {%- endif -%}
-                {%- if block.settings.button_label1 != blank -%}
-                  <div class="banner__buttons">
-                    <a
-                      {% if block.settings.link2 %}
-                        href="{{ block.settings.link2 }}"
-                      {% else %}
-                        role="link2" aria-disabled="true"
-                      {% endif %}
-                      class="button button--secondary"
-                    >
-                      {{- block.settings.button_label1 | escape -}}
-                    </a>
-                  </div>
-                {%- endif -%}
               </div>
-            </div>
+            {% endif %}
             {% if block.settings.image_2 != blank %}
               <div class="hero-banner rgtImg{{ block.id | remove:'-'|remove:'_' }} " style="text-align:center; align-self: {{block.settings.text_self_align}};">
                 <img
@@ -318,6 +315,72 @@
           }
         </style>
         
+      {% elsif block.type == 'image' %}
+        <div
+          class="slideshow__slide grid__item grid--1-col slider__slide"
+          id="Slide-{{ section.id }}-{{ forloop.index }}"
+          {% if block.settings['link-2'] %}
+            onclick="location.href='{{ block.settings.link-2  }}';" style="cursor: pointer;"
+          {% endif %}
+          {{ block.shopify_attributes }}
+          role="group"
+          aria-roledescription="{{ 'sections.slideshow.slide' | t }}"
+          aria-label="{{ forloop.index }} {{ 'general.slider.of' | t }} {{ forloop.length }}"
+          tabindex="-1"
+        >
+          <{% if block.settings.slide_link != blank %}a href="{{ block.settings.slide_link }}" {% else %}div {% endif %} >
+            <div class="small-hide">
+              <div class="slideshow__media banner__media media{% if block.settings.image == blank %} placeholder{% endif %}">
+                {%- if block.settings.image -%}
+                  {%- assign height = block.settings.image.width | divided_by: block.settings.image.aspect_ratio | round -%}
+                  {{
+                    block.settings.image
+                    | image_url: width: 3840
+                    | image_tag:
+                      loading: 'lazy',
+                      height: height,
+                      sizes: '100vw',
+                      widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'
+                  }}
+                {%- else -%}
+                  {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
+                {%- endif -%}
+              </div>
+            </div>
+            <div class="large-up-hide">
+              <div class="slideshow__media banner__media media{% if block.settings.image_mob == blank %} placeholder{% endif %}">
+                {%- if block.settings.image_mob -%}
+                  {%- assign height = block.settings.image_mob.width
+                    | divided_by: block.settings.image_mob.aspect_ratio
+                    | round
+                  -%}
+                  {{
+                    block.settings.image_mob
+                    | image_url: width: 3840
+                    | image_tag:
+                      loading: 'lazy',
+                      height: height,
+                      sizes: '100vw',
+                      widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'
+                  }}
+                {%- else -%}
+                  {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
+                {%- endif -%}
+              </div>
+            </div>
+          </{% if block.settings.slide_link != blank %}a {% else %}div {% endif %}>
+        </div>
+        <style>
+          .rgtImg{{ block.id | remove:'-'|remove:'_' }} img{
+            width:{{ block.settings.img_2_dsk_wdth }}px;
+            max-width: 100%;
+          }
+          @media screen and (max-width: 780px){
+          .rgtImg{{ block.id | remove:'-'|remove:'_' }} img{
+            width:{{ block.settings.img_2_mbl_wdth }}px;
+          }
+          }
+        </style>
       {% elsif block.type == 'image-slide' %}
         <style>
           #Slide-{{ section.id }}-{{ forloop.index }} .banner__media::after {
@@ -388,87 +451,89 @@
             </div>
           </div>
           <div class="slideshow__text-wrapper banner--content-align-mobile-bottom banner__content banner__content--{{ block.settings.mobile_box_align }} banner__content--{{ block.settings.box_align }} page-width{% if block.settings.show_text_box == false %} banner--desktop-transparent{% endif %}">
-            <div class="slideshow__text banner__box banner__box-{{block.id}}  content-container content-container--full-width-mobile color-{{ block.settings.color_scheme }} gradient slideshow__text--{{ block.settings.text_alignment }} slideshow__text-mobile--{{ block.settings.text_alignment_mobile }}">
-              {% if block.settings.image_1 != blank and block.settings['review-text'] != blank %}
-                <p class="review-box">
-                  <img
-                    src="{{ block.settings.image_1 | image_url: height: 20 }}"
-                    width=""
-                    height=""
-                    alt="Selected image 1"
+            {% if block.settings.image_1 != blank or block.settings['review-text'] != blank or block.settings.caption != blank or block.settings.heading != blank or block.settings.subheading != blank or block.settings.button_label != blank or block.settings.button_label1 != blank %}  
+              <div class="slideshow__text banner__box banner__box-{{block.id}}  content-container content-container--full-width-mobile color-{{ block.settings.color_scheme }} gradient slideshow__text--{{ block.settings.text_alignment }} slideshow__text-mobile--{{ block.settings.text_alignment_mobile }}">
+                {% if block.settings.image_1 != blank and block.settings['review-text'] != blank %}
+                  <p class="review-box">
+                    <img
+                      src="{{ block.settings.image_1 | image_url: height: 20 }}"
+                      width=""
+                      height=""
+                      alt="Selected image 1"
+                    >
+                    {{- block.settings['review-text'] }}
+                  </p>
+                {% elsif block.settings['review-text'] != blank %}
+                  <p>
+                    {{- block.settings['review-text'] }}
+                  </p>
+                {% endif %}
+                {%- if block.settings.caption != blank -%}
+                  <h1
+                    class="inline-richtext h2"
                   >
-                  {{- block.settings['review-text'] }}
-                </p>
-              {% elsif block.settings['review-text'] != blank %}
-                <p>
-                  {{- block.settings['review-text'] }}
-                </p>
-              {% endif %}
-              {%- if block.settings.caption != blank -%}
-                <h1
-                  class="inline-richtext h2"
-                >
-                  {{ block.settings.caption }}
-                </h1>
-              {%- endif -%}
-              {%- if block.settings.heading != blank -%}
-                <style>
-                  .lm-slide-head-{{block.id}} {
-                      font-size:{{ block.settings.block_head_size-2 }}px !important;
-                      line-height:{{ block.settings.block_head_line }};
-                      margin-bottom:10px;
-                  }
-                    @media screen and (max-width: 600px){
-                      .lm-slide-head-{{block.id}} {
-                      font-size:{{ block.settings.block_head_size-mobile }}px !important;
-                  }
+                    {{ block.settings.caption }}
+                  </h1>
+                {%- endif -%}
+                {%- if block.settings.heading != blank -%}
+                  <style>
+                    .lm-slide-head-{{block.id}} {
+                        font-size:{{ block.settings.block_head_size-2 }}px !important;
+                        line-height:{{ block.settings.block_head_line }};
+                        margin-bottom:10px;
                     }
-                            @media only screen and (max-width: 749px) {
-                    .banner__content--flex-start>.banner__box-{{block.id}} {
-                      margin: {{block.settings.mobile_text_spacing}}px 0;
+                      @media screen and (max-width: 600px){
+                        .lm-slide-head-{{block.id}} {
+                        font-size:{{ block.settings.block_head_size-mobile }}px !important;
                     }
-                            }
-                </style>
-                <h2 class="banner__heading inline-richtext lm-slide-head-{{block.id}} {{ block.settings.block_head_size }}">
-                  {{ block.settings.heading }}
-                </h2>
-              {%- endif -%}
-              {%- if block.settings.subheading != blank -%}
-                <div class="banner__text" {{ block.shopify_attributes }}>
-                  <span>{{ block.settings.subheading }}</span>
+                      }
+                              @media only screen and (max-width: 749px) {
+                      .banner__content--flex-start>.banner__box-{{block.id}} {
+                        margin: {{block.settings.mobile_text_spacing}}px 0;
+                      }
+                              }
+                  </style>
+                  <h2 class="banner__heading inline-richtext lm-slide-head-{{block.id}} {{ block.settings.block_head_size }}">
+                    {{ block.settings.heading }}
+                  </h2>
+                {%- endif -%}
+                {%- if block.settings.subheading != blank -%}
+                  <div class="banner__text" {{ block.shopify_attributes }}>
+                    <span>{{ block.settings.subheading }}</span>
+                  </div>
+                {%- endif -%}
+                <div class="bgslider-button">
+                  {%- if block.settings.button_label != blank -%}
+                    <div class="banner__buttons">
+                      <a
+                        {% if block.settings.link %}
+                          href="{{ block.settings.link }}"
+                        {% else %}
+                          role="link" aria-disabled="true"
+                        {% endif %}
+                        class="button button--primary"
+                      >
+                        {{- block.settings.button_label | escape -}}
+                      </a>
+                    </div>
+                  {%- endif -%}
+                  {%- if block.settings.button_label1 != blank -%}
+                    <div class="banner__buttons">
+                      <a
+                        {% if block.settings.link2 %}
+                          href="{{ block.settings.link2 }}"
+                        {% else %}
+                          role="link2" aria-disabled="true"
+                        {% endif %}
+                        class="button button--secondary"
+                      >
+                        {{- block.settings.button_label1 | escape -}}
+                      </a>
+                    </div>
+                  {%- endif -%}
                 </div>
-              {%- endif -%}
-              <div class="bgslider-button">
-                {%- if block.settings.button_label != blank -%}
-                  <div class="banner__buttons">
-                    <a
-                      {% if block.settings.link %}
-                        href="{{ block.settings.link }}"
-                      {% else %}
-                        role="link" aria-disabled="true"
-                      {% endif %}
-                      class="button button--primary"
-                    >
-                      {{- block.settings.button_label | escape -}}
-                    </a>
-                  </div>
-                {%- endif -%}
-                {%- if block.settings.button_label1 != blank -%}
-                  <div class="banner__buttons">
-                    <a
-                      {% if block.settings.link2 %}
-                        href="{{ block.settings.link2 }}"
-                      {% else %}
-                        role="link2" aria-disabled="true"
-                      {% endif %}
-                      class="button button--secondary"
-                    >
-                      {{- block.settings.button_label1 | escape -}}
-                    </a>
-                  </div>
-                {%- endif -%}
               </div>
-            </div>
+            {% endif %}
             {% if block.settings.image_2 != blank %}
               <div class="hero-banner rgtImg{{ block.id | remove:'-'|remove:'_' }} " style="text-align:center; align-self: {{block.settings.text_self_align}};">
                 <img
@@ -792,6 +857,22 @@
           "label": "Mobile Video"
         },
         {
+          "type": "select",
+          "label": "Video Size",
+          "id": "video_size",
+          "default":"cover",
+          "options": [
+            {
+              "value": "cover",
+              "label":"Cover"
+            },
+            {
+              "value": "contain",
+              "label":"Contain"
+            }
+          ]
+        },
+        {
           "type": "inline_richtext",
           "id": "caption",
           "default": "Company",
@@ -1059,6 +1140,29 @@
           "label": "Mobile Text Box Spacing ",
           "info": "Work when text on top",
           "default": 0
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "name": "Image Slide(No Text)",
+      "limit": 5,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "t:sections.slideshow.blocks.slide.settings.image.label"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_mob",
+          "label": "Mobile Image"
+        },
+        {
+          "type": "url",
+          "id": "slide_link",
+          "label": "Slide URL",
+          "default":"/"
         }
       ]
     },

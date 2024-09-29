@@ -6,7 +6,7 @@
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
   }
-  .collapsible-content__heading {
+  .section-{{ section.id }}-padding .collapsible-content__heading {
   font-size: {{ section.settings.desktop_heading_font_size }}px;
   }
 
@@ -15,7 +15,6 @@
       padding-top: {{ section.settings.padding_top }}px;
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
-    
   }
  .collap_btn{
     display:none;
@@ -28,26 +27,32 @@
       max-width: unset;
       display: flex;
       justify-content: space-between;
-  }
-  .gm_left_wrap h2 {
-    margin-bottom: 12px;
-}
-.gm_left_wrap .collapsible-content__header > div{
-  position: sticky;
-    top: 150px;
-}
-.collap_btn{
-    display:inline-block;
-  }
-  .collab_btn_wrap{
-    display:none;
-  }
-.collapsible-content__header{
-  width: {{ section.settings.header_text_width }}%;
-}
-.collapsible-content__header+div{
-  width: {{ 110 |  minus: section.settings.header_text_width }}%;
-}
+    }
+    .gm_left_wrap h2 {
+      margin-bottom: 12px;
+    }
+    .gm_left_wrap .collapsible-content__header > div{
+      position: sticky;
+      top: 150px;
+    }
+    .collap_btn{
+      display:inline-block;
+    }
+    .collab_btn_wrap{
+      display:none;
+    }
+    .section-{{ section.id }}-padding .collapsible-content__header{
+      width: {{ section.settings.header_text_width }}%;
+    }
+    {% if section.settings.header_text_width == 100 %}
+      .section-{{ section.id }}-padding .collapsible-content__header+div{
+        width: 100%;
+      }
+    {% else %}
+    .section-{{ section.id }}-padding .collapsible-content__header+div{
+        width: {{ 110 |  minus: section.settings.header_text_width }}%;
+      }
+    {% endif %}
   }
   .collab_btn_wrap{
     margin-top:10px;
@@ -59,7 +64,7 @@
     padding-bottom: {{ section.settings.mobile_padding_bottom }}px;
   }
 
-  .collapsible-content__heading {
+  .section-{{ section.id }}-padding .collapsible-content__heading {
     font-size: {{ section.settings.mobile_heading_font_size }}px;
   }
 }
@@ -72,10 +77,10 @@
   
 {%- endstyle -%}
 
-<div class="page-width sw-collapsible color-{{ section.settings.color_scheme }} gradient">
+<div class=" sw-collapsible color-{{ section.settings.color_scheme }} gradient">
   <div class="collapsible-content collapsible-{{ section.settings.layout }}-layout isolate{% if section.settings.layout == 'section' %} page-width{% elsif section.settings.layout == 'none' %} content-container content-container--full-width{% endif %}">
     <div class="collapsible-content__wrapper section-{{ section.id }}-padding{% if section.settings.layout == 'section' %} content-container color-{{ section.settings.container_color_scheme }} gradient{% endif %}">
-      <div class="{% if section.settings.image == blank %}collapsible-content-wrapper-narrow{% else %}page-width{% endif %} {{ section.settings.header_alignment }}" >
+      <div class="{% if section.settings.image != blank %}page-width{% endif %} {{ section.settings.header_alignment }}" >
         <div
           class="collapsible-content__header{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
           style="text-align: {{ section.settings.heading_alignment }};"
@@ -253,7 +258,7 @@
       "label": "Header Box Width",
       "default": 24,
       "min": 10,
-      "max": 90,
+      "max": 100,
       "step": 1,
       "unit": "%"
     },

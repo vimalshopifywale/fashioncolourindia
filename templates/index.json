@@ -1,18 +1,28 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "hero_slider_hAr9Q9": {
       "type": "hero-slider",
       "blocks": {
-        "slide_Ld9UUr": {
-          "type": "slide",
+        "image_slide_LptzRe": {
+          "type": "image-slide",
           "settings": {
             "review-text": "10,000+ Happy Customers",
-            "image_1": "shopify:\/\/shop_images\/review-3.4-stars.png",
-            "image_2": "shopify:\/\/shop_images\/hero-banner.png",
-            "img_2_dsk_wdth": 600,
+            "image_1": "shopify://shop_images/review-3.4-stars_51414753-7284-4eff-93c5-e006e2953320.png",
+            "image_2": "shopify://shop_images/hero-banner_fadd9a3a-8ab7-40ec-813d-ead90ac51873.png",
+            "text_self_align": "center",
+            "img_2_dsk_wdth": 440,
             "img_2_mbl_wdth": 300,
-            "image": "shopify:\/\/shop_images\/rosa-rafael-pxax5WuM7eY-unsplash.jpg",
-            "image_mob": "shopify:\/\/shop_images\/rosa-rafael-pxax5WuM7eY-unsplash.jpg",
+            "image": "shopify://shop_images/rosa-rafael-pxax5WuM7eY-unsplash_9899085d-0fb5-4ef0-9517-baf0f7e99502.jpg",
+            "image_mob": "shopify://shop_images/rosa-rafael-pxax5WuM7eY-unsplash_9899085d-0fb5-4ef0-9517-baf0f7e99502.jpg",
             "caption": "Fashion Colour 24Hr Longwear Liquid Foundation With Skin Care",
             "block_cap_size": 40,
             "block_cap_sizes": 30,
@@ -23,10 +33,10 @@
             "heading_size": "h1",
             "subheading": "",
             "button_label": "Shop Bestseller",
-            "link": "#",
+            "link": "",
             "button_label1": "Bundle & Save",
-            "bg_color": "#ffffff",
-            "link2": "#",
+            "bg_color": "#FFF",
+            "link2": "",
             "link-2": "",
             "button_style_secondary": false,
             "box_align": "middle-center",
@@ -41,7 +51,7 @@
         }
       },
       "block_order": [
-        "slide_Ld9UUr"
+        "image_slide_LptzRe"
       ],
       "settings": {
         "layout": "full_bleed",
@@ -64,38 +74,38 @@
           "type": "tab",
           "settings": {
             "tab_title": "Face",
-            "image_1": "shopify:\/\/shop_images\/Foundation_1.jpg",
+            "image_1": "shopify://shop_images/Foundation_1.jpg",
             "title_1": "Foundation",
             "sub_title_1": "",
-            "link_1": "shopify:\/\/collections\/foundation",
-            "image_2": "shopify:\/\/shop_images\/Compact_1.jpg",
-            "title_2": "Face Powder \/ Compact",
+            "link_1": "shopify://collections/foundation",
+            "image_2": "shopify://shop_images/Compact_1.jpg",
+            "title_2": "Face Powder / Compact",
             "sub_title_2": "",
-            "link_2": "shopify:\/\/collections\/face-powder-compact",
-            "image_3": "shopify:\/\/shop_images\/Concealer_Primer_1.jpg",
+            "link_2": "shopify://collections/face-powder-compact",
+            "image_3": "shopify://shop_images/Concealer_Primer_1.jpg",
             "title_3": "Concealer and Primer",
             "sub_title_3": "",
-            "link_3": "shopify:\/\/collections\/concealer-and-primer",
-            "image_4": "shopify:\/\/shop_images\/Toner_Serum_1.jpg",
+            "link_3": "shopify://collections/concealer-and-primer",
+            "image_4": "shopify://shop_images/Toner_Serum_1.jpg",
             "title_4": "Serum  & Toner",
             "sub_title_4": "",
-            "link_4": "shopify:\/\/collections\/serum-toner",
-            "image_5": "shopify:\/\/shop_images\/Blusher_Highlighter_Bronzer_1.jpg",
+            "link_4": "shopify://collections/serum-toner",
+            "image_5": "shopify://shop_images/Blusher_Highlighter_Bronzer_1.jpg",
             "title_5": "Bluser, Highlighter &  Bronzer",
             "sub_title_5": "",
-            "link_5": "shopify:\/\/collections\/bluser-highlighter-bronzer",
-            "image_6": "shopify:\/\/shop_images\/Makeup_Fixer_Remover_1.jpg",
+            "link_5": "shopify://collections/bluser-highlighter-bronzer",
+            "image_6": "shopify://shop_images/Makeup_Fixer_Remover_1.jpg",
             "title_6": "Makeup Fixer & Remover",
             "sub_title_6": "",
-            "link_6": "shopify:\/\/collections\/makeup-fixer-remover",
-            "image_7": "shopify:\/\/shop_images\/Makeup_Kit_1.jpg",
+            "link_6": "shopify://collections/makeup-fixer-remover",
+            "image_7": "shopify://shop_images/Makeup_Kit_1.jpg",
             "title_7": "Makeup Kits",
             "sub_title_7": "",
-            "link_7": "shopify:\/\/collections\/makeup-kits",
-            "image_8": "shopify:\/\/shop_images\/Brush_Tools_Accessories_1.jpg",
+            "link_7": "shopify://collections/makeup-kits",
+            "image_8": "shopify://shop_images/Brush_Tools_Accessories_1.jpg",
             "title_8": "Brushes Tools & Accessories",
             "sub_title_8": "",
-            "link_8": "shopify:\/\/collections\/brushes-tools-accessories",
+            "link_8": "shopify://collections/brushes-tools-accessories",
             "title_9": "",
             "sub_title_9": "",
             "link_9": "",
@@ -123,22 +133,22 @@
           "type": "tab",
           "settings": {
             "tab_title": "Lips",
-            "image_1": "shopify:\/\/shop_images\/Lipstick_1.jpg",
+            "image_1": "shopify://shop_images/Lipstick_1.jpg",
             "title_1": "Lipstick",
             "sub_title_1": "",
-            "link_1": "shopify:\/\/collections\/lipstick",
-            "image_2": "shopify:\/\/shop_images\/Lip_Balm_Gloss_1.jpg",
+            "link_1": "shopify://collections/lipstick",
+            "image_2": "shopify://shop_images/Lip_Balm_Gloss_1.jpg",
             "title_2": "Lip Balm & Gloss",
             "sub_title_2": "",
-            "link_2": "shopify:\/\/collections\/lip-balm-gloss",
-            "image_3": "shopify:\/\/shop_images\/Lip_Primer_Definer_1.jpg",
+            "link_2": "shopify://collections/lip-balm-gloss",
+            "image_3": "shopify://shop_images/Lip_Primer_Definer_1.jpg",
             "title_3": "Lip Primer & Definer",
             "sub_title_3": "",
-            "link_3": "shopify:\/\/collections\/lip-primer-definer",
-            "image_4": "shopify:\/\/shop_images\/Lip_Contour_Mousse_1.jpg",
+            "link_3": "shopify://collections/lip-primer-definer",
+            "image_4": "shopify://shop_images/Lip_Contour_Mousse_1.jpg",
             "title_4": "Lip Contour & Mousse",
             "sub_title_4": "",
-            "link_4": "shopify:\/\/collections\/lip-contour-mousse",
+            "link_4": "shopify://collections/lip-contour-mousse",
             "title_5": "",
             "sub_title_5": "",
             "link_5": "",
@@ -178,26 +188,26 @@
           "type": "tab",
           "settings": {
             "tab_title": "Eyes",
-            "image_1": "shopify:\/\/shop_images\/Eyeshadow_1.jpg",
+            "image_1": "shopify://shop_images/Eyeshadow_1.jpg",
             "title_1": "Eyeshadow",
             "sub_title_1": "",
-            "link_1": "shopify:\/\/collections\/eyeshadow",
-            "image_2": "shopify:\/\/shop_images\/Eyelashes_Mascara_1.jpg",
+            "link_1": "shopify://collections/eyeshadow",
+            "image_2": "shopify://shop_images/Eyelashes_Mascara_1.jpg",
             "title_2": "Eyelashes & Mascara",
             "sub_title_2": "",
-            "link_2": "shopify:\/\/collections\/eyelashes-mascara",
-            "image_3": "shopify:\/\/shop_images\/Eyelash_Mascara_1.jpg",
+            "link_2": "shopify://collections/eyelashes-mascara",
+            "image_3": "shopify://shop_images/Eyelash_Mascara_1.jpg",
             "title_3": "Eyeliner & Pencil",
             "sub_title_3": "",
-            "link_3": "shopify:\/\/collections\/eyeliner-pencil",
-            "image_4": "shopify:\/\/shop_images\/Kajal_1.jpg",
+            "link_3": "shopify://collections/eyeliner-pencil",
+            "image_4": "shopify://shop_images/Kajal_1.jpg",
             "title_4": "Kajal",
             "sub_title_4": "",
-            "link_4": "shopify:\/\/collections\/kajal",
-            "image_5": "shopify:\/\/shop_images\/Eyebrows_1.jpg",
+            "link_4": "shopify://collections/kajal",
+            "image_5": "shopify://shop_images/Eyebrows_1.jpg",
             "title_5": "Eyebrow",
             "sub_title_5": "",
-            "link_5": "shopify:\/\/collections\/eyebrow",
+            "link_5": "shopify://collections/eyebrow",
             "title_6": "",
             "sub_title_6": "",
             "link_6": "",
@@ -462,14 +472,14 @@
         "heading_mtNtkJ": {
           "type": "heading",
           "settings": {
-            "heading": "<h1>Empowering Beauty, Naturally<\/h1>",
+            "heading": "<h1>Empowering Beauty, Naturally</h1>",
             "heading_size": "h2"
           }
         },
         "text_EqCRcP": {
           "type": "text",
           "settings": {
-            "text": "<p>At Fashion Colour, we believe that true beauty is more than skin deep. Our mission is to create high-quality, cruelty-free products that enhance your natural beauty while nurturing your skin and hair. With a commitment to sustainability and inclusivity, we’re here to celebrate every unique shade and texture.<\/p>",
+            "text": "<p>At Fashion Colour, we believe that true beauty is more than skin deep. Our mission is to create high-quality, cruelty-free products that enhance your natural beauty while nurturing your skin and hair. With a commitment to sustainability and inclusivity, we’re here to celebrate every unique shade and texture.</p>",
             "text_style": "body"
           }
         },
@@ -586,112 +596,112 @@
         "slide_pNznWQ": {
           "type": "slide",
           "settings": {
-            "imgPkr": "shopify:\/\/shop_images\/Video-343.gif",
-            "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/87aeb31898b04b06b1c29e7ecc7cb73b.mp4",
+            "imgPkr": "shopify://shop_images/Video-343.gif",
+            "video": "https://cdn.shopify.com/videos/c/o/v/87aeb31898b04b06b1c29e7ecc7cb73b.mp4",
             "slctPrdct": "fashion-colour-platinum-liquid-blusher-5gm"
           }
         },
         "slide_AYQAtb": {
           "type": "slide",
           "settings": {
-            "imgPkr": "shopify:\/\/shop_images\/Video-279_1.gif",
-            "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/6f307cdceb7645aaa1364839f0ce8a83.mp4",
+            "imgPkr": "shopify://shop_images/Video-279_1.gif",
+            "video": "https://cdn.shopify.com/videos/c/o/v/6f307cdceb7645aaa1364839f0ce8a83.mp4",
             "slctPrdct": "fashion-colour-24hr-longwear-liquid-foundation-with-skin-care"
           }
         },
         "slide_hAYdLL": {
           "type": "slide",
           "settings": {
-            "imgPkr": "shopify:\/\/shop_images\/Video-163.gif",
-            "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/5cd6f98388f64e3b9a3f0208728128f8.mp4",
+            "imgPkr": "shopify://shop_images/Video-163.gif",
+            "video": "https://cdn.shopify.com/videos/c/o/v/5cd6f98388f64e3b9a3f0208728128f8.mp4",
             "slctPrdct": "fashion-colour-24hr-longwear-liquid-foundation-with-skin-care"
           }
         },
         "slide_n84eCd": {
           "type": "slide",
           "settings": {
-            "imgPkr": "shopify:\/\/shop_images\/9206bbd4ed4a46c98b58984cbffc25e2.gif",
-            "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/9206bbd4ed4a46c98b58984cbffc25e2.mp4",
+            "imgPkr": "shopify://shop_images/9206bbd4ed4a46c98b58984cbffc25e2.gif",
+            "video": "https://cdn.shopify.com/videos/c/o/v/9206bbd4ed4a46c98b58984cbffc25e2.mp4",
             "slctPrdct": "fashion-colour-24hr-longwear-liquid-foundation-with-skin-care"
           }
         },
         "slide_JQcXGN": {
           "type": "slide",
           "settings": {
-            "imgPkr": "shopify:\/\/shop_images\/Video-737.gif",
-            "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/5cf6239fd2224b958231de5d8cd50210.mp4",
+            "imgPkr": "shopify://shop_images/Video-737.gif",
+            "video": "https://cdn.shopify.com/videos/c/o/v/5cf6239fd2224b958231de5d8cd50210.mp4",
             "slctPrdct": "fashion-colour-platinum-liquid-blusher-5gm"
           }
         },
         "slide_n8pNjA": {
           "type": "slide",
           "settings": {
-            "imgPkr": "shopify:\/\/shop_images\/b45b08d40d594c5fa2e39b29842b5567.gif",
-            "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/b45b08d40d594c5fa2e39b29842b5567.mp4",
+            "imgPkr": "shopify://shop_images/b45b08d40d594c5fa2e39b29842b5567.gif",
+            "video": "https://cdn.shopify.com/videos/c/o/v/b45b08d40d594c5fa2e39b29842b5567.mp4",
             "slctPrdct": "fashion-colour-cc-cream"
           }
         },
         "slide_8xcpdc": {
           "type": "slide",
           "settings": {
-            "imgPkr": "shopify:\/\/shop_images\/Video-782.gif",
-            "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/d350405d3d5445a394328ef16308ab82.mp4",
+            "imgPkr": "shopify://shop_images/Video-782.gif",
+            "video": "https://cdn.shopify.com/videos/c/o/v/d350405d3d5445a394328ef16308ab82.mp4",
             "slctPrdct": "platinum-loose-powder-loose-baking-and-setting-powder"
           }
         },
         "slide_ReqE9L": {
           "type": "slide",
           "settings": {
-            "imgPkr": "shopify:\/\/shop_images\/Video-216.gif",
-            "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/edf40843961b46939ff2ade844983a6c.mp4",
+            "imgPkr": "shopify://shop_images/Video-216.gif",
+            "video": "https://cdn.shopify.com/videos/c/o/v/edf40843961b46939ff2ade844983a6c.mp4",
             "slctPrdct": "fashion-colour-24hr-longwear-liquid-foundation-with-skin-care"
           }
         },
         "slide_TJbpPQ": {
           "type": "slide",
           "settings": {
-            "imgPkr": "shopify:\/\/shop_images\/Video-647.gif",
-            "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/5b310592708b476fbae889a5e702a890.mp4",
+            "imgPkr": "shopify://shop_images/Video-647.gif",
+            "video": "https://cdn.shopify.com/videos/c/o/v/5b310592708b476fbae889a5e702a890.mp4",
             "slctPrdct": "fashion-colour-tinted-moisturizer-full-coverage-cream-spf15"
           }
         },
         "slide_TnTjgt": {
           "type": "slide",
           "settings": {
-            "imgPkr": "shopify:\/\/shop_images\/AQPvlHORaFZgwlw0EDFLVK-POjuNAJERss-ZlnOarfAMLD7kt5p5krx3bLyb9vPRBJS7yzuZ52Yn7nUmwfbn38Oq.gif",
-            "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/51edd91a614d4e0cbecac727d5b7d680.mp4",
+            "imgPkr": "shopify://shop_images/AQPvlHORaFZgwlw0EDFLVK-POjuNAJERss-ZlnOarfAMLD7kt5p5krx3bLyb9vPRBJS7yzuZ52Yn7nUmwfbn38Oq.gif",
+            "video": "https://cdn.shopify.com/videos/c/o/v/51edd91a614d4e0cbecac727d5b7d680.mp4",
             "slctPrdct": "fashion-colour-platinum-eyeshadow-palette"
           }
         },
         "slide_ipWwiY": {
           "type": "slide",
           "settings": {
-            "imgPkr": "shopify:\/\/shop_images\/AQOMtyxwv7H2Y9nh7F5x5AscCslX77j4gQTAoDn-CgMDyvRJdWVhfdiQkheRquXG2GhUGi1Bdv3VeO-Yv0MZhV.gif",
-            "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/6aafd81000924532ac9998a57daa6cbe.mp4",
+            "imgPkr": "shopify://shop_images/AQOMtyxwv7H2Y9nh7F5x5AscCslX77j4gQTAoDn-CgMDyvRJdWVhfdiQkheRquXG2GhUGi1Bdv3VeO-Yv0MZhV.gif",
+            "video": "https://cdn.shopify.com/videos/c/o/v/6aafd81000924532ac9998a57daa6cbe.mp4",
             "slctPrdct": "platinum-loose-powder-loose-baking-and-setting-powder"
           }
         },
         "slide_cgTrH4": {
           "type": "slide",
           "settings": {
-            "imgPkr": "shopify:\/\/shop_images\/0a184ab891624a008c554d7e3bd91490.gif",
-            "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/0a184ab891624a008c554d7e3bd91490.mp4",
+            "imgPkr": "shopify://shop_images/0a184ab891624a008c554d7e3bd91490.gif",
+            "video": "https://cdn.shopify.com/videos/c/o/v/0a184ab891624a008c554d7e3bd91490.mp4",
             "slctPrdct": "tinted-magic-lip-balm-3gm"
           }
         },
         "slide_bzz4rp": {
           "type": "slide",
           "settings": {
-            "imgPkr": "shopify:\/\/shop_images\/Video-450_2.gif",
-            "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/a34b3ff95882402ab626751cb64930e5.mp4",
+            "imgPkr": "shopify://shop_images/Video-450_2.gif",
+            "video": "https://cdn.shopify.com/videos/c/o/v/a34b3ff95882402ab626751cb64930e5.mp4",
             "slctPrdct": "fashion-colour-cc-cream"
           }
         },
         "slide_rHQiYr": {
           "type": "slide",
           "settings": {
-            "imgPkr": "shopify:\/\/shop_images\/Video-194.gif",
-            "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/cbd7a14bc3bf4c14953ee5432c2c0c60.mp4",
+            "imgPkr": "shopify://shop_images/Video-194.gif",
+            "video": "https://cdn.shopify.com/videos/c/o/v/cbd7a14bc3bf4c14953ee5432c2c0c60.mp4",
             "slctPrdct": "fashion-colour-moisturizing-primer"
           }
         }
@@ -744,7 +754,7 @@
           "settings": {
             "heading": "Is the packaging travel-friendly?",
             "icon": "none",
-            "row_content": "<p>Yes, the palette is compact and lightweight, making it perfect for travel or on-the-go touch-ups.<\/p>",
+            "row_content": "<p>Yes, the palette is compact and lightweight, making it perfect for travel or on-the-go touch-ups.</p>",
             "page": ""
           }
         },
@@ -753,7 +763,7 @@
           "settings": {
             "heading": "Are your products suitable for all skin types?",
             "icon": "none",
-            "row_content": "<p>Yes, our products are formulated to be suitable for all skin types, including sensitive, oily, combination, and dry skin. We recommend checking the product details for specific recommendations or concerns.<br\/><\/p>",
+            "row_content": "<p>Yes, our products are formulated to be suitable for all skin types, including sensitive, oily, combination, and dry skin. We recommend checking the product details for specific recommendations or concerns.<br/></p>",
             "page": ""
           }
         },
@@ -762,7 +772,7 @@
           "settings": {
             "heading": "How do I choose the right foundation shade?",
             "icon": "none",
-            "row_content": "<p>To choose the right foundation shade, identify your undertone (cool, warm, or neutral) and select a shade that matches your neck and face. Our store also offers a shade-matching guide to help you find your perfect match.<br\/><br\/><\/p>",
+            "row_content": "<p>To choose the right foundation shade, identify your undertone (cool, warm, or neutral) and select a shade that matches your neck and face. Our store also offers a shade-matching guide to help you find your perfect match.<br/><br/></p>",
             "page": ""
           }
         },
@@ -771,7 +781,7 @@
           "settings": {
             "heading": "Are your products vegan and cruelty-free?",
             "icon": "none",
-            "row_content": "<p>Yes, all of our products are 100% vegan and cruelty-free. We are committed to creating beauty products that are ethically produced and free from animal testing.<br\/><\/p>",
+            "row_content": "<p>Yes, all of our products are 100% vegan and cruelty-free. We are committed to creating beauty products that are ethically produced and free from animal testing.<br/></p>",
             "page": ""
           }
         },
@@ -780,7 +790,7 @@
           "settings": {
             "heading": "What are the key ingredients in your skincare products?",
             "icon": "none",
-            "row_content": "<p>Our skincare products contain a blend of natural and effective ingredients, such as Vitamin C, hyaluronic acid, and botanical extracts, all designed to nourish and rejuvenate your skin. For specific ingredients, please refer to each product's ingredient list.<br\/><\/p>",
+            "row_content": "<p>Our skincare products contain a blend of natural and effective ingredients, such as Vitamin C, hyaluronic acid, and botanical extracts, all designed to nourish and rejuvenate your skin. For specific ingredients, please refer to each product's ingredient list.<br/></p>",
             "page": ""
           }
         },
@@ -789,7 +799,7 @@
           "settings": {
             "heading": "Do you test your products on animals?",
             "icon": "none",
-            "row_content": "<p>No, we are a cruelty-free brand and do not test any of our products on animals. We are proud to uphold ethical and sustainable practices in the beauty industry.<\/p>",
+            "row_content": "<p>No, we are a cruelty-free brand and do not test any of our products on animals. We are proud to uphold ethical and sustainable practices in the beauty industry.</p>",
             "page": ""
           }
         }
@@ -808,7 +818,7 @@
         "header_alignment": "gm_left_wrap",
         "header_text_width": 33,
         "btn_text": "More FAQs",
-        "btn_url": "shopify:\/\/pages\/faqs",
+        "btn_url": "shopify://pages/faqs",
         "desktop_heading_font_size": 37,
         "chkbx": false,
         "heading_size": "h1",
@@ -834,121 +844,121 @@
         "icon_VM3cpX": {
           "type": "icon",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_5.png",
-            "img_star": "shopify:\/\/shop_images\/Group_1_1.svg",
+            "image": "shopify://shop_images/Rectangle_5.png",
+            "img_star": "shopify://shop_images/Group_1_1.svg",
             "slide_radius": 6,
             "link": "",
             "show_icon": true,
             "title": "Anamika Roy",
-            "text": "<p>This powder is so lightweight, yet it keeps my makeup in place all day long. My skin stays matte without feeling heavy<\/p>"
+            "text": "<p>This powder is so lightweight, yet it keeps my makeup in place all day long. My skin stays matte without feeling heavy</p>"
           }
         },
         "icon_mNnhQV": {
           "type": "icon",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_5_1.png",
-            "img_star": "shopify:\/\/shop_images\/Group_1_1.svg",
+            "image": "shopify://shop_images/Rectangle_5_1.png",
+            "img_star": "shopify://shop_images/Group_1_1.svg",
             "slide_radius": 6,
             "link": "",
             "show_icon": true,
             "title": "Riya Nayak",
-            "text": "<p>The powder is super light and blends well with my skin tone. It doesn’t feel heavy, and it keeps my makeup in place all day. Perfect for everyday use<\/p>"
+            "text": "<p>The powder is super light and blends well with my skin tone. It doesn’t feel heavy, and it keeps my makeup in place all day. Perfect for everyday use</p>"
           }
         },
         "icon_jHBmQc": {
           "type": "icon",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_5_2.png",
-            "img_star": "shopify:\/\/shop_images\/Group_1_1.svg",
+            "image": "shopify://shop_images/Rectangle_5_2.png",
+            "img_star": "shopify://shop_images/Group_1_1.svg",
             "slide_radius": 6,
             "link": "",
             "show_icon": true,
             "title": "Pooja Sahu",
-            "text": "<p>I have super sensitive skin, and this balm worked like a charm. It gently removed all my makeup without any irritation. Highly recommend<\/p>"
+            "text": "<p>I have super sensitive skin, and this balm worked like a charm. It gently removed all my makeup without any irritation. Highly recommend</p>"
           }
         },
         "icon_hwprNr": {
           "type": "icon",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_5_3.png",
-            "img_star": "shopify:\/\/shop_images\/Group_1_1.svg",
+            "image": "shopify://shop_images/Rectangle_5_3.png",
+            "img_star": "shopify://shop_images/Group_1_1.svg",
             "slide_radius": 6,
             "link": "",
             "show_icon": true,
             "title": "Tanya Nair",
-            "text": "<p>After using this serum, my skin feels more firm and looks glowing all day long. It’s great for dull skin<\/p>"
+            "text": "<p>After using this serum, my skin feels more firm and looks glowing all day long. It’s great for dull skin</p>"
           }
         },
         "icon_rxPmC8": {
           "type": "icon",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_5_4.png",
-            "img_star": "shopify:\/\/shop_images\/Group_1_1.svg",
+            "image": "shopify://shop_images/Rectangle_5_4.png",
+            "img_star": "shopify://shop_images/Group_1_1.svg",
             "slide_radius": 12,
             "link": "",
             "show_icon": true,
             "title": "Aarti Malhotra",
-            "text": "<p>This foundation gives me a natural look and lasts all day without needing touch-ups. Plus, it feels great on the skin<\/p>"
+            "text": "<p>This foundation gives me a natural look and lasts all day without needing touch-ups. Plus, it feels great on the skin</p>"
           }
         },
         "icon_iDPHWb": {
           "type": "icon",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_5_5.png",
-            "img_star": "shopify:\/\/shop_images\/Group_1_1.svg",
+            "image": "shopify://shop_images/Rectangle_5_5.png",
+            "img_star": "shopify://shop_images/Group_1_1.svg",
             "slide_radius": 0,
             "link": "",
             "show_icon": true,
             "title": "Sakshi Gupta",
-            "text": "<p>I love the creamy texture of this blush. It’s easy to apply and blend, and the color looks very natural on my skin<\/p>"
+            "text": "<p>I love the creamy texture of this blush. It’s easy to apply and blend, and the color looks very natural on my skin</p>"
           }
         },
         "icon_49k9rj": {
           "type": "icon",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_5_6_f72c4610-d121-4217-8edb-963eca3627cd.png",
-            "img_star": "shopify:\/\/shop_images\/Group_1_1.svg",
+            "image": "shopify://shop_images/Rectangle_5_6_f72c4610-d121-4217-8edb-963eca3627cd.png",
+            "img_star": "shopify://shop_images/Group_1_1.svg",
             "slide_radius": 0,
             "link": "",
             "show_icon": true,
             "title": "Aditi Verma",
-            "text": "<p>I love that this lip crayon doesn’t dry out my lips like some other long-lasting lip products. The texture is so smooth<\/p>"
+            "text": "<p>I love that this lip crayon doesn’t dry out my lips like some other long-lasting lip products. The texture is so smooth</p>"
           }
         },
         "icon_gc6Byh": {
           "type": "icon",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_5_7.png",
-            "img_star": "shopify:\/\/shop_images\/Group_1_1.svg",
+            "image": "shopify://shop_images/Rectangle_5_7.png",
+            "img_star": "shopify://shop_images/Group_1_1.svg",
             "slide_radius": 0,
             "link": "",
             "show_icon": true,
             "title": "Sonia Pathak",
-            "text": "<p>I use this every day for a natural look. It blends beautifully and lasts all day without needing a touch-up<\/p>"
+            "text": "<p>I use this every day for a natural look. It blends beautifully and lasts all day without needing a touch-up</p>"
           }
         },
         "icon_eUTfqX": {
           "type": "icon",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_5_9.png",
-            "img_star": "shopify:\/\/shop_images\/Group_1_1.svg",
+            "image": "shopify://shop_images/Rectangle_5_9.png",
+            "img_star": "shopify://shop_images/Group_1_1.svg",
             "slide_radius": 0,
             "link": "",
             "show_icon": true,
             "title": "Jagrati Sindhe",
-            "text": "<p>I’m amazed at how this lipstick doesn’t transfer at all! Even after hours of wear, the color stays put and looks fresh<\/p>"
+            "text": "<p>I’m amazed at how this lipstick doesn’t transfer at all! Even after hours of wear, the color stays put and looks fresh</p>"
           }
         },
         "icon_y8xtjr": {
           "type": "icon",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_5_10.png",
-            "img_star": "shopify:\/\/shop_images\/Group_1_1.svg",
+            "image": "shopify://shop_images/Rectangle_5_10.png",
+            "img_star": "shopify://shop_images/Group_1_1.svg",
             "slide_radius": 0,
             "link": "",
             "show_icon": true,
             "title": "Priyal Jain",
-            "text": "<p>This mist is incredibly soothing. My sensitive skin feels calm and hydrated instantly<\/p>"
+            "text": "<p>This mist is incredibly soothing. My sensitive skin feels calm and hydrated instantly</p>"
           }
         }
       },
@@ -969,7 +979,7 @@
         "alignment": "center",
         "heading_font_size": 37,
         "heading_font_sizemob": 30,
-        "img_sign": "shopify:\/\/shop_images\/checked_1_1.svg",
+        "img_sign": "shopify://shop_images/checked_1_1.svg",
         "icon_alignment": "center",
         "icon_size": 100,
         "per_row": 4,
@@ -1002,8 +1012,8 @@
         "slide_bWpkep": {
           "type": "slide",
           "settings": {
-            "imgPkr": "shopify:\/\/shop_images\/459570578_18455707981040959_4240917642604049776_n.jpg",
-            "img_url": "https:\/\/www.instagram.com\/p\/C_4u1wCvWPH\/",
+            "imgPkr": "shopify://shop_images/459570578_18455707981040959_4240917642604049776_n.jpg",
+            "img_url": "https://www.instagram.com/p/C_4u1wCvWPH/",
             "ttl": "",
             "subTtl": ""
           }
@@ -1011,8 +1021,8 @@
         "slide_BimUUA": {
           "type": "slide",
           "settings": {
-            "imgPkr": "shopify:\/\/shop_images\/Snapinsta.app_435475274_18425631031040959_548475629733840636_n_1024.jpg",
-            "img_url": "https:\/\/www.instagram.com\/p\/C5ad9vzxe45\/?img_index=3",
+            "imgPkr": "shopify://shop_images/Snapinsta.app_435475274_18425631031040959_548475629733840636_n_1024.jpg",
+            "img_url": "https://www.instagram.com/p/C5ad9vzxe45/?img_index=3",
             "ttl": "",
             "subTtl": ""
           }
@@ -1020,8 +1030,8 @@
         "slide_LaTDTj": {
           "type": "slide",
           "settings": {
-            "imgPkr": "shopify:\/\/shop_images\/SaveClip.App_460644640_18456491767040959_7836400184949531475_n.jpg",
-            "img_url": "https:\/\/www.instagram.com\/p\/DADDhYwPJer\/",
+            "imgPkr": "shopify://shop_images/SaveClip.App_460644640_18456491767040959_7836400184949531475_n.jpg",
+            "img_url": "https://www.instagram.com/p/DADDhYwPJer/",
             "ttl": "",
             "subTtl": ""
           }
@@ -1029,8 +1039,8 @@
         "slide_kr8zUt": {
           "type": "slide",
           "settings": {
-            "imgPkr": "shopify:\/\/shop_images\/SaveClip.App_458384373_18454178872040959_2339893394990115624_n.jpg",
-            "img_url": "https:\/\/www.instagram.com\/p\/C_kSju-RTXJ\/",
+            "imgPkr": "shopify://shop_images/SaveClip.App_458384373_18454178872040959_2339893394990115624_n.jpg",
+            "img_url": "https://www.instagram.com/p/C_kSju-RTXJ/",
             "ttl": "",
             "subTtl": ""
           }
@@ -1038,8 +1048,8 @@
         "slide_pQikU3": {
           "type": "slide",
           "settings": {
-            "imgPkr": "shopify:\/\/shop_images\/SnapInsta.io_439314910_18427912174040959_5884374809014697499_n.jpg",
-            "img_url": "https:\/\/www.instagram.com\/p\/C58khHXRs1r\/",
+            "imgPkr": "shopify://shop_images/SnapInsta.io_439314910_18427912174040959_5884374809014697499_n.jpg",
+            "img_url": "https://www.instagram.com/p/C58khHXRs1r/",
             "ttl": "",
             "subTtl": ""
           }
@@ -1047,8 +1057,8 @@
         "slide_jQ66fV": {
           "type": "slide",
           "settings": {
-            "imgPkr": "shopify:\/\/shop_images\/Discover_Fashion_Colour_s_curated_lip_shades._Make_every_moment_memorable_...._fashioncolour_cosmetics_makeupartist_professionalmua_mua_makeup_wakeupandmakeup_beauty.jpg",
-            "img_url": "https:\/\/www.instagram.com\/p\/C3j8LGMMr0m\/",
+            "imgPkr": "shopify://shop_images/Discover_Fashion_Colour_s_curated_lip_shades._Make_every_moment_memorable_...._fashioncolour_cosmetics_makeupartist_professionalmua_mua_makeup_wakeupandmakeup_beauty.jpg",
+            "img_url": "https://www.instagram.com/p/C3j8LGMMr0m/",
             "ttl": "",
             "subTtl": ""
           }
@@ -1056,8 +1066,8 @@
         "slide_khERPR": {
           "type": "slide",
           "settings": {
-            "imgPkr": "shopify:\/\/shop_images\/Banish_Stubborn_Holi_Colors_Effortlessly_With_Our_Clean_It_Zero_Gentle_Makeup_Remover_Balm_Let_Your_Skin_Revel_In_The_Joy_Of_Effortless_Cleansing_Post-Celebrations._Shop_Now_Link_in_B.jpg",
-            "img_url": "https:\/\/www.instagram.com\/p\/C4vIYRLRgiD\/",
+            "imgPkr": "shopify://shop_images/Banish_Stubborn_Holi_Colors_Effortlessly_With_Our_Clean_It_Zero_Gentle_Makeup_Remover_Balm_Let_Your_Skin_Revel_In_The_Joy_Of_Effortless_Cleansing_Post-Celebrations._Shop_Now_Link_in_B.jpg",
+            "img_url": "https://www.instagram.com/p/C4vIYRLRgiD/",
             "ttl": "",
             "subTtl": ""
           }
@@ -1065,8 +1075,8 @@
         "slide_e8AdKb": {
           "type": "slide",
           "settings": {
-            "imgPkr": "shopify:\/\/shop_images\/SnapInsta.io_425352915_1583302332421054_3019058165801313718_n.jpg",
-            "img_url": "https:\/\/www.instagram.com\/p\/C3FM-R_RGu2\/",
+            "imgPkr": "shopify://shop_images/SnapInsta.io_425352915_1583302332421054_3019058165801313718_n.jpg",
+            "img_url": "https://www.instagram.com/p/C3FM-R_RGu2/",
             "ttl": "",
             "subTtl": ""
           }
@@ -1074,8 +1084,8 @@
         "slide_8hk6nh": {
           "type": "slide",
           "settings": {
-            "imgPkr": "shopify:\/\/shop_images\/A_flush_of_love_on_your_cheeks_Celebrate_love_with_our_exquisite_collection_link_in_bio_...._fashioncolour_cosmetics_makeupartist_professionalmua_mua_makeup_wakeupandmakeup_beauty.jpg",
-            "img_url": "https:\/\/www.instagram.com\/p\/C3PSxyGskFa\/",
+            "imgPkr": "shopify://shop_images/A_flush_of_love_on_your_cheeks_Celebrate_love_with_our_exquisite_collection_link_in_bio_...._fashioncolour_cosmetics_makeupartist_professionalmua_mua_makeup_wakeupandmakeup_beauty.jpg",
+            "img_url": "https://www.instagram.com/p/C3PSxyGskFa/",
             "ttl": "",
             "subTtl": ""
           }
@@ -1083,8 +1093,8 @@
         "slide_FpnUJ6": {
           "type": "slide",
           "settings": {
-            "imgPkr": "shopify:\/\/shop_images\/457670550_18453079177040959_1722093851528496731_n.jpg",
-            "img_url": "https:\/\/www.instagram.com\/p\/C_VtVV-Pxa7\/",
+            "imgPkr": "shopify://shop_images/457670550_18453079177040959_1722093851528496731_n.jpg",
+            "img_url": "https://www.instagram.com/p/C_VtVV-Pxa7/",
             "ttl": "",
             "subTtl": ""
           }

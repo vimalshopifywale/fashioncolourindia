@@ -35,7 +35,7 @@
             "button_label": "Shop Bestseller",
             "link": "",
             "button_label1": "Bundle & Save",
-            "bg_color": "#FFF",
+            "bg_color": "#ffffff",
             "link2": "",
             "link-2": "",
             "button_style_secondary": false,
@@ -57,6 +57,9 @@
         "layout": "full_bleed",
         "banner_border": 12,
         "slide_height": "small",
+        "desk_height": 200,
+        "sml_desk_height": 200,
+        "mbl_height": 200,
         "slider_visual": "counter",
         "auto_rotate": true,
         "hide_navigation": false,
@@ -64,7 +67,9 @@
         "show_text_below": false,
         "accessibility_info": "Slideshow about our brand",
         "padding_top": 100,
-        "padding_bottom": 100
+        "padding_bottom": 100,
+        "padding_top_mbl": 40,
+        "padding_bottom_mbl": 40
       }
     },
     "our_collection_7jxwER": {
@@ -310,7 +315,16 @@
         "secPdgTop": 20,
         "secPdgBtm": 20,
         "mblPdgTop": 20,
-        "mblPdgBtm": 20
+        "mblPdgBtm": 20,
+        "dskSld": 4.8,
+        "dskSpc": 20,
+        "tabSld": 4.8,
+        "tabSpc": 20,
+        "mblSld": 1.8,
+        "mblSpc": 20,
+        "sldAtply": 1.5,
+        "pagination": true,
+        "navigation": true
       }
     },
     "featured_collection_W8newm": {
@@ -325,6 +339,7 @@
         "show_description": false,
         "description_style": "body",
         "collection": "bestsellers",
+        "gradiant_text": "default",
         "products_to_show": 10,
         "columns_desktop": 4,
         "full_width": false,
@@ -364,6 +379,7 @@
         "show_description": false,
         "description_style": "body",
         "collection": "",
+        "gradiant_text": "default",
         "products_to_show": 4,
         "columns_desktop": 4,
         "full_width": false,
@@ -723,6 +739,7 @@
         "slide_rHQiYr"
       ],
       "settings": {
+        "gradiant_text": false,
         "preTtl": "Our Products in Action",
         "subtitle_font_size": 20,
         "subtitle_font_sizemob": 16,
@@ -814,6 +831,7 @@
       ],
       "settings": {
         "caption": "",
+        "gradient_wrap": false,
         "heading": "Frequently Asked Questions",
         "header_alignment": "gm_left_wrap",
         "header_text_width": 33,
@@ -823,7 +841,7 @@
         "chkbx": false,
         "heading_size": "h1",
         "heading_alignment": "left",
-        "layout": "none",
+        "layout": "section",
         "color_scheme": "accent-1",
         "container_color_scheme": "accent-1",
         "open_first_collapsible_row": false,
@@ -1114,6 +1132,7 @@
       ],
       "settings": {
         "preTtl": "@fashioncolourofficial",
+        "gradiant_text": false,
         "subtitle_font_size": 20,
         "subtitle_font_sizemob": 16,
         "ttl": "Follow us on Instagram",

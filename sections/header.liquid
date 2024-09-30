@@ -29,7 +29,7 @@
 {%- style -%}
   header-drawer {
     justify-self: start;
-    margin-left: -1.2rem;
+    /* margin-left: -1.2rem; */
   }
 .logo-light {
     position: absolute;
@@ -88,7 +88,7 @@
     }
   }
   .header {
-    padding: {{ section.settings.padding_top | times: 0.5 | round: 0 }}px 3rem {{ section.settings.padding_bottom | times: 0.5 | round: 0 }}px 3rem;
+    padding: {{ section.settings.padding_top | times: 0.5 | round: 0 }}px 1rem {{ section.settings.padding_bottom | times: 0.5 | round: 0 }}px;
   }
 
   .section-header {
@@ -1024,6 +1024,12 @@
       "name":"Secondary Menus",
         "limit": 1,
       "settings": [
+        {
+          "type":"text",
+          "id":"second_title",
+          "label":"Second Menu Title",
+          "default":"Our Menu"
+        },
         {
           "type":"link_list",
           "id":"secondary_menu",

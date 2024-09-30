@@ -4299,10 +4299,10 @@ h5,
 }
 
 @media (max-width: 767px) {
-  .header__icons {
+  /* .header__icons {
     margin-right: -15px;
     padding-right: 0.4rem;
-  }
+  } */
 
   .search-modal {
     height: 120px;
@@ -4594,9 +4594,9 @@ svg.svg-invert path {
   content: unset;
 }
 
-.swiper-button-next.gmCstm {
+/* .swiper-button-next.gmCstm {
   transform: rotate(180deg);
-}
+} */
 .swiper-pagination.gmPag {
   position:unset;
   margin-top: 16px;

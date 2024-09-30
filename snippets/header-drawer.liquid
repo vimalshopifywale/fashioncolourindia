@@ -126,6 +126,7 @@
             {% for block in section.blocks %}
             {% if block.type == 'secondary_menus' and block.settings.secondary_menu %}
             <div id="cartdrawer" class="secondary-main">
+              <h3 class="menu-title" style="text-align: left; margin-top:24px;">{{ block.settings.second_title }}</h3>
               <ul class="menu list-menu list-menu--inline" role="list">
                 {% for link in block.settings.secondary_menu.links %}
                 <li class="menu-link">

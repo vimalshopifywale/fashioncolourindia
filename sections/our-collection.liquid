@@ -51,6 +51,12 @@
                   {% endif %}
                 {% endfor %}
               </div>
+              <div class="swiper-button-next gmCstm swNxt{{block.id | remove: '-' |  remove: '_'  }}" {{block.blocks.length}}>
+                {% render 'gm-icon-next' %}
+              </div>
+              <div class="swiper-button-prev gmCstm swPrv{{block.id | remove: '-' |  remove: '_'  }}">
+                {% render 'gm-icon-prev' %}
+              </div>  
             </div>
           </div>
         </div>
@@ -65,10 +71,6 @@
               disableOnInteraction: false,
             },
             {% endif %}
-            pagination: {
-              el: ".swPag{{block.id | remove: '-' |  remove: '_'  }}",
-              clickable: true,
-            },
             navigation: {
               nextEl: ".swNxt{{block.id | remove: '-' |  remove: '_'  }}",
               prevEl: ".swPrv{{block.id | remove: '-' |  remove: '_'  }}",
@@ -150,6 +152,7 @@
   /* Collection items */
   .collection-items {
     display: flex;
+    flex-direction: column;
     gap: 42px;
   }
 

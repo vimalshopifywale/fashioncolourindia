@@ -61,7 +61,7 @@
     .middel-header .main-header{
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
     }
     .middel-header nav .header__menu-item span{
         color: #0D0D0D;
@@ -817,7 +817,7 @@
             display: none;
         }
         .sw-header .header__icons{
-            margin-left: auto;
+            /* margin-left: auto; */
         }
         #cartdrawer.secondary-main ul.menu.list-menu.list-menu--inline {
             display: block;

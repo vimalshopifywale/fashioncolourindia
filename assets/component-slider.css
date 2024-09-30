@@ -178,10 +178,17 @@ slider-component.slider-component-full-width {
   }
 
   .slider-component-full-width .slider--desktop .slider__slide:first-child {
-    margin-left: 1.5rem;
-    scroll-margin-left: 1.5rem;
+    /* margin-left: 1.5rem; */
+    /* scroll-margin-left: 1.5rem; */
   }
-
+.centerGMnav{
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  justify-content: space-between !important;
+}
   /* Fix to show some space at the end of our sliders in all browsers */
   .slider-component-full-width .slider--desktop:after {
     padding-left: 1.5rem;

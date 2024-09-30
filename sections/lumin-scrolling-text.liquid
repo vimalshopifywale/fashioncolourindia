@@ -76,7 +76,11 @@
                 {{ block.shopify_attributes }}
               >
                 <span class="scroll rte">
-                  {% render 'icon-accordion', icon: block.settings.icon %}
+                  {% if block.settings.icon == 'custom' %}
+                    {{ block.settings.custom_icon }}
+                    {% else  %}
+                    {% render 'icon-accordion', icon: block.settings.icon %}
+                  {% endif %}
                   {{ block.settings.Announcement }}
                 </span>
               </div>
@@ -144,7 +148,11 @@
                 {{ block.shopify_attributes }}
               >
                 <span class="scroll rte">
-                  {% render 'icon-accordion', icon: block.settings.icon %}
+                  {% if block.settings.icon == 'custom' %}
+                    {{ block.settings.custom_icon }}
+                    {% else  %}
+                    {% render 'icon-accordion', icon: block.settings.icon %}
+                  {% endif %}
                   {{ block.settings.Announcement }}
                 </span>
               </div>
@@ -212,7 +220,11 @@
                 {{ block.shopify_attributes }}
               >
                 <span class="scroll rte">
-                  {% render 'icon-accordion', icon: block.settings.icon %}
+                  {% if block.settings.icon == 'custom' %}
+                    {{ block.settings.custom_icon }}
+                    {% else  %}
+                    {% render 'icon-accordion', icon: block.settings.icon %}
+                  {% endif %}
                   {{ block.settings.Announcement }}
                 </span>
               </div>
@@ -280,7 +292,11 @@
                 {{ block.shopify_attributes }}
               >
                 <span class="scroll rte">
-                  {% render 'icon-accordion', icon: block.settings.icon %}
+                  {% if block.settings.icon == 'custom' %}
+                    {{ block.settings.custom_icon }}
+                    {% else  %}
+                    {% render 'icon-accordion', icon: block.settings.icon %}
+                  {% endif %}
                   {{ block.settings.Announcement }}
                 </span>
               </div>
@@ -348,7 +364,11 @@
                 {{ block.shopify_attributes }}
               >
                 <span class="scroll rte">
-                  {% render 'icon-accordion', icon: block.settings.icon %}
+                  {% if block.settings.icon == 'custom' %}
+                    {{ block.settings.custom_icon }}
+                    {% else  %}
+                    {% render 'icon-accordion', icon: block.settings.icon %}
+                  {% endif %}
                   {{ block.settings.Announcement }}
                 </span>
               </div>
@@ -416,7 +436,11 @@
                 {{ block.shopify_attributes }}
               >
                 <span class="scroll rte">
-                  {% render 'icon-accordion', icon: block.settings.icon %}
+                  {% if block.settings.icon == 'custom' %}
+                    {{ block.settings.custom_icon }}
+                    {% else  %}
+                    {% render 'icon-accordion', icon: block.settings.icon %}
+                  {% endif %}
                   {{ block.settings.Announcement }}
                 </span>
               </div>
@@ -484,7 +508,11 @@
                 {{ block.shopify_attributes }}
               >
                 <span class="scroll rte">
-                  {% render 'icon-accordion', icon: block.settings.icon %}
+                  {% if block.settings.icon == 'custom' %}
+                    {{ block.settings.custom_icon }}
+                    {% else  %}
+                    {% render 'icon-accordion', icon: block.settings.icon %}
+                  {% endif %}
                   {{ block.settings.Announcement }}
                 </span>
               </div>
@@ -552,7 +580,11 @@
                 {{ block.shopify_attributes }}
               >
                 <span class="scroll rte">
-                  {% render 'icon-accordion', icon: block.settings.icon %}
+                  {% if block.settings.icon == 'custom' %}
+                    {{ block.settings.custom_icon }}
+                    {% else  %}
+                    {% render 'icon-accordion', icon: block.settings.icon %}
+                  {% endif %}
                   {{ block.settings.Announcement }}
                 </span>
               </div>
@@ -620,7 +652,11 @@
                 {{ block.shopify_attributes }}
               >
                 <span class="scroll rte">
-                  {% render 'icon-accordion', icon: block.settings.icon %}
+                  {% if block.settings.icon == 'custom' %}
+                    {{ block.settings.custom_icon }}
+                    {% else  %}
+                    {% render 'icon-accordion', icon: block.settings.icon %}
+                  {% endif %}
                   {{ block.settings.Announcement }}
                 </span>
               </div>
@@ -933,6 +969,10 @@
             "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.icon.options__1.label"
           },
           {
+            "value": "custom",
+            "label":"Custom"
+          },
+          {
             "value": "apple",
             "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.icon.options__2.label"
           },
@@ -1107,6 +1147,12 @@
         ],
         "default": "check_mark",
         "label": "Select Icon"
+      },
+      {
+        "type": "html",
+        "id": "custom_icon",
+        "label": "Enter SVG code",
+        "info": "Don't forget to add 'icon icon-accordion' to the Class"
       },
      {
         "type": "url",

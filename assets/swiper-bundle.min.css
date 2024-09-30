@@ -26,6 +26,7 @@
   overflow: hidden;
   list-style: none;
   padding: 0;
+  width: 100%;
   z-index: 1;
 }
 

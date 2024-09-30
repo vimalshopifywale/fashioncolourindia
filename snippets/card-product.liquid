@@ -20,6 +20,7 @@
   - swatch_options: {Boolean} Show swatches for product variants. Default: false
   - swatch_limit: {Number} Limit the number of swatches shown. Default: 4 (optional)
   - swatch_shape: {String} Shape of the swatches. Values are "circle" or "square". Default: "circle" (optional)
+  - gradiant_card: {Boolean} Show Product card in to Gradient View. Default: false
   Usage:
   {% render 'card-product', show_vendor: section.settings.show_vendor, show_quick_desc: section.settings.show_quick_desc %}
 {% endcomment %}
@@ -62,7 +63,7 @@
       assign ratio = 1
     endif
   -%}
-  <div class="card-wrapper product-card-wrapper">
+  <div class="card-wrapper product-card-wrapper {% if gradiant_card == 'gradiant_card' %}gradiant_card_wrap{% endif %}">
     <div
       class="
         card card--{{ settings.card_style }}

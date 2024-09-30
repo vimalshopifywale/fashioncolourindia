@@ -2,7 +2,7 @@
   <div class="page-width gmVdoSld-{{section.id}}">
     <div class="vdoSldCntWrap">
       {% if section.settings.preTtl != blank %}
-        <span class="vdo-subtitel">{{ section.settings.preTtl }}</span>
+        <span class="vdo-subtitel {% if section.settings.gradiant_text %} gradiant_wrap{% endif %}">{{ section.settings.preTtl }}</span>
       {% endif %}
       {% if section.settings.ttl != blank %}
         <h2 class="h1 video-heading">{{ section.settings.ttl }}</h2>
@@ -201,6 +201,11 @@
         align-items: center;
         padding-top: 36px;
       }
+    {% if section.settings.gradiant_text %}
+      .gmVdoSld-{{section.id}} .badge, .gmVdoSld-{{section.id}} .gmPrdctImg a {
+        background: linear-gradient(271.44deg, #805207 0.38%, #ECD27D 46.4%, #AC832B 79.58%, #F2D97D 100.93%) !important;
+      }
+    {% endif %}
       @media screen and (max-width: 767px){
        .gmVdoSld-{{section.id}} .swiper-branding{
           padding: 20px 0 0 !important;
@@ -320,6 +325,12 @@
     }
   ],
   "settings": [
+    {
+      "type": "checkbox",
+      "id": "gradiant_text",
+      "label": "Check to Enable Golden Text and Effects",
+      "default":false
+    },
     {
       "type": "text",
       "id": "preTtl",

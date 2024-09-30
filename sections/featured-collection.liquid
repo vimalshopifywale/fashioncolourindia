@@ -99,7 +99,7 @@
             {% endif %}
           >
             {% render 'card-product',
-              card_product: product,
+              card_product: product, gradiant_card: section.settings.gradiant_text,
               media_aspect_ratio: section.settings.image_ratio,
               image_shape: section.settings.image_shape,
               show_secondary_image: section.settings.show_secondary_image,
@@ -286,6 +286,22 @@
       "type": "collection",
       "id": "collection",
       "label": "t:sections.featured-collection.settings.collection.label"
+    },
+    {
+      "type": "select",
+      "id": "gradiant_text",
+      "label": "Product Card Style",
+      "default": "default",
+      "options": [
+        {
+          "value": "gradiant_card",
+          "label":"Gradient"
+        },
+        {
+          "value": "default",
+          "label":"Default"
+        }
+      ]
     },
     {
       "type": "range",

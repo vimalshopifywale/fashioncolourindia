@@ -53,7 +53,7 @@
     {%- unless section.settings.title == blank -%}
       <div class="title-wrapper-with-link title-wrapper--self-padded-mobile title-wrapper--no-top-margin"
            style="justify-content: {{ section.settings.heading_center }};text-align: {{ section.settings.heading_center }};">
-        <h2 class="title inline-richtext {{ section.settings.collection_text_alignment }} {{ section.settings.heading_size }}">
+        <h2 class="title inline-richtext {% if section.settings.gradiant_text %} gradiant_wrap{% endif %} {{ section.settings.collection_text_alignment }} {{ section.settings.heading_size }}">
           {{ section.settings.title }}
         </h2>
         {%- if section.settings.button_label != blank and show_mobile_slider -%}
@@ -227,6 +227,12 @@
       "id": "title",
       "default": "Multicolumn",
       "label": "t:sections.multicolumn.settings.title.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "gradiant_text",
+      "label": "Check to Enable Gold Gradiant Text",
+      "default":false
     },
     {
       "type": "select",

@@ -22,6 +22,22 @@
       }
     }
   {%- endstyle -%}
+{% elsif section.settings.slide_height == 'custom' %}
+    <style>
+      .banner--{{ section.settings.slide_height }}{
+            min-height:{{ section.settings.desk_height }}px;
+          }
+          @media screen and (max-width:920px) {
+            .banner--{{ section.settings.slide_height }}{
+              min-height:{{ section.settings.sml_desk_height }}px;
+            }
+          }
+          @media screen and (max-width:680px) {
+            .banner--{{ section.settings.slide_height }}{
+              min-height:{{ section.settings.mbl_height }}px;
+            }
+          }
+    </style>
 {%- endif -%}
 {% if section.settings.layout == 'grid' %}
   <style>
@@ -32,14 +48,25 @@
 {% endif %}
 
 <style>
+  
     .growth-slide {
        z-index:2;
-       margin-top: -24px;
+       /* margin-top: -24px;
        background: #ffffff57;
        max-width: 240px;
-       left: calc(50% - 120px);
+       left: calc(50% - 120px); */
       {% if section.settings.hide_navigation %} display:none !important;{% endif %}
-           }
+    }
+    .slideshow__controls .slider-button {
+      display: none;
+    }
+    .slideshow__controls {
+      bottom: 0;
+      position: absolute;
+      z-index: 2;
+      left: 50%;
+      transform: translate(-50%,-50%);
+    }
   @media screen and (max-width: 749px){
     .growth-slide {
        max-width: 100%;
@@ -148,6 +175,12 @@
           padding-bottom: {{section.settings.padding_bottom}}px;
         }
       }
+      @media screen and (min-width: 750px) {
+        .slidshow-{{ section.id }} .slideshow__slide.grid__item{
+          padding-top: {{section.settings.padding_top_mbl}}px;
+          padding-bottom: {{section.settings.padding_bottom_mbl}}px;
+        }
+      }
     </style>
     {%- for block in section.blocks -%}
       {% if block.type == 'video-slide' %}
@@ -172,7 +205,7 @@
           }
         </style>
         <div
-          class="slideshow__slide grid__item grid--1-col slider__slide"
+          class="slideshow__slide grid__item grid--1-col slider__slide slide"
           id="Slide-{{ section.id }}-{{ forloop.index }}"
           {% if block.settings['link-2'] %}
             onclick="location.href='{{ block.settings.link-2  }}';" style="cursor: pointer;"
@@ -382,6 +415,7 @@
           }
         </style>
       {% elsif block.type == 'image-slide' %}
+        
         <style>
           #Slide-{{ section.id }}-{{ forloop.index }} .banner__media::after {
             opacity: {{ block.settings.image_overlay_opacity | divided_by: 100.0 }};
@@ -695,11 +729,45 @@
         {
           "value": "large",
           "label": "t:sections.slideshow.settings.slide_height.options__4.label"
+        },
+        {
+          "value": "custom",
+          "label":"Custom"
         }
       ],
       "default": "medium",
       "label": "t:sections.slideshow.settings.slide_height.label"
     },
+    {
+        "type": "range",
+        "id": "desk_height",
+        "min": 100,
+        "max": 1000,
+        "step": 10,
+        "default":200,
+        "info": "Only Works if Slide Height Custom Selected",
+        "label": "Desktop Min Height"
+      }, 
+      {
+        "type": "range",
+        "id": "sml_desk_height",
+        "min": 100,
+        "max": 1000,
+        "step": 10,
+        "info": "Only Works if Slide Height Custom Selected",
+        "default":200,
+        "label": "Small Desktop Min Height"
+      }, 
+      {
+        "type": "range",
+        "id": "mbl_height",
+        "min": 80,
+        "max": 800,
+        "step": 10,
+        "info": "Only Works if Slide Height Custom Selected",
+        "default":200,
+        "label": "Mobile Min Height"
+      },
     {
       "type": "select",
       "id": "slider_visual",
@@ -781,6 +849,26 @@
       "step": 4,
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_top_mbl",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding Top (Mobile)",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_mbl",
+      "min": 40,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding Bottom (Mobile)",
       "default": 40
     }
   ],

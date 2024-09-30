@@ -4,7 +4,7 @@
 <div class="page-width gmSld-{{section.id}}">
 <div class="vdoSldCntWrap">
     {% if section.settings.preTtl != blank %}
-        <span class="vdo-subtitel">{{section.settings.preTtl}}</span>
+        <span class="vdo-subtitel {% if section.settings.gradiant_text %} gradiant_wrap{% endif %}">{{section.settings.preTtl}}</span>
     {% endif %}
     {% if section.settings.ttl != blank %}
         <h2 class="h1 video-heading">{{section.settings.ttl}}</h2>
@@ -187,6 +187,12 @@
         "id": "preTtl",
         "label": "Enter Sub-Title"
       },
+      {
+      "type": "checkbox",
+      "id": "gradiant_text",
+      "label": "Check to Enable Gold Gradiant Text",
+      "default":false
+    },
       {
         "type": "range",
         "id": "subtitle_font_size",

@@ -33,7 +33,7 @@
                     assign slide_image = 'image_' | append: forloop.index
                   %}
                   {% if block.settings[slide_image] %}
-                    <div class="collection-item">
+                    <div class="collection-item swiper-slide">
                       <a href="{{ block.settings[slide_link] }}">
                         <img
                           src="{{ block.settings[slide_image] | image_url: width: 600 }}"
@@ -66,12 +66,12 @@
             },
             {% endif %}
             pagination: {
-              el: ".swPag{{section.id | remove: '-' |  remove: '_'  }}",
+              el: ".swPag{{block.id | remove: '-' |  remove: '_'  }}",
               clickable: true,
             },
             navigation: {
-              nextEl: ".swNxt{{section.id | remove: '-' |  remove: '_'  }}",
-              prevEl: ".swPrv{{section.id | remove: '-' |  remove: '_'  }}",
+              nextEl: ".swNxt{{block.id | remove: '-' |  remove: '_'  }}",
+              prevEl: ".swPrv{{block.id | remove: '-' |  remove: '_'  }}",
             },
             breakpoints: {
               640: {
@@ -194,29 +194,35 @@
 </style>
 
 <script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const tabs = document.querySelectorAll('.collection-tabs a');
-    const contents = document.querySelectorAll('.tab-content');
+$('.tabbing-text').on('click',(el)=>{
+      el.preventDefault();
+      $('.tab-content,.tabbing-text').removeClass('active');
+      el.currentTarget.classList.add('active');
+      $(`#tab-${el.currentTarget.dataset.tab}`).addClass('active')
+});
+  // document.addEventListener('DOMContentLoaded', function () {
+  //   const tabs = document.querySelectorAll('.collection-tabs a');
+  //   const contents = document.querySelectorAll('.tab-content');
   
-    tabs.forEach(function (tab) {
-      tab.addEventListener('click', function (e) {
-        e.preventDefault();
+  //   tabs.forEach(function (tab) {
+  //     tab.addEventListener('click', function (e) {
+  //       e.preventDefault();
   
-        tabs.forEach(function (t) {
-          t.classList.remove('active');
-        });
+  //       tabs.forEach(function (t) {
+  //         t.classList.remove('active');
+  //       });
   
-        tab.classList.add('active');
+  //       tab.classList.add('active');
   
-        contents.forEach(function (content) {
-          content.classList.remove('active');
-        });
+  //       contents.forEach(function (content) {
+  //         content.classList.remove('active');
+  //       });
   
-        const target = document.querySelector('#tab-' + tab.getAttribute('data-tab'));
-        target.classList.add('active');
-      });
-    });
-  });
+  //       const target = document.querySelector('#tab-' + tab.getAttribute('data-tab'));
+  //       target.classList.add('active');
+  //     });
+  //   });
+  // });
 </script>
 
 <!-- Schema -->
@@ -291,7 +297,8 @@
         "min": 12,
         "max": 48,
         "step": 1
-      }, {
+      }, 
+      {
         "type": "header",
         "content": "Desktop Padding"
       }, {

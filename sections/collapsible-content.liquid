@@ -77,7 +77,7 @@
   
 {%- endstyle -%}
 
-<div class=" sw-collapsible color-{{ section.settings.color_scheme }} gradient">
+<div class=" sw-collapsible color-{{ section.settings.color_scheme }} gradient {% if section.settings.gradient_wrap %}col_gradient_wrap{% endif %}">
   <div class="collapsible-content collapsible-{{ section.settings.layout }}-layout isolate{% if section.settings.layout == 'section' %} page-width{% elsif section.settings.layout == 'none' %} content-container content-container--full-width{% endif %}">
     <div class="collapsible-content__wrapper section-{{ section.id }}-padding{% if section.settings.layout == 'section' %} content-container color-{{ section.settings.container_color_scheme }} gradient{% endif %}">
       <div class="{% if section.settings.image != blank %}page-width{% endif %} {{ section.settings.header_alignment }}" >
@@ -229,6 +229,12 @@
       "type": "text",
       "id": "caption",
       "label": "t:sections.collapsible_content.settings.caption.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "gradient_wrap",
+      "label": "Check to Enable Golden Text and Effects",
+      "default":false
     },
     {
       "type": "inline_richtext",

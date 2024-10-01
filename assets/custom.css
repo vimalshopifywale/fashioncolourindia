@@ -1,5 +1,8 @@
 /* ===Header================================================================== */
-    .header__inline-menu .secondary-main ul li a{
+.swiper{
+    width: 100%;
+}    
+.header__inline-menu .secondary-main ul li a{
         font-weight: 400;
         font-size: 18px;
     }

@@ -1,13 +1,22 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "current": {
     "sale_price": "#707070",
     "compers_color": "#bf0436",
     "theme_color": "#bf0436",
     "extended-megamenu-show-imgs": "yes",
-    "extended-megamenu-featured-img": "shopify:\/\/shop_images\/Menu_Cover_2.jpg",
-    "extended-megamenu-url": "shopify:\/\/collections\/shop-all",
-    "extended-megamenu-featured-img-2": "shopify:\/\/shop_images\/Menu_Cover_bd39a1fa-df31-4ad2-a14f-49d72a73f8ae.jpg",
-    "extended-megamenu-url-2": "shopify:\/\/products\/revolife-mct-oil",
+    "extended-megamenu-featured-img": "shopify://shop_images/Menu_Cover_2.jpg",
+    "extended-megamenu-url": "shopify://collections/shop-all",
+    "extended-megamenu-featured-img-2": "shopify://shop_images/Menu_Cover_bd39a1fa-df31-4ad2-a14f-49d72a73f8ae.jpg",
+    "extended-megamenu-url-2": "shopify://products/revolife-mct-oil",
     "swatchType": "color",
     "swatchColors": "Black:#000000\nWhite:#f5f5f5\nBlue:#005eff\nRed:#c9002c\nPink:#ffd5e6\nBrown:#a2896b\nOlive:#808000\nPurple:#dac6ef\nGrey:#e2e2e7\nBeige:#d8c7af\n\nvind-charming:#B42742\nDark-brown:#74261E\nDark-brown-light:#5B292C\nBrown-orange:#BD3129\nOrange-pink:#BC3545\nPink:#BE4781\nBlack:#000\nCornsilk:#FFE3D8\nGold:#FFD58D\nMandysPink:#F8B391\nWax Flower:#EDBDA2",
     "swatchStyle": "round",
@@ -25,12 +34,12 @@
     "img_height": "50",
     "show_quantity_input": false,
     "btn_style": "primary",
-    "logo": "shopify:\/\/shop_images\/black_logo_1.svg",
+    "logo": "shopify://shop_images/black_logo_1.svg",
     "logo_width": 85,
-    "second_logo": "shopify:\/\/shop_images\/platinum_logo_1_8cafcd20-06ce-4948-99b1-2e07abb8d0bb.svg",
-    "second_logo_url": "shopify:\/\/pages\/platinum",
+    "second_logo": "shopify://shop_images/platinum_logo_1_8cafcd20-06ce-4948-99b1-2e07abb8d0bb.svg",
+    "second_logo_url": "shopify://pages/platinum",
     "logo_widths": 60,
-    "favicon": "shopify:\/\/shop_images\/Group_4550.svg",
+    "favicon": "shopify://shop_images/Group_4550.svg",
     "type_header_font": "din_neuzeit_grotesk_n3",
     "type_header_italic_font": "din_neuzeit_grotesk_n3",
     "heading_spacing": -0.2,
@@ -155,15 +164,15 @@
     "mfBdgs": true,
     "brand_headline": "",
     "brand_description": "",
-    "brand_image": "shopify:\/\/shop_images\/Logos_22be9c92-1ca9-4306-9b1f-7d13f76b65a9.svg",
+    "brand_image": "shopify://shop_images/Logos_22be9c92-1ca9-4306-9b1f-7d13f76b65a9.svg",
     "brand_image_width": 205,
-    "social_facebook_link": "https:\/\/www.facebook.com\/fashioncolour01",
-    "social_instagram_link": "https:\/\/www.instagram.com\/fashioncolourofficial\/",
+    "social_facebook_link": "https://www.facebook.com/fashioncolour01",
+    "social_instagram_link": "https://www.instagram.com/fashioncolourofficial/",
     "social_youtube_link": "",
     "social_tiktok_link": "",
-    "social_twitter_link": "https:\/\/x.com\/FashionColour01",
+    "social_twitter_link": "https://x.com/FashionColour01",
     "social_snapchat_link": "",
-    "social_pinterest_link": "https:\/\/in.pinterest.com\/fashioncolourin\/",
+    "social_pinterest_link": "https://in.pinterest.com/fashioncolourin/",
     "social_tumblr_link": "",
     "social_vimeo_link": "",
     "predictive_search_enabled": true,
@@ -173,7 +182,7 @@
     "sup_enabled": false,
     "cart_type": "drawer",
     "crtTxt": "🚚 Fast & Free Shipping on all Orders",
-    "paymentImg": "shopify:\/\/shop_images\/payment_revolife_store.svg",
+    "paymentImg": "shopify://shop_images/payment_revolife_store.svg",
     "show_vendor": false,
     "show_cart_note": false,
     "cart_drawer_collection": "",
@@ -181,8 +190,8 @@
     "fsb_enable": false,
     "fsb_ajax": false,
     "fsb_goal": "120",
-    "fsb_headline_start": "If you add <strong>(x)<\/strong> worth of products to your cart, you'll get Freeshipping!",
-    "fsb_headline_middle": "You are <strong>(x)<\/strong> away from Freeshipping!",
+    "fsb_headline_start": "If you add <strong>(x)</strong> worth of products to your cart, you'll get Freeshipping!",
+    "fsb_headline_middle": "You are <strong>(x)</strong> away from Freeshipping!",
     "bar_color_scheme": "scheme-6a35cdea-138a-4dd6-b7b5-b066419a615e",
     "fsb_background_color": "#f3f3f3",
     "fsb_progress_color": "#000000",
@@ -226,7 +235,7 @@
     ],
     "blocks": {
       "14060646107696862457": {
-        "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/judgeme_core\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "type": "shopify://apps/judge-me-reviews/blocks/judgeme_core/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
         "disabled": false,
         "settings": {
         }
@@ -347,7 +356,7 @@
         "settings": {
           "background": "#0d0d0d",
           "background_gradient": "",
-          "text": "#f2f2f2",
+          "text": "#ffffff",
           "button": "#bf0436",
           "button_label": "#ffffff",
           "secondary_button_label": "#bf0436",
@@ -361,6 +370,17 @@
           "text": "#ffffff",
           "button": "#121212",
           "button_label": "#bf04b9",
+          "secondary_button_label": "#bf0436",
+          "shadow": "#ffffff"
+        }
+      },
+      "scheme-d68f3e7e-529e-4fac-9e48-fa44a16ae7fb": {
+        "settings": {
+          "background": "#0d0d0d",
+          "background_gradient": "",
+          "text": "#ffffff",
+          "button": "#ffffff",
+          "button_label": "#bf0436",
           "secondary_button_label": "#bf0436",
           "shadow": "#ffffff"
         }
@@ -523,7 +543,7 @@
       "sale_badge_color_scheme": "accent-2",
       "sold_out_badge_color_scheme": "inverse",
       "brand_headline": "",
-      "brand_description": "<p><\/p>",
+      "brand_description": "<p></p>",
       "brand_image_width": 100,
       "social_twitter_link": "",
       "social_facebook_link": "",

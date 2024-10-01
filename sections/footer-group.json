@@ -7,15 +7,6 @@
 * made to this file may be overwritten.
 * ------------------------------------------------------------
 */
-/*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
 {
   "name": "t:sections.footer.name",
   "type": "footer",
@@ -74,7 +65,7 @@
         "show_border": true,
         "show_body_font": "head",
         "newsletter_enable": true,
-        "newsletter_heading": "<h4>Sign up for our newsletter<\/h4><p> Get <strong>15% off<\/strong> on your next order!<\/p>",
+        "newsletter_heading": "<h4>Sign up for our newsletter</h4><p> Get <strong>15% off</strong> on your next order!</p>",
         "enable_follow_on_shop": true,
         "show_social": true,
         "enable_country_selector": false,

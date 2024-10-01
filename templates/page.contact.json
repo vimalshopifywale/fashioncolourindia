@@ -7,15 +7,6 @@
 * made to this file may be overwritten.
 * ------------------------------------------------------------
 */
-/*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
 {
   "sections": {
     "main": {
@@ -32,14 +23,14 @@
         "template--14588668117088__178d28a7-8c38-4b54-93d3-4f373de515b5-heading-1": {
           "type": "heading",
           "settings": {
-            "heading": "<strong>Contact us<\/strong>",
+            "heading": "<strong>Contact us</strong>",
             "heading_size": "h1"
           }
         },
         "template--14588668117088__178d28a7-8c38-4b54-93d3-4f373de515b5-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>We're here to assist you. Reach out anytime for support, questions, or feedback.<\/p>"
+            "text": "<p>We're here to assist you. Reach out anytime for support, questions, or feedback.</p>"
           }
         }
       },
@@ -116,9 +107,9 @@
         "column_ydHFrw": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Group_1_4.svg",
+            "image": "shopify://shop_images/Group_3_3_2_1.svg",
             "title": "",
-            "text": "<p><strong>Phone :<\/strong><a href=\"tel:+91-8712777777\" title=\"tel:+91-8712777777\"><strong> <\/strong><\/a><a href=\"tel:+91 8712777777\" title=\"tel:+91 8712777777\">+91 8712777777<\/a><\/p><p><strong>Email :        <\/strong><a href=\"mailto:customercare@fashioncolour.in\" title=\"mailto:customercare@fashioncolour.in\">customercare@fashioncolour.in<\/a><\/p>",
+            "text": "<p><strong>Phone :</strong><a href=\"tel:+91-8712777777\" title=\"tel:+91-8712777777\"><strong> </strong></a><a href=\"tel:+91 8712777777\" title=\"tel:+91 8712777777\">+91 8712777777</a></p><p><strong>Email :        </strong><a href=\"mailto:customercare@fashioncolour.in\" title=\"mailto:customercare@fashioncolour.in\">customercare@fashioncolour.in</a></p>",
             "link_label": "",
             "link": "",
             "image_width_desktop": 100,
@@ -128,9 +119,9 @@
         "column_djjgtC": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Group_3_3.svg",
-            "title": "<strong>Support Team :<\/strong>",
-            "text": "<p><\/p><p>Monday - Friday ( 10am to 7pm)<\/p>",
+            "image": "shopify://shop_images/Group_3_3_3_2.svg",
+            "title": "<strong>Support Team :</strong>",
+            "text": "<p></p><p>Monday - Friday ( 10am to 7pm)</p>",
             "link_label": "",
             "link": "",
             "image_width_desktop": 100,
@@ -140,9 +131,9 @@
         "column_th4LBx": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Group_6_2.svg",
-            "title": "<strong>Address :<\/strong>",
-            "text": "<p><\/p><p>Color Couture LLP<\/p><p>NDM1,Netaji Subhash Place, Pitampura, Delhi-110034<\/p>",
+            "image": "shopify://shop_images/Group_3_3_1_2.svg",
+            "title": "<strong>Address :</strong>",
+            "text": "<p></p><p><strong>Color Couture LLP</strong></p><p>NDM1, Netaji Subhash Place, Pitampura, Delhi-110034</p>",
             "link_label": "",
             "link": "",
             "image_width_desktop": 100,
@@ -157,7 +148,7 @@
       ],
       "custom_css": [
         ".content-container {border: 0.7px solid #c3c3c3; background-color: #fff; border-radius: 15px; padding: 40px 0; height: 100%;}",
-        ".content-container strong{font-weight:500;}"
+        ".content-container strong {font-weight: 500;}"
       ],
       "settings": {
         "title": "",

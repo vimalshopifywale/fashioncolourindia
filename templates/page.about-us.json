@@ -7,15 +7,6 @@
 * made to this file may be overwritten.
 * ------------------------------------------------------------
 */
-/*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
 {
   "sections": {
     "main": {
@@ -32,14 +23,14 @@
         "heading_fByPJ9": {
           "type": "heading",
           "settings": {
-            "heading": "<strong>Our Story<\/strong>",
+            "heading": "<strong>Our Story</strong>",
             "heading_size": "h1"
           }
         },
         "text_78agbX": {
           "type": "text",
           "settings": {
-            "text": "<p>At RevoLife™, our mission is to prioritize holistic health over fleeting trends and quick fixes. In a world inundated with diet culture and toxic beauty standards, we've set out to revolutionize the health industry by offering natural, effective, and scientifically-backed wellness solutions.<\/p><p>Founded on the belief that true wellness comes from within, RevoLife™ combines the wisdom of traditional herbal remedies with modern scientific research. Our products, from Eye Vital to Hair Growth Serum, are meticulously crafted to support your well-being in every aspect—be it eye health, hair vitality, bone strength, or overall immunity.<\/p><p>We stand by our promise of delivering only the best. All our products are lab-tested, Non-GMO, and free from sugar, fillers, and harmful chemicals. Whether you're looking for vegan-friendly options or scientifically-backed formulations, RevoLife™ has something for everyone. Our ingredients are traceable, ensuring you receive the highest quality in every purchase.<\/p>"
+            "text": "<p>Welcome to Fashion Colour, where beauty meets individuality and innovation. More than just a makeup and skincare brand, we are a community that celebrates diversity, creativity, and self-expression. Our mission is simple: to provide high-quality, affordable products that cater to all skin tones, textures, and types, allowing everyone to feel confident in their own skin.</p><p>At Fashion Colour, we blend the transformative power of makeup with the nurturing benefits of skincare. Each product is carefully formulated to not only enhance your appearance but also nourish your skin, ensuring that your beauty routine is both empowering and healthy. From our long-lasting foundations to our gentle makeup removers, we offer a wide range of products designed to meet your every beauty need.</p><p>Inclusivity is at the core of our brand. We believe beauty is for everyone, which is why we are committed to creating shades and formulations that reflect every complexion. In addition, we are proud to be cruelty-free, with ethically sourced ingredients that respect both people and the planet.</p><p>Whether you’re looking for a flawless finish or skincare that truly cares, Fashion Colour has something for you. We invite you to explore our collections, find your perfect match, and join a community that empowers you to embrace your unique beauty every day. Fashion Colour – empowering beauty, naturally.</p>"
           }
         }
       },
@@ -58,116 +49,48 @@
         "mobile_padding_bottom": 20
       }
     },
-    "rich_text_ekCF8F": {
-      "type": "rich-text",
+    "image_with_text_z7DfV7": {
+      "type": "image-with-text",
       "blocks": {
-        "heading_P8U9mz": {
+        "heading_zQpwCE": {
           "type": "heading",
           "settings": {
-            "heading": "<strong>Our Certifications<\/strong>",
+            "heading": "<h3><strong>Why Choose Fashion Colour?</strong></h3><p></p>",
             "heading_size": "h1"
           }
-        }
-      },
-      "block_order": [
-        "heading_P8U9mz"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "accent-1",
-        "full_width": true,
-        "padding_top": 80,
-        "padding_bottom": 16,
-        "mobile_padding_top": 76,
-        "mobile_padding_bottom": 20
-      }
-    },
-    "brands_MWVMme": {
-      "type": "brands",
-      "blocks": {
-        "image_kfNFdB": {
-          "type": "image",
-          "settings": {
-            "logo_image": "shopify:\/\/shop_images\/9099_1_2.jpg",
-            "logo_image_width": 174,
-            "logo_image_height_mobile": 94
-          }
         },
-        "image_3VGb3T": {
-          "type": "image",
+        "text_JmUgdL": {
+          "type": "text",
           "settings": {
-            "logo_image": "shopify:\/\/shop_images\/Group_4533.jpg",
-            "logo_image_width": 174,
-            "logo_image_height_mobile": 94
-          }
-        },
-        "image_LMhQQd": {
-          "type": "image",
-          "settings": {
-            "logo_image": "shopify:\/\/shop_images\/567_1_2.jpg",
-            "logo_image_width": 174,
-            "logo_image_height_mobile": 94
-          }
-        },
-        "image_8iizTR": {
-          "type": "image",
-          "settings": {
-            "logo_image": "shopify:\/\/shop_images\/Group_4535.jpg",
-            "logo_image_width": 174,
-            "logo_image_height_mobile": 94
-          }
-        },
-        "image_axmzH9": {
-          "type": "image",
-          "settings": {
-            "logo_image": "shopify:\/\/shop_images\/Group_4527.jpg",
-            "logo_image_width": 174,
-            "logo_image_height_mobile": 94
-          }
-        },
-        "image_ermqrH": {
-          "type": "image",
-          "settings": {
-            "logo_image": "shopify:\/\/shop_images\/Group_4531.jpg",
-            "logo_image_width": 174,
-            "logo_image_height_mobile": 94
-          }
-        },
-        "image_EfFRwH": {
-          "type": "image",
-          "settings": {
-            "logo_image": "shopify:\/\/shop_images\/Group_4527.jpg",
-            "logo_image_width": 174,
-            "logo_image_height_mobile": 94
+            "text": "<p>Choosing Fashion Colour means choosing products that are designed with you in mind. Our commitment to creating inclusive, cruelty-free, and ethically sourced products is at the core of everything we do. Whether you’re shopping for a new foundation or looking to upgrade your skincare routine, Fashion Colour offers a wide array of products to help you achieve your beauty goals.</p>",
+            "text_style": "body"
           }
         }
       },
       "block_order": [
-        "image_kfNFdB",
-        "image_3VGb3T",
-        "image_LMhQQd",
-        "image_8iizTR",
-        "image_axmzH9",
-        "image_ermqrH",
-        "image_EfFRwH"
+        "heading_zQpwCE",
+        "text_JmUgdL"
       ],
       "settings": {
-        "scroll_speed": 15,
-        "color_scheme": "accent-1",
-        "padding_desktop": 16,
-        "padding_mobile": 8,
-        "padding_item_desktop": 36,
-        "padding_item_mobile": 24,
-        "padding_top": 0,
-        "padding_bottom": 0
+        "image": "shopify://shop_images/Rectangle_359.jpg",
+        "height": "small",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     }
   },
   "order": [
     "main",
     "rich_text_YnVzfw",
-    "rich_text_ekCF8F",
-    "brands_MWVMme"
+    "image_with_text_z7DfV7"
   ]
 }

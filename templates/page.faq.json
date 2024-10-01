@@ -7,15 +7,6 @@
 * made to this file may be overwritten.
 * ------------------------------------------------------------
 */
-/*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
 {
   "sections": {
     "main": {
@@ -32,14 +23,14 @@
         "6796aae3-0b94-4c0d-a460-ab06d9a3a33e": {
           "type": "heading",
           "settings": {
-            "heading": "<strong>FAQs<\/strong>",
+            "heading": "<strong>FAQs</strong>",
             "heading_size": "h0"
           }
         },
         "eb505d90-0714-42cf-b794-4012d27e6860": {
           "type": "text",
           "settings": {
-            "text": "<p>Your Guide to Common Queries.<\/p>"
+            "text": "<p>Your Guide to Common Queries.</p>"
           }
         }
       },
@@ -66,7 +57,7 @@
           "settings": {
             "heading": "Are your products safe for sensitive skin?",
             "icon": "none",
-            "row_content": "<p>Yes, all our products are made using high-quality ingredients that are safe for all skin types, including sensitive skin.<\/p>",
+            "row_content": "<p>Yes, all our products are made using high-quality ingredients that are safe for all skin types, including sensitive skin.</p>",
             "page": ""
           }
         },
@@ -75,7 +66,7 @@
           "settings": {
             "heading": "Can I use your products during pregnancy?",
             "icon": "none",
-            "row_content": "<p>While our products are made from safe ingredients, we recommend consulting with your doctor before using any new products during pregnancy.<\/p>",
+            "row_content": "<p>While our products are made from safe ingredients, we recommend consulting with your doctor before using any new products during pregnancy.</p>",
             "page": ""
           }
         },
@@ -84,7 +75,7 @@
           "settings": {
             "heading": "How long does the product last once opened?",
             "icon": "none",
-            "row_content": "<p>The shelf life of our products is usually 12 to 24 months after opening. Please refer to the product label for specific details.<\/p>",
+            "row_content": "<p>The shelf life of our products is usually 12 to 24 months after opening. Please refer to the product label for specific details.</p>",
             "page": ""
           }
         },
@@ -93,7 +84,7 @@
           "settings": {
             "heading": "Do your products contain harmful chemicals?",
             "icon": "none",
-            "row_content": "<p>No, our products are free from harmful chemicals like parabens, sulfates, and artificial fragrances. We prioritize safety and quality.<\/p>",
+            "row_content": "<p>No, our products are free from harmful chemicals like parabens, sulfates, and artificial fragrances. We prioritize safety and quality.</p>",
             "page": ""
           }
         },
@@ -102,7 +93,7 @@
           "settings": {
             "heading": "Are your products tested on animals?",
             "icon": "none",
-            "row_content": "<p>No, we are committed to cruelty-free practices and do not test on animals.<\/p>",
+            "row_content": "<p>No, we are committed to cruelty-free practices and do not test on animals.</p>",
             "page": ""
           }
         },
@@ -111,7 +102,7 @@
           "settings": {
             "heading": "Can I use your products if I have allergies?",
             "icon": "none",
-            "row_content": "<p>If you have specific allergies, please check the ingredient list on the product packaging. We recommend doing a patch test before using any new product.<\/p>",
+            "row_content": "<p>If you have specific allergies, please check the ingredient list on the product packaging. We recommend doing a patch test before using any new product.</p>",
             "page": ""
           }
         },
@@ -120,7 +111,7 @@
           "settings": {
             "heading": "How do I know which product is right for my skin type?",
             "icon": "none",
-            "row_content": "<p>Each product page provides detailed information about the suitability for different skin types. If you’re still unsure, you can reach out to our customer support for personalized recommendations.<\/p>",
+            "row_content": "<p>Each product page provides detailed information about the suitability for different skin types. If you’re still unsure, you can reach out to our customer support for personalized recommendations.</p>",
             "page": ""
           }
         },
@@ -129,7 +120,7 @@
           "settings": {
             "heading": "Do you offer samples before purchasing?",
             "icon": "none",
-            "row_content": "<p>Currently, we do not offer samples. However, our products are available in smaller sizes that you can try before committing to a full-size purchase.<\/p>",
+            "row_content": "<p>Currently, we do not offer samples. However, our products are available in smaller sizes that you can try before committing to a full-size purchase.</p>",
             "page": ""
           }
         }
@@ -146,8 +137,12 @@
       ],
       "settings": {
         "caption": "",
-        "heading": "",
-        "desktop_heading_font_size": 18,
+        "heading": "General & Product FAQs",
+        "header_alignment": "top",
+        "header_text_width": 10,
+        "btn_text": "",
+        "btn_url": "",
+        "desktop_heading_font_size": 29,
         "chkbx": false,
         "heading_size": "h1",
         "heading_alignment": "center",
@@ -163,7 +158,7 @@
         "mobile_padding_top": 0,
         "mobile_padding_bottom": 20,
         "border_enabled": true,
-        "mobile_heading_font_size": 18
+        "mobile_heading_font_size": 28
       }
     },
     "collapsible_content_HMgaUa": {
@@ -174,7 +169,7 @@
           "settings": {
             "heading": "How long does it take to deliver my order?",
             "icon": "none",
-            "row_content": "<p>Orders are typically delivered within 3-5 business days. Delivery times may vary depending on your location.<\/p>",
+            "row_content": "<p>Orders are typically delivered within 3-5 business days. Delivery times may vary depending on your location.</p>",
             "page": ""
           }
         },
@@ -183,7 +178,7 @@
           "settings": {
             "heading": "Which areas in India do you deliver to?",
             "icon": "none",
-            "row_content": "<p>We deliver across India. However, delivery to certain remote locations may take a little longer.<\/p>",
+            "row_content": "<p>We deliver across India. However, delivery to certain remote locations may take a little longer.</p>",
             "page": ""
           }
         },
@@ -192,7 +187,7 @@
           "settings": {
             "heading": "Can I track my order?",
             "icon": "none",
-            "row_content": "<p>Yes, once your order is dispatched, we will send you a tracking number via email, which you can use to track your shipment.<\/p>",
+            "row_content": "<p>Yes, once your order is dispatched, we will send you a tracking number via email, which you can use to track your shipment.</p>",
             "page": ""
           }
         },
@@ -201,7 +196,7 @@
           "settings": {
             "heading": "What courier partners do you use for shipping?",
             "icon": "none",
-            "row_content": "<p>We use reliable courier partners like Bluedart, Ecom-Express, and Shadowfax to ensure timely and secure delivery of your orders<\/p>",
+            "row_content": "<p>We use reliable courier partners like Bluedart, Ecom-Express, and Shadowfax to ensure timely and secure delivery of your orders</p>",
             "page": ""
           }
         },
@@ -210,7 +205,7 @@
           "settings": {
             "heading": "Can I change my delivery address after placing an order?",
             "icon": "none",
-            "row_content": "<p>If your order hasn’t been dispatched yet, you can contact our customer support team to update the delivery address. Once dispatched, the address cannot be changed.<\/p>",
+            "row_content": "<p>If your order hasn’t been dispatched yet, you can contact our customer support team to update the delivery address. Once dispatched, the address cannot be changed.</p>",
             "page": ""
           }
         },
@@ -219,7 +214,7 @@
           "settings": {
             "heading": "What should I do if my package was marked as delivered but I didn’t receive it?",
             "icon": "none",
-            "row_content": "<p>If your package shows as delivered but you haven’t received it, please contact our customer support team immediately at fashioncolourecom@gmail.com or call us at 8712777777.<\/p>",
+            "row_content": "<p>If your package shows as delivered but you haven’t received it, please contact our customer support team immediately at fashioncolourecom@gmail.com or call us at 8712777777.</p>",
             "page": ""
           }
         },
@@ -228,7 +223,7 @@
           "settings": {
             "heading": "What are the shipping charges for my order?",
             "icon": "none",
-            "row_content": "<p>We offer free shipping on all orders above ₹500. For orders below this amount, a nominal shipping charge may apply.<\/p>",
+            "row_content": "<p>We offer free shipping on all orders above ₹500. For orders below this amount, a nominal shipping charge may apply.</p>",
             "page": ""
           }
         },
@@ -237,7 +232,7 @@
           "settings": {
             "heading": "Can I request express shipping for my order?",
             "icon": "none",
-            "row_content": "<p>At the moment, we do not offer express shipping. However, we ensure that all orders are delivered as quickly as possible within 3-5 business days.<\/p>",
+            "row_content": "<p>At the moment, we do not offer express shipping. However, we ensure that all orders are delivered as quickly as possible within 3-5 business days.</p>",
             "page": ""
           }
         }
@@ -254,12 +249,16 @@
       ],
       "settings": {
         "caption": "",
-        "heading": "",
+        "heading": "Shipping FAQs",
+        "header_alignment": "top",
+        "header_text_width": 77,
+        "btn_text": "",
+        "btn_url": "",
         "desktop_heading_font_size": 18,
         "chkbx": false,
         "heading_size": "h1",
         "heading_alignment": "center",
-        "layout": "section",
+        "layout": "none",
         "color_scheme": "accent-1",
         "container_color_scheme": "background-2",
         "open_first_collapsible_row": false,
@@ -282,7 +281,7 @@
           "settings": {
             "heading": "What is your return policy?",
             "icon": "none",
-            "row_content": "<p>We do not offer returns or exchanges unless the product is damaged, defective, or you’ve received the wrong item. You can initiate a return within 3 business days of receiving your order.<\/p>",
+            "row_content": "<p>We do not offer returns or exchanges unless the product is damaged, defective, or you’ve received the wrong item. You can initiate a return within 3 business days of receiving your order.</p>",
             "page": ""
           }
         },
@@ -291,7 +290,7 @@
           "settings": {
             "heading": "How do I initiate a return if I received a damaged or defective product?",
             "icon": "none",
-            "row_content": "<p>If your product is damaged, defective, or incorrect, please contact our customer support team via email at customercare@fashioncolour.in or call us at 8712777777 within 3 days of receiving the order. Provide your order ID and a photo of the product.<\/p>",
+            "row_content": "<p>If your product is damaged, defective, or incorrect, please contact our customer support team via email at customercare@fashioncolour.in or call us at 8712777777 within 3 days of receiving the order. Provide your order ID and a photo of the product.</p>",
             "page": ""
           }
         },
@@ -300,7 +299,7 @@
           "settings": {
             "heading": "What items are not eligible for return?",
             "icon": "none",
-            "row_content": "<p>Items that are used, damaged due to misuse, or returned without original packaging and tags are not eligible for return. Returns initiated after 3 business days are also not accepted.<\/p>",
+            "row_content": "<p>Items that are used, damaged due to misuse, or returned without original packaging and tags are not eligible for return. Returns initiated after 3 business days are also not accepted.</p>",
             "page": ""
           }
         },
@@ -309,7 +308,7 @@
           "settings": {
             "heading": "Will I get a full refund if I return a product?",
             "icon": "none",
-            "row_content": "<p>Yes, if the product is defective or you received the wrong item, you will receive a full refund once the product is returned to us in its original packaging.<\/p>",
+            "row_content": "<p>Yes, if the product is defective or you received the wrong item, you will receive a full refund once the product is returned to us in its original packaging.</p>",
             "page": ""
           }
         },
@@ -318,7 +317,7 @@
           "settings": {
             "heading": "How long does the return process take?",
             "icon": "none",
-            "row_content": "<p>Once you contact us and we pick up the product (within 2-4 business days), the refund or replacement will be processed after we verify that the returned product is in its original condition.<\/p>",
+            "row_content": "<p>Once you contact us and we pick up the product (within 2-4 business days), the refund or replacement will be processed after we verify that the returned product is in its original condition.</p>",
             "page": ""
           }
         },
@@ -327,7 +326,7 @@
           "settings": {
             "heading": "Do I need to return the free gift with my order?",
             "icon": "none",
-            "row_content": "<p>Yes, any free gifts included with your purchase must be returned along with the product for a refund or exchange.<\/p>",
+            "row_content": "<p>Yes, any free gifts included with your purchase must be returned along with the product for a refund or exchange.</p>",
             "page": ""
           }
         },
@@ -336,7 +335,7 @@
           "settings": {
             "heading": "What should I do if the replacement product is not available?",
             "icon": "none",
-            "row_content": "<p>In case a replacement is not available for the defective or wrong product you received, we will issue a full refund.<\/p>",
+            "row_content": "<p>In case a replacement is not available for the defective or wrong product you received, we will issue a full refund.</p>",
             "page": ""
           }
         },
@@ -345,7 +344,7 @@
           "settings": {
             "heading": "Can I exchange the product if I change my mind about the shade?",
             "icon": "none",
-            "row_content": "<p>Unfortunately, we do not accept returns or exchanges due to a change of mind about the shade or after using the product.<\/p>",
+            "row_content": "<p>Unfortunately, we do not accept returns or exchanges due to a change of mind about the shade or after using the product.</p>",
             "page": ""
           }
         }
@@ -362,7 +361,11 @@
       ],
       "settings": {
         "caption": "",
-        "heading": "",
+        "heading": "Return & exchange FAQs",
+        "header_alignment": "top",
+        "header_text_width": 30,
+        "btn_text": "",
+        "btn_url": "",
         "desktop_heading_font_size": 18,
         "chkbx": false,
         "heading_size": "h1",
@@ -389,9 +392,9 @@
         "custom_text_small": "",
         "color_scheme": "accent-1",
         "padding_top": 0,
-        "padding_bottom": 152,
+        "padding_bottom": 72,
         "use_anchor_link": true,
-        "anchor_link": "\/collections\/all"
+        "anchor_link": "https://fashioncolourindia.myshopify.com/"
       }
     }
   },

@@ -9,61 +9,165 @@
 */
 {
   "sections": {
-    "hero_slider_hAr9Q9": {
+    "hero_slider_64mdj9": {
       "type": "hero-slider",
       "blocks": {
-        "slide_Ld9UUr": {
-          "type": "slide",
+        "image_slide_yCfij4": {
+          "type": "image-slide",
           "settings": {
-            "review-text": "10,000+ Happy Customers",
-            "image_1": "shopify://shop_images/review-3.4-stars.png",
-            "image_2": "shopify://shop_images/hero-banner.png",
-            "img_2_dsk_wdth": 600,
+            "review-text": "",
+            "text_self_align": "center",
+            "img_2_dsk_wdth": 700,
             "img_2_mbl_wdth": 300,
-            "image": "shopify://shop_images/rosa-rafael-pxax5WuM7eY-unsplash.jpg",
-            "image_mob": "shopify://shop_images/rosa-rafael-pxax5WuM7eY-unsplash.jpg",
-            "caption": "Fashion Colour 24Hr Longwear Liquid Foundation With Skin Care",
-            "block_cap_size": 40,
-            "block_cap_sizes": 30,
-            "heading": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
-            "block_head_size-2": 17,
-            "block_head_size-mobile": 16,
+            "caption": "",
+            "block_cap_size": 20,
+            "block_cap_sizes": 20,
+            "heading": "",
+            "block_head_size-2": 20,
+            "block_head_size-mobile": 20,
             "block_head_line": 1.4,
             "heading_size": "h1",
             "subheading": "",
-            "button_label": "Shop Bestseller",
-            "link": "#",
-            "button_label1": "Bundle & Save",
+            "button_label": "",
+            "link": "",
+            "button_label1": "",
             "bg_color": "#ffffff",
-            "link2": "#",
+            "link2": "",
             "link-2": "",
             "button_style_secondary": false,
             "box_align": "middle-center",
             "show_text_box": true,
-            "text_alignment": "left",
-            "image_overlay_opacity": 50,
-            "color_scheme": "scheme-c83d469c-2a1d-4ae7-b1fc-e428dd6a108f",
-            "text_alignment_mobile": "left",
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center",
+            "mobile_box_align": "center",
+            "mobile_text_spacing": 0
+          }
+        },
+        "image_slide_D77bwk": {
+          "type": "image-slide",
+          "settings": {
+            "review-text": "10,000+ Happy Customers",
+            "text_self_align": "center",
+            "img_2_dsk_wdth": 700,
+            "img_2_mbl_wdth": 300,
+            "caption": "Company",
+            "block_cap_size": 20,
+            "block_cap_sizes": 20,
+            "heading": "Image slide",
+            "block_head_size-2": 20,
+            "block_head_size-mobile": 20,
+            "block_head_line": 1.4,
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "Button label",
+            "link": "",
+            "button_label1": "Button label",
+            "bg_color": "#ffffff",
+            "link2": "",
+            "link-2": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center",
+            "mobile_box_align": "center",
+            "mobile_text_spacing": 0
+          }
+        },
+        "image_slide_G98wiU": {
+          "type": "image-slide",
+          "settings": {
+            "review-text": "10,000+ Happy Customers",
+            "text_self_align": "center",
+            "img_2_dsk_wdth": 700,
+            "img_2_mbl_wdth": 300,
+            "caption": "Company",
+            "block_cap_size": 20,
+            "block_cap_sizes": 20,
+            "heading": "Image slide",
+            "block_head_size-2": 20,
+            "block_head_size-mobile": 20,
+            "block_head_line": 1.4,
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "Button label",
+            "link": "",
+            "button_label1": "Button label",
+            "bg_color": "#ffffff",
+            "link2": "",
+            "link-2": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center",
+            "mobile_box_align": "center",
+            "mobile_text_spacing": 0
+          }
+        },
+        "image_slide_QpdXEJ": {
+          "type": "image-slide",
+          "settings": {
+            "review-text": "10,000+ Happy Customers",
+            "text_self_align": "center",
+            "img_2_dsk_wdth": 700,
+            "img_2_mbl_wdth": 300,
+            "caption": "Company",
+            "block_cap_size": 20,
+            "block_cap_sizes": 20,
+            "heading": "Image slide",
+            "block_head_size-2": 20,
+            "block_head_size-mobile": 20,
+            "block_head_line": 1.4,
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "Button label",
+            "link": "",
+            "button_label1": "Button label",
+            "bg_color": "#FFF",
+            "link2": "",
+            "link-2": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center",
             "mobile_box_align": "center",
             "mobile_text_spacing": 0
           }
         }
       },
       "block_order": [
-        "slide_Ld9UUr"
+        "image_slide_yCfij4",
+        "image_slide_D77bwk",
+        "image_slide_G98wiU",
+        "image_slide_QpdXEJ"
       ],
       "settings": {
         "layout": "full_bleed",
-        "banner_border": 12,
-        "slide_height": "small",
+        "banner_border": 0,
+        "slide_height": "medium",
+        "desk_height": 200,
+        "sml_desk_height": 200,
+        "mbl_height": 200,
         "slider_visual": "counter",
-        "auto_rotate": true,
+        "auto_rotate": false,
         "hide_navigation": false,
         "change_slides_speed": 5,
         "show_text_below": false,
         "accessibility_info": "Slideshow about our brand",
-        "padding_top": 100,
-        "padding_bottom": 100
+        "padding_top": 40,
+        "padding_bottom": 40,
+        "padding_top_mbl": 40,
+        "padding_bottom_mbl": 40
       }
     },
     "our_collection_7jxwER": {
@@ -243,7 +347,8 @@
           "type": "tab",
           "settings": {
             "tab_title": "Nails",
-            "title_1": "",
+            "image_1": "shopify://shop_images/Polished_Perfection-_Embrace_Elegance_with_our_Mesmerizing_Nail_Paints_NailedIt_ConfidentlyYou_NailGoals_ExpressYourself_fashioncolors_ChicStyle_ColorfulNails_expressyourvibe.jpg",
+            "title_1": "Nail Paint",
             "sub_title_1": "",
             "link_1": "",
             "title_2": "",
@@ -306,10 +411,19 @@
         "content_text": "#0d0d0d",
         "text_font_size": 19,
         "text_font_sizes": 19,
-        "secPdgTop": 50,
-        "secPdgBtm": 20,
-        "mblPdgTop": 20,
-        "mblPdgBtm": 20
+        "secPdgTop": 60,
+        "secPdgBtm": 30,
+        "mblPdgTop": 45,
+        "mblPdgBtm": 20,
+        "dskSld": 4,
+        "dskSpc": 20,
+        "tabSld": 4.8,
+        "tabSpc": 20,
+        "mblSld": 1.8,
+        "mblSpc": 20,
+        "sldAtply": 1.5,
+        "pagination": true,
+        "navigation": true
       }
     },
     "featured_collection_W8newm": {
@@ -324,6 +438,7 @@
         "show_description": false,
         "description_style": "body",
         "collection": "bestsellers",
+        "gradiant_text": "default",
         "products_to_show": 10,
         "columns_desktop": 4,
         "full_width": false,
@@ -342,13 +457,58 @@
         "quick_desc_size": 14,
         "enable_quick_add": true,
         "show_secondary_add": false,
-        "columns_mobile": "1",
+        "columns_mobile": "2",
         "swipe_on_mobile": true,
         "navigation_on_mobile": false,
-        "padding_top": 40,
-        "padding_bottom": 68,
+        "padding_top": 60,
+        "padding_bottom": 100,
         "mobile_padding_top": 80,
         "mobile_padding_bottom": 80
+      }
+    },
+    "gm_slider_rrieeC": {
+      "type": "gm-slider",
+      "blocks": {
+        "slide_EiUB8N": {
+          "type": "slide",
+          "settings": {
+            "img_url": "",
+            "ttl": "",
+            "subTtl": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_EiUB8N"
+      ],
+      "settings": {
+        "preTtl": "All-in-One Beauty Collection",
+        "gradiant_text": false,
+        "subtitle_font_size": 26,
+        "subtitle_font_sizemob": 16,
+        "ttl": "",
+        "heading_font_size": 24,
+        "heading_font_sizemob": 24,
+        "subTtl": "",
+        "btnTxt": "",
+        "btnUrl": "",
+        "chkBx": false,
+        "overlays_box": false,
+        "dskSld": 4.8,
+        "dskSpc": 20,
+        "tabSld": 4.8,
+        "tabSpc": 20,
+        "mblSld": 1.8,
+        "mblSpc": 20,
+        "sldAtply": 1.5,
+        "pagination": true,
+        "navigation": true,
+        "color_scheme": "background-2",
+        "sldCol": "#ffffff",
+        "secPdgTop": 20,
+        "secPdgBtm": 20,
+        "secPdgTopMbl": 20,
+        "secPdgBtmMbl": 20
       }
     },
     "tabs_collection_kX3nVY": {
@@ -358,7 +518,7 @@
           "type": "tab",
           "settings": {
             "heading": "Skin Care",
-            "collection": "skin-care",
+            "collection": "bestsellers",
             "description": "",
             "collection_text_alignment": "left",
             "show_description": false,
@@ -369,7 +529,7 @@
           "type": "tab",
           "settings": {
             "heading": "Hair Care",
-            "collection": "hair-care",
+            "collection": "bestsellers",
             "description": "",
             "collection_text_alignment": "left",
             "show_description": false,
@@ -380,7 +540,7 @@
           "type": "tab",
           "settings": {
             "heading": "Serum & Toner",
-            "collection": "serum-toner",
+            "collection": "bestsellers-platinum-1",
             "description": "",
             "collection_text_alignment": "left",
             "show_description": false,
@@ -463,7 +623,8 @@
       "settings": {
         "color_scheme_main": "",
         "layout_width": "grid",
-        "height": "adapt",
+        "video": "shopify://files/videos/Video-720.mp4",
+        "height": "small",
         "desktop_image_width": "medium",
         "layout": "text_first",
         "desktop_content_position": "top",
@@ -685,6 +846,7 @@
         "slide_rHQiYr"
       ],
       "settings": {
+        "gradiant_text": false,
         "preTtl": "Our Products in Action",
         "subtitle_font_size": 20,
         "subtitle_font_sizemob": 16,
@@ -776,6 +938,7 @@
       ],
       "settings": {
         "caption": "",
+        "gradient_wrap": false,
         "heading": "Frequently Asked Questions",
         "header_alignment": "gm_left_wrap",
         "header_text_width": 33,
@@ -785,16 +948,16 @@
         "chkbx": false,
         "heading_size": "h1",
         "heading_alignment": "left",
-        "layout": "none",
+        "layout": "section",
         "color_scheme": "accent-1",
         "container_color_scheme": "accent-1",
         "open_first_collapsible_row": false,
         "image_ratio": "adapt",
         "desktop_layout": "image_second",
         "heading_size_row": "h3",
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "mobile_padding_top": 0,
+        "padding_top": 72,
+        "padding_bottom": 40,
+        "mobile_padding_top": 40,
         "mobile_padding_bottom": 0,
         "border_enabled": false,
         "mobile_heading_font_size": 30
@@ -964,7 +1127,7 @@
         "margin_bottom": 0,
         "padding_top": 100,
         "padding_bottom": 100,
-        "padding_tops": 80,
+        "padding_tops": 52,
         "padding_bottoms": 80
       }
     },
@@ -1076,6 +1239,7 @@
       ],
       "settings": {
         "preTtl": "@fashioncolourofficial",
+        "gradiant_text": false,
         "subtitle_font_size": 20,
         "subtitle_font_sizemob": 16,
         "ttl": "Follow us on Instagram",
@@ -1105,9 +1269,10 @@
     }
   },
   "order": [
-    "hero_slider_hAr9Q9",
+    "hero_slider_64mdj9",
     "our_collection_7jxwER",
     "featured_collection_W8newm",
+    "gm_slider_rrieeC",
     "tabs_collection_kX3nVY",
     "video_text_V6xpR6",
     "tabs_collection_GW6L9C",

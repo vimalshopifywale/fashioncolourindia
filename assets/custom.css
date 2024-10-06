@@ -321,7 +321,7 @@
     .sw-product .thumbnail-list {
         gap: 22px;
         overflow-y: auto;
-        flex-direction: unset;
+        /* flex-direction: unset; */
         transform: translate(0) !important;
     }
 

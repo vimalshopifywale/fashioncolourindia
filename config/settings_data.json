@@ -96,6 +96,7 @@
     "card_text_alignment": "left",
     "card_color_scheme": "scheme-6a35cdea-138a-4dd6-b7b5-b066419a615e",
     "swatch_show": true,
+    "swatches_limit": 5,
     "swatch_position": "top",
     "tag_show": false,
     "card_border_thickness": 1,

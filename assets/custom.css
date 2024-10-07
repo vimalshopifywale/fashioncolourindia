@@ -1,3 +1,6 @@
+.jdgm-widget.jdgm-widget{
+    margin-bottom: 10px;
+}
 /* ===Header================================================================== */
 .swiper{
     width: 100%;
@@ -358,16 +361,25 @@
         border-radius: 16px;
         margin: 27px 0 ;
     } */
-    .sw-product .sw-variantbox {
+    .sw-productbtn {
+        margin: 0 !important;
+    }
+    .sw-product .product-form {
+        border-left: 1px solid #CDCDCD;
+        border-right: 1px solid #CDCDCD;
+        padding: 0 10px 0;
+    }
+    .sw-product .sw-variantbox, .without-variant {
         border-top: 1px solid #CDCDCD;
         border-left: 1px solid #CDCDCD;
         border-right: 1px solid #CDCDCD;
         padding: 23px 10px 15px;
         border-radius: 16px 16px 0 0;
-        margin: 27px 0 0;
+        margin: 27px 0 0 !important;
     }
-    .sw-productbtn {
-        margin: 0 !important;
+
+    .without-variant .product-form {
+        border: unset !important;
     }
     .sw-product .lm-feature-image_Hbm4K8{
         padding: 15px 10px 14px;
@@ -397,11 +409,7 @@
         font-size: 20px;
         font-weight: 500;
     }
-    .sw-product .product-form {
-        border-left: 1px solid #CDCDCD;
-        border-right: 1px solid #CDCDCD;
-        padding: 0 10px 0;
-    }
+    
 
 /* ===Collecction================================================================== */
     .feature-collection .collection-titel{
@@ -431,7 +439,7 @@
         font-size: 17px;
     }
     .feature-collection .price-item.price-item--sale.price-item--last {
-        font-weight: 300;
+        font-weight: 500;
         line-height: 1;
     }
     .feature-collection .price-item.price-item--regular {
@@ -459,11 +467,11 @@
         border: 0;
         color: #0D0D0D;
         font-size: 11px;
-        font-weight: 500;
+        font-weight: 400;
+        text-transform: capitalize;
         letter-spacing: 1px;
         padding: 4px;
         border-radius: 2px;
-        text-transform: lowercase;
     }
     .feature-collection .card-price {
         margin-top: 0px !important;
@@ -777,7 +785,7 @@
             flex-wrap: nowrap;
         }
         .menu-title {
-            padding: 11px 30px;
+            padding: 10px 30px;
             margin: 0;
             font-weight: 500;
             font-size: 24px;
@@ -874,6 +882,11 @@
         }
         .header__heading-logo-wrapper{
             margin-left: auto;
+        }
+        .main-header > .header__heading-logo-wrapper{
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
         }
         .footer-block__image-wrapper img {
             margin: 50px auto 0;

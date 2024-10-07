@@ -85,6 +85,14 @@
                 spaceBetween: {{section.settings.dskSpc}},
               },
             },
+            on: {
+              afterInit: function(){
+                setTimeout(()=>{
+                  let imgHgt = $('.swp-{{block.id}} .collection-item img').height()/2;
+                $('.swNxt{{block.id | remove: '-' |  remove: '_'  }},.swPrv{{block.id | remove: '-' |  remove: '_'  }}').css('top',imgHgt+'px');
+                },1000);
+              },
+            }
           });
         </script>
       {% endfor %}
@@ -203,6 +211,7 @@ $('.tabbing-text').on('click',(el)=>{
       el.currentTarget.classList.add('active');
       $(`#tab-${el.currentTarget.dataset.tab}`).addClass('active')
 });
+
   // document.addEventListener('DOMContentLoaded', function () {
   //   const tabs = document.querySelectorAll('.collection-tabs a');
   //   const contents = document.querySelectorAll('.tab-content');

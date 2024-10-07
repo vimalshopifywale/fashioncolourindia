@@ -156,9 +156,6 @@
   .image-with-text.collapse-borders:not(.image-with-text--overlap) .image-with-text__content {
     border-top: 0;
   }
-  .image-with-text__content{
-    padding-left: 0;
-  }
 }
 
 .image-with-text__content--mobile-right > * {

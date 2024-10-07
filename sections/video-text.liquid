@@ -33,7 +33,6 @@
     top: 0;
     left: 0;
     object-fit: cover;
-    border-radius: 10px !important;
 }
   
  {% if section.settings.layout_width == 'full_bleed' %}
@@ -225,17 +224,7 @@
   </div>
 </div>
 </div>
-                <style>
-                  #ImageWithText--{{ section.id }} .image-with-text__heading{
-                  font-weight: 500 !important;
-                  font-size: {{ section.settings.heading_font_size }}px !important;
-                }
-                @media screen and (max-width:767px){
-                  #ImageWithText--{{ section.id }} .image-with-text__heading{                    
-                    font-size: {{ section.settings.heading_font_sizemob }}px !important;
-                  }
-                }
-                </style>
+                
 {% schema %}
 {
   "name": "Video with Text",
@@ -265,24 +254,6 @@
       ],
       "default": "grid",
       "label": "Layout"
-    },
-    {
-      "type": "range",
-      "id": "heading_font_size",
-      "label": "Desktop Heading Font Size",
-      "default": 24,
-      "min": 16,
-      "max": 72,
-      "step": 1
-    },
-    {
-      "type": "range",
-      "id": "heading_font_sizemob",
-      "label": "Mobile Heading Font Size",
-      "default": 24,
-      "min": 16,
-      "max": 72,
-      "step": 1
     },
       {
           "type": "video",

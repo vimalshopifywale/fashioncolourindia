@@ -51,7 +51,7 @@
   border-spacing: 0;
 }
 .comparison-table tbody {
- /* box-shadow: var(--table-shadow-horizontal-offset) var(--table-shadow-vertical-offset) var(--table-shadow-blur-radius) var(--table-border-width) rgba(var(--color-foreground),var(--table-shadow-opacity)); */
+ box-shadow: var(--table-shadow-horizontal-offset) var(--table-shadow-vertical-offset) var(--table-shadow-blur-radius) var(--table-border-width) rgba(var(--color-foreground),var(--table-shadow-opacity));
   /*box-shadow:var(--table-border-width) var(--table-border-width) var(--table-border-width) calc(var(--table-border-width) + var(--table-shadow-horizontal-offset)) rgb(var(--color-foreground)), var(--table-shadow-horizontal-offset) var(--table-shadow-vertical-offset) var(--table-shadow-blur-radius) var(--table-border-width) rgba(var(--color-button), var(--alpha-button-background));        
 */
  border-radius:  var(--table-corner-radius);

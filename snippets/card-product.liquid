@@ -230,7 +230,7 @@
         <div class="card__content">
           <div class="card__information">
             {%- if show_rating -%}
-              <div class="jdgm-widget jdgm-preview-badge" data-id="{{ card_product.id }}">
+              <div class="jdgm-widget jdgm-preview-badge" data-id="{{ card_product.metafields.loox.avg_rating }}">
                 {{ card_product.metafields.judgeme.badge }}
               </div>
             {%- endif -%}

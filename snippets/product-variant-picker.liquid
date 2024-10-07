@@ -25,12 +25,8 @@
       <fieldset class="js product-form__input">
         {% if settings.variant_pipe_color %}
             {% liquid
-            if raw_option_name contains '~'
-              assign raw_option_name = option.name |  split: '~' 
-            else 
-              assign raw_option_name = option.name |  split: '|' 
-            endif
-            assign useColor = true 
+             assign raw_option_name = option.name |  split: '|' 
+             assign useColor = true 
             %}
           {% else %}
             {%- liquid
@@ -47,11 +43,7 @@
         {% endif %}
         {% if settings.variant_pipe_color %}
           {% assign option_name = raw_option_name[0] %}
-          {% if option.selected_value contains '~' %}
-              {% assign raw_option_selected = option.selected_value | split: '~' %}
-            {% else %}
-              {% assign raw_option_selected = option.selected_value | split: '|' %}
-          {% endif %}
+          {% assign raw_option_selected = option.selected_value | split: '|' %}
           {% assign option_selected = raw_option_selected[0] %}
         {% else %}
           {% assign option_selected = option.selected_value %}

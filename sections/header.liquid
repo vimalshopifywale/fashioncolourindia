@@ -108,18 +108,6 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
-  @media screen and (max-width: 990px){
-    header#site-header {
-      position: relative;
-      padding: 16px 0;
-    }
-
-    h1.header__heading {
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-  }
   .header__menu-item {
     padding: 1.2rem;
     text-decoration: none;
@@ -131,7 +119,6 @@
     letter-spacing: {{ settings.header_spacing }}px;
     text-transform: {{ settings.header_menu_transform }};
 }
-
 {%- endstyle -%}
 
 <script src="{{ 'details-disclosure.js' | asset_url }}" defer="defer"></script>

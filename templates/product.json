@@ -30,7 +30,7 @@
           }
         },
         "judge_me_reviews_preview_badge_bFPePG": {
-          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
           }
         },
@@ -38,7 +38,7 @@
           "type": "review",
           "disabled": true,
           "settings": {
-            "lrw_text": "4.8 / 3884 Reviews",
+            "lrw_text": "4.8 \/ 3884 Reviews",
             "lrw_color": "#000000",
             "margin_top": 0,
             "margin_bottom": 0
@@ -47,7 +47,7 @@
         "price": {
           "type": "price",
           "settings": {
-            "price_size": 20,
+            "price_size": 18,
             "sale_price_color": "#000000",
             "price_bold": false,
             "badge_hide": false,
@@ -78,7 +78,7 @@
         "image_Hbm4K8": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/payment_getway_800x_1fdd630c-9d0f-4e1b-9d19-947cee56cff5.svg",
+            "image": "shopify:\/\/shop_images\/payment_getway_800x_1fdd630c-9d0f-4e1b-9d19-947cee56cff5.svg",
             "image_size": 75,
             "icon_mobile_size": 100,
             "image_border": 0,
@@ -92,12 +92,12 @@
           "settings": {
             "ship_days": 2,
             "cut_off_time": 16,
-            "icon": "shopify://shop_images/shipping-temp.svg",
+            "icon": "shopify:\/\/shop_images\/shipping-temp.svg",
             "icon_size": 16,
             "image_ani": "none",
             "text_size": 14,
             "text_style": "body",
-            "text": "Estimated Delivery Date: <strong>(date)</strong> | Free Shipping Order",
+            "text": "Estimated Delivery Date: <strong>(date)<\/strong> | Free Shipping Order",
             "date_locale": "en-US",
             "ship_bg": "#ffffff",
             "show_border": false,
@@ -330,7 +330,7 @@
           "settings": {
             "heading": "How long does the lip crayon last?",
             "icon": "none",
-            "row_content": "<p>{{ product.metafields.custom.product_details_controller.value.product_fa_qs | metafield_tag: field: 'question' }}</p>",
+            "row_content": "<p>{{ product.metafields.custom.product_details_controller.value.product_fa_qs | metafield_tag: field: 'question' }}<\/p>",
             "page": ""
           }
         }
@@ -344,12 +344,7 @@
       ],
       "settings": {
         "caption": "",
-        "gradient_wrap": false,
         "heading": "Frequently Asked Questions",
-        "header_alignment": "gm_left_wrap",
-        "header_text_width": 24,
-        "btn_text": "",
-        "btn_url": "",
         "desktop_heading_font_size": 40,
         "chkbx": true,
         "heading_size": "h1",
@@ -402,8 +397,8 @@
         "slide_4bY9Bg": {
           "type": "slide",
           "settings": {
-            "imgPkr": "shopify://shop_images/459570578_18455707981040959_4240917642604049776_n.jpg",
-            "img_url": "https://www.instagram.com/p/C_4u1wCvWPH/",
+            "imgPkr": "shopify:\/\/shop_images\/459570578_18455707981040959_4240917642604049776_n.jpg",
+            "img_url": "https:\/\/www.instagram.com\/p\/C_4u1wCvWPH\/",
             "ttl": "",
             "subTtl": ""
           }
@@ -411,8 +406,8 @@
         "slide_9mkmKd": {
           "type": "slide",
           "settings": {
-            "imgPkr": "shopify://shop_images/Snapinsta.app_435475274_18425631031040959_548475629733840636_n_1024.jpg",
-            "img_url": "https://www.instagram.com/p/C_4u1wCvWPH/",
+            "imgPkr": "shopify:\/\/shop_images\/Snapinsta.app_435475274_18425631031040959_548475629733840636_n_1024.jpg",
+            "img_url": "https:\/\/www.instagram.com\/p\/C_4u1wCvWPH\/",
             "ttl": "",
             "subTtl": ""
           }
@@ -420,8 +415,8 @@
         "slide_fG84By": {
           "type": "slide",
           "settings": {
-            "imgPkr": "shopify://shop_images/SaveClip.App_460644640_18456491767040959_7836400184949531475_n.jpg",
-            "img_url": "https://www.instagram.com/p/C_4u1wCvWPH/",
+            "imgPkr": "shopify:\/\/shop_images\/SaveClip.App_460644640_18456491767040959_7836400184949531475_n.jpg",
+            "img_url": "https:\/\/www.instagram.com\/p\/C_4u1wCvWPH\/",
             "ttl": "",
             "subTtl": ""
           }
@@ -429,8 +424,8 @@
         "slide_HgHEjF": {
           "type": "slide",
           "settings": {
-            "imgPkr": "shopify://shop_images/SaveClip.App_458384373_18454178872040959_2339893394990115624_n.jpg",
-            "img_url": "https://www.instagram.com/p/C_4u1wCvWPH/",
+            "imgPkr": "shopify:\/\/shop_images\/SaveClip.App_458384373_18454178872040959_2339893394990115624_n.jpg",
+            "img_url": "https:\/\/www.instagram.com\/p\/C_4u1wCvWPH\/",
             "ttl": "",
             "subTtl": ""
           }
@@ -438,8 +433,8 @@
         "slide_p6A9gU": {
           "type": "slide",
           "settings": {
-            "imgPkr": "shopify://shop_images/SnapInsta.io_439314910_18427912174040959_5884374809014697499_n.jpg",
-            "img_url": "https://www.instagram.com/p/C_4u1wCvWPH/",
+            "imgPkr": "shopify:\/\/shop_images\/SnapInsta.io_439314910_18427912174040959_5884374809014697499_n.jpg",
+            "img_url": "https:\/\/www.instagram.com\/p\/C_4u1wCvWPH\/",
             "ttl": "",
             "subTtl": ""
           }
@@ -447,8 +442,8 @@
         "slide_ckGVXp": {
           "type": "slide",
           "settings": {
-            "imgPkr": "shopify://shop_images/Discover_Fashion_Colour_s_curated_lip_shades._Make_every_moment_memorable_...._fashioncolour_cosmetics_makeupartist_professionalmua_mua_makeup_wakeupandmakeup_beauty.jpg",
-            "img_url": "https://www.instagram.com/p/C_4u1wCvWPH/",
+            "imgPkr": "shopify:\/\/shop_images\/Discover_Fashion_Colour_s_curated_lip_shades._Make_every_moment_memorable_...._fashioncolour_cosmetics_makeupartist_professionalmua_mua_makeup_wakeupandmakeup_beauty.jpg",
+            "img_url": "https:\/\/www.instagram.com\/p\/C_4u1wCvWPH\/",
             "ttl": "",
             "subTtl": ""
           }
@@ -456,8 +451,8 @@
         "slide_xnfKba": {
           "type": "slide",
           "settings": {
-            "imgPkr": "shopify://shop_images/Banish_Stubborn_Holi_Colors_Effortlessly_With_Our_Clean_It_Zero_Gentle_Makeup_Remover_Balm_Let_Your_Skin_Revel_In_The_Joy_Of_Effortless_Cleansing_Post-Celebrations._Shop_Now_Link_in_B.jpg",
-            "img_url": "https://www.instagram.com/p/C_4u1wCvWPH/",
+            "imgPkr": "shopify:\/\/shop_images\/Banish_Stubborn_Holi_Colors_Effortlessly_With_Our_Clean_It_Zero_Gentle_Makeup_Remover_Balm_Let_Your_Skin_Revel_In_The_Joy_Of_Effortless_Cleansing_Post-Celebrations._Shop_Now_Link_in_B.jpg",
+            "img_url": "https:\/\/www.instagram.com\/p\/C_4u1wCvWPH\/",
             "ttl": "",
             "subTtl": ""
           }
@@ -465,8 +460,8 @@
         "slide_PNXQXX": {
           "type": "slide",
           "settings": {
-            "imgPkr": "shopify://shop_images/SnapInsta.io_425352915_1583302332421054_3019058165801313718_n.jpg",
-            "img_url": "https://www.instagram.com/p/C_4u1wCvWPH/",
+            "imgPkr": "shopify:\/\/shop_images\/SnapInsta.io_425352915_1583302332421054_3019058165801313718_n.jpg",
+            "img_url": "https:\/\/www.instagram.com\/p\/C_4u1wCvWPH\/",
             "ttl": "",
             "subTtl": ""
           }
@@ -474,8 +469,8 @@
         "slide_xiFEEK": {
           "type": "slide",
           "settings": {
-            "imgPkr": "shopify://shop_images/A_flush_of_love_on_your_cheeks_Celebrate_love_with_our_exquisite_collection_link_in_bio_...._fashioncolour_cosmetics_makeupartist_professionalmua_mua_makeup_wakeupandmakeup_beauty.jpg",
-            "img_url": "https://www.instagram.com/p/C_4u1wCvWPH/",
+            "imgPkr": "shopify:\/\/shop_images\/A_flush_of_love_on_your_cheeks_Celebrate_love_with_our_exquisite_collection_link_in_bio_...._fashioncolour_cosmetics_makeupartist_professionalmua_mua_makeup_wakeupandmakeup_beauty.jpg",
+            "img_url": "https:\/\/www.instagram.com\/p\/C_4u1wCvWPH\/",
             "ttl": "",
             "subTtl": ""
           }
@@ -483,8 +478,8 @@
         "slide_iWRGCP": {
           "type": "slide",
           "settings": {
-            "imgPkr": "shopify://shop_images/457670550_18453079177040959_1722093851528496731_n.jpg",
-            "img_url": "https://www.instagram.com/p/C_4u1wCvWPH/",
+            "imgPkr": "shopify:\/\/shop_images\/457670550_18453079177040959_1722093851528496731_n.jpg",
+            "img_url": "https:\/\/www.instagram.com\/p\/C_4u1wCvWPH\/",
             "ttl": "",
             "subTtl": ""
           }
@@ -504,7 +499,6 @@
       ],
       "settings": {
         "preTtl": "@fashioncolourofficial",
-        "gradiant_text": false,
         "subtitle_font_size": 20,
         "subtitle_font_sizemob": 16,
         "ttl": "Follow us on Instagram",

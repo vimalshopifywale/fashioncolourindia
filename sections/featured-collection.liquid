@@ -130,8 +130,9 @@
             </li>
           {%- endfor -%}
         {%- endfor -%}
+        </ul>
         {%- if show_mobile_slider or show_desktop_slider -%}
-          <div class="slider-buttons centerGMnav no-js-hidden{% if section.settings.navigation_on_desk %} medium-hide large-up-hide{% endif %}{% if section.settings.navigation_on_mobile %} small-hide{% endif %}">
+          <div class="slider-buttons centerGMnav{% if show_mobile_slider == false %} page-width{% endif %}{% if section.settings.full_width == false  %} page-width-desktop{% endif %} no-js-hidden{% if section.settings.navigation_on_desk %} medium-hide large-up-hide{% endif %}{% if section.settings.navigation_on_mobile %} small-hide{% endif %}">
             <button
               type="button"
               class="slider-button slider-button--prev"
@@ -159,7 +160,6 @@
             </button>
           </div>
         {%- endif -%}
-      </ul>
     </slider-component>
 
     {%- if section.settings.show_view_all and more_in_collection -%}

@@ -351,6 +351,16 @@
 .image-with-text__content > * + * {
   margin-top: 2rem;
 }
+@media screen and (max-width:749px) {
+  .image-with-text__content > * + * {
+    margin-top: 1rem;
+    font-size: 18px;
+    line-height: normal;
+  }
+  .image-with-text__content{
+    padding-right: unset !important;
+  }
+}
 
 .image-with-text__content > .image-with-text__text:empty ~ a {
   margin-top: 2rem;

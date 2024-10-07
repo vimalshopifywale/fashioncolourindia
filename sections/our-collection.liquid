@@ -88,7 +88,7 @@
             on: {
               afterInit: function(){
                 setTimeout(()=>{
-                  let imgHgt = $('.swp-{{block.id}} .collection-item img').height()/2;
+                  let imgHgt = $('.collection-item img').height()/2;
                 $('.swNxt{{block.id | remove: '-' |  remove: '_'  }},.swPrv{{block.id | remove: '-' |  remove: '_'  }}').css('top',imgHgt+'px');
                 },1000);
               },

@@ -130,9 +130,9 @@
 
 .card--media .card__inner .card__content {
   position: relative;
-  padding: calc(var(--image-padding) + 1rem);
+  /* padding: calc(var(--image-padding) + 1rem);
   padding-left: 14px;
-    padding-right: 14px;
+    padding-right: 14px; */
 }
 
 .card__content {
@@ -491,8 +491,20 @@
   flex-wrap: wrap;
   font-size: 14px;
   gap: 2px;
+  position: absolute;
+  bottom: 5%;
+  justify-content: center;
+  width: 100%;
+  padding: 0 8px;
 }
-
+.prdcTagWrap > span {
+  padding: 2px 12px;
+  border: 1px solid black;
+  border-radius: 100px;
+  line-height: normal;
+  background-color: white;
+  font-size: 12px;
+}
 .prdcTag {
   display: flex;
   gap: 4px;

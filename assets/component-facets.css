@@ -818,6 +818,9 @@ details.menu-opening .mobile-facets__close svg {
   grid-template-columns: min-content 1fr;
   text-align: start;
 }
+.mobile-facets__close-button span {
+  text-wrap: nowrap;
+}
 
 .mobile-facets__close-button > .facets__and-helptext {
   grid-column-start: 2;

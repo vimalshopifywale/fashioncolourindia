@@ -3014,6 +3014,17 @@ details-disclosure>details {
   color: rgb(var(--color-badge-foreground));
   word-break: break-word;
 }
+.card__badge .badge{
+  background: #bf0436;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 8px 13px;
+  border-radius: 0 200px 200px 0;
+  text-transform: capitalize;
+  border: 1px solid #D4D4D4;
+}
 
 .gradient {
   background: rgb(var(--color-background));

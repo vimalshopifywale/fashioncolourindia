@@ -1,21 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
-/*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "hero_slider_wXpLwx": {
@@ -174,7 +165,7 @@
         "image_ratio": "adapt",
         "show_secondary_image": false,
         "show_vendor": false,
-        "show_rating": false,
+        "show_rating": true,
         "enable_quick_desc": false,
         "quick_desc_legth": 90,
         "quick_desc_size": 14,
@@ -259,6 +250,7 @@
         "show_secondary_add": false,
         "columns_mobile": "2",
         "swipe_on_mobile": false,
+        "mob_slide": 1.8,
         "navigation_on_mobile": true,
         "padding_top": 52,
         "padding_bottom": 52,
@@ -451,7 +443,7 @@
         "slide_fHzLxh"
       ],
       "settings": {
-        "gradiant_text": false,
+        "gradiant_text": true,
         "preTtl": "Our Products in Action",
         "subtitle_font_size": 16,
         "subtitle_font_sizemob": 16,
@@ -666,7 +658,7 @@
       ],
       "settings": {
         "preTtl": "@fashioncolourofficial",
-        "gradiant_text": false,
+        "gradiant_text": true,
         "subtitle_font_size": 20,
         "subtitle_font_sizemob": 16,
         "ttl": "Follow us on Instagram",
@@ -676,7 +668,7 @@
         "btnTxt": "",
         "btnUrl": "",
         "chkBx": false,
-        "overlays_box": false,
+        "overlays_box": true,
         "dskSld": 4.8,
         "dskSpc": 20,
         "tabSld": 4.8,

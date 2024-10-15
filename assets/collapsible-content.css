@@ -140,14 +140,14 @@
 
 .accordion p,
 .accordion p strong{
-color:#5E5E5E;
-font-size:16px;
+/* color:#5E5E5E; */
+font-size:18px;
 font-weight: 400;
 }
 
-.accordion h3{
+/* .accordion h3{
   color:#333333;
-  }
+  } */
 
 .collapsible-content summary:hover .accordion__title {
 	text-decoration: none;

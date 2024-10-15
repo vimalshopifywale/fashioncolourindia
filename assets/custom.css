@@ -724,10 +724,9 @@ span.swatch_count {
     background: linear-gradient(271.44deg, #805207 0.38%, #ECD27D 46.4%, #AC832B 79.58%, #F2D97D 100.93%);
 }
 
+
 .col_gradient_wrap .icon.icon-caret {
     background-image: linear-gradient(271.44deg, #805207 0.38%, #ECD27D 46.4%, #AC832B 79.58%, #F2D97D 100.93%) !important;
-    !i;
-    !;
 }
 
 .gradiant_card_wrap .card__media {

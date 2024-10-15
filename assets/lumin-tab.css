@@ -3,10 +3,11 @@ ul.custom--tabs {
   max-width: var(--page-width);
   display: flex !important;
   white-space: nowrap;
-  gap: 38px;
+  gap: 20px;
   overflow-x: auto;
   margin: 0 auto;
 }
+
 .custom__tab-content p span,
 .custom__tab-content p {
   color: #555555;
@@ -14,22 +15,27 @@ ul.custom--tabs {
   font-size: 20px;
   margin: 0;
 }
-.custom__tab-content p strong{
+
+.custom__tab-content p strong {
   font-weight: 500;
 }
+
 .custom--tabs .tab__list {
   display: inline-block;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
 }
+
 .custom__tab-content {
   display: none;
 }
+
 .custom__tab-content.active {
   display: block;
   padding-top: 38px;
   padding-bottom: 1px;
 }
+
 .tab__list h4.custom-tab {
   display: inline-block !important;
   padding: 0 0 10px !important;
@@ -38,43 +44,65 @@ ul.custom--tabs {
   line-height: 1;
   font-weight: 400;
 }
+
 .active-always {
   display: block !important;
 }
+
 .tab__list h4.custom-tab.active {
   color: rgb(var(--color-button)) !important;
   border-bottom: 2px solid rgb(var(--color-button)) !important;
 }
+
+.tab__list h4.gradiant_tab {
+  padding: 10px 18px !important;
+}
+
+.tab__list h4.gradiant_tab.active {
+  background: linear-gradient(271.44deg, #805207 0.38%, #ECD27D 46.4%, #AC832B 79.58%, #F2D97D 100.93%);
+  border-radius: 100px;
+  color: white !important;
+  border: unset !important;
+}
+
 .custom__tab-content p:first-child {
   margin-top: 0;
 }
+
 .lumin-tab-width {
-    padding:0 4rem;
-  }
-@media screen and (max-width: 749px){
+  padding: 0 4rem;
+}
+
+@media screen and (max-width: 749px) {
+
   .custom__tab-content p span,
-    .custom__tab-content p{
+  .custom__tab-content p {
     font-size: 17px;
   }
 }
+
 @media only screen and (max-width: 576px) {
   .custom--tabs .tab__list .custom-tab {
     width: 100%;
     border-bottom: none !important;
   }
+
   .tab__list h4.custom-tab {
     padding: 7px 2px !important;
     margin: 10px 0px 0px 0px !important;
   }
-  .custom__tab-content.active {
-  }
+
+  .custom__tab-content.active {}
+
   .lumin-tab-width {
     padding: 0;
   }
-  .custom__tab-content.active{
+
+  .custom__tab-content.active {
     padding: 26px 0 0;
   }
-  ul.custom--tabs{
+
+  ul.custom--tabs {
     gap: 20px;
   }
 }

@@ -21,7 +21,7 @@
 <div class="color-{{ section.settings.color_scheme }} gradient isolate">
   <div class="page-width section-{{ section.id }}-padding">
     {%- if section.settings.heading != blank -%}
-      <h2 class="collage-wrapper-title inline-richtext {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+      <h2 class="collage-wrapper-title inline-richtext {{ section.settings.text_alignment }} {% if section.settings.gradient_wrap %}gradiant_wrap{% endif %} {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
         {{ section.settings.heading }}
       </h2>
     {%- endif -%}
@@ -258,6 +258,12 @@
       "id": "heading",
       "default": "Multimedia collage",
       "label": "t:sections.collage.settings.heading.label"
+      },
+    {
+      "type": "checkbox",
+      "id": "gradient_wrap",
+      "label": "Check to Enable Golden Text and Effects",
+      "default":false
     },
     {
       "type": "select",
@@ -278,6 +284,26 @@
       ],
       "default": "h1",
       "label": "t:sections.all.heading_size.label"
+    },
+    {
+      "type": "select",
+      "label": "Heading Alignment",
+      "id": "text_alignment",
+      "default":"center",
+      "options": [
+        {
+          "value": "left",
+          "label":"Left"
+        },
+        {
+          "value": "center",
+          "label":"Center"
+        },
+        {
+          "value": "right",
+          "label":"Right"
+        }
+      ]
     },
     {
       "type": "select",

@@ -4,7 +4,26 @@
   --alpha-link: 0.85;
   --alpha-badge-border: 0.1;
 }
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
 
+/* Track */
+::-webkit-scrollbar-track {
+  background: #0d0d0d;
+  width: 8px; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #bf0436; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #d3033a; 
+}
 .product-card-wrapper .card,
 .contains-card--product {
   --border-radius: var(--product-card-corner-radius);
@@ -2545,7 +2564,7 @@ product-info .loading__spinner:not(.hidden)~*,
 
 .header__heading-logo-wrapper {
   width: auto;
-  display: inline-block;
+  display: inline-flex;
   transition: width 0.3s cubic-bezier(0.52, 0, 0.61, 0.99);
 }
 

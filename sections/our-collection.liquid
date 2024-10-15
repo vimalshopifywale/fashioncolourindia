@@ -61,7 +61,7 @@
           </div>
         </div>
         <script>
-          var swiper = new Swiper(".swp-{{block.id}}", {
+          var swiper{{forloop.index}} = new Swiper(".swp-{{block.id}}", {
             slidesPerView: {{section.settings.mblSld}},
             spaceBetween: {{section.settings.mblSpc}},
             loop:true,

@@ -1,21 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
-/*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -146,9 +137,10 @@
       ],
       "settings": {
         "caption": "",
+        "gradient_wrap": false,
         "heading": "General & Product FAQs",
         "header_alignment": "top",
-        "header_text_width": 10,
+        "header_text_width": 100,
         "btn_text": "",
         "btn_url": "",
         "desktop_heading_font_size": 29,
@@ -258,16 +250,17 @@
       ],
       "settings": {
         "caption": "",
+        "gradient_wrap": false,
         "heading": "Shipping FAQs",
         "header_alignment": "top",
-        "header_text_width": 77,
+        "header_text_width": 100,
         "btn_text": "",
         "btn_url": "",
-        "desktop_heading_font_size": 18,
+        "desktop_heading_font_size": 29,
         "chkbx": false,
         "heading_size": "h1",
         "heading_alignment": "center",
-        "layout": "none",
+        "layout": "section",
         "color_scheme": "accent-1",
         "container_color_scheme": "background-2",
         "open_first_collapsible_row": false,
@@ -279,7 +272,7 @@
         "mobile_padding_top": 0,
         "mobile_padding_bottom": 20,
         "border_enabled": true,
-        "mobile_heading_font_size": 18
+        "mobile_heading_font_size": 28
       }
     },
     "collapsible_content_KmAKf8": {
@@ -370,12 +363,13 @@
       ],
       "settings": {
         "caption": "",
+        "gradient_wrap": false,
         "heading": "Return & exchange FAQs",
         "header_alignment": "top",
-        "header_text_width": 30,
+        "header_text_width": 100,
         "btn_text": "",
         "btn_url": "",
-        "desktop_heading_font_size": 18,
+        "desktop_heading_font_size": 29,
         "chkbx": false,
         "heading_size": "h1",
         "heading_alignment": "center",
@@ -391,7 +385,7 @@
         "mobile_padding_top": 0,
         "mobile_padding_bottom": 20,
         "border_enabled": true,
-        "mobile_heading_font_size": 18
+        "mobile_heading_font_size": 28
       }
     },
     "extra_button_LQC7VV": {

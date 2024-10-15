@@ -65,7 +65,7 @@
       {% if block.type == 'tab' %}
         <li class="tab__list {% if forloop.first %}active{% endif %}" {{ block.shopify_attributes }}>
           <h4
-            class="custom-tab {% if forloop.first %}active{% endif %}"
+            class="custom-tab {% if section.settings.gradiant_wrap %}gradiant_tab{% endif %} {% if forloop.first %}active{% endif %}"
             data-content-id="content--{{ block.id }}--{{ section.id }}"
           >
             {% if block.settings.heading == blank -%}
@@ -131,7 +131,8 @@
                 show_quick_desc: section.settings.enable_quick_desc,
                 show_quick_add: section.settings.enable_quick_add,
                 show_secondary_add: section.settings.show_secondary_add,
-                section_id: section.id
+                section_id: section.id,
+                gradiant_card: section.settings.gradiant_wrap
               %}
             </li>
           {% endunless %}
@@ -200,6 +201,12 @@
   "groups": ["header", "custom.popup", "footer"]
   },
   "settings": [
+    {
+      "type": "checkbox",
+      "id": "gradiant_wrap",
+      "default":false,
+      "label": "Check to Enable Gold Gradiant Fill"
+    },  
     {
       "type": "text",
       "id": "preTtl",

@@ -221,7 +221,7 @@
   </div>
 </div>
 <script>
-   var swiper = new Swiper(".swp-{{section.id}}", {
+   var swiper{{section.id |  remove: '-' |  remove: '_'  }} = new Swiper(".swp-{{section.id}}", {
       slidesPerView: {{section.settings.mblSld}},
     spaceBetween: {{section.settings.mblSpc}},
     loop:true,

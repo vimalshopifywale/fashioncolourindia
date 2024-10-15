@@ -14,6 +14,7 @@
     rgba(var(--color-shadow), var(--popup-shadow-opacity));
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
+  border-radius: 0 0 8px 8px;
 }
 
 .predictive-search--search-template {

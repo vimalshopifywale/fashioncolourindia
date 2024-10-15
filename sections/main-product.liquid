@@ -492,9 +492,9 @@
                 {% if block.settings.text != blank %}
                   <style>
                     .gm-feature-{{ block.id }} {
-                        display: flex;
-                        align-items: center;
-                        margin: {{block.settings.padding_top}}px 0 {{block.settings.padding_bottom}}px 0;
+                      display: grid;
+                      grid-template-columns: 50% 50%;
+                      gap: 12px;
                     }
                     .gm-feature-{{ block.id }} {
                           font-size: {{block.settings.text_size}}px;
@@ -502,33 +502,50 @@
                     .gm-feature-{{ block.id }} p {
                           margin: 0px;
                       }
+                      .gmHgPnt {
+                        /* width: 50%; */
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                      }
+  
+                      .gmHgPnt img {
+                        width: 36px;
+                      }
                       .gmHgPnt ul {
                           list-style-type: none;
                           padding-left: 0;
+                          display: grid;
+                          grid-template-columns: 50% 50%;
                       }
                       .gmHgPnt li{
                           position:relative;
                           margin: 5px 0;
                       }
-                      .gmHgPnt li::before{
+                      /* .gmHgPnt li::before{
                           content:url(https://cdn.shopify.com/s/files/1/0707/9356/0288/files/badge-check.svg?v=1722848230);
                           margin-right:6px;
                           display:inline-block;
                           vertical-align: text-top;
-                      }
-
-                      @media (max-width: 767px) {
-
-                        .gm-feature-gm_feature_MLHaBY {
+                      } */
+  
+                        @media (max-width: 767px) {
+                        /* .gm-feature-{{ block.id }} {
                           font-size: 15px;
                           margin-bottom:-1px;
+                        } */
+                        .gmHgPnt{
+                          font-size:14px;
                         }
-                        }
+                      } 
                   </style>
-                  <div class="gm-feature-{{ block.id }}" {{ block.shopify_attributes }}>
-                    <div class="gmHgPnt">
-                      {{ block.settings.text }}
-                    </div>
+                  <div class="gmfeature gm-feature-{{ block.id }}" {{ block.shopify_attributes }}>
+                    {% for icnDtl in product.metafields.custom.product_details_controller.value.highlight_points.value limit : 6 %}
+                      <div class="gmHgPnt">
+                        <div><img src="{{ icnDtl.icon | image_url: width: 40 }}" alt="{{icnDtl.icon.alt}}" width="" height=""></div>
+                        <div>{{ icnDtl.title }}</div>
+                      </div>
+                    {% endfor %}
                   </div>
                 {% endif %}
               {%- when 'shipping' -%}
@@ -589,61 +606,61 @@
                   </p>
 
                   <script>
-      function countDate() {
-        const today = new Date();
-        let daysCounted = 0;
-        let weekdaysCounted = 0;
+      // function countDate() {
+      //   const today = new Date();
+      //   let daysCounted = 0;
+      //   let weekdaysCounted = 0;
 
-        while (weekdaysCounted < {{ block.settings.ship_days }}) {
-          // Increment date by one day
-          today.setDate(today.getDate() + 1);
+      //   while (weekdaysCounted < {{ block.settings.ship_days }}) {
+      //     // Increment date by one day
+      //     today.setDate(today.getDate() + 1);
 
-          // Check if it's a weekend
-          if (today.getDay() !== 0 && today.getDay() !== 6) {
-            weekdaysCounted++;
-          }
+      //     // Check if it's a weekend
+      //     if (today.getDay() !== 0 && today.getDay() !== 6) {
+      //       weekdaysCounted++;
+      //     }
           
 
-          daysCounted++;
-        } 
-        // Format date as "MMM DD, ddd"
-        const options = { month: "short", day: "numeric", weekday: "short" };
-        const formattedDate = today.toLocaleDateString("{{block.settings.date_locale}}", options);
+      //     daysCounted++;
+      //   } 
+      //   // Format date as "MMM DD, ddd"
+      //   const options = { month: "short", day: "numeric", weekday: "short" };
+      //   const formattedDate = today.toLocaleDateString("{{block.settings.date_locale}}", options);
 
-        // Display result
-        document.getElementById("result").innerHTML = `${formattedDate}`;
-      }
+      //   // Display result
+      //   document.getElementById("result").innerHTML = `${formattedDate}`;
+      // }
 
-      countDate();
+      // countDate();
                   </script>
 
                   <script>
 // Set the end time to 4pm
-const endTime = new Date();
-endTime.setHours({{ block.settings.cut_off_time }}, 0, 0);
+// const endTime = new Date();
+// endTime.setHours({{ block.settings.cut_off_time }}, 0, 0);
 
-// Update the countdown every second
-setInterval(updateCountdown, 1000);
+// // Update the countdown every second
+// setInterval(updateCountdown, 1000);
 
-function updateCountdown() {
-  const now = new Date().getTime();
-  const distance = endTime.getTime() - now;
+// function updateCountdown() {
+//   const now = new Date().getTime();
+//   const distance = endTime.getTime() - now;
 
-  // If the countdown has ended, reset it to the next day at 4pm
-  if (distance < 0) {
-    endTime.setDate(endTime.getDate() + 1);
-    endTime.setHours({{ block.settings.cut_off_time }}, 0, 0);
-  }
+//   // If the countdown has ended, reset it to the next day at 4pm
+//   if (distance < 0) {
+//     endTime.setDate(endTime.getDate() + 1);
+//     endTime.setHours({{ block.settings.cut_off_time }}, 0, 0);
+//   }
 
-  // Calculate remaining time
-  const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+//   // Calculate remaining time
+//   const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+//   const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+//   const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  // Update the countdown element
-  const countdownElement = document.getElementById("countdown");
-  countdownElement.innerHTML = `${hours}h ${minutes}m`;
-}
+//   // Update the countdown element
+//   const countdownElement = document.getElementById("countdown");
+//   countdownElement.innerHTML = `${hours}h ${minutes}m`;
+// }
                   </script>
                 </div>
               {%- when 'image' -%}

@@ -172,7 +172,16 @@
                       {% endif %}
                         {% if variant.available == false %}disabled{% endif %}
                     >
-                      {{ variant.title }} - {{ variant_price | money }}
+                    {% if variant.title contains '~' %}
+                      {% assign variant_title_raw = variant.title |  split: '~' %}
+                      {% assign variant_title = variant_title_raw[0] %}
+                    {% elsif variant.title contains '|' %}
+                      {% assign variant_title_raw = variant.title |  split: '|' %}
+                      {% assign variant_title = variant_title_raw[0] %}
+                    {% else %}  
+                      {% assign variant_title = variant.title %}
+                    {% endif %}
+                      {{ variant_title }} - {{ variant_price | money }}
                     </option>
                   {% endfor %}
                 </select>

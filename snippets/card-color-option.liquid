@@ -248,9 +248,10 @@
       border-color: #acacac;
   } */
 </style>
+
 <fieldset
   class="sw-swatches card-product-form__input js"
-  style="padding: 1px 0px 17px 1px;display: inline-flex;flex-wrap: wrap;align-items: center;gap: 6px;margin: 0;justify-content: var(--text-alignment);border: none;position: relative;"
+  style="padding: 1px 0px 10px 1px;display: inline-flex;flex-wrap: wrap;align-items: center;gap: 6px;margin: 14px 0 0 0;justify-content: var(--text-alignment);border: none;position: relative;"
 >
   {% if settings.swatches_limit > 0 %}
     {%- for value in option.values limit: settings.swatches_limit -%}
@@ -342,7 +343,9 @@
       </label>
       {%- assign colorCodes = '' -%}
     {%- endfor -%}  
-    <span class="swatch_count">+{{ option.values.size | minus: settings.swatches_limit }}</span>
+    {% if option.values.size >= settings.swatches_limit %}
+      <span class="swatch_count">+{{ option.values.size | minus: settings.swatches_limit }}</span>
+    {% endif %}
   {% else %}
     {%- for value in option.values -%}
     {%- liquid

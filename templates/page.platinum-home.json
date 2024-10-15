@@ -147,6 +147,8 @@
         "tab_b4TyXF"
       ],
       "settings": {
+        "gradiant_wrap": true,
+        "background_color": "#0d0d0d",
         "preTtl": "",
         "subtitle_font_size": 16,
         "subtitle_font_sizemob": 16,
@@ -210,6 +212,7 @@
         "heading": "Unleash Your Radiance with Luxury Makeup",
         "gradient_wrap": true,
         "heading_size": "h1",
+        "text_alignment": "center",
         "desktop_layout": "right",
         "mobile_layout": "column",
         "card_styles": "product-card-wrapper",
@@ -526,7 +529,7 @@
       ],
       "settings": {
         "caption": "",
-        "gradient_wrap": false,
+        "gradient_wrap": true,
         "heading": "Frequently Asked Questions",
         "header_alignment": "gm_left_wrap",
         "header_text_width": 24,

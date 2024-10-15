@@ -3,6 +3,7 @@
   grid-row-start: 4;
   /* margin: 1rem 0; */
   z-index: 1;
+  margin-top: 10px;
 }
 
 /* .card--card .quick-add {
@@ -46,8 +47,12 @@
   overflow: hidden;
   max-width: var(--page-width);
   width: calc(100% - 3rem);
+  border-radius: 10px;
 }
-
+quick-add-modal .product__title h2 {
+  font-size: 28px !important;
+  font-weight: 500 !important;
+}
 @media screen and (min-width: 750px) {
   .quick-add-modal__content {
     --modal-height-offset: 10rem;
@@ -105,6 +110,9 @@
 
   quick-add-modal .product--mobile-columns .product__media-item {
     width: calc(100% - 3rem - var(--grid-mobile-horizontal-spacing));
+  }
+  quick-add-modal .product__title h2{
+    font-size: 24px !important;
   }
 }
 

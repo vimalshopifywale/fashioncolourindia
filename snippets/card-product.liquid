@@ -36,8 +36,8 @@
     .card-wrapper .product-form__controls-group label.color-swatch {
         width: {{settings.swatch_size_card}}px;
         height: {{settings.swatch_size_card}}px;
-
     }
+    
     .card__description {
       margin: 24px 0;
       font-size: {{ section.settings.quick_desc_size }}px;
@@ -254,11 +254,42 @@
           </div>
           {% assign icntxt = card_product.metafields.custom.product_details_controller.value.product_badges %}
           {% if settings.mfBdgs and icntxt != blank %}
-            <div class="prdcTagWrap">
+              <div
+                class="color-{{ settings.tag_color_scheme }} gradient scroll-container"
+                style="
+                  --tag-fonts: {{ settings.card_tag_font }}px;
+                  --text-transform: {{settings.tag_transformation }};
+                  --tag-spacing: {{settings.tag_text_spacing }}px;
+                  --tag-weight: {{settings.tag_weight}};
+                  --tag-speed: {{ settings.tag_speed }}s;
+                "
+              >
+                <ul class="scroll-text">
+                  {% for prdcTag in card_product.metafields.custom.product_details_controller.value.product_badges.value %}
+                    <li>{{ prdcTag }}</li>                  
+                {% endfor %}
+                </ul>
+                <ul class="scroll-text">
+                  {% for prdcTag in card_product.metafields.custom.product_details_controller.value.product_badges.value %}
+                    <li>{{ prdcTag }}</li>                  
+                {% endfor %}
+                </ul>
+                <ul class="scroll-text">
+                  {% for prdcTag in card_product.metafields.custom.product_details_controller.value.product_badges.value %}
+                    <li>{{ prdcTag }}</li>                  
+                {% endfor %}
+                </ul>
+                <ul class="scroll-text">
+                  {% for prdcTag in card_product.metafields.custom.product_details_controller.value.product_badges.value %}
+                    <li>{{ prdcTag }}</li>                  
+                {% endfor %}
+                </ul>
+              </div>
+            {% comment %} <div class="prdcTagWrap">
               {% for prdcTag in card_product.metafields.custom.product_details_controller.value.product_badges.value %}
                   <span>{{ prdcTag }}</span>                  
               {% endfor %}
-            </div>
+            </div> {% endcomment %}
           {% endif %}
           <div class="card__badge {{ settings.badge_position }}">
               {%- if card_product.tags contains 'bestseller-gm' -%}
@@ -306,7 +337,7 @@
           </div>
         </div>
       </div>
-      <div class="card__content">
+      <div class="card__content sw-product">
         <div class="card__information" style="overflow: hidden;">
           {%- if show_rating -%}
             <div class="jdgm-widget jdgm-preview-badge" data-id="{{ card_product.metafields.loox.avg_rating }}">
@@ -411,11 +442,9 @@
                   {% if settings.swatchType == 'color' %}
                     {%- unless card_product.has_only_default_variant -%}
                       {%- for option in card_product.options_with_values -%}
-                        {% if settings.swatchType == 'color' and option.name == settings.optionName %}
                           <div class="card-swatch" style="width:100%;">
                             {% render 'card-color-option', product: card_product, option: option %}
                           </div>
-                        {% endif %}
                       {%- endfor -%}
                     {% endunless %}
                     {% comment %}
@@ -580,7 +609,7 @@
                         >
                           <span>
                             {%- if card_product.selected_or_first_available_variant.available -%}
-                              {{ 'products.product.add_to_cart' | t }}
+                              Add to Cart
                             {%- else -%}
                               {{ 'products.product.sold_out' | t }}
                             {%- endif -%}

@@ -167,10 +167,10 @@
        );"
        class="color-swatch variant-swatch {% case swatchStyle %}{% when "round" %}round{% when "square-round-corners" %}round-corners{% endcase %}"
           for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
-      <span class="visually-hidden">{{ 'products.product.variant_sold_out_or_unavailable' | t }}</span>
-    </label>
+        <span class="visually-hidden">{{ 'products.product.variant_sold_out_or_unavailable' | t }}</span>
+      </label>
     {%- else -%}
-        {%- liquid
+      {%- liquid
         for colorData in swatchColors 
             assign colorDataArr = colorData | split:":" 
             assign ruleName = colorDataArr[0] | strip
@@ -180,51 +180,51 @@
                 break 
             endif 
         endfor
-    -%} 
-    <label 
-      data-{{ option.name | downcase | replace: ' ', '-'  }}="{{value}}"
-      style="background: {{ value }}; 
-    {%- case colorNumber -%} 
-        
-        {%- when 2 -%}
-            background-color: #{{ colorCodes[1] }};
-        {%- when 3 -%}
-            background: linear-gradient(135deg, #{{ colorCodes[1] }} 50%, #{{ colorCodes[2] }} 50%);
-        {%- when 4 -%}
-            background: linear-gradient(to right,#{{ colorCodes[1] }} 33%,#{{ colorCodes[2] }} 33%,#{{ colorCodes[2] }} 66%, #{{ colorCodes[3] }} 66%);
-        {%- else -%}
-            background-image:url({{ colorCodes[0] | downcase | replace: ' ', '-' | file_img_url }});
-        {%- endcase -%}
-        "class="color-swatch {% case swatchStyle %}{% when "round" %}round{% when "square-round-corners" %}round-corners{% endcase %}"
-        for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
-      <span class="visually-hidden">{{ 'products.product.variant_sold_out_or_unavailable' | t }}</span>
-    </label>
-    {%- assign colorCodes = "" -%}
+      -%} 
+      <label 
+        data-{{ option.name | downcase | replace: ' ', '-'  }}="{{value}}"
+        style="background: {{ value }}; 
+      {%- case colorNumber -%} 
+          
+          {%- when 2 -%}
+              background-color: #{{ colorCodes[1] }};
+          {%- when 3 -%}
+              background: linear-gradient(135deg, #{{ colorCodes[1] }} 50%, #{{ colorCodes[2] }} 50%);
+          {%- when 4 -%}
+              background: linear-gradient(to right,#{{ colorCodes[1] }} 33%,#{{ colorCodes[2] }} 33%,#{{ colorCodes[2] }} 66%, #{{ colorCodes[3] }} 66%);
+          {%- else -%}
+              background-image:url({{ colorCodes[0] | downcase | replace: ' ', '-' | file_img_url }});
+          {%- endcase -%}
+          "class="color-swatch {% case swatchStyle %}{% when "round" %}round{% when "square-round-corners" %}round-corners{% endcase %}"
+          for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
+        <span class="visually-hidden">{{ 'products.product.variant_sold_out_or_unavailable' | t }}</span>
+      </label>
+      {%- assign colorCodes = "" -%}
     {%- endif -%}
   {%- elsif block.settings.picker_type == 'gm-variant' -%}
     {% if value contains '~' %}
       {% assign gm_var_img = value |  split: '~' %}
       {% assign gm_img_url = shop.metaobjects.swatch_images[gm_var_img[1]].swatch_image | image_url: width:80%}
       <input
-      type="radio"
-      id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
-      name="{{ option.name }}"
-      value="{{ value | escape }}"
-      form="{{ product_form_id }}"
-      {% if option.selected_value == value %}
-        checked
-      {% endif %}
-      {% if option_disabled %}
-        class="disabled"
-      {% endif %}
-    >
+        type="radio"
+        id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
+        name="{{ option.name }}" data-color-name="{{ gm_var_img[0] }}"
+        value="{{ value | escape }}"
+        form="{{ product_form_id }}"
+        {% if option.selected_value == value %}
+          checked
+        {% endif %}
+        {% if option_disabled %}
+          class="disabled"
+        {% endif %}
+      >
       <label 
-      data-{{ option.name | downcase | replace: ' ', '-'  }}="{{value[0]}}"
-      style="background-image:url({{gm_img_url}});"
-       class="color-swatch variant-swatch {% case swatchStyle %}{% when "round" %}round{% when "square-round-corners" %}round-corners{% endcase %}"
-          for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
-      <span class="visually-hidden">{{ 'products.product.variant_sold_out_or_unavailable' | t }}</span>
-    </label>
+        data-{{ option.name | downcase | replace: ' ', '-'  }}="{{value[0]}}"
+        style="background-image:url({{gm_img_url}});"
+        class="color-swatch variant-swatch {% case swatchStyle %}{% when "round" %}round{% when "square-round-corners" %}round-corners{% endcase %} img_swatches"
+            for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
+        <span class="visually-hidden">{{ 'products.product.variant_sold_out_or_unavailable' | t }}</span>
+      </label>
     {% elsif value contains '|' %}
       {% liquid
         assign gm_value = value | split: '|'
@@ -232,8 +232,8 @@
       <input
         type="radio"
         id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
-        name="{{ option.name }}"
-        value="{{ gm_value[0] | escape }}"
+        name="{{ option.name }}" data-color-name="{{ gm_value[0] }}"
+        value="{{ value | escape }}"
         form="{{ product_form_id }}"
         {% if option.selected_value == value %}
           checked
@@ -263,102 +263,101 @@
         </label>
       {%- else -%}
         {%- liquid
-        for colorData in swatchColors 
-            assign colorDataArr = colorData | split:":" 
-            assign ruleName = colorDataArr[0] | strip
-            if value == ruleName
-                assign colorCodes = colorDataArr[1] | strip | split :"#"
-                assign colorNumber = 0 | plus: colorCodes.size
-                break 
-            endif 
-        endfor
-      -%} 
-      <label 
-        data-{{ option.name | downcase | replace: ' ', '-'  }}="{{gm_value[0]}}"
-        style="background: #{{ gm_value[1] }}; 
-      {%- case colorNumber -%} 
-          {%- when 2 -%}
-              background-color: #{{ colorCodes[1] }};
-          {%- when 3 -%}
-              background: linear-gradient(135deg, #{{ colorCodes[1] }} 50%, #{{ colorCodes[2] }} 50%);
-          {%- when 4 -%}
-              background: linear-gradient(to right,#{{ colorCodes[1] }} 33%,#{{ colorCodes[2] }} 33%,#{{ colorCodes[2] }} 66%, #{{ colorCodes[3] }} 66%);
-          {%- else -%}
-              background-image:url({{ colorCodes[0] | downcase | replace: ' ', '-' | file_img_url }});
-          {%- endcase -%}
-          "class="color-swatch {% case swatchStyle %}{% when "round" %}round{% when "square-round-corners" %}round-corners{% endcase %}"
-          for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
-        <span class="visually-hidden">{{ 'products.product.variant_sold_out_or_unavailable' | t }}</span>
-      </label>
-      {%- assign colorCodes = "" -%}
+          for colorData in swatchColors 
+              assign colorDataArr = colorData | split:":" 
+              assign ruleName = colorDataArr[0] | strip
+              if value == ruleName
+                  assign colorCodes = colorDataArr[1] | strip | split :"#"
+                  assign colorNumber = 0 | plus: colorCodes.size
+                  break 
+              endif 
+          endfor
+        -%} 
+        <label 
+          data-{{ option.name | downcase | replace: ' ', '-'  }}="{{gm_value[0]}}"
+          style="background: #{{ gm_value[1] }}; 
+          {%- case colorNumber -%} 
+            {%- when 2 -%}
+                background-color: #{{ colorCodes[1] }};
+            {%- when 3 -%}
+                background: linear-gradient(135deg, #{{ colorCodes[1] }} 50%, #{{ colorCodes[2] }} 50%);
+            {%- when 4 -%}
+                background: linear-gradient(to right,#{{ colorCodes[1] }} 33%,#{{ colorCodes[2] }} 33%,#{{ colorCodes[2] }} 66%, #{{ colorCodes[3] }} 66%);
+            {%- else -%}
+                background-image:url({{ colorCodes[0] | downcase | replace: ' ', '-' | file_img_url }});
+            {%- endcase -%}
+            "class="color-swatch {% case swatchStyle %}{% when "round" %}round{% when "square-round-corners" %}round-corners{% endcase %}"
+            for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
+          <span class="visually-hidden">{{ 'products.product.variant_sold_out_or_unavailable' | t }}</span>
+        </label>
+        {%- assign colorCodes = "" -%}
+      {% endif %}
     {% else %}
       <input
-      type="radio"
-      id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
-      name="{{ option.name }}"
-      value="{{ value | escape }}"
-      form="{{ product_form_id }}"
-      {% if option.selected_value == value %}
-        checked
-      {% endif %}
-      {% if option_disabled %}
-        class="disabled"
-      {% endif %}
-    >
-    {%- if swatchType == "variantImage" -%}
-      <label 
-      data-{{ option.name | downcase | replace: ' ', '-'  }}="{{value}}"
-      style="background-image:url(
-      {%- liquid
-        assign optionIndex = option.position | minus: 1 
-        for variant in product.variants
-            if variant.options[optionIndex] == value
-              assign swatchSizePortrait = swatchSize | times: 2 
-              echo variant.image | image_url: width: swatchSizePortrait 
-              break
-            endif
-        endfor
-      -%}
-      );"
-      class="color-swatch variant-swatch {% case swatchStyle %}{% when "round" %}round{% when "square-round-corners" %}round-corners{% endcase %}"
-          for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
-      <span class="visually-hidden">{{ 'products.product.variant_sold_out_or_unavailable' | t }}</span>
-    </label>
-    {%- else -%}
-        {%- liquid
-        for colorData in swatchColors 
-            assign colorDataArr = colorData | split:":" 
-            assign ruleName = colorDataArr[0] | strip
-            if value == ruleName
-                assign colorCodes = colorDataArr[1] | strip | split :"#"
-                assign colorNumber = 0 | plus: colorCodes.size
-                break 
-            endif 
-        endfor
-    -%} 
-    <label 
-      data-{{ option.name | downcase | replace: ' ', '-'  }}="{{value}}"
-      style="background: {{ value }}; 
-    {%- case colorNumber -%} 
-        
-        {%- when 2 -%}
-            background-color: #{{ colorCodes[1] }};
-        {%- when 3 -%}
-            background: linear-gradient(135deg, #{{ colorCodes[1] }} 50%, #{{ colorCodes[2] }} 50%);
-        {%- when 4 -%}
-            background: linear-gradient(to right,#{{ colorCodes[1] }} 33%,#{{ colorCodes[2] }} 33%,#{{ colorCodes[2] }} 66%, #{{ colorCodes[3] }} 66%);
-        {%- else -%}
-            background-image:url({{ colorCodes[0] | downcase | replace: ' ', '-' | file_img_url }});
-        {%- endcase -%}
-        "class="color-swatch {% case swatchStyle %}{% when "round" %}round{% when "square-round-corners" %}round-corners{% endcase %}"
-        for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
-      <span class="visually-hidden">{{ 'products.product.variant_sold_out_or_unavailable' | t }}</span>
-    </label>
-    {%- assign colorCodes = "" -%}
-    {%- endif -%}
+        type="radio"
+        id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
+        name="{{ option.name }}"
+        value="{{ value | escape }}"
+        form="{{ product_form_id }}"
+        {% if option.selected_value == value %}
+          checked
+        {% endif %}
+        {% if option_disabled %}
+          class="disabled"
+        {% endif %}
+      >
+      {%- if swatchType == "variantImage" -%}
+        <label 
+          data-{{ option.name | downcase | replace: ' ', '-'  }}="{{value}}"
+          style="background-image:url(
+          {%- liquid
+            assign optionIndex = option.position | minus: 1 
+            for variant in product.variants
+                if variant.options[optionIndex] == value
+                  assign swatchSizePortrait = swatchSize | times: 2 
+                  echo variant.image | image_url: width: swatchSizePortrait 
+                  break
+                endif
+            endfor
+          -%}
+          );"
+          class="color-swatch variant-swatch {% case swatchStyle %}{% when "round" %}round{% when "square-round-corners" %}round-corners{% endcase %}"
+              for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
+          <span class="visually-hidden">{{ 'products.product.variant_sold_out_or_unavailable' | t }}</span>
+        </label>
+      {%- else -%}
+          {%- liquid
+          for colorData in swatchColors 
+              assign colorDataArr = colorData | split:":" 
+              assign ruleName = colorDataArr[0] | strip
+              if value == ruleName
+                  assign colorCodes = colorDataArr[1] | strip | split :"#"
+                  assign colorNumber = 0 | plus: colorCodes.size
+                  break 
+              endif 
+            endfor
+        -%} 
+        <label 
+          data-{{ option.name | downcase | replace: ' ', '-'  }}="{{value}}"
+          style="background: {{ value }}; 
+        {%- case colorNumber -%} 
+            
+            {%- when 2 -%}
+                background-color: #{{ colorCodes[1] }};
+            {%- when 3 -%}
+                background: linear-gradient(135deg, #{{ colorCodes[1] }} 50%, #{{ colorCodes[2] }} 50%);
+            {%- when 4 -%}
+                background: linear-gradient(to right,#{{ colorCodes[1] }} 33%,#{{ colorCodes[2] }} 33%,#{{ colorCodes[2] }} 66%, #{{ colorCodes[3] }} 66%);
+            {%- else -%}
+                background-image:url({{ colorCodes[0] | downcase | replace: ' ', '-' | file_img_url }});
+            {%- endcase -%}
+            "class="color-swatch {% case swatchStyle %}{% when "round" %}round{% when "square-round-corners" %}round-corners{% endcase %}"
+            for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
+          <span class="visually-hidden">{{ 'products.product.variant_sold_out_or_unavailable' | t }}</span>
+        </label>
+        {%- assign colorCodes = "" -%}
+      {%- endif -%}
     {% endif %}
-    
-  {%- endif -%}
   {%- elsif block.settings.picker_type == 'dropdown' -%}
     <option
       value="{{ value | escape }}"
@@ -375,10 +374,10 @@
   {%- endif -%}
 {%- endfor -%}
 
-<script>
+{% comment %} <script>
   document.querySelectorAll('input+label[data-{{ option.name | downcase | replace: ' ', '-'  }}]').forEach(el=>{
     el.addEventListener('click',()=>{
       document.querySelector('#selected-{{ option.name | downcase | replace: ' ', '-'  }}').textContent = " "+el.getAttribute('data-{{ option.name | downcase | replace: ' ', '-'  }}')
     })
   })
-</script>
+</script> {% endcomment %}

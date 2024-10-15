@@ -972,7 +972,7 @@ class VariantSelects extends HTMLElement {
   }
   
   updateOptions() {
-    this.options = Array.from(this.querySelectorAll('select'), (select) => select.value);
+    this.options = Array.from(this.querySelectorAll('select'), (select) => {select.value});
   }
 
   updateMasterId() {
@@ -1276,7 +1276,7 @@ class VariantRadios extends VariantSelects {
  updateOptions() {
     const fieldsets = Array.from(this.querySelectorAll('fieldset'));
     this.options = fieldsets.map((fieldset) => {
-      fieldset.querySelector('.form__label').lastChild.textContent = Array.from(fieldset.querySelectorAll('input')).find((radio) => radio.checked).value;
+      fieldset.querySelector('.form__label').lastChild.textContent = Array.from(fieldset.querySelectorAll('input')).find((radio) => radio.checked).dataset.colorName;
       return Array.from(fieldset.querySelectorAll('input')).find((radio) => radio.checked).value;
       var checkedValue = document.querySelector('.product-form__input input:checked').value;
       document.getElementById("form__label").innerHTML = checkedValue;

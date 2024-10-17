@@ -98,9 +98,8 @@ color: inherit;
             {{ collection.title | link_to: collection.url }}
           </li>
         {%- endif -%}
-        {% assign prdct = product.title |  split: '-' %}
         <li class="breadcrumbs__item">
-          <a class="breadcrumbs__link" href="{{ product.url }}" aria-current="page">{{ prdct[0] }}</a>
+          <a class="breadcrumbs__link" href="{{ product.url }}" aria-current="page">{{ product.title }}</a>
         </li>
       {%- when 'collection' and collection.handle -%}
         {%- if current_tags -%}

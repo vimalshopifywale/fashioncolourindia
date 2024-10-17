@@ -113,8 +113,7 @@
           {% endif %}
           <div class="atc-content">
             <h3 class="product__title {{ settings.title_size }} {% unless settings.show_title_mb  %} mobile-hide{% endunless %}">
-              {% assign prdct = product.title |  split: '-' %}
-              {{ prdct[0] | truncatewords: 4 }}
+              {{ product.title | truncatewords: 4 }}
             </h3>
             <div
               class="no-js-hidden {% unless settings.show_price_mb  %} mobile-hide{% endunless %}"
@@ -244,7 +243,7 @@
                   >
                     <span>
                       {%- if product.selected_or_first_available_variant.available -%}
-                        {{ 'products.product.add_to_cart' | t }}
+                        Add to Cart
                       {%- else -%}
                         {{ 'products.product.sold_out' | t }}
                       {%- endif -%}

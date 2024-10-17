@@ -127,8 +127,7 @@
                     >
                   </div>
                   <div class="gmPrdctImg">
-                    {% assign prdctl = block.settings.slctPrdct.title | split: '|' %}
-                    <p class="text_trunc">{{ prdctl[0] }}</p>
+                    <p class="text_trunc">{{ block.settings.slctPrdct.title }}</p>
                     {% render 'price', product: block.settings.slctPrdct, show_badges: settings.badge_type %}
                     <a href="{{block.settings.slctPrdct.url}}">Shop Now</a>
                   </div>

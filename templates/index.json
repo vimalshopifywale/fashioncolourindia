@@ -519,7 +519,7 @@
           "type": "tab",
           "settings": {
             "heading": "Skin Care",
-            "collection": "bestsellers",
+            "collection": "skin-care",
             "description": "",
             "collection_text_alignment": "left",
             "show_description": false,
@@ -530,7 +530,7 @@
           "type": "tab",
           "settings": {
             "heading": "Hair Care",
-            "collection": "bestsellers",
+            "collection": "hair-care",
             "description": "",
             "collection_text_alignment": "left",
             "show_description": false,
@@ -541,7 +541,7 @@
           "type": "tab",
           "settings": {
             "heading": "Serum & Toner",
-            "collection": "bestsellers-platinum-1",
+            "collection": "serum-toner",
             "description": "",
             "collection_text_alignment": "left",
             "show_description": false,
@@ -559,6 +559,7 @@
       ],
       "settings": {
         "gradiant_wrap": false,
+        "background_color": "#ffffff",
         "preTtl": "Skin Mantra",
         "subtitle_font_size": 16,
         "subtitle_font_sizemob": 16,
@@ -568,7 +569,7 @@
         "tab_font_mb": 14,
         "tab_font_mb_align": "center",
         "show_border": false,
-        "products_to_show": 4,
+        "products_to_show": 12,
         "columns_desktop": 4,
         "full_width": false,
         "show_view_all": true,
@@ -689,6 +690,7 @@
       ],
       "settings": {
         "gradiant_wrap": false,
+        "background_color": "#ffffff",
         "preTtl": "Tools",
         "subtitle_font_size": 16,
         "subtitle_font_sizemob": 16,
@@ -742,7 +744,7 @@
           "settings": {
             "imgPkr": "shopify://shop_images/Video-163.gif",
             "video": "https://cdn.shopify.com/videos/c/o/v/5cd6f98388f64e3b9a3f0208728128f8.mp4",
-            "slctPrdct": "fashion-colour-24hr-longwear-liquid-foundation-with-skin-care"
+            "slctPrdct": "fashion-colour-pro-matte-liquid-foundation"
           }
         },
         "slide_n84eCd": {
@@ -750,7 +752,7 @@
           "settings": {
             "imgPkr": "shopify://shop_images/9206bbd4ed4a46c98b58984cbffc25e2.gif",
             "video": "https://cdn.shopify.com/videos/c/o/v/9206bbd4ed4a46c98b58984cbffc25e2.mp4",
-            "slctPrdct": "fashion-colour-24hr-longwear-liquid-foundation-with-skin-care"
+            "slctPrdct": "fashion-colour-all-matte-primer"
           }
         },
         "slide_JQcXGN": {
@@ -758,7 +760,7 @@
           "settings": {
             "imgPkr": "shopify://shop_images/Video-737.gif",
             "video": "https://cdn.shopify.com/videos/c/o/v/5cf6239fd2224b958231de5d8cd50210.mp4",
-            "slctPrdct": "fashion-colour-platinum-liquid-blusher-5gm"
+            "slctPrdct": "platinum-loose-powder-loose-baking-and-setting-powder"
           }
         },
         "slide_n8pNjA": {
@@ -774,7 +776,7 @@
           "settings": {
             "imgPkr": "shopify://shop_images/Video-782.gif",
             "video": "https://cdn.shopify.com/videos/c/o/v/d350405d3d5445a394328ef16308ab82.mp4",
-            "slctPrdct": "platinum-loose-powder-loose-baking-and-setting-powder"
+            "slctPrdct": "fashion-colour-platinum-professional-quantum-40-eyeshadow-pallete"
           }
         },
         "slide_ReqE9L": {
@@ -822,7 +824,7 @@
           "settings": {
             "imgPkr": "shopify://shop_images/Video-450_2.gif",
             "video": "https://cdn.shopify.com/videos/c/o/v/a34b3ff95882402ab626751cb64930e5.mp4",
-            "slctPrdct": "fashion-colour-cc-cream"
+            "slctPrdct": "fashion-colour-water-based-moisturizer-primer"
           }
         },
         "slide_rHQiYr": {

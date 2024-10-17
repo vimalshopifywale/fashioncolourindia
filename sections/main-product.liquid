@@ -607,61 +607,61 @@
                   </p>
 
                   <script>
-      // function countDate() {
-      //   const today = new Date();
-      //   let daysCounted = 0;
-      //   let weekdaysCounted = 0;
+      function countDate() {
+        const today = new Date();
+        let daysCounted = 0;
+        let weekdaysCounted = 0;
 
-      //   while (weekdaysCounted < {{ block.settings.ship_days }}) {
-      //     // Increment date by one day
-      //     today.setDate(today.getDate() + 1);
+        while (weekdaysCounted < {{ block.settings.ship_days }}) {
+          // Increment date by one day
+          today.setDate(today.getDate() + 1);
 
-      //     // Check if it's a weekend
-      //     if (today.getDay() !== 0 && today.getDay() !== 6) {
-      //       weekdaysCounted++;
-      //     }
+          // Check if it's a weekend
+          if (today.getDay() !== 0 && today.getDay() !== 6) {
+            weekdaysCounted++;
+          }
           
 
-      //     daysCounted++;
-      //   } 
-      //   // Format date as "MMM DD, ddd"
-      //   const options = { month: "short", day: "numeric", weekday: "short" };
-      //   const formattedDate = today.toLocaleDateString("{{block.settings.date_locale}}", options);
+          daysCounted++;
+        } 
+        // Format date as "MMM DD, ddd"
+        const options = { month: "short", day: "numeric", weekday: "short" };
+        const formattedDate = today.toLocaleDateString("{{block.settings.date_locale}}", options);
 
-      //   // Display result
-      //   document.getElementById("result").innerHTML = `${formattedDate}`;
-      // }
+        // Display result
+        document.getElementById("result").innerHTML = `${formattedDate}`;
+      }
 
-      // countDate();
+      countDate();
                   </script>
 
                   <script>
 // Set the end time to 4pm
-// const endTime = new Date();
-// endTime.setHours({{ block.settings.cut_off_time }}, 0, 0);
+const endTime = new Date();
+endTime.setHours({{ block.settings.cut_off_time }}, 0, 0);
 
-// // Update the countdown every second
-// setInterval(updateCountdown, 1000);
+// Update the countdown every second
+setInterval(updateCountdown, 1000);
 
-// function updateCountdown() {
-//   const now = new Date().getTime();
-//   const distance = endTime.getTime() - now;
+function updateCountdown() {
+  const now = new Date().getTime();
+  const distance = endTime.getTime() - now;
 
-//   // If the countdown has ended, reset it to the next day at 4pm
-//   if (distance < 0) {
-//     endTime.setDate(endTime.getDate() + 1);
-//     endTime.setHours({{ block.settings.cut_off_time }}, 0, 0);
-//   }
+  // If the countdown has ended, reset it to the next day at 4pm
+  if (distance < 0) {
+    endTime.setDate(endTime.getDate() + 1);
+    endTime.setHours({{ block.settings.cut_off_time }}, 0, 0);
+  }
 
-//   // Calculate remaining time
-//   const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-//   const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-//   const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  // Calculate remaining time
+  const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-//   // Update the countdown element
-//   const countdownElement = document.getElementById("countdown");
-//   countdownElement.innerHTML = `${hours}h ${minutes}m`;
-// }
+  // Update the countdown element
+  const countdownElement = document.getElementById("countdown");
+  countdownElement.innerHTML = `${hours}h ${minutes}m`;
+}
                   </script>
                 </div>
               {%- when 'image' -%}
@@ -884,11 +884,10 @@
                 {% endif %}
               {%- when 'title' -%}
                 <div class="product__title" {{ block.shopify_attributes }}>
-                  {% assign prdct = product.title | split: '-' %}
-                  <h1 style="font-size:{{ block.settings.title_size }}px;">{{ prdct[0] | escape }}</h1>
+                  <h1 >{{ product.title | escape }}</h1>
                   <a href="{{ product.url }}" class="product__title">
                     <h2 class="h1">
-                      {{ prdct[0] | escape }}
+                      {{ product.title | escape }}
                     </h2>
                   </a>
                 </div>
@@ -2483,12 +2482,11 @@
       endif
     -%}
 
-    <script type="application/ld+json">
-      {% assign prdct = product.title |  split: '-' %}
+    <script type="application/ld+json">      
         {
           "@context": "http://schema.org/",
           "@type": "Product",
-          "name": {{ prdct[0] | json }},
+          "name": {{ product.title }},
           "url": {{ request.origin | append: product.url | json }},
           {% if seo_media -%}
             "image": [

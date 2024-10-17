@@ -211,7 +211,7 @@
       "settings": {
         "heading": "Unleash Your Radiance with Luxury Makeup",
         "gradient_wrap": true,
-        "heading_size": "h1",
+        "heading_size": "h0",
         "text_alignment": "center",
         "desktop_layout": "right",
         "mobile_layout": "column",
@@ -225,7 +225,7 @@
       "type": "featured-collection",
       "settings": {
         "title": "Best Seller",
-        "heading_font_size": 24,
+        "heading_font_size": 40,
         "heading_font_sizemob": 24,
         "heading_size": "h1",
         "description": "",
@@ -366,7 +366,7 @@
           "settings": {
             "imgPkr": "shopify://shop_images/Video-258.gif",
             "video": "https://cdn.shopify.com/videos/c/o/v/57844746d35a44caac8993f236b37b27.mp4",
-            "slctPrdct": "glamorous-concealer-palette-32gm"
+            "slctPrdct": "fashion-colour-platinum-liquid-blusher-5gm"
           }
         },
         "slide_PDd4G4": {
@@ -398,7 +398,7 @@
           "settings": {
             "imgPkr": "shopify://shop_images/Video-131.gif",
             "video": "https://cdn.shopify.com/videos/c/o/v/735b7bafc5294302adea34ffde82ebe7.mp4",
-            "slctPrdct": "platinum-loose-powder-loose-baking-and-setting-powder"
+            "slctPrdct": "fashion-colour-all-matte-primer"
           }
         },
         "slide_hRXG7p": {
@@ -406,7 +406,7 @@
           "settings": {
             "imgPkr": "shopify://shop_images/Video-462.gif",
             "video": "https://cdn.shopify.com/videos/c/o/v/24a482c4576647be822a49a74ce7de20.mp4",
-            "slctPrdct": "fashion-colour-flushed-blush-velvet-touch-creamy-texture-liquid-blush-15gm"
+            "slctPrdct": "fashion-colour-platinum-liquid-blusher-5gm"
           }
         },
         "slide_tGU3pY": {
@@ -452,7 +452,7 @@
         "subtitle_font_size": 16,
         "subtitle_font_sizemob": 16,
         "ttl": "Real Reviews from Our Beauty Tribe",
-        "heading_font_size": 24,
+        "heading_font_size": 38,
         "heading_font_sizemob": 24,
         "subTtl": "",
         "btnTxt": "View all",

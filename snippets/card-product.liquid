@@ -246,9 +246,8 @@
                 id="StandardCardNoMediaLink-{{ section_id }}-{{ card_product.id }}"
                 class="full-unstyled-link text_trunc"
                 aria-labelledby="StandardCardNoMediaLink-{{ section_id }}-{{ card_product.id }} NoMediaStandardBadge-{{ section_id }}-{{ card_product.id }}"
-              >
-                {% assign prdct = card_product.title | split: '-' %}
-                {{ prdct[0] | escape }}
+              >                
+                {{ card_product.title | escape }}
               </a>
             </h3>
           </div>
@@ -356,9 +355,8 @@
               id="CardLink-{{ section_id }}-{{ card_product.id }}"
               class="full-unstyled-link text_trunc"
               aria-labelledby="CardLink-{{ section_id }}-{{ card_product.id }} Badge-{{ section_id }}-{{ card_product.id }}"
-            >
-              {% assign prdct = card_product.title | split: '-' %}
-              {{ prdct[0] | escape }}
+            >              
+              {{ card_product.title | escape }}
             </a>
           </h3>
           <div class="card-information">

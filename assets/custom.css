@@ -251,6 +251,7 @@ ul.list-menu.list-menu--inline li a span:hover,
     font-weight: 500;
     border-radius: 50px;
     font-family: 'Sofia_Pro';
+  background:unset !important;
 }
 
 .image-box img.prdctImg {

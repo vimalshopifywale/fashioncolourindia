@@ -32,8 +32,7 @@
           class="product-variant-id"
         >
 
-        {% assign prdct = product.title |  split: '-' %}
-          <span class="h3" style="max-width: 170px;white-space: nowrap; overflow: hidden;text-overflow: ellipsis;display: block;">{{prdct[0] | escape }}</span>
+          <span class="h3" style="max-width: 170px;white-space: nowrap; overflow: hidden;text-overflow: ellipsis;display: block;">{{product.title | escape }}</span>
           <div
             style="margin-top: 10px;"
             class="no-js-hidden"

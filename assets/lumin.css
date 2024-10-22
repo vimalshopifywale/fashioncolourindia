@@ -133,6 +133,9 @@ font-size: 2.2rem!important;
 .price--on-sale .price-item--regular {
     color: #51aeb0 !important;
 }*/
+.gmVdoSldWrap .price-item--regular {
+    color: #bf0436 !important;
+}
 
 .spr-container {
   border-color: #ffffff !important;

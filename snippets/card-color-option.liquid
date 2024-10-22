@@ -294,7 +294,7 @@
 
       <input
         type="radio"
-        id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
+        id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}-{{ loopcheck }}"
         name="{{ option.name }}"
         value="{{ fnl_value | escape }}"
         form="{{ card-product_form_id }}"
@@ -337,7 +337,7 @@
               {%- endcase -%} position: relative;
         "
         class="color-swatch {% case swatchStyle %}{% when "round" %}round{% when "square-round-corners" %}round-corners{% endcase %}"
-        for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
+        for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}-{{ loopcheck }}"
       >
         <span class="visually-hidden">{{ 'products.product.variant_sold_out_or_unavailable' | t }}</span>
       </label>
@@ -371,7 +371,7 @@
 
     <input
       type="radio"
-      id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
+      id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}-{{ loopcheck }}"
       name="{{ option.name }}"
       value="{{ fnl_value | escape }}"
       form="{{ card-product_form_id }}"
@@ -414,7 +414,7 @@
             {%- endcase -%} position: relative;
       "
       class="color-swatch {% case swatchStyle %}{% when "round" %}round{% when "square-round-corners" %}round-corners{% endcase %}"
-      for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
+      for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}-{{ loopcheck }}"
     >
       <span class="visually-hidden">{{ 'products.product.variant_sold_out_or_unavailable' | t }}</span>
     </label>

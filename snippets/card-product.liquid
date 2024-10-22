@@ -441,7 +441,7 @@
                     {%- unless card_product.has_only_default_variant -%}
                       {%- for option in card_product.options_with_values -%}
                           <div class="card-swatch" style="width:100%;">
-                            {% render 'card-color-option', product: card_product, option: option %}
+                            {% render 'card-color-option', product: card_product, option: option, loopcheck:forloop.index %}
                           </div>
                       {%- endfor -%}
                     {% endunless %}

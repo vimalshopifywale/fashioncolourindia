@@ -721,7 +721,9 @@ span.swatch_count {
     box-sizing: border-box;
     pointer-events: none;
 }
-
+.gradiant_card_wrap .price-item--regular{
+    color: white;
+}
 .col_gradient_wrap .collap_btn {
     background: linear-gradient(271.44deg, #805207 0.38%, #ECD27D 46.4%, #AC832B 79.58%, #F2D97D 100.93%);
 }

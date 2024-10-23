@@ -359,7 +359,7 @@ ul.list-menu.list-menu--inline li a span:hover,
     position: absolute;
     bottom: 17px;
     left: 23px;
-    z-index: 1;
+    z-index: 10;
     padding: 10px;
     color: #313131;
     font-size: 14px;
@@ -406,7 +406,8 @@ ul.list-menu.list-menu--inline li a span:hover,
 }
 
 .sw-product .product__description p {
-    color: #555555;
+    /* color: #555555; */
+    color: #000;
     font-weight: 400;
     font-size: 15px;
     font-family: 'sofia_Pro';

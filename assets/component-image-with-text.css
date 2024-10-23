@@ -446,6 +446,7 @@ h2.image-with-text__heading.inline-richtext.h1 {
 
 .image-with-text__text p {
   color: #5E5E5E;
+  font-size: 18px;
 }
 
 h2.image-with-text__heading.inline-richtext.h1 p {

@@ -205,6 +205,52 @@
         "padding_bottom": 0
       }
     },
+    "gm_image_banner_J34CUp": {
+      "type": "GM-image-banner",
+      "blocks": {
+        "image_Jd9xRL": {
+          "type": "image",
+          "settings": {
+          }
+        },
+        "image_hhgtPm": {
+          "type": "image",
+          "settings": {
+          }
+        },
+        "image_Bbmapc": {
+          "type": "image",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "image_Jd9xRL",
+        "image_hhgtPm",
+        "image_Bbmapc"
+      ],
+      "settings": {
+        "pgWdth": false,
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "mobile_padding_top": 20,
+        "mobile_padding_bottom": 20,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "mobile_margin_top": 0,
+        "mobile_margin_bottom": 0
+      }
+    },
     "comparison_table_XH6XXt": {
       "type": "comparison-table",
       "blocks": {
@@ -547,6 +593,7 @@
     "301f7d84-22e5-45b5-8f0a-a01627b7db19",
     "main",
     "tabs_XLgmRt",
+    "gm_image_banner_J34CUp",
     "comparison_table_XH6XXt",
     "c0ef23cf-5481-4b47-9b78-3c28134c079a",
     "related-products",

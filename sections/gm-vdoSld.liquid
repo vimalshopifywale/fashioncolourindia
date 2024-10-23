@@ -137,6 +137,12 @@
           {%- endif -%}
         {% endfor %}
       </div>
+      <div class="swiper-button-next gmCstm swNxt{{section.id | remove: '-' |  remove: '_'  }}" {{section.blocks.length}}>
+        {% render 'gm-icon-next' %}
+      </div>
+      <div class="swiper-button-prev gmCstm swPrv{{section.id | remove: '-' |  remove: '_'  }}">
+        {% render 'gm-icon-prev' %}
+      </div>
     </div>
     <div class="swiper-branding">
       <span>Powered By</span>
@@ -224,6 +230,10 @@
       slidesPerView: {{section.settings.mblSld}},
     spaceBetween: {{section.settings.mblSpc}},
     loop:true,
+    navigation: {
+      nextEl: ".swNxt{{section.id | remove: '-' |  remove: '_'  }}",
+      prevEl: ".swPrv{{section.id | remove: '-' |  remove: '_'  }}",
+    },
     breakpoints: {
       640: {
         slidesPerView: {{section.settings.tabSld}},

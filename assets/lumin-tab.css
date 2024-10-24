@@ -3,7 +3,7 @@ ul.custom--tabs {
   max-width: var(--page-width);
   display: flex !important;
   white-space: nowrap;
-  gap: 20px;
+  gap: 40px;
   overflow-x: auto;
   margin: 0 auto;
 }
@@ -92,7 +92,6 @@ ul.custom--tabs {
     margin: 10px 0px 0px 0px !important;
   }
 
-  .custom__tab-content.active {}
 
   .lumin-tab-width {
     padding: 0;

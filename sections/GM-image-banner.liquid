@@ -1,27 +1,6 @@
 {{ 'section-image-banner.css' | asset_url | stylesheet_tag }}
 
-{%- if section.settings.image_height == 'adapt' and block.settings.image != blank -%}
-  {%- style -%}
-    @media screen and (max-width: 749px) {
-      #Banner-{{ section.id }}::before,
-      #Banner-{{ section.id }} .banner__media::before,
-      #Banner-{{ section.id }}:not(.banner--mobile-bottom) .banner__content::before {
-        padding-bottom: {{ 1 | divided_by: section.settings.desktop_image.aspect_ratio | times: 100 }}%;
-        content: '';
-        display: block;
-      }
-    }
 
-    @media screen and (min-width: 750px) {
-      #Banner-{{ section.id }}::before,
-      #Banner-{{ section.id }} .banner__media::before {
-        padding-bottom: {{ 1 | divided_by: section.settings.desktop_image.aspect_ratio | times: 100 }}%;
-        content: '';
-        display: block;
-      }
-    }
-  {%- endstyle -%}
-{%- endif -%}
 
 {%- style -%}
   #Banner-{{ section.id }}::after {
@@ -38,34 +17,146 @@
     left: 50%;
     transform: translateX(-50%);
   }
+  .gm_banner_aplus img{
+    width:100%;
+    height:100%;
+  }
+  .gm_banner_aplus .gm_mobile{
+    display:none;
+  }
+
+  .gm_banner_aplus,.gm_banner_aplus > div {
+    display: flex;
+    flex-direction: column;
+}
+  .gm_banner_aplus img{
+    border-radius:unset;
+  }
+  .gm_banner_aplus > div{
+    border-radius:15px;
+    overflow:hidden;
+  }
+  .gm_banner_aplus.prdctUnset{
+    transform:unset !important;
+  }
+  @media screen and (max-width:768px){
+    .gm_banner_aplus .gm_desktop{
+      display:none;
+    }
+    .gm_banner_aplus .gm_mobile{
+      display:flex;
+    }
+  }
 {%- endstyle -%}
 
 {%- liquid
   assign full_width = '100vw'
   assign widths = '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'
 
-  if section.settings.image_behavior == 'ambient'
-    assign half_width = '60vw'
-    assign full_width = '120vw'
-    assign stacked_sizes = '(min-width: 750px) 60vw, 120vw'
-    assign widths = '450, 660, 900, 1320, 1800, 2136, 2400, 3600, 7680'
-  elsif section.settings.image_behavior == 'fixed' or section.settings.image_behavior == 'zoom-in'
-    assign half_width = '100vw'
-    assign stacked_sizes = '100vw'
-  else
-    assign half_width = '50vw'
-    assign stacked_sizes = '(min-width: 750px) 50vw, 100vw'
-  endif
+  
+  assign half_width = '50vw'
+  assign stacked_sizes = '(min-width: 750px) 50vw, 100vw'
   assign fetch_priority = 'auto'
   if section.index == 1
     assign fetch_priority = 'high'
   endif
 -%}
-{% for block in section.blocks %}
-    {%- if block.settings.image != blank -%}
-        <div id="Banner-{{ section.id }}" class="banner gradient section-{{ section.id }}-padding banner--{{ section.settings.image_height }} {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}" >
-            {% if block.settings.mobile_image != blank %}
-                <div class="{% if section.settings.pgWdth %}prdctUnset page-width{% endif %} banner__media media{% if block.settings.image == blank %} placeholder{% endif %}{% if section.settings.image_behavior != 'none' %} animate--{{ section.settings.image_behavior }}{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
+{% if section.settings.meta_field %}
+  <div class="{% if section.settings.pgWdth %}prdctUnset page-width{% endif %} section-{{ section.id }}-padding gm_banner_aplus {% if section.settings.image_behavior != 'none' %} animate--{{ section.settings.image_behavior }}{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
+    <div class="gm_desktop">
+      {% for desktop_image in product.metafields.custom.product_details_controller.value.a_listing.value.for_desktop_version.value %}
+        {%- liquid
+            assign image_height = desktop_image.width | divided_by: desktop_image.aspect_ratio
+            if section.settings.stack_images_on_mobile
+            assign sizes = stacked_sizes
+            else
+            assign sizes = full_width
+            endif
+        -%}
+        {{
+            desktop_image
+            | image_url: width: 3840
+            | image_tag:
+            width: desktop_image.width,
+            height: image_height,
+            class: 'gm_desktop',
+            sizes: sizes,
+            widths: widths,
+            fetchpriority: fetch_priority
+        }}
+    {% endfor %}
+    </div>
+    <div class="gm_mobile">
+      {% for mobile_image in product.metafields.custom.product_details_controller.value.a_listing.value.for_mobile_version.value %}
+        {%- liquid
+            assign image_height = mobile_image.width | divided_by: mobile_image.aspect_ratio
+            if section.settings.stack_images_on_mobile
+            assign sizes = stacked_sizes
+            else
+            assign sizes = full_width
+            endif
+        -%}
+        {{
+            mobile_image
+            | image_url: width: 3840
+            | image_tag:
+            width: mobile_image.width,
+            height: image_height,
+            class: 'gm_mobile',
+            sizes: sizes,
+            widths: widths,
+            fetchpriority: fetch_priority
+        }}
+      {% endfor %}
+    </div>
+  </div>
+{% else %}
+  {% for block in section.blocks %}
+      {%- if block.settings.desktop_image != blank -%}
+          <div id="Banner-{{ block.id }}" class="section-{{ section.id }}-padding gm_banner_aplus {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}" >
+              {% if block.settings.mobile_image != blank %}
+                <div class="{% if section.settings.pgWdth %}prdctUnset page-width{% endif %} {% if section.settings.image_behavior != 'none' %} animate--{{ section.settings.image_behavior }}{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
+                  {%- liquid
+                      assign image_height = block.settings.desktop_image.width | divided_by: block.settings.desktop_image.aspect_ratio
+                      if section.settings.stack_images_on_mobile
+                      assign sizes = stacked_sizes
+                      else
+                      assign sizes = full_width
+                      endif
+                  -%}
+                  {{
+                      block.settings.desktop_image
+                      | image_url: width: 3840
+                      | image_tag:
+                      width: block.settings.desktop_image.width,
+                      height: image_height,
+                      class: 'gm_desktop',
+                      sizes: sizes,
+                      widths: widths,
+                      fetchpriority: fetch_priority
+                  }}
+                  {%- liquid
+                      assign image_height = block.settings.mobile_image.width | divided_by: block.settings.mobile_image.aspect_ratio
+                      if section.settings.stack_images_on_mobile
+                      assign sizes = stacked_sizes
+                      else
+                      assign sizes = full_width
+                      endif
+                  -%}
+                  {{
+                      block.settings.mobile_image
+                      | image_url: width: 3840
+                      | image_tag:
+                      width: block.settings.mobile_image.width,
+                      height: image_height,
+                      class: 'gm_mobile',
+                      sizes: sizes,
+                      widths: widths,
+                      fetchpriority: fetch_priority
+                  }}
+                </div>
+              {% else %}
+              <div class="{% if section.settings.pgWdth %}prdctUnset page-width{% endif %} {% if section.settings.image_behavior != 'none' %} animate--{{ section.settings.image_behavior }}{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
                 {%- liquid
                     assign image_height = block.settings.desktop_image.width | divided_by: block.settings.desktop_image.aspect_ratio
                     if section.settings.stack_images_on_mobile
@@ -75,7 +166,7 @@
                     endif
                 -%}
                 {{
-                    block.settings.image
+                    block.settings.desktop_image
                     | image_url: width: 3840
                     | image_tag:
                     width: block.settings.desktop_image.width,
@@ -85,12 +176,13 @@
                     widths: widths,
                     fetchpriority: fetch_priority
                 }}
-                </div>
-                
-            {% endif %}
-        </div>
-    {%- endif -%}
-{% endfor %}
+              </div>
+              {% endif %}
+          </div>
+      {%- endif -%}
+  {% endfor %}
+    
+{% endif %}
 {%- style -%}
   /* .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
@@ -134,32 +226,10 @@
       "default":false
     },
     {
-      "type": "header",
-      "content": "t:sections.all.animation.content"
-    },
-    {
-      "type": "select",
-      "id": "image_behavior",
-      "options": [
-        {
-          "value": "none",
-          "label": "t:sections.all.animation.image_behavior.options__1.label"
-        },
-        {
-          "value": "ambient",
-          "label": "t:sections.all.animation.image_behavior.options__2.label"
-        },
-        {
-          "value": "fixed",
-          "label": "t:sections.all.animation.image_behavior.options__3.label"
-        },
-        {
-          "value": "zoom-in",
-          "label": "t:sections.all.animation.image_behavior.options__4.label"
-        }
-      ],
-      "default": "none",
-      "label": "t:sections.all.animation.image_behavior.label"
+      "type": "checkbox",
+      "id": "meta_field",
+      "label": "Check to Fetch Data From Metafield",
+      "default":false
     },
     {
       "type": "header",

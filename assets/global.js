@@ -532,7 +532,7 @@ class ModalDialog extends HTMLElement {
     });
     if (this.classList.contains('media-modal')) {
       this.addEventListener('pointerup', (event) => {
-        if (event.pointerType === 'mouse' && !event.target.closest('deferred-media, product-model')) this.hide();
+        if(!this.hasAttribute('gmlight'))if (event.pointerType === 'mouse' && !event.target.closest('deferred-media, product-model')) this.hide();
       });
     } else {
       this.addEventListener('click', (event) => {
@@ -557,7 +557,7 @@ class ModalDialog extends HTMLElement {
     //window.pauseAllMedia();
   }
 
-  hide() {
+  hide() {    
     document.body.classList.remove('overflow-hidden');
     document.body.dispatchEvent(new CustomEvent('modalClosed'));
     this.removeAttribute('open');

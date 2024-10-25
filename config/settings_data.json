@@ -185,7 +185,7 @@
     "currency_code_enabled": false,
     "sup_enabled": false,
     "cart_type": "drawer",
-    "crtTxt": "🚚 Fast & Free Shipping on all Orders",
+    "crtTxt": "Fast & Free Shipping on all Orders",
     "paymentImg": "shopify://shop_images/payment_revolife_store.svg",
     "show_vendor": false,
     "show_cart_note": false,
@@ -240,6 +240,12 @@
     "blocks": {
       "14060646107696862457": {
         "type": "shopify://apps/judge-me-reviews/blocks/judgeme_core/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "14070305384974036441": {
+        "type": "shopify://apps/quick-social-login/blocks/app-embed/835209bc-8680-493e-b34a-6dd763a16101",
         "disabled": false,
         "settings": {
         }

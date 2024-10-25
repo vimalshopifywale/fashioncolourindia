@@ -7,33 +7,6 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
     "hero_slider_wXpLwx": {
@@ -385,7 +358,7 @@
           "settings": {
             "imgPkr": "shopify://shop_images/AQN3taaUhmpWpABCcLer06fX4ov4itI9ORPEYv28rLJVzMSor3GsqWq-pb1bWOtVrjLe2VVIoEzLQ6KT-PQEpdO2_1.gif",
             "video": "https://cdn.shopify.com/videos/c/o/v/cd0542c6c7364cb6b28dd67233e4a884.mp4",
-            "slctPrdct": "fashion-colour-tinted-moisturizer-full-coverage-cream-spf15"
+            "slctPrdct": "fashion-colour-tinted-moisturizer-full-coverage-cream"
           }
         },
         "slide_9Eq6UQ": {
@@ -393,7 +366,7 @@
           "settings": {
             "imgPkr": "shopify://shop_images/Video-258.gif",
             "video": "https://cdn.shopify.com/videos/c/o/v/57844746d35a44caac8993f236b37b27.mp4",
-            "slctPrdct": "fashion-colour-platinum-liquid-blusher-5gm"
+            "slctPrdct": "fashion-colour-platinum-liquid-blusher"
           }
         },
         "slide_PDd4G4": {
@@ -409,7 +382,7 @@
           "settings": {
             "imgPkr": "shopify://shop_images/Video-783.gif",
             "video": "https://cdn.shopify.com/videos/c/o/v/a435915b0bc94816b44bac7df196c9d9.mp4",
-            "slctPrdct": "fashion-colour-platinum-double-head-mascara-10ml"
+            "slctPrdct": "fashion-colour-platinum-double-head-mascara"
           }
         },
         "slide_GxJkRp": {
@@ -433,7 +406,7 @@
           "settings": {
             "imgPkr": "shopify://shop_images/Video-462.gif",
             "video": "https://cdn.shopify.com/videos/c/o/v/24a482c4576647be822a49a74ce7de20.mp4",
-            "slctPrdct": "fashion-colour-platinum-liquid-blusher-5gm"
+            "slctPrdct": "fashion-colour-platinum-liquid-blusher"
           }
         },
         "slide_tGU3pY": {

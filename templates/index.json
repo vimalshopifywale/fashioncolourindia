@@ -7,33 +7,6 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
     "hero_slider_64mdj9": {
@@ -490,24 +463,65 @@
         "navigation_on_mobile": false,
         "padding_top": 60,
         "padding_bottom": 100,
-        "mobile_padding_top": 80,
-        "mobile_padding_bottom": 80
+        "mobile_padding_top": 32,
+        "mobile_padding_bottom": 36
       }
     },
     "gm_slider_rrieeC": {
       "type": "gm-slider",
       "blocks": {
-        "slide_EiUB8N": {
+        "slide_8zFzzj": {
           "type": "slide",
           "settings": {
-            "img_url": "",
+            "imgPkr": "shopify://shop_images/Sweet-Bomb-A_-Mob-View_04.jpg",
+            "img_url": "shopify://products/24hrs-shiny-black-waterproof-eyeliner-glossy-one-touch-make-your-eyes-outstanding",
+            "ttl": "",
+            "subTtl": ""
+          }
+        },
+        "slide_mMQkYP": {
+          "type": "slide",
+          "settings": {
+            "imgPkr": "shopify://shop_images/Sweet-Bomb-A_-Mob-View_04.jpg",
+            "img_url": "shopify://products/24hrs-shiny-black-waterproof-eyeliner-glossy-one-touch-make-your-eyes-outstanding",
+            "ttl": "",
+            "subTtl": ""
+          }
+        },
+        "slide_Qiddp7": {
+          "type": "slide",
+          "settings": {
+            "imgPkr": "shopify://shop_images/Sweet-Bomb-A_-Web_01.jpg",
+            "img_url": "shopify://products/2-in-1-hd-matte-fusion-waterproof-light-reflecting-setting-powder",
+            "ttl": "",
+            "subTtl": ""
+          }
+        },
+        "slide_TrDJTn": {
+          "type": "slide",
+          "settings": {
+            "imgPkr": "shopify://shop_images/Sweet-Bomb-A_-Mob-View_04.jpg",
+            "img_url": "shopify://products/24hrs-shiny-black-waterproof-eyeliner-glossy-one-touch-make-your-eyes-outstanding",
+            "ttl": "",
+            "subTtl": ""
+          }
+        },
+        "slide_EXRmnE": {
+          "type": "slide",
+          "settings": {
+            "imgPkr": "shopify://shop_images/Sweet-Bomb-A_-Mob-View_04.jpg",
+            "img_url": "shopify://products/24hrs-shiny-black-waterproof-eyeliner-glossy-one-touch-make-your-eyes-outstanding",
             "ttl": "",
             "subTtl": ""
           }
         }
       },
       "block_order": [
-        "slide_EiUB8N"
+        "slide_8zFzzj",
+        "slide_mMQkYP",
+        "slide_Qiddp7",
+        "slide_TrDJTn",
+        "slide_EXRmnE"
       ],
       "settings": {
         "preTtl": "All-in-One Beauty Collection",
@@ -522,7 +536,7 @@
         "btnUrl": "",
         "chkBx": false,
         "overlays_box": false,
-        "dskSld": 4.8,
+        "dskSld": 4.4,
         "dskSpc": 20,
         "tabSld": 4.8,
         "tabSpc": 20,
@@ -653,8 +667,8 @@
       "settings": {
         "color_scheme_main": "",
         "layout_width": "grid",
-        "heading_font_size": 24,
-        "heading_font_sizemob": 24,
+        "heading_font_size": 37,
+        "heading_font_sizemob": 30,
         "video": "shopify://files/videos/Video-273.mp4",
         "height": "medium",
         "desktop_image_width": "medium",
@@ -743,7 +757,7 @@
         "enable_quick_add": true,
         "show_secondary_add": false,
         "columns_mobile": "2",
-        "padding_top": 100,
+        "padding_top": 40,
         "padding_bottom": 100
       }
     },
@@ -755,7 +769,7 @@
           "settings": {
             "imgPkr": "shopify://shop_images/Video-343.gif",
             "video": "https://cdn.shopify.com/videos/c/o/v/87aeb31898b04b06b1c29e7ecc7cb73b.mp4",
-            "slctPrdct": "fashion-colour-platinum-liquid-blusher-5gm"
+            "slctPrdct": "fashion-colour-platinum-liquid-blusher"
           }
         },
         "slide_AYQAtb": {
@@ -795,7 +809,7 @@
           "settings": {
             "imgPkr": "shopify://shop_images/b45b08d40d594c5fa2e39b29842b5567.gif",
             "video": "https://cdn.shopify.com/videos/c/o/v/b45b08d40d594c5fa2e39b29842b5567.mp4",
-            "slctPrdct": "fashion-colour-cc-cream"
+            "slctPrdct": "fashion-colour-face-highlighter-bronzer-and-illumintor"
           }
         },
         "slide_8xcpdc": {
@@ -819,7 +833,7 @@
           "settings": {
             "imgPkr": "shopify://shop_images/Video-647.gif",
             "video": "https://cdn.shopify.com/videos/c/o/v/5b310592708b476fbae889a5e702a890.mp4",
-            "slctPrdct": "fashion-colour-tinted-moisturizer-full-coverage-cream-spf15"
+            "slctPrdct": "fashion-colour-tinted-moisturizer-full-coverage-cream"
           }
         },
         "slide_TnTjgt": {
@@ -843,7 +857,7 @@
           "settings": {
             "imgPkr": "shopify://shop_images/0a184ab891624a008c554d7e3bd91490.gif",
             "video": "https://cdn.shopify.com/videos/c/o/v/0a184ab891624a008c554d7e3bd91490.mp4",
-            "slctPrdct": "tinted-magic-lip-balm-3gm"
+            "slctPrdct": "tinted-magic-lip-balm"
           }
         },
         "slide_bzz4rp": {

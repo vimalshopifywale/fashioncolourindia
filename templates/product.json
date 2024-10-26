@@ -142,7 +142,7 @@
         "media_fit": "contain",
         "gallery_layout": "thumbnail",
         "media_position": "left",
-        "image_zoom": "lightbox",
+        "image_zoom": "gmlightbox",
         "mobile_thumbnails": "show",
         "show_full_image": true,
         "second_image_size": 18,
@@ -306,9 +306,26 @@
         "table_shadow_blur": 0,
         "table_border_thickness": 1,
         "padding_top": 100,
-        "padding_bottom": 100,
+        "padding_bottom": 52,
         "padding_top_mobile": 80,
-        "padding_bottom_mobile": 80
+        "padding_bottom_mobile": 24
+      }
+    },
+    "1729502553f55afa50": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_ypHaPW": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_ypHaPW"
+      ],
+      "settings": {
+        "include_margins": true,
+        "color_scheme": ""
       }
     },
     "c0ef23cf-5481-4b47-9b78-3c28134c079a": {
@@ -564,6 +581,7 @@
     "tabs_XLgmRt",
     "gm_image_banner_dmcY4D",
     "comparison_table_XH6XXt",
+    "1729502553f55afa50",
     "c0ef23cf-5481-4b47-9b78-3c28134c079a",
     "related-products",
     "gm_slider_H73iEy"

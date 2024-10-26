@@ -550,120 +550,112 @@
                   </div>
                 {% endif %}
               {%- when 'shipping' -%}
-                <style>
-                  .qa-feature-{{ block.id }} {
-                        margin: 0px;
-                        font-size: {{ block.settings.text_size }}px;
-                        text-transform: {{ block.settings.text_style }};
-                    }
-                  .qa-feature-{{ block.id }} img {
-                        width: {{block.settings.icon_size}}px !important;
-                        height: auto;
-                        vertical-align: middle;
-                        margin-right: 0px;
-                    }
-                            .qa-feature-{{ block.id }} svg {
-                        width: {{block.settings.icon_size}}px !important;
-                        height: auto;
-                        vertical-align: sub;
-                        margin-right: 5px;
-                    }
-                    .ship-wrapper {
-                        display: flex;
-                        max-width:44rem;
-                        column-gap: 10px;
-                        background: {{block.settings.ship_bg}};
-                        border-radius: {{ block.settings.border_radius }}px;
-                          {% if block.settings.show_border %}
-                        box-shadow: 0 0 0 1px {{block.settings.ship_border}};{% endif %}
-                        padding: {{block.settings.padding_top}}px {{block.settings.padding_bottom}}px;
-                        margin: {{block.settings.margin_top}}px 0 {{block.settings.margin_bottom}}px 0;
-                        align-items: flex-start;
-                        }
-                        @media screen and (max-width: 750px){
-                          .ship-wrapper{
-                            margin-bottom: 0;
+                {%- when 'shipping' -%}
+                  <style>
+                    .qa-feature-{{ block.id }} {
+                          margin: 0px;
+                          font-size: {{ block.settings.text_size }}px;
+                          text-transform: {{ block.settings.text_style }};
+                      }
+                    .qa-feature-{{ block.id }} img {
+                          width: {{block.settings.icon_size}}px !important;
+                          height: auto;
+                          vertical-align: middle;
+                          margin-right: 0px;
+                      }
+                              .qa-feature-{{ block.id }} svg {
+                          width: {{block.settings.icon_size}}px !important;
+                          height: auto;
+                          vertical-align: sub;
+                          margin-right: 5px;
+                      }
+                      .ship-wrapper {
+                          display: flex;
+                          max-width:44rem;
+                          column-gap: 10px;
+                          background: {{block.settings.ship_bg}};
+                          border-radius: {{ block.settings.border_radius }}px;
+                            {% if block.settings.show_border %}
+                          box-shadow: 0 0 0 1px {{block.settings.ship_border}};{% endif %}
+                          padding: {{block.settings.padding_top}}px {{block.settings.padding_bottom}}px;
+                          margin: {{block.settings.margin_top}}px 0 {{block.settings.margin_bottom}}px 0;
+                          align-items: flex-start;
                           }
-                        }
-                </style>
-                {% assign ship_text = block.settings.text %}
-                {% assign countdown = countdown | prepend: '<span id="countdown">' | append: '</span>' %}
-                {% assign result = result | prepend: '<span id="result">' | append: '</span>' %}
-                <div class="ship-wrapper qa-feature-{{ block.id }}" {{ block.shopify_attributes }}>
-                  {%- if block.settings.icon != blank -%}
-                    <img
-                      src="{{ block.settings.icon | img_url: '100x' }}"
-                      class="lumin-ani-{{ block.settings.image_ani }} is--infinite"
-                    >
-                  {%- else -%}
-                    <img
-                      width="28"
-                      height="28"
-                      src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxzdmcgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDI4IDI4Ij4NCiAgPGRlZnM+DQogICAgPHN0eWxlPi5jbHMtMXtmaWxsOiM1MjUyNTI7c3Ryb2tlLXdpZHRoOjBweDt9PC9zdHlsZT4NCiAgPC9kZWZzPg0KICA8cGF0aCBjbGFzcz0iY2xzLTEiDQogICAgZD0ibTI2LjY2LDEyLjk2bC0xLjUzLTMuODNjLS4xLS4yNC0uMjctLjQ1LS40OC0uNi0uMjItLjE1LS40Ny0uMjItLjczLS4yMmgtNC4yMnYtMS4zMWMwLS4xMi0uMDUtLjIzLS4xMy0uMzEtLjA4LS4wOC0uMTktLjEzLS4zMS0uMTNIMi42MmMtLjM1LDAtLjY4LjE0LS45My4zOHMtLjM4LjU4LS4zOC45M3YxMi4yNWMwLC4zNS4xNC42OC4zOC45My4yNS4yNS41OC4zOC45My4zOGgyLjIyYy4xMS43My40NywxLjM5LDEuMDMsMS44OC41Ni40OCwxLjI3Ljc1LDIsLjc1czEuNDUtLjI3LDItLjc1Yy41Ni0uNDguOTItMS4xNSwxLjAzLTEuODhoNi4xOWMuMTEuNzMuNDcsMS4zOSwxLjAzLDEuODguNTYuNDgsMS4yNy43NSwyLC43NXMxLjQ1LS4yNywyLS43NWMuNTYtLjQ4LjkyLTEuMTUsMS4wMy0xLjg4aDIuMjJjLjM1LDAsLjY4LS4xNC45My0uMzguMjUtLjI1LjM4LS41OC4zOC0uOTN2LTdjMC0uMDYtLjAxLS4xMS0uMDMtLjE2Wm0tNi45Ny0zLjc4aDQuMjJjLjA5LDAsLjE3LjAzLjI1LjA3LjA3LjA1LjEzLjEyLjE2LjJsMS4yOSwzLjIzaC01Ljkydi0zLjVaTTIuMTksNy44OGMwLS4xMi4wNS0uMjMuMTMtLjMxcy4xOS0uMTMuMzEtLjEzaDE2LjE5djcuODhIMi4xOXYtNy40NFptNS42OSwxNS4zMWMtLjQzLDAtLjg2LS4xMy0xLjIyLS4zNy0uMzYtLjI0LS42NC0uNTgtLjgxLS45OC0uMTctLjQtLjIxLS44NC0uMTItMS4yNi4wOC0uNDIuMjktLjgxLjYtMS4xMi4zMS0uMzEuNy0uNTEsMS4xMi0uNi40Mi0uMDguODYtLjA0LDEuMjYuMTJzLjc0LjQ1Ljk4LjgxYy4yNC4zNi4zNy43OC4zNywxLjIyLDAsLjI5LS4wNi41Ny0uMTcuODQtLjExLjI3LS4yNy41MS0uNDcuNzEtLjIuMi0uNDQuMzYtLjcxLjQ3cy0uNTUuMTctLjg0LjE3Wm05LjIyLTIuNjJoLTYuMTljLS4xMS0uNzMtLjQ3LTEuMzktMS4wMy0xLjg4LS41Ni0uNDgtMS4yNy0uNzUtMi0uNzVzLTEuNDUuMjctMiwuNzVjLS41Ni40OC0uOTIsMS4xNS0xLjAzLDEuODhoLTIuMjJjLS4xMiwwLS4yMy0uMDUtLjMxLS4xMy0uMDgtLjA4LS4xMy0uMTktLjEzLS4zMXYtMy45NGgxNi42MnYyLjA1Yy0uNDYuMjItLjg1LjU0LTEuMTUuOTUtLjMuNDEtLjQ5Ljg4LS41NywxLjM4Wm0zLjAzLDIuNjJjLS40MywwLS44Ni0uMTMtMS4yMi0uMzctLjM2LS4yNC0uNjQtLjU4LS44MS0uOTgtLjE3LS40LS4yMS0uODQtLjEyLTEuMjYuMDgtLjQyLjI5LS44MS42LTEuMTIuMzEtLjMxLjctLjUxLDEuMTItLjYuNDItLjA4Ljg2LS4wNCwxLjI2LjEyLjQuMTcuNzQuNDUuOTguODEuMjQuMzYuMzcuNzguMzcsMS4yMiwwLC41OC0uMjMsMS4xNC0uNjQsMS41NXMtLjk3LjY0LTEuNTUuNjRabTUuNjktMy4wNmMwLC4xMi0uMDUuMjMtLjEzLjMxLS4wOC4wOC0uMTkuMTMtLjMxLjEzaC0yLjIyYy0uMTItLjgtLjU1LTEuNTMtMS4yLTIuMDEtLjY1LS40OS0xLjQ3LS42OS0yLjI3LS41OHYtNC40MWg2LjEydjYuNTZaIiAvPg0KPC9zdmc+"
-                    >
-                  {%- endif -%}
-                  <p style="margin:0;">
-                    {{ ship_text | replace: '(timer)', countdown | replace: '(date)', result }}
-                  </p>
-
-                  <script>
-      function countDate() {
-        const today = new Date();
-        let daysCounted = 0;
-        let weekdaysCounted = 0;
-
-        while (weekdaysCounted < {{ block.settings.ship_days }}) {
-          // Increment date by one day
-          today.setDate(today.getDate() + 1);
-
-          // Check if it's a weekend
-          if (today.getDay() !== 0 && today.getDay() !== 6) {
-            weekdaysCounted++;
-          }
-          
-
-          daysCounted++;
-        } 
-        // Format date as "MMM DD, ddd"
-        const options = { month: "short", day: "numeric", weekday: "short" };
-        const formattedDate = today.toLocaleDateString("{{block.settings.date_locale}}", options);
-
-        // Display result
-        document.getElementById("result").innerHTML = `${formattedDate}`;
-      }
-
-      countDate();
-                  </script>
-
-                  <script>
-// Set the end time to 4pm
-const endTime = new Date();
-endTime.setHours({{ block.settings.cut_off_time }}, 0, 0);
-
-// Update the countdown every second
-setInterval(updateCountdown, 1000);
-
-function updateCountdown() {
-  const now = new Date().getTime();
-  const distance = endTime.getTime() - now;
-
-  // If the countdown has ended, reset it to the next day at 4pm
-  if (distance < 0) {
-    endTime.setDate(endTime.getDate() + 1);
-    endTime.setHours({{ block.settings.cut_off_time }}, 0, 0);
+                  </style>
+                  {% assign ship_text = block.settings.text %}
+                  {% assign countdown = countdown | prepend: '<span id="countdown">' | append: '</span>' %}
+                  {% assign result = result | prepend: '<span id="result">' | append: '</span>' %}
+                  <div class="ship-wrapper qa-feature-{{ block.id }}" {{ block.shopify_attributes }}>
+                    {%- if block.settings.icon != blank -%}
+                        <img
+                          src="{{ block.settings.icon | img_url: '100x' }}"
+                          class="lumin-ani-{{ block.settings.image_ani }} is--infinite"
+                        >
+                      {%- else -%}
+                     <img width="28" height="28" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxzdmcgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDI4IDI4Ij4NCiAgPGRlZnM+DQogICAgPHN0eWxlPi5jbHMtMXtmaWxsOiM1MjUyNTI7c3Ryb2tlLXdpZHRoOjBweDt9PC9zdHlsZT4NCiAgPC9kZWZzPg0KICA8cGF0aCBjbGFzcz0iY2xzLTEiDQogICAgZD0ibTI2LjY2LDEyLjk2bC0xLjUzLTMuODNjLS4xLS4yNC0uMjctLjQ1LS40OC0uNi0uMjItLjE1LS40Ny0uMjItLjczLS4yMmgtNC4yMnYtMS4zMWMwLS4xMi0uMDUtLjIzLS4xMy0uMzEtLjA4LS4wOC0uMTktLjEzLS4zMS0uMTNIMi42MmMtLjM1LDAtLjY4LjE0LS45My4zOHMtLjM4LjU4LS4zOC45M3YxMi4yNWMwLC4zNS4xNC42OC4zOC45My4yNS4yNS41OC4zOC45My4zOGgyLjIyYy4xMS43My40NywxLjM5LDEuMDMsMS44OC41Ni40OCwxLjI3Ljc1LDIsLjc1czEuNDUtLjI3LDItLjc1Yy41Ni0uNDguOTItMS4xNSwxLjAzLTEuODhoNi4xOWMuMTEuNzMuNDcsMS4zOSwxLjAzLDEuODguNTYuNDgsMS4yNy43NSwyLC43NXMxLjQ1LS4yNywyLS43NWMuNTYtLjQ4LjkyLTEuMTUsMS4wMy0xLjg4aDIuMjJjLjM1LDAsLjY4LS4xNC45My0uMzguMjUtLjI1LjM4LS41OC4zOC0uOTN2LTdjMC0uMDYtLjAxLS4xMS0uMDMtLjE2Wm0tNi45Ny0zLjc4aDQuMjJjLjA5LDAsLjE3LjAzLjI1LjA3LjA3LjA1LjEzLjEyLjE2LjJsMS4yOSwzLjIzaC01Ljkydi0zLjVaTTIuMTksNy44OGMwLS4xMi4wNS0uMjMuMTMtLjMxcy4xOS0uMTMuMzEtLjEzaDE2LjE5djcuODhIMi4xOXYtNy40NFptNS42OSwxNS4zMWMtLjQzLDAtLjg2LS4xMy0xLjIyLS4zNy0uMzYtLjI0LS42NC0uNTgtLjgxLS45OC0uMTctLjQtLjIxLS44NC0uMTItMS4yNi4wOC0uNDIuMjktLjgxLjYtMS4xMi4zMS0uMzEuNy0uNTEsMS4xMi0uNi40Mi0uMDguODYtLjA0LDEuMjYuMTJzLjc0LjQ1Ljk4LjgxYy4yNC4zNi4zNy43OC4zNywxLjIyLDAsLjI5LS4wNi41Ny0uMTcuODQtLjExLjI3LS4yNy41MS0uNDcuNzEtLjIuMi0uNDQuMzYtLjcxLjQ3cy0uNTUuMTctLjg0LjE3Wm05LjIyLTIuNjJoLTYuMTljLS4xMS0uNzMtLjQ3LTEuMzktMS4wMy0xLjg4LS41Ni0uNDgtMS4yNy0uNzUtMi0uNzVzLTEuNDUuMjctMiwuNzVjLS41Ni40OC0uOTIsMS4xNS0xLjAzLDEuODhoLTIuMjJjLS4xMiwwLS4yMy0uMDUtLjMxLS4xMy0uMDgtLjA4LS4xMy0uMTktLjEzLS4zMXYtMy45NGgxNi42MnYyLjA1Yy0uNDYuMjItLjg1LjU0LTEuMTUuOTUtLjMuNDEtLjQ5Ljg4LS41NywxLjM4Wm0zLjAzLDIuNjJjLS40MywwLS44Ni0uMTMtMS4yMi0uMzctLjM2LS4yNC0uNjQtLjU4LS44MS0uOTgtLjE3LS40LS4yMS0uODQtLjEyLTEuMjYuMDgtLjQyLjI5LS44MS42LTEuMTIuMzEtLjMxLjctLjUxLDEuMTItLjYuNDItLjA4Ljg2LS4wNCwxLjI2LjEyLjQuMTcuNzQuNDUuOTguODEuMjQuMzYuMzcuNzguMzcsMS4yMiwwLC41OC0uMjMsMS4xNC0uNjQsMS41NXMtLjk3LjY0LTEuNTUuNjRabTUuNjktMy4wNmMwLC4xMi0uMDUuMjMtLjEzLjMxLS4wOC4wOC0uMTkuMTMtLjMxLjEzaC0yLjIyYy0uMTItLjgtLjU1LTEuNTMtMS4yLTIuMDEtLjY1LS40OS0xLjQ3LS42OS0yLjI3LS41OHYtNC40MWg2LjEydjYuNTZaIiAvPg0KPC9zdmc+">
+                      {%- endif -%}
+                    <p style="margin:0;">
+                      {{ ship_text | replace: '(timer)', countdown | replace: '(date)', result }}
+                    </p>
+  
+                    <script>
+        function countDate() {
+          const today = new Date();
+          let daysCounted = 0;
+          let weekdaysCounted = 0;
+  
+          while (weekdaysCounted < {{ block.settings.ship_days }}) {
+            // Increment date by one day
+            today.setDate(today.getDate() + 1);
+  
+            // Check if it's a weekend
+            if (today.getDay() !== 0 && today.getDay() !== 6) {
+              weekdaysCounted++;
+            }
+            
+  
+            daysCounted++;
+          } 
+          // Format date as "MMM DD, ddd"
+          const options = { month: "short", day: "numeric", weekday: "short" };
+          const formattedDate = today.toLocaleDateString("{{block.settings.date_locale}}", options);
+  
+          // Display result
+          document.getElementById("result").innerHTML = `${formattedDate}`;
+        }
+  
+        countDate();
+                    </script>
+  
+                    <script>
+  // Set the end time to 4pm
+  const endTime = new Date();
+  endTime.setHours({{ block.settings.cut_off_time }}, 0, 0);
+  
+  // Update the countdown every second
+  setInterval(updateCountdown, 1000);
+  
+  function updateCountdown() {
+    const now = new Date().getTime();
+    const distance = endTime.getTime() - now;
+  
+    // If the countdown has ended, reset it to the next day at 4pm
+    if (distance < 0) {
+      endTime.setDate(endTime.getDate() + 1);
+      endTime.setHours({{ block.settings.cut_off_time }}, 0, 0);
+    }
+  
+    // Calculate remaining time
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  
+    // Update the countdown element
+    const countdownElement = document.getElementById("countdown");
+    countdownElement.innerHTML = `${hours}h ${minutes}m`;
   }
-
-  // Calculate remaining time
-  const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-  // Update the countdown element
-  const countdownElement = document.getElementById("countdown");
-  countdownElement.innerHTML = `${hours}h ${minutes}m`;
-}
-                  </script>
-                </div>
+                    </script>
+                  </div>
               {%- when 'image' -%}
                 <style>
                   .lm-feature-{{ block.id }} {
@@ -2407,7 +2399,7 @@ function updateCountdown() {
       {% render 'lumin-sticky-cart', product: product %}
     {%- endif -%}
 
-    {% render 'product-media-modal', variant_images: variant_images %}
+    {% render 'product-media-modal', variant_images: variant_images, gm_lightbox: section.settings.image_zoom %}
 
     {% assign popups = section.blocks | where: 'type', 'popup' %}
     {%- for block in popups -%}
@@ -5994,6 +5986,10 @@ function updateCountdown() {
         {
           "value": "lightbox",
           "label": "t:sections.main-product.settings.image_zoom.options__1.label"
+        },
+        {
+          "value": "gmlightbox",
+          "label": "GM Lightbox"
         },
         {
           "value": "hover",

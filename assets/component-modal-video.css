@@ -100,3 +100,19 @@
   position: static;
   border: 0;
 }
+.modal-video__content-info video{
+  width: 100%;
+  height: 100%;
+}
+
+
+@media screen and (max-width:749px) {
+  .modal-video__content-info video.desktop{
+    display: none;
+  }
+}
+@media screen and (min-width:750px) {
+  .modal-video__content-info video.mobile{
+    display: none;
+  }
+}

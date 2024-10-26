@@ -39,7 +39,7 @@
     font-size: {{section.settings.tab_font_mb}}px;
   }
    ul.lumin-tab-{{ section.id }} {
-  justify-content: {{ section.settings.tab_font_mb_align }};
+  justify-content: unset;
   }
  .lumin-tab-content-{{ section.id }} {
    text-align: {{ section.settings.tab_content_align_mb }};
@@ -135,7 +135,8 @@
                 show_quick_add: section.settings.enable_quick_add,
                 show_secondary_add: section.settings.show_secondary_add,
                 section_id: section.id,
-                gradiant_card: section.settings.gradiant_wrap
+                gradiant_card: section.settings.gradiant_wrap,
+                swatch_show:true
               %}
             </li>
           {% endunless %}

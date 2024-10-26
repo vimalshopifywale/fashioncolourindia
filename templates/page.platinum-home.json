@@ -226,6 +226,7 @@
         "video_CPEpfa": {
           "type": "video",
           "settings": {
+            "video_upload": "shopify://files/videos/PLATINUM MATT NO TRANSFER LIPSTICK.mov",
             "video_url": "",
             "description": "Describe the video"
           }
@@ -233,6 +234,7 @@
         "video_dnWVgp": {
           "type": "video",
           "settings": {
+            "video_upload": "shopify://files/videos/PLATINUM BLUSH PALETTI.mov",
             "video_url": "https://youtu.be/IerXQX8vo9I?si=K5d9_UwNKwsTZbJG",
             "description": "Describe the video"
           }
@@ -240,6 +242,8 @@
         "video_DJxJii": {
           "type": "video",
           "settings": {
+            "video_upload": "shopify://files/videos/D-TANCREAM.mov",
+            "video_upload_mbl": "shopify://files/videos/55064A.mp4",
             "video_url": "",
             "description": "Describe the video"
           }
@@ -265,6 +269,9 @@
     },
     "featured_collection_fHNg9n": {
       "type": "featured-collection",
+      "custom_css": [
+        ".jdgm-prev-badge__text {color: white;}"
+      ],
       "settings": {
         "title": "Best Seller",
         "heading_font_size": 40,
@@ -287,7 +294,7 @@
         "image_ratio": "adapt",
         "show_secondary_image": false,
         "show_vendor": false,
-        "show_rating": false,
+        "show_rating": true,
         "show_swatch": false,
         "enable_quick_desc": false,
         "quick_desc_legth": 90,
@@ -367,7 +374,7 @@
         "gradiant_text": true,
         "heading_size": "h1",
         "heading_center": "center",
-        "image_width": "third",
+        "image_width": "full",
         "image_ratio": "adapt",
         "columns_desktop": 4,
         "column_alignment": "center",
@@ -375,7 +382,7 @@
         "button_label": "",
         "button_link": "",
         "color_scheme": "scheme-6c3ff99c-8da2-435f-9574-05cdd95811b2",
-        "columns_mobile": "2",
+        "columns_mobile": "1",
         "swipe_on_mobile": true,
         "navigation_on_mobile": false,
         "padding_top": 52,

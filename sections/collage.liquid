@@ -6,14 +6,19 @@
 
 {%- style -%}
   .section-{{ section.id }}-padding {
-    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+    padding-top: {{ section.settings.padding_top_mbl | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom_mbl | times: 0.75 | round: 0 }}px;
   }
-
+  .section-{{ section.id }}-padding .custom.collage-wrapper-title{
+    font-size: {{ section.settings.font_size_text }}px;
+  }
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top }}px;
       padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+    .section-{{ section.id }}-padding .custom.collage-wrapper-title{
+      font-size: {{ section.settings.font_size_text_mbl }}px;
     }
   }
 {%- endstyle -%}
@@ -212,6 +217,17 @@
                       {% render 'icon-close' %}
                     </button>
                     <div class="modal-video__content-info">
+                      {% if  block.settings.video_upload != blank %}
+                        {% if block.settings.video_upload_mbl != blank %}
+                          {{ block.settings.video_upload | video_tag: autoplay: true, loop: true, muted: true, class:'desktop'  }}
+                          {{ block.settings.video_upload_mbl | video_tag: autoplay: true, loop: true, muted: true, class:'mobile'  }}
+                        {% else %}
+                        {{ block.settings.video_upload_mbl |  video_tag }}
+                          {{ block.settings.video_upload | video_tag: autoplay: true, loop: true, muted: true  }}
+                        {% endif %}
+                        {% else %}
+                          
+                      
                       <deferred-media class="modal-video__video template-popup">
                         <template>
                           {%- if block.settings.video_url.type == 'youtube' -%}
@@ -233,6 +249,7 @@
                           {%- endif -%}
                         </template>
                       </deferred-media>
+                    {% endif %}
                     </div>
                   </div>
                 </modal-dialog>
@@ -280,10 +297,34 @@
         {
           "value": "h0",
           "label": "t:sections.all.heading_size.options__3.label"
+        },
+        {
+          "value": "custom",
+          "label":"Custom"
         }
       ],
       "default": "h1",
       "label": "t:sections.all.heading_size.label"
+    },
+    {
+      "type": "range",
+      "id": "font_size_text",
+      "label": "Desktop Font Size",
+      "info": "Only Works if Heading Size Custom Selected",
+      "min": 10,
+      "max": 100,
+      "step": 1,
+      "default":48
+    },
+    {
+      "type": "range",
+      "id": "font_size_text_mbl",
+      "label": "Mobile Font Size",
+      "info": "Only Works if Heading Size Custom Selected",
+      "min": 10,
+      "max": 100,
+      "step": 1,
+      "default":28
     },
     {
       "type": "select",
@@ -384,6 +425,26 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_top_mbl",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding Top Mobile",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_mbl",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding Bottom Mobile",
+      "default": 36
     }
   ],
   "blocks": [
@@ -434,6 +495,17 @@
           "type": "image_picker",
           "id": "cover_image",
           "label": "t:sections.collage.blocks.video.settings.cover_image.label"
+        },
+        {
+          "type": "video",
+          "id": "video_upload",
+          "label": "Upload Video (Desktop)",
+          "info": "Leave Black to show Youtube or Vimeo Video"
+        },
+        {
+          "type": "video",
+          "id": "video_upload_mbl",
+          "label": "Upload Video (Mobile Version)"
         },
         {
           "type": "video_url",

@@ -1133,7 +1133,7 @@ summary::-webkit-details-marker {
   }
 
   .grid--peek .grid__item {
-    min-width: 65%;
+    min-width: auto;
   }
 
   .grid--peek.slider .grid__item:first-of-type {
@@ -1157,7 +1157,7 @@ summary::-webkit-details-marker {
 
   .slider--tablet.grid--peek.grid--1-col-tablet-down .grid__item,
   .slider--mobile.grid--peek.grid--1-col-tablet-down .grid__item {
-    width: calc(100% - var(--grid-mobile-horizontal-spacing) - 14rem);
+    width: calc(75% - var(--grid-mobile-horizontal-spacing) - 14rem);
   }
 }
 

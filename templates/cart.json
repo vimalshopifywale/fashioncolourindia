@@ -1,21 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
-/*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "e45dab48-de03-420e-a878-43e5493d092f": {
@@ -31,7 +22,7 @@
         "fomo_speed": 3,
         "fomo_text_before": "",
         "number_bold": true,
-        "fomo_text_after": "<strong>People</strong> are checking out now",
+        "fomo_text_after": "<strong>People<\/strong> are checking out now",
         "text_alignment": "center",
         "padding_top": 12,
         "padding_bottom": 12,

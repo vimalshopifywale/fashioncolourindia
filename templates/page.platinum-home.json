@@ -12,25 +12,28 @@
     "hero_slider_wXpLwx": {
       "type": "hero-slider",
       "blocks": {
-        "image_slide_nyawWD": {
-          "type": "image-slide",
+        "video_slide_GX6Lyd": {
+          "type": "video-slide",
           "settings": {
-            "review-text": "10,000+ Happy Customers",
+            "review-text": "",
             "text_self_align": "center",
             "img_2_dsk_wdth": 700,
             "img_2_mbl_wdth": 300,
-            "caption": "Company",
+            "image": "shopify://files/videos/PLATINUM BLUSH PALETTI.mov",
+            "image_mob": "shopify://files/videos/PLATINUM BLUSH PALETTI.mov",
+            "video_size": "cover",
+            "caption": "",
             "block_cap_size": 20,
             "block_cap_sizes": 20,
-            "heading": "Image slide",
+            "heading": "",
             "block_head_size-2": 20,
             "block_head_size-mobile": 20,
             "block_head_line": 1.4,
             "heading_size": "h1",
             "subheading": "",
-            "button_label": "Button label",
+            "button_label": "",
             "link": "",
-            "button_label1": "Button label",
+            "button_label1": "",
             "bg_color": "#ffffff",
             "link2": "",
             "link-2": "",
@@ -44,10 +47,47 @@
             "mobile_box_align": "center",
             "mobile_text_spacing": 0
           }
+        },
+        "video_slide_DhbTQE": {
+          "type": "video-slide",
+          "settings": {
+            "review-text": "10,000+ Happy Customers",
+            "text_self_align": "center",
+            "img_2_dsk_wdth": 700,
+            "img_2_mbl_wdth": 300,
+            "image": "shopify://files/videos/PLATINUM MATT NO TRANSFER LIPSTICK.mov",
+            "image_mob": "shopify://files/videos/PLATINUM MATT NO TRANSFER LIPSTICK.mov",
+            "video_size": "cover",
+            "caption": "Company",
+            "block_cap_size": 20,
+            "block_cap_sizes": 20,
+            "heading": "Image slide",
+            "block_head_size-2": 20,
+            "block_head_size-mobile": 20,
+            "block_head_line": 1.4,
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_label1": "",
+            "bg_color": "#ffffff",
+            "link2": "",
+            "link-2": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center",
+            "mobile_box_align": "flex-start",
+            "mobile_text_spacing": 0
+          }
         }
       },
       "block_order": [
-        "image_slide_nyawWD"
+        "video_slide_GX6Lyd",
+        "video_slide_DhbTQE"
       ],
       "settings": {
         "layout": "full_bleed",
@@ -186,7 +226,7 @@
         "video_CPEpfa": {
           "type": "video",
           "settings": {
-            "video_url": "https://youtu.be/atv8KY6p2sY?si=sWUpEor-gSfhBQLZ",
+            "video_url": "",
             "description": "Describe the video"
           }
         },
@@ -200,7 +240,7 @@
         "video_DJxJii": {
           "type": "video",
           "settings": {
-            "video_url": "https://youtu.be/s7z37URp5eQ?si=kITvSY-pkLzwfvSx",
+            "video_url": "",
             "description": "Describe the video"
           }
         }
@@ -247,7 +287,7 @@
         "image_ratio": "adapt",
         "show_secondary_image": false,
         "show_vendor": false,
-        "show_rating": true,
+        "show_rating": false,
         "show_swatch": false,
         "enable_quick_desc": false,
         "quick_desc_legth": 90,
@@ -324,10 +364,10 @@
       ],
       "settings": {
         "title": "Unrivaled Quality, Timeless Luxury",
-        "gradiant_text": false,
+        "gradiant_text": true,
         "heading_size": "h1",
         "heading_center": "center",
-        "image_width": "full",
+        "image_width": "third",
         "image_ratio": "adapt",
         "columns_desktop": 4,
         "column_alignment": "center",
@@ -368,7 +408,7 @@
           "settings": {
             "imgPkr": "shopify://shop_images/Video-258.gif",
             "video": "https://cdn.shopify.com/videos/c/o/v/57844746d35a44caac8993f236b37b27.mp4",
-            "slctPrdct": "fashion-colour-platinum-liquid-blusher"
+            "slctPrdct": "platinum-multi-use-concealer-ii-lightweight-ii-full-coverage"
           }
         },
         "slide_PDd4G4": {
@@ -479,18 +519,18 @@
         "collapsible_row_gNkNkq": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Is the packaging travel-friendly?",
+            "heading": "Can i layer different products without them feeling heavy?",
             "icon": "none",
-            "row_content": "<p>Yes, the palette is compact and lightweight, making it perfect for travel or on-the-go touch-ups.</p>",
+            "row_content": "<p>Absolutely! Fashion Colour products are formulated with lightweight textures, allowing for comfortable layering without a heavy feel.</p>",
             "page": ""
           }
         },
         "collapsible_row_w3ntyE": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "How do I choose the right foundation shade?",
+            "heading": "Are your mascaras waterproof?",
             "icon": "none",
-            "row_content": "<p>How do I choose the right foundation shade?</p>",
+            "row_content": "<p>Yes, our mascaras are waterproof and smudge-resistant, providing you with a voluminous look that lasts all day.</p>",
             "page": ""
           }
         },
@@ -499,16 +539,16 @@
           "settings": {
             "heading": "Are your products vegan and cruelty-free?",
             "icon": "none",
-            "row_content": "<p>Are your products vegan and cruelty-free?</p>",
+            "row_content": "<p>Absolutely! All Fashion Colour products are 100% vegan, cruelty-free, paraben-free, and derma-tested, ensuring both quality and ethical standards.</p>",
             "page": ""
           }
         },
         "collapsible_row_xWBF8i": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "What are the key ingredients in your skincare products?",
+            "heading": "What if I have sensitive skin?",
             "icon": "none",
-            "row_content": "<p>What are the key ingredients in your skincare products?</p>",
+            "row_content": "<p>Our products are derma-tested, suitable for sensitive skin, and free from harsh chemicals. However, we recommend a patch test before full application if you have very sensitive skin.</p>",
             "page": ""
           }
         },
@@ -517,7 +557,7 @@
           "settings": {
             "heading": "Do you test your products on animals?",
             "icon": "none",
-            "row_content": "<p> Do you test your products on animals?</p>",
+            "row_content": "<p>No, Fashion Colour is committed to ethical beauty. We do not test on animals, and our products are proudly cruelty-free.</p>",
             "page": ""
           }
         }

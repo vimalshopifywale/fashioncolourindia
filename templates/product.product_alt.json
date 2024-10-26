@@ -1,21 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
-/*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "301f7d84-22e5-45b5-8f0a-a01627b7db19": {
@@ -61,7 +52,7 @@
         "ad73ef22-d96e-41c5-b4e1-ed8d9daf2239": {
           "type": "review",
           "settings": {
-            "lrw_text": "4.8 / 3884 Reviews",
+            "lrw_text": "4.8 \/ 3884 Reviews",
             "lrw_color": "#000000",
             "margin_top": 0,
             "margin_bottom": 0
@@ -97,13 +88,13 @@
           "type": "text_benefits",
           "disabled": true,
           "settings": {
-            "benefits": "<h3>Why Choose Us - </h3><p>🌹 Exceptional Quality </p><p>✨ Unmatched Customer Service</p><p>🌸 Fast and Reliable Shipping</p>"
+            "benefits": "<h3>Why Choose Us - <\/h3><p>🌹 Exceptional Quality <\/p><p>✨ Unmatched Customer Service<\/p><p>🌸 Fast and Reliable Shipping<\/p>"
           }
         },
         "vendor": {
           "type": "text",
           "settings": {
-            "text": "This is a demo store for the <em>Revive</em> theme by<em> </em><a href=\"https://lumintheme.com/\" target=\"_blank\" title=\"https://lumintheme.com/\"><em>lumintheme</em></a><em>.</em> These products are <em>not for sale.</em>",
+            "text": "This is a demo store for the <em>Revive<\/em> theme by<em> <\/em><a href=\"https:\/\/lumintheme.com\/\" target=\"_blank\" title=\"https:\/\/lumintheme.com\/\"><em>lumintheme<\/em><\/a><em>.<\/em> These products are <em>not for sale.<\/em>",
             "text_style": "body"
           }
         },
@@ -204,7 +195,7 @@
             "image_ani": "none",
             "text_size": 12,
             "text_style": "body",
-            "text": "Order in <strong>(timer) </strong>to Get By <strong>(date) </strong>|<strong> </strong>30-day returns on all orders",
+            "text": "Order in <strong>(timer) <\/strong>to Get By <strong>(date) <\/strong>|<strong> <\/strong>30-day returns on all orders",
             "date_locale": "en-US",
             "ship_bg": "#ffffff",
             "show_border": false,
@@ -223,7 +214,7 @@
             "icon_mobile_size": 50,
             "heading": "",
             "heading_size": 18,
-            "text": "<p>Free shipping on orders of $90 Worldwide</p><p>30-day returns on all orders</p>",
+            "text": "<p>Free shipping on orders of $90 Worldwide<\/p><p>30-day returns on all orders<\/p>",
             "text_size": 12,
             "padding_top": 8,
             "padding_bottom": 8
@@ -247,7 +238,7 @@
             "icon_mobile_size": 50,
             "heading": "",
             "heading_size": 20,
-            "text": "<p>Shop with peace of mind, your personal information is protected.</p>",
+            "text": "<p>Shop with peace of mind, your personal information is protected.<\/p>",
             "text_size": 13,
             "padding_top": 8,
             "padding_bottom": 8
@@ -260,7 +251,7 @@
             "icon_mobile_size": 50,
             "heading": "",
             "heading_size": 26,
-            "text": "<p>Shop with us and contribute to a greener planet.</p>",
+            "text": "<p>Shop with us and contribute to a greener planet.<\/p>",
             "text_size": 13,
             "padding_top": 8,
             "padding_bottom": 8
@@ -273,7 +264,7 @@
             "icon_mobile_size": 50,
             "heading": "",
             "heading_size": 20,
-            "text": "<p>Shop more, save more, and enjoy unbeatable value.</p>",
+            "text": "<p>Shop more, save more, and enjoy unbeatable value.<\/p>",
             "text_size": 13,
             "padding_top": 8,
             "padding_bottom": 8
@@ -318,7 +309,7 @@
           "settings": {
             "heading": "SHIPPING INFORMATION",
             "icon": "none",
-            "content": "<p>Free 2 Day Shipping on Orders $50+. Returns must be postmarked: within 15 days of delivery for a refund and within 30 days for a Store Credit or Exchange. </p><p><a href=\"/collections/all\" title=\"All products\">Read our full returns policy in our FAQ page.</a></p><p>All Sale items are final sale.</p>",
+            "content": "<p>Free 2 Day Shipping on Orders $50+. Returns must be postmarked: within 15 days of delivery for a refund and within 30 days for a Store Credit or Exchange. <\/p><p><a href=\"\/collections\/all\" title=\"All products\">Read our full returns policy in our FAQ page.<\/a><\/p><p>All Sale items are final sale.<\/p>",
             "page": ""
           }
         },
@@ -327,7 +318,7 @@
           "settings": {
             "heading": "RETURNS & REFUNDS",
             "icon": "none",
-            "content": "<p>Free 2 Day Shipping on Orders $50+. Returns must be postmarked: within 15 days of delivery for a refund and within 30 days for a Store Credit or Exchange. </p><p><a href=\"/collections/all\" title=\"All products\">Read our full returns policy in our FAQ page.</a></p><p>All Sale items are final sale.</p>",
+            "content": "<p>Free 2 Day Shipping on Orders $50+. Returns must be postmarked: within 15 days of delivery for a refund and within 30 days for a Store Credit or Exchange. <\/p><p><a href=\"\/collections\/all\" title=\"All products\">Read our full returns policy in our FAQ page.<\/a><\/p><p>All Sale items are final sale.<\/p>",
             "page": ""
           }
         }
@@ -387,7 +378,7 @@
           "settings": {
             "heading": "Description",
             "description": true,
-            "tab_content": "<p>Some text here</p>",
+            "tab_content": "<p>Some text here<\/p>",
             "page": ""
           }
         },
@@ -396,7 +387,7 @@
           "settings": {
             "heading": "More Info",
             "description": false,
-            "tab_content": "<p><strong>Radiant Glow Face Cream</strong></p><p>Experience the ultimate in skincare luxury with our Radiant Glow Face Cream. Infused with nourishing vitamins and antioxidants, this lightweight yet deeply moisturizing cream rejuvenates your skin, leaving it soft, smooth, and radiant. Perfect for all skin types, it helps to reduce the appearance of fine lines and wrinkles while promoting an even skin tone. Elevate your daily skincare routine with a touch of elegance and let your natural beauty shine through.</p>",
+            "tab_content": "<p><strong>Radiant Glow Face Cream<\/strong><\/p><p>Experience the ultimate in skincare luxury with our Radiant Glow Face Cream. Infused with nourishing vitamins and antioxidants, this lightweight yet deeply moisturizing cream rejuvenates your skin, leaving it soft, smooth, and radiant. Perfect for all skin types, it helps to reduce the appearance of fine lines and wrinkles while promoting an even skin tone. Elevate your daily skincare routine with a touch of elegance and let your natural beauty shine through.<\/p>",
             "page": "product-info"
           }
         },
@@ -405,7 +396,7 @@
           "settings": {
             "heading": "Why Us?",
             "description": false,
-            "tab_content": "<p>✓ Exceptional Quality ✨ Unmatched Customer Service 🌸 Fast and Reliable Shipping</p>",
+            "tab_content": "<p>✓ Exceptional Quality ✨ Unmatched Customer Service 🌸 Fast and Reliable Shipping<\/p>",
             "page": ""
           }
         }
@@ -436,7 +427,7 @@
         "template--15124688076883__e2fe0eca-e002-483a-b480-89fb59bb4de6-announcement-1": {
           "type": "announcement",
           "settings": {
-            "Announcement": "<p>This is just a demo store to advertise the <strong>Revive</strong> Theme by <a href=\"https://lumintheme.com/\" target=\"_blank\" title=\"https://lumintheme.com/\">Lumin<em>Themes</em></a>. These products are not for sale.</p>",
+            "Announcement": "<p>This is just a demo store to advertise the <strong>Revive<\/strong> Theme by <a href=\"https:\/\/lumintheme.com\/\" target=\"_blank\" title=\"https:\/\/lumintheme.com\/\">Lumin<em>Themes<\/em><\/a>. These products are not for sale.<\/p>",
             "announcement_size": 22,
             "announcement_size_m": 20,
             "text_spacing": 0,
@@ -482,7 +473,7 @@
             "bg_color": "#ffffff",
             "icon_size": 25,
             "icon_corner": 0,
-            "head": "The headline should be <strong>attention-grabbing, concise</strong>, and <em>communicate</em> the primary benefit.",
+            "head": "The headline should be <strong>attention-grabbing, concise<\/strong>, and <em>communicate<\/em> the primary benefit.",
             "use_body_font": false,
             "head_color": "#212121",
             "head_size_d": 34,
@@ -514,7 +505,7 @@
             "padding_size_in": 10,
             "text_border": 0,
             "bg_color": "rgba(0,0,0,0)",
-            "head": "<strong>Benefits and Features</strong>",
+            "head": "<strong>Benefits and Features<\/strong>",
             "head_color": "#ffffff",
             "head_size_d": 30,
             "head_size_m": 24,
@@ -553,7 +544,7 @@
             "head_size_d": 30,
             "head_size_m": 24,
             "margin_bottom": 15,
-            "subtitle": "<p>Highlight the key benefits and features of your product or service in a concise and visually appealing manner. Use icons or graphics to make it more engaging.</p>",
+            "subtitle": "<p>Highlight the key benefits and features of your product or service in a concise and visually appealing manner. Use icons or graphics to make it more engaging.<\/p>",
             "text_color": "#212121",
             "text_size_d": 16,
             "text_size_m": 14,
@@ -579,7 +570,7 @@
             "padding_size_in": 10,
             "text_border": 0,
             "bg_color": "rgba(0,0,0,0)",
-            "head": "<strong>Benefits and Features</strong>",
+            "head": "<strong>Benefits and Features<\/strong>",
             "head_color": "#000000",
             "head_size_d": 30,
             "head_size_m": 24,
@@ -657,7 +648,7 @@
       "settings": {
         "title": "Comparison table",
         "heading_size": "h1",
-        "text": "<p>Choose Revive® for high-quality, effective, and ethical skincare products that deliver real results. Join our community of satisfied customers and discover the difference today.</p>",
+        "text": "<p>Choose Revive® for high-quality, effective, and ethical skincare products that deliver real results. Join our community of satisfied customers and discover the difference today.<\/p>",
         "button_label": "",
         "link": "",
         "button_style_secondary": false,
@@ -691,7 +682,7 @@
           "settings": {
             "heading": "What if it doesn’t work for me?",
             "icon": "none",
-            "row_content": "<p>Enjoy the Flexibility of a 30-Day Return Period for Our Products.</p>",
+            "row_content": "<p>Enjoy the Flexibility of a 30-Day Return Period for Our Products.<\/p>",
             "page": ""
           }
         },
@@ -700,7 +691,7 @@
           "settings": {
             "heading": "Guarentee?",
             "icon": "none",
-            "row_content": "<p>Shop with <strong>Confidence</strong> Knowing that Our Products are Guaranteed to Meet Your Expectations.</p>",
+            "row_content": "<p>Shop with <strong>Confidence<\/strong> Knowing that Our Products are Guaranteed to Meet Your Expectations.<\/p>",
             "page": ""
           }
         },
@@ -718,7 +709,7 @@
           "settings": {
             "heading": "Do you provide tracking information?",
             "icon": "none",
-            "row_content": "<p>Yes, Every order includes a tracking number which will be provided via email or text once your order is fulfilled.</p>",
+            "row_content": "<p>Yes, Every order includes a tracking number which will be provided via email or text once your order is fulfilled.<\/p>",
             "page": ""
           }
         }
@@ -774,7 +765,7 @@
             "icon_size": 50,
             "heading": "Deep Hydration",
             "heading_size_alt": 20,
-            "text": "<p>Our face cream provides intense hydration, replenishing your skin's moisture levels.</p>"
+            "text": "<p>Our face cream provides intense hydration, replenishing your skin's moisture levels.<\/p>"
           }
         },
         "7d85026e-fa9d-4e4b-95b1-0e105f239be4": {
@@ -783,7 +774,7 @@
             "icon_size": 50,
             "heading": "Anti-Aging Properties",
             "heading_size_alt": 20,
-            "text": "<p>Packed with powerful antioxidants like vitamins C and E, our formula helps to combat the signs of aging.</p>"
+            "text": "<p>Packed with powerful antioxidants like vitamins C and E, our formula helps to combat the signs of aging.<\/p>"
           }
         },
         "0295fbde-df99-4898-bdf5-4bfaa708d5fb": {
@@ -792,7 +783,7 @@
             "icon_size": 50,
             "heading": "Non-Greasy Formula",
             "heading_size_alt": 20,
-            "text": "<p>Our lightweight and non-comedogenic formula absorbs quickly into the skin.</p>"
+            "text": "<p>Our lightweight and non-comedogenic formula absorbs quickly into the skin.<\/p>"
           }
         }
       },
@@ -833,7 +824,7 @@
         "text_4BNWiB": {
           "type": "text",
           "settings": {
-            "text": "<h3>Brightening and Even Skin Tone</h3><p>With natural brightening agents such as niacinamide, our face cream helps to fade dark spots and hyperpigmentation. It evens out your skin tone, giving you a luminous and glowing look.</p><p><em>Perfect for all skin types</em></p>",
+            "text": "<h3>Brightening and Even Skin Tone<\/h3><p>With natural brightening agents such as niacinamide, our face cream helps to fade dark spots and hyperpigmentation. It evens out your skin tone, giving you a luminous and glowing look.<\/p><p><em>Perfect for all skin types<\/em><\/p>",
             "text_style": "body"
           }
         },
@@ -841,7 +832,7 @@
           "type": "button",
           "settings": {
             "button_label": "Shop Collections",
-            "button_link": "shopify://collections",
+            "button_link": "shopify:\/\/collections",
             "button_style_secondary": false
           }
         }
@@ -874,7 +865,7 @@
         "template--15124688076883__05f459a6-0335-4bab-8d23-ac347077efcc-announcement-1": {
           "type": "announcement",
           "settings": {
-            "Announcement": "<p>WE LOVE THE PLANET</p>",
+            "Announcement": "<p>WE LOVE THE PLANET<\/p>",
             "announcement_size": 49,
             "announcement_size_m": 44,
             "text_spacing": 3,
@@ -887,7 +878,7 @@
         "template--15124688076883__05f459a6-0335-4bab-8d23-ac347077efcc-announcement-2": {
           "type": "announcement",
           "settings": {
-            "Announcement": "<p>RECYCLABLE PACKAGING</p>",
+            "Announcement": "<p>RECYCLABLE PACKAGING<\/p>",
             "announcement_size": 50,
             "announcement_size_m": 44,
             "text_spacing": 3,
@@ -920,7 +911,7 @@
         "91817b81-c148-4c6c-8a35-09d6ba380ca5": {
           "type": "announcement",
           "settings": {
-            "Announcement": "<p>Some text</p>",
+            "Announcement": "<p>Some text<\/p>",
             "announcement_size": 49,
             "announcement_size_m": 44,
             "text_spacing": 3,
@@ -933,7 +924,7 @@
         "dd77f8e0-9a10-41d6-a2a8-69b2326223a3": {
           "type": "announcement",
           "settings": {
-            "Announcement": "<p>RECYCLABLE PACKAGING</p>",
+            "Announcement": "<p>RECYCLABLE PACKAGING<\/p>",
             "announcement_size": 50,
             "announcement_size_m": 44,
             "text_spacing": 3,
@@ -972,7 +963,7 @@
         "mobile_content_position": "middle",
         "color_scheme": "inverse",
         "desktop_content_alignment": "center",
-        "heading": "<strong>Revive, Renew, Rejoice</strong>",
+        "heading": "<strong>Revive, Renew, Rejoice<\/strong>",
         "heading_size": "h0",
         "text": "",
         "button_label_1": "",
@@ -1109,7 +1100,7 @@
             "head_size_d": 30,
             "head_size_m": 24,
             "margin_bottom": 15,
-            "subtitle": "<p>Share contact information, store details, and brand content with your customers.</p>",
+            "subtitle": "<p>Share contact information, store details, and brand content with your customers.<\/p>",
             "text_color": "#212121",
             "text_size_d": 16,
             "text_size_m": 14,
@@ -1231,7 +1222,7 @@
             "head_size_d": 30,
             "head_size_m": 24,
             "margin_bottom": 15,
-            "subtitle": "<p>Share contact information, store details, and brand content with your customers.</p>",
+            "subtitle": "<p>Share contact information, store details, and brand content with your customers.<\/p>",
             "text_color": "#212121",
             "text_size_d": 16,
             "text_size_m": 14,

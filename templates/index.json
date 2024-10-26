@@ -12,152 +12,25 @@
     "hero_slider_64mdj9": {
       "type": "hero-slider",
       "blocks": {
-        "image_slide_yCfij4": {
-          "type": "image-slide",
+        "image_cVy3CB": {
+          "type": "image",
           "settings": {
-            "review-text": "",
-            "text_self_align": "center",
-            "img_2_dsk_wdth": 700,
-            "img_2_mbl_wdth": 300,
-            "caption": "",
-            "block_cap_size": 20,
-            "block_cap_sizes": 20,
-            "heading": "",
-            "block_head_size-2": 20,
-            "block_head_size-mobile": 20,
-            "block_head_line": 1.4,
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "",
-            "button_label1": "",
-            "bg_color": "#ffffff",
-            "link2": "",
-            "link-2": "",
-            "button_style_secondary": false,
-            "box_align": "middle-center",
-            "show_text_box": true,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "",
-            "text_alignment_mobile": "center",
-            "mobile_box_align": "center",
-            "mobile_text_spacing": 0
-          }
-        },
-        "image_slide_D77bwk": {
-          "type": "image-slide",
-          "settings": {
-            "review-text": "10,000+ Happy Customers",
-            "text_self_align": "center",
-            "img_2_dsk_wdth": 700,
-            "img_2_mbl_wdth": 300,
-            "caption": "Company",
-            "block_cap_size": 20,
-            "block_cap_sizes": 20,
-            "heading": "Image slide",
-            "block_head_size-2": 20,
-            "block_head_size-mobile": 20,
-            "block_head_line": 1.4,
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "Button label",
-            "link": "",
-            "button_label1": "Button label",
-            "bg_color": "#ffffff",
-            "link2": "",
-            "link-2": "",
-            "button_style_secondary": false,
-            "box_align": "middle-center",
-            "show_text_box": false,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "",
-            "text_alignment_mobile": "center",
-            "mobile_box_align": "center",
-            "mobile_text_spacing": 0
-          }
-        },
-        "image_slide_G98wiU": {
-          "type": "image-slide",
-          "settings": {
-            "review-text": "10,000+ Happy Customers",
-            "text_self_align": "center",
-            "img_2_dsk_wdth": 700,
-            "img_2_mbl_wdth": 300,
-            "caption": "Company",
-            "block_cap_size": 20,
-            "block_cap_sizes": 20,
-            "heading": "Image slide",
-            "block_head_size-2": 20,
-            "block_head_size-mobile": 20,
-            "block_head_line": 1.4,
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "Button label",
-            "link": "",
-            "button_label1": "Button label",
-            "bg_color": "#ffffff",
-            "link2": "",
-            "link-2": "",
-            "button_style_secondary": false,
-            "box_align": "middle-center",
-            "show_text_box": false,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "",
-            "text_alignment_mobile": "center",
-            "mobile_box_align": "center",
-            "mobile_text_spacing": 0
-          }
-        },
-        "image_slide_QpdXEJ": {
-          "type": "image-slide",
-          "settings": {
-            "review-text": "10,000+ Happy Customers",
-            "text_self_align": "center",
-            "img_2_dsk_wdth": 700,
-            "img_2_mbl_wdth": 300,
-            "caption": "Company",
-            "block_cap_size": 20,
-            "block_cap_sizes": 20,
-            "heading": "Image slide",
-            "block_head_size-2": 20,
-            "block_head_size-mobile": 20,
-            "block_head_line": 1.4,
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "Button label",
-            "link": "",
-            "button_label1": "Button label",
-            "bg_color": "#ffffff",
-            "link2": "",
-            "link-2": "",
-            "button_style_secondary": false,
-            "box_align": "middle-center",
-            "show_text_box": true,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "background-1",
-            "text_alignment_mobile": "center",
-            "mobile_box_align": "center",
-            "mobile_text_spacing": 0
+            "image": "shopify://shop_images/Artboard_1-100.jpg",
+            "image_mob": "shopify://shop_images/Artboard_1-100.jpg",
+            "slide_link": "/"
           }
         }
       },
       "block_order": [
-        "image_slide_yCfij4",
-        "image_slide_D77bwk",
-        "image_slide_G98wiU",
-        "image_slide_QpdXEJ"
+        "image_cVy3CB"
       ],
       "settings": {
         "layout": "full_bleed",
         "banner_border": 0,
-        "slide_height": "medium",
-        "desk_height": 200,
-        "sml_desk_height": 200,
-        "mbl_height": 200,
+        "slide_height": "custom",
+        "desk_height": 500,
+        "sml_desk_height": 500,
+        "mbl_height": 400,
         "slider_visual": "counter",
         "auto_rotate": false,
         "hide_navigation": false,
@@ -347,7 +220,7 @@
           "type": "tab",
           "settings": {
             "tab_title": "Nails",
-            "image_1": "shopify://shop_images/Polished_Perfection-_Embrace_Elegance_with_our_Mesmerizing_Nail_Paints_NailedIt_ConfidentlyYou_NailGoals_ExpressYourself_fashioncolors_ChicStyle_ColorfulNails_expressyourvibe.jpg",
+            "image_1": "shopify://shop_images/Polished_Perfection-_Embrace_Elegance_with_our_Mesmerizing_Nail_Paints_NailedIt_ConfidentlyYou_NailGoals_ExpressYourself_fashioncolors_ChicStyle_ColorfulNails_expressyourvibe_1_1.png",
             "title_1": "Nail Paint",
             "sub_title_1": "",
             "link_1": "",
@@ -409,9 +282,9 @@
         "subtitle_font_sizes": 16,
         "color_scheme": "",
         "content_text": "#0d0d0d",
-        "text_font_size": 19,
-        "text_font_sizes": 19,
-        "secPdgTop": 60,
+        "text_font_size": 26,
+        "text_font_sizes": 22,
+        "secPdgTop": 75,
         "secPdgBtm": 30,
         "mblPdgTop": 45,
         "mblPdgBtm": 20,
@@ -430,7 +303,7 @@
       "type": "featured-collection",
       "settings": {
         "title": "Best Seller",
-        "heading_font_size": 37,
+        "heading_font_size": 36,
         "heading_font_sizemob": 30,
         "heading_size": "h1",
         "description": "",
@@ -461,96 +334,10 @@
         "swipe_on_mobile": true,
         "mob_slide": 1.5,
         "navigation_on_mobile": false,
-        "padding_top": 60,
-        "padding_bottom": 100,
-        "mobile_padding_top": 32,
+        "padding_top": 64,
+        "padding_bottom": 60,
+        "mobile_padding_top": 36,
         "mobile_padding_bottom": 36
-      }
-    },
-    "gm_slider_rrieeC": {
-      "type": "gm-slider",
-      "blocks": {
-        "slide_8zFzzj": {
-          "type": "slide",
-          "settings": {
-            "imgPkr": "shopify://shop_images/Sweet-Bomb-A_-Mob-View_04.jpg",
-            "img_url": "shopify://products/24hrs-shiny-black-waterproof-eyeliner-glossy-one-touch-make-your-eyes-outstanding",
-            "ttl": "",
-            "subTtl": ""
-          }
-        },
-        "slide_mMQkYP": {
-          "type": "slide",
-          "settings": {
-            "imgPkr": "shopify://shop_images/Sweet-Bomb-A_-Mob-View_04.jpg",
-            "img_url": "shopify://products/24hrs-shiny-black-waterproof-eyeliner-glossy-one-touch-make-your-eyes-outstanding",
-            "ttl": "",
-            "subTtl": ""
-          }
-        },
-        "slide_Qiddp7": {
-          "type": "slide",
-          "settings": {
-            "imgPkr": "shopify://shop_images/Sweet-Bomb-A_-Web_01.jpg",
-            "img_url": "shopify://products/2-in-1-hd-matte-fusion-waterproof-light-reflecting-setting-powder",
-            "ttl": "",
-            "subTtl": ""
-          }
-        },
-        "slide_TrDJTn": {
-          "type": "slide",
-          "settings": {
-            "imgPkr": "shopify://shop_images/Sweet-Bomb-A_-Mob-View_04.jpg",
-            "img_url": "shopify://products/24hrs-shiny-black-waterproof-eyeliner-glossy-one-touch-make-your-eyes-outstanding",
-            "ttl": "",
-            "subTtl": ""
-          }
-        },
-        "slide_EXRmnE": {
-          "type": "slide",
-          "settings": {
-            "imgPkr": "shopify://shop_images/Sweet-Bomb-A_-Mob-View_04.jpg",
-            "img_url": "shopify://products/24hrs-shiny-black-waterproof-eyeliner-glossy-one-touch-make-your-eyes-outstanding",
-            "ttl": "",
-            "subTtl": ""
-          }
-        }
-      },
-      "block_order": [
-        "slide_8zFzzj",
-        "slide_mMQkYP",
-        "slide_Qiddp7",
-        "slide_TrDJTn",
-        "slide_EXRmnE"
-      ],
-      "settings": {
-        "preTtl": "All-in-One Beauty Collection",
-        "gradiant_text": false,
-        "subtitle_font_size": 26,
-        "subtitle_font_sizemob": 16,
-        "ttl": "",
-        "heading_font_size": 24,
-        "heading_font_sizemob": 24,
-        "subTtl": "",
-        "btnTxt": "",
-        "btnUrl": "",
-        "chkBx": false,
-        "overlays_box": false,
-        "dskSld": 4.4,
-        "dskSpc": 20,
-        "tabSld": 4.8,
-        "tabSpc": 20,
-        "mblSld": 1.8,
-        "mblSpc": 20,
-        "sldAtply": 1.5,
-        "pagination": true,
-        "navigation": true,
-        "color_scheme": "background-2",
-        "sldCol": "#ffffff",
-        "secPdgTop": 20,
-        "secPdgBtm": 20,
-        "secPdgTopMbl": 20,
-        "secPdgBtmMbl": 20
       }
     },
     "tabs_collection_kX3nVY": {
@@ -602,12 +389,12 @@
         "gradiant_wrap": false,
         "background_color": "#ffffff",
         "preTtl": "Skin Mantra",
-        "subtitle_font_size": 16,
+        "subtitle_font_size": 18,
         "subtitle_font_sizemob": 16,
         "tabs_color_scheme": "accent-1",
-        "tab_font": 30,
+        "tab_font": 26,
         "tab_font_align": "center",
-        "tab_font_mb": 14,
+        "tab_font_mb": 22,
         "tab_font_mb_align": "center",
         "show_border": false,
         "products_to_show": 12,
@@ -619,7 +406,7 @@
         "image_ratio": "adapt",
         "show_secondary_image": false,
         "show_vendor": false,
-        "show_rating": false,
+        "show_rating": true,
         "enable_quick_desc": false,
         "quick_desc_legth": 90,
         "quick_desc_size": 14,
@@ -627,7 +414,9 @@
         "show_secondary_add": false,
         "columns_mobile": "2",
         "padding_top": 36,
-        "padding_bottom": 36
+        "padding_bottom": 68,
+        "padding_top_mobile": 36,
+        "padding_bottom_mobile": 100
       }
     },
     "video_text_V6xpR6": {
@@ -636,7 +425,7 @@
         "heading_HgzhCc": {
           "type": "heading",
           "settings": {
-            "heading": "Empowering Beauty, Naturally",
+            "heading": "Empowering Beauty Naturally",
             "heading_size": "h1"
           }
         },
@@ -678,10 +467,14 @@
         "content_layout": "no-overlap",
         "color_scheme": "",
         "mobile_content_alignment": "left",
-        "margin_top": 36,
-        "margin_bottom": 36,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "margin_top_mobile": 0,
+        "margin_bottom_mobile": 0,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "padding_top_mobile": 36,
+        "padding_bottom_mobile": 0
       }
     },
     "tabs_collection_GW6L9C": {
@@ -733,12 +526,12 @@
         "gradiant_wrap": false,
         "background_color": "#ffffff",
         "preTtl": "Tools",
-        "subtitle_font_size": 16,
+        "subtitle_font_size": 18,
         "subtitle_font_sizemob": 16,
         "tabs_color_scheme": "accent-1",
         "tab_font": 30,
         "tab_font_align": "center",
-        "tab_font_mb": 18,
+        "tab_font_mb": 24,
         "tab_font_mb_align": "left",
         "show_border": false,
         "products_to_show": 4,
@@ -757,8 +550,10 @@
         "enable_quick_add": true,
         "show_secondary_add": false,
         "columns_mobile": "2",
-        "padding_top": 40,
-        "padding_bottom": 100
+        "padding_top": 16,
+        "padding_bottom": 68,
+        "padding_top_mobile": 100,
+        "padding_bottom_mobile": 68
       }
     },
     "gm_vdo_sld_PXcCY3": {
@@ -801,7 +596,7 @@
           "settings": {
             "imgPkr": "shopify://shop_images/Video-737.gif",
             "video": "https://cdn.shopify.com/videos/c/o/v/5cf6239fd2224b958231de5d8cd50210.mp4",
-            "slctPrdct": "platinum-loose-powder-loose-baking-and-setting-powder"
+            "slctPrdct": "fashion-colour-vitamin-c-setting-spray"
           }
         },
         "slide_n8pNjA": {
@@ -825,7 +620,7 @@
           "settings": {
             "imgPkr": "shopify://shop_images/Video-216.gif",
             "video": "https://cdn.shopify.com/videos/c/o/v/edf40843961b46939ff2ade844983a6c.mp4",
-            "slctPrdct": "fashion-colour-24hr-longwear-liquid-foundation-with-skin-care"
+            "slctPrdct": "intensifying-fill-in-browliner-eyeliner-pencil"
           }
         },
         "slide_TJbpPQ": {
@@ -900,7 +695,7 @@
         "subtitle_font_sizemob": 16,
         "ttl": "Real Reviews from Our Beauty Tribe",
         "heading_font_size": 37,
-        "heading_font_sizemob": 30,
+        "heading_font_sizemob": 28,
         "subTtl": "",
         "btnTxt": "",
         "btnUrl": "",
@@ -1003,12 +798,12 @@
         "image_ratio": "adapt",
         "desktop_layout": "image_second",
         "heading_size_row": "h3",
-        "padding_top": 72,
+        "padding_top": 92,
         "padding_bottom": 40,
-        "mobile_padding_top": 40,
-        "mobile_padding_bottom": 0,
+        "mobile_padding_top": 68,
+        "mobile_padding_bottom": 12,
         "border_enabled": false,
-        "mobile_heading_font_size": 30
+        "mobile_heading_font_size": 24
       }
     },
     "testimonial_slider_PxwHpG": {
@@ -1023,7 +818,7 @@
             "link": "",
             "show_icon": true,
             "title": "Anamika Roy",
-            "text": "<p>This powder is so lightweight, yet it keeps my makeup in place all day long. My skin stays matte without feeling heavy</p>"
+            "text": "<p>This powder is so lightweight, yet it keeps my makeup in place all day long. My skin stays matte without feeling heavy.</p>"
           }
         },
         "icon_mNnhQV": {
@@ -1035,7 +830,7 @@
             "link": "",
             "show_icon": true,
             "title": "Riya Nayak",
-            "text": "<p>The powder is super light and blends well with my skin tone. It doesn’t feel heavy, and it keeps my makeup in place all day. Perfect for everyday use</p>"
+            "text": "<p>The powder is super light and blends well with my skin tone. It doesn’t feel heavy, and it keeps my makeup in place all day. Perfect for everyday use.</p>"
           }
         },
         "icon_jHBmQc": {
@@ -1047,7 +842,7 @@
             "link": "",
             "show_icon": true,
             "title": "Pooja Sahu",
-            "text": "<p>I have super sensitive skin, and this balm worked like a charm. It gently removed all my makeup without any irritation. Highly recommend</p>"
+            "text": "<p>I have super sensitive skin, and this balm worked like a charm. It gently removed all my makeup without any irritation. Highly recommend.</p>"
           }
         },
         "icon_hwprNr": {
@@ -1059,7 +854,7 @@
             "link": "",
             "show_icon": true,
             "title": "Tanya Nair",
-            "text": "<p>After using this serum, my skin feels more firm and looks glowing all day long. It’s great for dull skin</p>"
+            "text": "<p>After using this serum, my skin feels more firm and looks glowing all day long. It’s great for dull skin.</p>"
           }
         },
         "icon_rxPmC8": {
@@ -1071,7 +866,7 @@
             "link": "",
             "show_icon": true,
             "title": "Aarti Malhotra",
-            "text": "<p>This foundation gives me a natural look and lasts all day without needing touch-ups. Plus, it feels great on the skin</p>"
+            "text": "<p>This foundation gives me a natural look and lasts all day without needing touch-ups. Plus, it feels great on the skin.</p>"
           }
         },
         "icon_iDPHWb": {
@@ -1083,7 +878,7 @@
             "link": "",
             "show_icon": true,
             "title": "Sakshi Gupta",
-            "text": "<p>I love the creamy texture of this blush. It’s easy to apply and blend, and the color looks very natural on my skin</p>"
+            "text": "<p>I love the creamy texture of this blush. It’s easy to apply and blend, and the color looks very natural on my skin.</p>"
           }
         },
         "icon_49k9rj": {
@@ -1095,7 +890,7 @@
             "link": "",
             "show_icon": true,
             "title": "Aditi Verma",
-            "text": "<p>I love that this lip crayon doesn’t dry out my lips like some other long-lasting lip products. The texture is so smooth</p>"
+            "text": "<p>I love that this lip crayon doesn’t dry out my lips like some other long-lasting lip products. The texture is so smooth.</p>"
           }
         },
         "icon_gc6Byh": {
@@ -1107,7 +902,7 @@
             "link": "",
             "show_icon": true,
             "title": "Sonia Pathak",
-            "text": "<p>I use this every day for a natural look. It blends beautifully and lasts all day without needing a touch-up</p>"
+            "text": "<p>I use this every day for a natural look. It blends beautifully and lasts all day without needing a touch-up.</p>"
           }
         },
         "icon_eUTfqX": {
@@ -1119,7 +914,7 @@
             "link": "",
             "show_icon": true,
             "title": "Jagrati Sindhe",
-            "text": "<p>I’m amazed at how this lipstick doesn’t transfer at all! Even after hours of wear, the color stays put and looks fresh</p>"
+            "text": "<p>I’m amazed at how this lipstick doesn’t transfer at all! Even after hours of wear, the color stays put and looks fresh.</p>"
           }
         },
         "icon_y8xtjr": {
@@ -1131,7 +926,7 @@
             "link": "",
             "show_icon": true,
             "title": "Priyal Jain",
-            "text": "<p>This mist is incredibly soothing. My sensitive skin feels calm and hydrated instantly</p>"
+            "text": "<p>This mist is incredibly soothing. My sensitive skin feels calm and hydrated instantly.</p>"
           }
         }
       },
@@ -1148,10 +943,10 @@
         "icon_y8xtjr"
       ],
       "settings": {
-        "ttl": "Loved By 10,000+ Happy Customer",
+        "ttl": "Loved By 10,000+ Happy Customers",
         "alignment": "center",
         "heading_font_size": 37,
-        "heading_font_sizemob": 30,
+        "heading_font_sizemob": 24,
         "img_sign": "shopify://shop_images/checked_1_1.svg",
         "icon_alignment": "center",
         "icon_size": 100,
@@ -1173,8 +968,8 @@
         "base_width": 100,
         "margin_top": 0,
         "margin_bottom": 0,
-        "padding_top": 100,
-        "padding_bottom": 100,
+        "padding_top": 68,
+        "padding_bottom": 80,
         "padding_tops": 52,
         "padding_bottoms": 80
       }
@@ -1309,7 +1104,7 @@
         "navigation": true,
         "color_scheme": "scheme-6a35cdea-138a-4dd6-b7b5-b066419a615e",
         "sldCol": "#ffffff",
-        "secPdgTop": 10,
+        "secPdgTop": 30,
         "secPdgBtm": 35,
         "secPdgTopMbl": 5,
         "secPdgBtmMbl": 40
@@ -1320,7 +1115,6 @@
     "hero_slider_64mdj9",
     "our_collection_7jxwER",
     "featured_collection_W8newm",
-    "gm_slider_rrieeC",
     "tabs_collection_kX3nVY",
     "video_text_V6xpR6",
     "tabs_collection_GW6L9C",

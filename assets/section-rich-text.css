@@ -91,6 +91,10 @@
   justify-content: flex-end;
 }
 
+.rich-text__text.rte {
+  color: #555;
+}
+
 
 /*Code By Growthx Media LLP*/
 
@@ -104,5 +108,9 @@
   .rich-text__blocks > * + * {
     margin-top: 1.2rem;
   }
+
+  .rich-text__text.rte {
+    color: #555;
+}
 
 }

@@ -406,9 +406,8 @@ ul.list-menu.list-menu--inline li a span:hover,
 }
 
 .sw-product .product__description p {
-    /* color: #555555; */
-    color: #000;
-    font-weight: 400;
+    color: #555555;
+    font-weight: 300;
     font-size: 15px;
     font-family: 'sofia_Pro';
 }

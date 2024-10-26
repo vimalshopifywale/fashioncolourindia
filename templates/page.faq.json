@@ -17,6 +17,17 @@
         "padding_bottom": 0
       }
     },
+    "breadcrumbs_f3p7fK": {
+      "type": "breadcrumbs",
+      "settings": {
+        "title_home": "Home",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "color_scheme": ""
+      }
+    },
     "b11d4998-a007-4a26-990e-fba6ade13b76": {
       "type": "rich-text",
       "blocks": {
@@ -45,7 +56,7 @@
         "full_width": true,
         "padding_top": 80,
         "padding_bottom": 0,
-        "mobile_padding_top": 48,
+        "mobile_padding_top": 36,
         "mobile_padding_bottom": 0
       }
     },
@@ -154,12 +165,12 @@
         "image_ratio": "adapt",
         "desktop_layout": "image_second",
         "heading_size_row": "h2",
-        "padding_top": 24,
+        "padding_top": 76,
         "padding_bottom": 36,
-        "mobile_padding_top": 0,
+        "mobile_padding_top": 40,
         "mobile_padding_bottom": 20,
         "border_enabled": true,
-        "mobile_heading_font_size": 28
+        "mobile_heading_font_size": 22
       }
     },
     "collapsible_content_HMgaUa": {
@@ -215,7 +226,7 @@
           "settings": {
             "heading": "What should I do if my package was marked as delivered but I didn’t receive it?",
             "icon": "none",
-            "row_content": "<p>If your package shows as delivered but you haven’t received it, please contact our customer support team immediately at fashioncolourecom@gmail.com or call us at 8712777777.</p>",
+            "row_content": "<p>If your package shows as delivered but you haven’t received it, please contact our customer support team immediately at customercare@fashioncolour.in or call us at 8712777777.</p>",
             "page": ""
           }
         },
@@ -267,12 +278,12 @@
         "image_ratio": "adapt",
         "desktop_layout": "image_second",
         "heading_size_row": "h2",
-        "padding_top": 24,
+        "padding_top": 36,
         "padding_bottom": 36,
-        "mobile_padding_top": 0,
+        "mobile_padding_top": 32,
         "mobile_padding_bottom": 20,
         "border_enabled": true,
-        "mobile_heading_font_size": 28
+        "mobile_heading_font_size": 22
       }
     },
     "collapsible_content_KmAKf8": {
@@ -380,12 +391,12 @@
         "image_ratio": "adapt",
         "desktop_layout": "image_second",
         "heading_size_row": "h2",
-        "padding_top": 24,
+        "padding_top": 36,
         "padding_bottom": 36,
-        "mobile_padding_top": 0,
+        "mobile_padding_top": 32,
         "mobile_padding_bottom": 20,
         "border_enabled": true,
-        "mobile_heading_font_size": 28
+        "mobile_heading_font_size": 22
       }
     },
     "extra_button_LQC7VV": {
@@ -403,6 +414,7 @@
   },
   "order": [
     "main",
+    "breadcrumbs_f3p7fK",
     "b11d4998-a007-4a26-990e-fba6ade13b76",
     "93d21b74-3b8b-4fd7-aea5-1624b545659e",
     "collapsible_content_HMgaUa",

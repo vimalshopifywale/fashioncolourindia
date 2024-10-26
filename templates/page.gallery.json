@@ -1,21 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
-/*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -31,14 +22,14 @@
         "heading_W3gLJA": {
           "type": "heading",
           "settings": {
-            "heading": "<strong>What makes your juice brand unique</strong>",
+            "heading": "<strong>What makes your juice brand unique<\/strong>",
             "heading_size": "h1"
           }
         },
         "text_R3agzx": {
           "type": "text",
           "settings": {
-            "text": "<p>We prioritize using only the freshest, highest quality ingredients sourced locally whenever possible.</p>"
+            "text": "<p>We prioritize using only the freshest, highest quality ingredients sourced locally whenever possible.<\/p>"
           }
         }
       },

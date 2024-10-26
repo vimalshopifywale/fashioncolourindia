@@ -1,21 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
-/*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "type": "custom.popup",
   "name": "Popup Group",
@@ -45,7 +36,7 @@
         "heading": "GET 10% OFF",
         "heading_size": "h1",
         "heading_suffix": "",
-        "text": "<p>Sign up for our email newsletter for special discounts and exclusive offers.</p>",
+        "text": "<p>Sign up for our email newsletter for special discounts and exclusive offers.<\/p>",
         "text_email": "Enter Email Here",
         "bottom_text": "Be the first to know about new collections and exclusive offers.",
         "social_media": true,
@@ -55,7 +46,7 @@
         "success_heading": "DISCOUNT!",
         "success_heading_size": "h1",
         "success_heading_suffix": "",
-        "success_text": "<p>Use the code bellow to get 10% off your whole order!</p>",
+        "success_text": "<p>Use the code bellow to get 10% off your whole order!<\/p>",
         "discount_code_label": "Discount code:",
         "floating": true,
         "flo_heading": "Get 10% Discount",

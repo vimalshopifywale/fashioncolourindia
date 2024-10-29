@@ -9,101 +9,36 @@
  */
 {
   "sections": {
-    "hero_slider_wXpLwx": {
+    "hero_slider_n9aajQ": {
       "type": "hero-slider",
       "blocks": {
-        "video_slide_GX6Lyd": {
-          "type": "video-slide",
+        "image_UqAQyD": {
+          "type": "image",
           "settings": {
-            "review-text": "",
-            "text_self_align": "center",
-            "img_2_dsk_wdth": 700,
-            "img_2_mbl_wdth": 300,
-            "image": "shopify://files/videos/PLATINUM BLUSH PALETTI.mov",
-            "image_mob": "shopify://files/videos/PLATINUM BLUSH PALETTI.mov",
-            "video_size": "cover",
-            "caption": "",
-            "block_cap_size": 20,
-            "block_cap_sizes": 20,
-            "heading": "",
-            "block_head_size-2": 20,
-            "block_head_size-mobile": 20,
-            "block_head_line": 1.4,
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "",
-            "button_label1": "",
-            "bg_color": "#ffffff",
-            "link2": "",
-            "link-2": "",
-            "button_style_secondary": false,
-            "box_align": "middle-center",
-            "show_text_box": true,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "background-1",
-            "text_alignment_mobile": "center",
-            "mobile_box_align": "center",
-            "mobile_text_spacing": 0
-          }
-        },
-        "video_slide_DhbTQE": {
-          "type": "video-slide",
-          "settings": {
-            "review-text": "10,000+ Happy Customers",
-            "text_self_align": "center",
-            "img_2_dsk_wdth": 700,
-            "img_2_mbl_wdth": 300,
-            "image": "shopify://files/videos/PLATINUM MATT NO TRANSFER LIPSTICK.mov",
-            "image_mob": "shopify://files/videos/PLATINUM MATT NO TRANSFER LIPSTICK.mov",
-            "video_size": "cover",
-            "caption": "Company",
-            "block_cap_size": 20,
-            "block_cap_sizes": 20,
-            "heading": "Image slide",
-            "block_head_size-2": 20,
-            "block_head_size-mobile": 20,
-            "block_head_line": 1.4,
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "",
-            "button_label1": "",
-            "bg_color": "#ffffff",
-            "link2": "",
-            "link-2": "",
-            "button_style_secondary": false,
-            "box_align": "middle-center",
-            "show_text_box": false,
-            "text_alignment": "left",
-            "image_overlay_opacity": 0,
-            "color_scheme": "background-1",
-            "text_alignment_mobile": "center",
-            "mobile_box_align": "flex-start",
-            "mobile_text_spacing": 0
+            "image": "shopify://shop_images/platinum_page_Banner_af5bbe79-fb96-48f4-8a0b-a9310fae1d16.jpg",
+            "image_mob": "shopify://shop_images/platinum_page_Banner_mobile_bf3b35fb-1d15-4cec-8f8f-38dc4106acde.jpg",
+            "slide_link": "/"
           }
         }
       },
       "block_order": [
-        "video_slide_GX6Lyd",
-        "video_slide_DhbTQE"
+        "image_UqAQyD"
       ],
       "settings": {
         "layout": "full_bleed",
-        "banner_border": 12,
-        "slide_height": "small",
-        "desk_height": 200,
-        "sml_desk_height": 200,
-        "mbl_height": 200,
+        "banner_border": 0,
+        "slide_height": "custom",
+        "desk_height": 750,
+        "sml_desk_height": 700,
+        "mbl_height": 480,
         "slider_visual": "counter",
-        "auto_rotate": true,
+        "auto_rotate": false,
         "hide_navigation": false,
         "change_slides_speed": 5,
-        "show_text_below": true,
+        "show_text_below": false,
         "accessibility_info": "Slideshow about our brand",
-        "padding_top": 52,
-        "padding_bottom": 52,
+        "padding_top": 40,
+        "padding_bottom": 40,
         "padding_top_mbl": 40,
         "padding_bottom_mbl": 40
       }
@@ -189,7 +124,7 @@
       "settings": {
         "gradiant_wrap": true,
         "background_color": "#0d0d0d",
-        "preTtl": "",
+        "preTtl": "Our Collection",
         "subtitle_font_size": 16,
         "subtitle_font_sizemob": 16,
         "tabs_color_scheme": "scheme-6c3ff99c-8da2-435f-9574-05cdd95811b2",
@@ -214,10 +149,10 @@
         "enable_quick_add": false,
         "show_secondary_add": false,
         "columns_mobile": "2",
-        "padding_top": 52,
+        "padding_top": 40,
         "padding_bottom": 52,
-        "padding_top_mobile": 36,
-        "padding_bottom_mobile": 36
+        "padding_top_mobile": 100,
+        "padding_bottom_mobile": 52
       }
     },
     "collage_gX8iDg": {
@@ -226,7 +161,9 @@
         "video_CPEpfa": {
           "type": "video",
           "settings": {
-            "video_upload": "shopify://files/videos/PLATINUM MATT NO TRANSFER LIPSTICK.mov",
+            "cover_image": "shopify://shop_images/Screenshot_38.png",
+            "video_upload": "shopify://files/videos/POWDERY EYE & BROWS.mov",
+            "video_upload_mbl": "shopify://files/videos/POWDERY EYE & BROWS.mov",
             "video_url": "",
             "description": "Describe the video"
           }
@@ -234,16 +171,19 @@
         "video_dnWVgp": {
           "type": "video",
           "settings": {
+            "cover_image": "shopify://shop_images/Screenshot_39.png",
             "video_upload": "shopify://files/videos/PLATINUM BLUSH PALETTI.mov",
-            "video_url": "https://youtu.be/IerXQX8vo9I?si=K5d9_UwNKwsTZbJG",
+            "video_upload_mbl": "shopify://files/videos/PLATINUM BLUSH PALETTI.mov",
+            "video_url": "",
             "description": "Describe the video"
           }
         },
         "video_DJxJii": {
           "type": "video",
           "settings": {
-            "video_upload": "shopify://files/videos/D-TANCREAM.mov",
-            "video_upload_mbl": "shopify://files/videos/55064A.mp4",
+            "cover_image": "shopify://shop_images/Screenshot_40.png",
+            "video_upload": "shopify://files/videos/PLATINUM MATT NO TRANSFER LIPSTICK.mov",
+            "video_upload_mbl": "shopify://files/videos/PLATINUM MATT NO TRANSFER LIPSTICK.mov",
             "video_url": "",
             "description": "Describe the video"
           }
@@ -254,17 +194,24 @@
         "video_dnWVgp",
         "video_DJxJii"
       ],
+      "custom_css": [
+        "h2.collage-wrapper-title {font-weight: 500;}"
+      ],
       "settings": {
         "heading": "Unleash Your Radiance with Luxury Makeup",
         "gradient_wrap": true,
-        "heading_size": "h0",
+        "heading_size": "custom",
+        "font_size_text": 24,
+        "font_size_text_mbl": 48,
         "text_alignment": "center",
         "desktop_layout": "right",
         "mobile_layout": "column",
         "card_styles": "product-card-wrapper",
         "color_scheme": "scheme-d68f3e7e-529e-4fac-9e48-fa44a16ae7fb",
         "padding_top": 36,
-        "padding_bottom": 36
+        "padding_bottom": 36,
+        "padding_top_mbl": 48,
+        "padding_bottom_mbl": 40
       }
     },
     "featured_collection_fHNg9n": {
@@ -307,8 +254,8 @@
         "navigation_on_mobile": true,
         "padding_top": 52,
         "padding_bottom": 52,
-        "mobile_padding_top": 20,
-        "mobile_padding_bottom": 20
+        "mobile_padding_top": 60,
+        "mobile_padding_bottom": 52
       }
     },
     "multicolumn_QQRBC6": {
@@ -374,7 +321,7 @@
         "gradiant_text": true,
         "heading_size": "h1",
         "heading_center": "center",
-        "image_width": "full",
+        "image_width": "third",
         "image_ratio": "adapt",
         "columns_desktop": 4,
         "column_alignment": "center",
@@ -501,7 +448,7 @@
         "subtitle_font_size": 16,
         "subtitle_font_sizemob": 16,
         "ttl": "Real Reviews from Our Beauty Tribe",
-        "heading_font_size": 38,
+        "heading_font_size": 40,
         "heading_font_sizemob": 24,
         "subTtl": "",
         "btnTxt": "View all",
@@ -516,7 +463,7 @@
         "invertChkbx": true,
         "secPdgTop": 50,
         "secPdgBtm": 50,
-        "mblPdgTop": 20,
+        "mblPdgTop": 40,
         "mblPdgBtm": 20
       }
     },
@@ -526,7 +473,7 @@
         "collapsible_row_gNkNkq": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Can i layer different products without them feeling heavy?",
+            "heading": "Can I layer different products without them feeling heavy?",
             "icon": "none",
             "row_content": "<p>Absolutely! Fashion Colour products are formulated with lightweight textures, allowing for comfortable layering without a heavy feel.</p>",
             "page": ""
@@ -576,6 +523,9 @@
         "collapsible_row_xWBF8i",
         "collapsible_row_xXiKFd"
       ],
+      "custom_css": [
+        ".accordion__content {color: #e3e3e3;}"
+      ],
       "settings": {
         "caption": "",
         "gradient_wrap": true,
@@ -597,8 +547,8 @@
         "heading_size_row": "h3",
         "padding_top": 52,
         "padding_bottom": 52,
-        "mobile_padding_top": 20,
-        "mobile_padding_bottom": 20,
+        "mobile_padding_top": 52,
+        "mobile_padding_bottom": 52,
         "border_enabled": false,
         "mobile_heading_font_size": 18
       }
@@ -741,7 +691,7 @@
     }
   },
   "order": [
-    "hero_slider_wXpLwx",
+    "hero_slider_n9aajQ",
     "tabs_collection_U94kG8",
     "collage_gX8iDg",
     "featured_collection_fHNg9n",

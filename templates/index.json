@@ -15,9 +15,9 @@
         "image_cVy3CB": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Artboard_1-100.jpg",
-            "image_mob": "shopify://shop_images/Artboard_1-100.jpg",
-            "slide_link": "/"
+            "image": "shopify://shop_images/Banner_Desktop.jpg",
+            "image_mob": "shopify://shop_images/Banner_Mobile.jpg",
+            "slide_link": "shopify://collections/bestsellers"
           }
         }
       },
@@ -28,9 +28,9 @@
         "layout": "full_bleed",
         "banner_border": 0,
         "slide_height": "custom",
-        "desk_height": 500,
-        "sml_desk_height": 500,
-        "mbl_height": 400,
+        "desk_height": 750,
+        "sml_desk_height": 700,
+        "mbl_height": 480,
         "slider_visual": "counter",
         "auto_rotate": false,
         "hide_navigation": false,
@@ -694,8 +694,8 @@
         "subtitle_font_size": 20,
         "subtitle_font_sizemob": 16,
         "ttl": "Real Reviews from Our Beauty Tribe",
-        "heading_font_size": 37,
-        "heading_font_sizemob": 28,
+        "heading_font_size": 40,
+        "heading_font_sizemob": 26,
         "subTtl": "",
         "btnTxt": "",
         "btnUrl": "",
@@ -799,9 +799,9 @@
         "desktop_layout": "image_second",
         "heading_size_row": "h3",
         "padding_top": 92,
-        "padding_bottom": 40,
-        "mobile_padding_top": 68,
-        "mobile_padding_bottom": 12,
+        "padding_bottom": 76,
+        "mobile_padding_top": 76,
+        "mobile_padding_bottom": 40,
         "border_enabled": false,
         "mobile_heading_font_size": 24
       }
@@ -945,8 +945,8 @@
       "settings": {
         "ttl": "Loved By 10,000+ Happy Customers",
         "alignment": "center",
-        "heading_font_size": 37,
-        "heading_font_sizemob": 24,
+        "heading_font_size": 40,
+        "heading_font_sizemob": 20,
         "img_sign": "shopify://shop_images/checked_1_1.svg",
         "icon_alignment": "center",
         "icon_size": 100,
@@ -968,8 +968,8 @@
         "base_width": 100,
         "margin_top": 0,
         "margin_bottom": 0,
-        "padding_top": 68,
-        "padding_bottom": 80,
+        "padding_top": 76,
+        "padding_bottom": 88,
         "padding_tops": 52,
         "padding_bottoms": 80
       }
@@ -1087,7 +1087,7 @@
         "subtitle_font_sizemob": 16,
         "ttl": "Follow us on Instagram",
         "heading_font_size": 40,
-        "heading_font_sizemob": 30,
+        "heading_font_sizemob": 24,
         "subTtl": "",
         "btnTxt": "",
         "btnUrl": "",

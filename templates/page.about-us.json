@@ -23,14 +23,14 @@
         "heading_fByPJ9": {
           "type": "heading",
           "settings": {
-            "heading": "<strong>Our Story<\/strong>",
+            "heading": "<strong>Our Story</strong>",
             "heading_size": "h1"
           }
         },
         "text_78agbX": {
           "type": "text",
           "settings": {
-            "text": "<p>Welcome to Fashion Colour, where beauty meets individuality and innovation. More than just a makeup and skincare brand, we are a community that celebrates diversity, creativity, and self-expression. Our mission is simple: to provide high-quality, affordable products that cater to all skin tones, textures, and types, allowing everyone to feel confident in their own skin.<\/p><p>At Fashion Colour, we blend the transformative power of makeup with the nurturing benefits of skincare. Each product is carefully formulated to not only enhance your appearance but also nourish your skin, ensuring that your beauty routine is both empowering and healthy. From our long-lasting foundations to our gentle makeup removers, we offer a wide range of products designed to meet your every beauty need.<\/p><p>Inclusivity is at the core of our brand. We believe beauty is for everyone, which is why we are committed to creating shades and formulations that reflect every complexion. In addition, we are proud to be cruelty-free, with ethically sourced ingredients that respect both people and the planet.<\/p><p>Whether you’re looking for a flawless finish or skincare that truly cares, Fashion Colour has something for you. We invite you to explore our collections, find your perfect match, and join a community that empowers you to embrace your unique beauty every day. Fashion Colour – empowering beauty, naturally.<\/p>"
+            "text": "<p>Since 2013, Fashion Colour has been committed to delivering high-quality beauty products that redefine beauty without breaking the bank. Our wide range spans makeup, skincare, and haircare, offering affordable solutions for everyone, from beginners perfecting their daily look to professionals crafting high-impact styles. Whether for everyday use or special occasions, Fashion Colour provides top-tier performance at accessible prices.<br/><br/>Our tagline, “Beauty Redefined,” reflects our belief that beauty is not about following set standards but about embracing individuality. We aim to empower everyone to express their unique style by creating products that combine quality, versatility, and affordability. By breaking traditional beauty boundaries, we make it possible for everyone to feel confident, beautiful, and truly themselves.<br/><br/>Once you experience Fashion Colour, you’ll discover a new approach to beauty that makes settling for anything less unimaginable.</p>"
           }
         }
       },
@@ -48,49 +48,10 @@
         "mobile_padding_top": 20,
         "mobile_padding_bottom": 20
       }
-    },
-    "image_with_text_z7DfV7": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_zQpwCE": {
-          "type": "heading",
-          "settings": {
-            "heading": "<h3><strong>Why Choose Fashion Colour?<\/strong><\/h3><p><\/p>",
-            "heading_size": "h1"
-          }
-        },
-        "text_JmUgdL": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Choosing Fashion Colour means choosing products that are designed with you in mind. Our commitment to creating inclusive, cruelty-free, and ethically sourced products is at the core of everything we do. Whether you’re shopping for a new foundation or looking to upgrade your skincare routine, Fashion Colour offers a wide array of products to help you achieve your beauty goals.<\/p>",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "heading_zQpwCE",
-        "text_JmUgdL"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/Rectangle_359.jpg",
-        "height": "small",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "section_color_scheme": "",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 80
-      }
     }
   },
   "order": [
     "main",
-    "rich_text_YnVzfw",
-    "image_with_text_z7DfV7"
+    "rich_text_YnVzfw"
   ]
 }

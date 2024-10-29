@@ -219,11 +219,11 @@
                     <div class="modal-video__content-info">
                       {% if  block.settings.video_upload != blank %}
                         {% if block.settings.video_upload_mbl != blank %}
-                          {{ block.settings.video_upload | video_tag: autoplay: true, loop: true, muted: true, class:'desktop'  }}
-                          {{ block.settings.video_upload_mbl | video_tag: autoplay: true, loop: true, muted: true, class:'mobile'  }}
+                          {{ block.settings.video_upload | video_tag: autoplay: true, loop: true, muted: true, class:'desktop', controls:true  }}
+                          {{ block.settings.video_upload_mbl | video_tag: autoplay: true, loop: true, muted: true, class:'mobile',controls:true   }}
                         {% else %}
                         {{ block.settings.video_upload_mbl |  video_tag }}
-                          {{ block.settings.video_upload | video_tag: autoplay: true, loop: true, muted: true  }}
+                          {{ block.settings.video_upload | video_tag: autoplay: true, loop: true, muted: true ,controls:true  }}
                         {% endif %}
                         {% else %}
                           

@@ -361,7 +361,7 @@
           aria-label="{{ forloop.index }} {{ 'general.slider.of' | t }} {{ forloop.length }}"
           tabindex="-1"
         >
-          <{% if block.settings.slide_link != blank %}a href="{{ block.settings.slide_link }}" {% else %}div {% endif %} >
+          <{% if block.settings.slide_link != blank %}a href="{{ block.settings.slide_link }}" style="z-index:2;" {% else %}div {% endif %} >
             <div class="small-hide">
               <div class="slideshow__media banner__media media{% if block.settings.image == blank %} placeholder{% endif %}">
                 {%- if block.settings.image -%}

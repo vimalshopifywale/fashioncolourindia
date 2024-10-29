@@ -562,6 +562,9 @@ class ModalDialog extends HTMLElement {
     document.body.dispatchEvent(new CustomEvent('modalClosed'));
     this.removeAttribute('open');
     removeTrapFocus(this.openedBy);
+    if(this.classList.contains('modal-video')){
+      $(this).find('video').trigger('pause');
+    }
     //window.pauseAllMedia();
   }
 }
@@ -1339,3 +1342,4 @@ customElements.define('product-recommendations', ProductRecommendations);
       document.body.classList.remove('unloading');
     }
   });
+  $('.modal-video__content-info video').on('click',(el)=>{el.stoppropogation()})

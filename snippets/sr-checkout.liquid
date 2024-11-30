@@ -1,0 +1,102 @@
+<script type="application/javascript">
+checkoutBuyer = "https://fastrr-boost-ui.pickrr.com/";
+</script>
+
+<input type="hidden" value="fashioncolour.in" id="sellerDomain"/>
+<link rel="stylesheet" href="https://fastrr-boost-ui.pickrr.com/assets/styles/shopify.css">
+<script src="https://fastrr-boost-ui.pickrr.com/assets/js/channels/shopify.js" defer></script>
+<script src="https://fastrr-boost-ui.pickrr.com/assets/js/channels/shiprocketMarketing.js"></script>
+
+<input type="hidden" value="rz" id="template"/>
+<!-- <input type="hidden" value="percent" id="discountType"/>
+<input type="hidden" value="5" id="discValue"/> -->
+
+<!-- <script>
+
+let fastrrBtn = '<div id="headless-button" class="shiprocket-headless" data-type="mini-cart"></div>'
+let shopifybutton = '<button style="background:var(--theme-color);color:white;text-transform:var(--uppercase)" type="submit" id="CartDrawer-Checkout" class="cart__checkout-button button" name="checkout" form="CartDrawer-Form">Checkout</button>'
+
+let buttonAdded = false
+let parsedBtnCode = new DOMParser().parseFromString(fastrrBtn, 'text/html').querySelectorAll('.shiprocket-headless')[0];
+const headlessNode = document.querySelector('html');
+
+// Options for the observer (which mutations to observe)
+const configuration = { attributes: true, childList: true, subtree: true };
+
+// Callback function to execute when mutations are observed
+const headlessCallback = (mutationList, observer) => {
+  for (const mutation of mutationList) {
+  let sidecart = document.querySelector('.drawer.animate.active')
+ 
+ 
+    if(sidecart) {
+      if(!document.getElementById('headless-button')) {
+     
+            if(Intl.DateTimeFormat().resolvedOptions().timeZone === "Asia/Calcutta") {
+             
+        document.getElementById('fastrrButton').innerHTML = fastrrBtn
+            }
+        if(Intl.DateTimeFormat().resolvedOptions().timeZone === "Asia/Kolkata") {
+             
+        document.getElementById('fastrrButton').innerHTML = fastrrBtn
+            }
+        
+      
+  }
+    if(!document.getElementById('CartDrawer-Checkout')) {
+      
+     
+            if(Intl.DateTimeFormat().resolvedOptions().timeZone != "Asia/Calcutta") {
+              if(Intl.DateTimeFormat().resolvedOptions().timeZone != "Asia/Kolkata") {
+              
+        document.getElementById('nativeCheckoutButton').innerHTML = shopifybutton
+            }
+            }
+      
+      }
+
+    
+    }
+
+  }
+};
+
+// Create an observer instance linked to the callback function
+const observer1 = new MutationObserver(headlessCallback);
+
+// Start observing the target node for configured mutations
+observer1.observe(headlessNode, configuration);
+
+</script> -->
+
+
+<style>	
+  .sr-headless-checkout {
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 6px;
+    height: 49px;
+    letter-spacing: 2px;
+    background-color:rgb(191, 4, 54) !important ; 
+    /* margin-top:3px;*/
+  }
+  .shiprocket-headless{
+    width:100%;
+  }
+/* .sr-discount-label{
+  font-size:0px !important;
+}
+
+ .sr-discount-label:before{
+    content:"EXTRA 5% OFF on PERFUMES";
+    font-size: 9px;
+    color: #000;
+    text-transform: none;
+    top: -8px;
+    left: 6px;
+    background-color: #53ff73;
+    border-radius: 3px;
+    padding: 0 10px;
+} */
+</style>

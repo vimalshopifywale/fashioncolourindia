@@ -540,8 +540,8 @@
               {{ 'sections.cart.update' | t }}
             </button>
           </noscript>
-
-          <button
+<div class="shiprocket-headless" data-type="mini-cart"></div>
+          <!-- <button
             type="submit"
             id="CartDrawer-Checkout"
             class="cart__checkout-button button"
@@ -555,7 +555,7 @@
           <path d="M10.875 5.265V4.37499C10.875 1.95876 8.91625 0 6.49999 0C4.08373 0 2.125 1.95876 2.125 4.37499V5.265C0.98752 5.76144 0.251641 6.88392 0.25 8.12499V11.875C0.252051 13.6 1.64995 14.9979 3.37498 15H9.62497C11.35 14.9979 12.7479 13.6 12.75 11.875V8.12499C12.7484 6.88392 12.0125 5.76144 10.875 5.265ZM7.12498 10.625C7.12498 10.9702 6.84517 11.25 6.49999 11.25C6.15481 11.25 5.875 10.9702 5.875 10.625V9.375C5.875 9.02982 6.15481 8.75001 6.49999 8.75001C6.84517 8.75001 7.12498 9.02982 7.12498 9.375V10.625ZM9.625 5.00001H3.37498V4.37502C3.37498 2.64914 4.77408 1.25001 6.49999 1.25001C8.2259 1.25001 9.625 2.64911 9.625 4.37502V5.00001Z" fill="white"/>
           </svg>
            <span>{{ 'sections.cart.checkout' | t }} - {{ cart.total_price | money_with_currency }}</span>
-          </button>
+          </button> -->
           
           {% if settings.paymentImg != blank %}
             <img class="pymtImg" height="" width="" src="{{settings.paymentImg |  image_url: height: 24}}" alt="{{settings.paymentImg.alt}}">

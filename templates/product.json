@@ -31,8 +31,7 @@
         },
         "judge_me_reviews_preview_badge_bFPePG": {
           "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-          }
+          "settings": {}
         },
         "gm_feature_LXVUqG": {
           "type": "gm-feature",
@@ -66,8 +65,8 @@
         },
         "description": {
           "type": "description",
-          "settings": {
-          }
+          "disabled": true,
+          "settings": {}
         },
         "variant_picker": {
           "type": "variant_picker",
@@ -99,14 +98,14 @@
         "264e37ac-8ac8-475c-9f10-973d46bb217d": {
           "type": "shipping",
           "settings": {
-            "ship_days": 2,
+            "ship_days": 3,
             "cut_off_time": 16,
             "icon": "shopify://shop_images/shipping-temp.svg",
-            "icon_size": 16,
+            "icon_size": 18,
             "image_ani": "none",
-            "text_size": 14,
+            "text_size": 16,
             "text_style": "body",
-            "text": "Estimated Delivery Date: <strong>(date)</strong> | Free Shipping over Rs. 500",
+            "text": "<strong>Estimated Delivery Date: (date) | Free Shipping over Rs. 500</strong>",
             "date_locale": "en-US",
             "ship_bg": "#ffffff",
             "show_border": false,
@@ -131,9 +130,7 @@
         "image_Hbm4K8",
         "264e37ac-8ac8-475c-9f10-973d46bb217d"
       ],
-      "custom_css": [
-
-      ],
+      "custom_css": [],
       "settings": {
         "enable_sticky_info": true,
         "color_scheme": "scheme-ba713329-d431-438f-8af7-80240302db4e",
@@ -316,8 +313,7 @@
       "blocks": {
         "judge_me_reviews_review_widget_ypHaPW": {
           "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-          }
+          "settings": {}
         }
       },
       "block_order": [

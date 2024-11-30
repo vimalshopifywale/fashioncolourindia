@@ -14,6 +14,23 @@
       "blocks": {
         "image_cVy3CB": {
           "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Banner_5.jpg",
+            "image_mob": "shopify://shop_images/Mobile_Banner_5.jpg",
+            "slide_link": "shopify://collections"
+          }
+        },
+        "image_VzgF4m": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Banner-7.jpg",
+            "image_mob": "shopify://shop_images/Mobile_Banner_6.jpg",
+            "slide_link": "shopify://collections"
+          }
+        },
+        "image_BjCzLp": {
+          "type": "image",
           "settings": {
             "image": "shopify://shop_images/Banner_Desktop.jpg",
             "image_mob": "shopify://shop_images/Banner_Mobile.jpg",
@@ -22,7 +39,9 @@
         }
       },
       "block_order": [
-        "image_cVy3CB"
+        "image_cVy3CB",
+        "image_VzgF4m",
+        "image_BjCzLp"
       ],
       "settings": {
         "layout": "full_bleed",
@@ -31,10 +50,10 @@
         "desk_height": 750,
         "sml_desk_height": 700,
         "mbl_height": 480,
-        "slider_visual": "counter",
-        "auto_rotate": false,
+        "slider_visual": "dots",
+        "auto_rotate": true,
         "hide_navigation": false,
-        "change_slides_speed": 5,
+        "change_slides_speed": 3,
         "show_text_below": false,
         "accessibility_info": "Slideshow about our brand",
         "padding_top": 40,
@@ -223,7 +242,7 @@
             "image_1": "shopify://shop_images/Polished_Perfection-_Embrace_Elegance_with_our_Mesmerizing_Nail_Paints_NailedIt_ConfidentlyYou_NailGoals_ExpressYourself_fashioncolors_ChicStyle_ColorfulNails_expressyourvibe_1_1.png",
             "title_1": "Nail Paint",
             "sub_title_1": "",
-            "link_1": "",
+            "link_1": "shopify://collections/nails",
             "title_2": "",
             "sub_title_2": "",
             "link_2": "",

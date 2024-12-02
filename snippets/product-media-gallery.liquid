@@ -62,7 +62,7 @@
     {% if request.page_type == 'product' %}
       {% for media in product.media %}
         {% if media.media_type == 'video' %}
-          <button
+          <button data-gm-target="{{ media.id }}"
             class="button button--play video-play-button"
             sw-video-trigger
             type="button"
@@ -232,13 +232,13 @@
               thumbnail-list__item slider__slide{% if section.settings.hide_variants and variant_images contains featured_media.src %} thumbnail-list_item--variant{% endif %}
               {% if media.media_type == 'video' or media.media_type == 'external_video' %} sw-video hide-video{% endif %}
             "
-            data-target="{{ section.id }}-{{ featured_media.id }}"
+            data-target="{{ section.id }}-{{ featured_media.id }}" 
             data-media-position="{{ media_index }}"
           >
             {%- capture thumbnail_id -%}
           Thumbnail-{{ section.id }}-0{{ id_append }}
           {%- endcapture -%}
-            <button
+            <button data-gm-target="{{ featured_media.id }}"
               class="thumbnail global-media-settings global-media-settings--no-shadow"
               aria-label="{%- if featured_media.media_type == 'image' -%}{{ 'products.product.media.load_image' | t: index: media_index }}{%- elsif featured_media.media_type == 'model' -%}{{ 'products.product.media.load_model' | t: index: media_index }}{%- elsif featured_media.media_type == 'video' or featured_media.media_type == 'external_video' -%}{{ 'products.product.media.load_video' | t: index: media_index }}{%- endif -%}"
               aria-current="true"
@@ -294,7 +294,7 @@
               {%- capture thumbnail_id -%}
           Thumbnail-{{ section.id }}-{{ forloop.index }}{{ id_append }}
           {%- endcapture -%}
-              <button
+              <button  data-gm-target="{{ media.id }}"
                 class="thumbnail global-media-settings global-media-settings--no-shadow"
                 aria-label="{%- if media.media_type == 'image' -%}{{ 'products.product.media.load_image' | t: index: media_index }}{%- elsif media.media_type == 'model' -%}{{ 'products.product.media.load_model' | t: index: media_index }}{%- elsif media.media_type == 'video' or media.media_type == 'external_video' -%}{{ 'products.product.media.load_video' | t: index: media_index }}{%- endif -%}"
                 {% if media == product.selected_or_first_available_variant.featured_media

@@ -488,6 +488,8 @@
                     {{ block.settings.text }}
                   </div>
                 </div>
+              
+
               {%- when 'gm-feature' -%}
                 {% if block.settings.text != blank %}
                   <style>
@@ -1112,6 +1114,211 @@
                     </div>
                   </details>
                 </div>
+              {%- when 'surprise' -%}
+                    <style>
+                      .surprise {
+                          display: flex;
+                          align-items: center;
+                          gap: 16px;
+                          padding: 12px 0;
+                          {% if block.settings.border_top %}
+                          border-top: 1px solid #d0d0d0;
+                          {% endif %}
+                          {% if block.settings.border_bottom %}
+                          border-bottom: 1px solid #d0d0d0;
+                          {% endif %}                     
+                          margin: 14px 0;     
+                      }
+
+                      .surprise_txt > * {
+                          margin: 0;
+                          display: flex;
+                          flex-direction: column;
+                          line-height: normal;
+                          font-size: 16px;
+                          font-weight: 200;
+                      }
+
+                      .surprise_txt strong {
+                          font-weight: 400;
+                      }
+
+                      .surprise_icn img {
+                          width: 100%;
+                      }
+
+                      .surprise_icn {
+                          width: 44px;
+                          display:flex;
+                      }
+                  </style>
+                <div class="surprise" {{ block.shopify_attributes }}>
+                  <div class="surprise_icn">
+                    <img src="{{ block.settings.icn_img |  image_url: width: 100 }}" alt="{{ block.settings.icn_img.alt }}" width="" height="">
+                  </div>
+                  <div class="surprise_txt">
+                    {{ block.settings.sup_txt }}
+                  </div>
+                </div>
+              {%- when 'gm_offer' -%}
+                <div class="product__accordion ofr_sld_acord accordion quick-add-hidden" {{ block.shopify_attributes }}>
+                  <details id="Details-{{ block.id }}-{{ section.id }}" open>
+                    <summary aria-expanded="true">
+                      <div class="summary__title">
+                        <h2 class="accordion__title inline-richtext">
+                          {{ block.settings.ttl }}
+                        </h2>
+                      </div>
+                      {% render 'icon-caret' %}
+                    </summary>
+                    <div class="accordion__content rte" id="ProductAccordion-{{ block.id }}-{{ section.id }}">
+                      <div class="ofr_sld">
+                        <div class="swiper swp_ofr">
+                          <div class="swiper-wrapper">
+                            {% for item in (1..10) %}
+                              {%  assign ofr_sld_ttl = 'ofr_sld_ttl_' |  append: forloop.index %}
+                              {%  assign ofr_sld_dec = 'ofr_sld_dec_' |  append: forloop.index %}
+                              {% if block.settings[ofr_sld_ttl] and block.settings[ofr_sld_dec] %}
+                                <div class="swiper-slide">
+                                  <div class="ofr_wrap">
+                                    <p class="ofr_sld_ttl">{{ block.settings[ofr_sld_ttl] }}</p>
+                                    <div class="ofr_sld_dec">{{ block.settings[ofr_sld_dec] }}</div>
+                                  </div>
+                                </div>
+                              {% endif %}
+                            {% endfor %}
+                          </div>
+                          <div class="swiper-button-next gmCstm swNxt">
+                            {% render 'gm-icon-next' %}
+                          </div>
+                          <div class="swiper-button-prev gmCstm swPrv">
+                            {% render 'gm-icon-prev' %}
+                          </div>
+                        </div>
+                      </div>
+                      <div class="ofr_sld_blk">
+                        {% if block.settings.img_svg_1 and block.settings.img_txt_1 %}
+                        <div class="fix_sld_bx">
+                          <div class="fix_svg"><img src="{{ block.settings.img_svg_1 |  image_url: width: 50 }}" width="" height=""></div>
+                          <p>{{ block.settings.img_txt_1 }}</p>
+                        </div>
+                        {% endif %}
+                        {% if block.settings.img_svg_2 and block.settings.img_txt_2 %}
+                        <div class="fix_sld_bx">
+                          <div class="fix_svg"><img src="{{ block.settings.img_svg_2 |  image_url: width: 50 }}" width="" height=""></div>
+                          <p>{{ block.settings.img_txt_2 }}</p>
+                        </div>
+                        {% endif %}
+                        {% if block.settings.img_svg_3 and block.settings.img_txt_3 %}
+                        <div class="fix_sld_bx">
+                          <div class="fix_svg"><img src="{{ block.settings.img_svg_3 |  image_url: width: 50 }}" width="" height=""></div>
+                          <p>{{ block.settings.img_txt_3 }}</p>
+                        </div>
+                        {% endif %}
+                      </div>
+                    </div>
+                  </details>
+                </div>
+                <style>
+                  .ofr_sld_acord {
+                      margin-top: 16px;
+                      border-bottom: unset;
+                  }
+                          .ofr_sld_acord{
+                            border-bottom:unset !important;
+                          }
+
+                  .ofr_sld_acord summary {
+                      align-items: center;
+                  }
+
+                  .ofr_sld_acord > details {
+                      padding: unset !important;!i;!;
+                  }
+
+                  .ofr_wrap {
+                      box-shadow: 0 0 4px 0 rgba(0, 0, 0, .3);
+                      padding: 8px 16px;
+                      border-radius: 8px;
+                  }
+
+                  .swp_ofr {
+                    margin-top: 22px;
+                  }
+                  .swp_ofr .swiper-slide{
+                    padding: 12px 2px;
+                  }
+                  p.ofr_sld_ttl {
+                      font-weight: 500 !important;
+                  }
+
+                  .ofr_wrap > * {
+                      margin: unset;
+                  }
+
+                  p.ofr_sld_dec {
+                      font-weight: 200;
+                      line-height: normal;
+                      margin-top: 14px;
+                  }
+
+                  .swp_ofr circle {
+                      fill: black;
+                      stroke: black;
+                  }
+
+                  .swp_ofr path {
+                      fill: white;
+                  }
+
+                  .ofr_sld_blk {
+                      margin-top: 20px;
+                      padding: 30px 0;
+                      border-top: 1px solid #d0d0d0;
+                      border-bottom: 1px solid #d0d0d0;
+                      display: flex;
+                      justify-content: space-around;
+                  }
+
+                  .ofr_sld_blk > * {
+                      display: inline-flex;
+                      flex-direction: column;
+                      align-items: center;
+                      gap: 8px;
+                      width: 30%;
+                  }
+
+                  .fix_svg {
+                      display: inline-block;
+                  }
+
+                  .fix_sld_bx > p {
+                      margin: unset;
+                      text-align: center;
+                  }
+                  .ofr_sld_dec > * {
+                      margin: unset;
+                      line-height: normal;
+                      font-size: 16px !important;
+                      font-weight: 300 !important;
+                  }
+
+                  .ofr_sld_dec {
+                      margin-top: 10px;
+                  }
+                </style>
+                <script>
+                  let swp = new Swiper('.swp_ofr',{
+                    slidesPerView: 1.3,
+                    spaceBetween: 10,
+                    centeredSlides:true,
+                    loop: true,
+                    navigation: {
+                      nextEl: ".swNxt",
+                      prevEl: ".swPrv",
+                    },
+                  });
+                </script>
               {%- when 'gm_collapsible_tab' -%}
                 <div class="product__accordion accordion quick-add-hidden" {{ block.shopify_attributes }}>
                   <details id="Details-{{ block.id }}-{{ section.id }}">
@@ -1125,10 +1332,7 @@
                       {% render 'icon-caret' %}
                     </summary>
                     <div class="accordion__content rte" id="ProductAccordion-{{ block.id }}-{{ section.id }}">
-                      <img
-                        src="{{ block.settings.content |  image_url: width: 400 }}"
-                        alt="{{block.settings.content.alt}}"
-                      >
+                      <img src="{{ block.settings.content |  image_url: width: 400 }}" alt="{{block.settings.content.alt}}" width="" height="">
                       {{ block.settings.page.content }}
                     </div>
                   </details>
@@ -2196,6 +2400,11 @@
                 {% render 'share-button', block: block, share_link: share_url %}
 
               {%- when 'variant_picker' -%}
+                <select style="display:none">
+                  {% for variant in product.variants %}
+                    <option data-option1="{{ variant.option1 }}" data-option2="{{ variant.option2 }}" data-option3="{{ variant.option3 }}" data-img="{{ variant.featured_media.id }}">{{variant.id}}</option>
+                  {% endfor %}
+                </select>
                 {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
               {%- when 'buy_buttons' -%}
                 {%- render 'buy-buttons',
@@ -2624,6 +2833,153 @@
           "id": "shipping_hide",
           "label": "Hide Shipping Info",
           "default": false
+        }
+      ]
+    },
+    {
+      "type":"gm_offer",
+      "name":"GM Offers And coupons",
+      "settings":[
+        {
+          "type":"text",
+          "id":"ttl",
+          "label":"Enter Title"
+        },
+        {
+          "type":"header",
+          "content":"Offer slider"
+        },
+        {
+          "type":"text",
+          "id":"ofr_sld_ttl_1",
+          "label":"Offer Slide Title 1"
+        },
+        {
+          "type":"richtext",
+          "id":"ofr_sld_dec_1",
+          "label":"Offer Slide Description 1"
+        },
+        {
+          "type":"text",
+          "id":"ofr_sld_ttl_2",
+          "label":"Offer Slide Title 2"
+        },
+        {
+          "type":"richtext",
+          "id":"ofr_sld_dec_2",
+          "label":"Offer Slide Description 2"
+        },
+        {
+          "type":"text",
+          "id":"ofr_sld_ttl_3",
+          "label":"Offer Slide Title 3"
+        },
+        {
+          "type":"richtext",
+          "id":"ofr_sld_dec_3",
+          "label":"Offer Slide Description 3"
+        },
+        {
+          "type":"text",
+          "id":"ofr_sld_ttl_4",
+          "label":"Offer Slide Title 4"
+        },
+        {
+          "type":"richtext",
+          "id":"ofr_sld_dec_4",
+          "label":"Offer Slide Description 4"
+        },
+        {
+          "type":"text",
+          "id":"ofr_sld_ttl_5",
+          "label":"Offer Slide Title 5"
+        },
+        {
+          "type":"richtext",
+          "id":"ofr_sld_dec_5",
+          "label":"Offer Slide Description 5"
+        },
+        {
+          "type":"text",
+          "id":"ofr_sld_ttl_6",
+          "label":"Offer Slide Title 6"
+        },
+        {
+          "type":"richtext",
+          "id":"ofr_sld_dec_6",
+          "label":"Offer Slide Description 6"
+        },
+        {
+          "type":"text",
+          "id":"ofr_sld_ttl_7",
+          "label":"Offer Slide Title 7"
+        },
+        {
+          "type":"richtext",
+          "id":"ofr_sld_dec_7",
+          "label":"Offer Slide Description 7"
+        },
+        {
+          "type":"header",
+          "content":"Fix Offer Blocks"
+        },
+        {
+          "type":"image_picker",
+          "id":"img_svg_1",
+          "label":"Fix Offer Block Image 1"
+        },
+        {
+          "type":"text",
+          "id":"img_txt_1",
+          "label":"Fix Offer Block Text 1"
+        },
+        {
+          "type":"image_picker",
+          "id":"img_svg_2",
+          "label":"Fix Offer Block Image 2"
+        },
+        {
+          "type":"text",
+          "id":"img_txt_2",
+          "label":"Fix Offer Block Text 2"
+        },
+        {
+          "type":"image_picker",
+          "id":"img_svg_3",
+          "label":"Fix Offer Block Image 3"
+        },
+        {
+          "type":"text",
+          "id":"img_txt_3",
+          "label":"Fix Offer Block Text 3"
+        }
+      ]
+    },
+    {
+      "type": "surprise",
+      "name":"GM Surprise",
+      "settings":[
+        {
+          "type": "image_picker",
+          "id":"icn_img",
+          "label":"Select Icon"
+        },
+        {
+          "type":"richtext",
+          "id":"sup_txt",
+          "label":"Enter Text"
+        },
+        {
+          "type":"checkbox",
+          "id":"border_top",
+          "label":"Border Top",
+          "default":true
+        },
+        {
+          "type":"checkbox",
+          "id":"border_bottom",
+          "label":"Border Bottom",
+          "default":true
         }
       ]
     },

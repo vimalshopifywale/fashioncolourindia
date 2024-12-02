@@ -116,6 +116,41 @@
             "margin_top": 20,
             "margin_bottom": 0
           }
+        },
+        "surprise_bma6YJ": {
+          "type": "surprise",
+          "settings": {
+            "icn_img": "shopify://shop_images/Group_1.webp",
+            "sup_txt": "<p><strong>Free Surprise*</strong></p><p>Get Free product on orders above ₹1299*<br/><strong>Coupon Code: BIGBASHSALE</strong></p>",
+            "border_top": true,
+            "border_bottom": true
+          }
+        },
+        "gm_offer_BbAyaw": {
+          "type": "gm_offer",
+          "settings": {
+            "ttl": "Offers and coupons",
+            "ofr_sld_ttl_1": "Free Glow O Clock Face Kit",
+            "ofr_sld_dec_1": "<p>Valid on all Orders Above Rs.549</p><p>Use Code \"<strong>FREEFACEPALETTE</strong>\" at Checkout</p>",
+            "ofr_sld_ttl_2": "Free Glow O Clock Face Kit",
+            "ofr_sld_dec_2": "<p>Valid on all Orders Above Rs.549</p><p>Use Code \"<strong>FREEFACEPALETTE</strong>\" at Checkout</p>",
+            "ofr_sld_ttl_3": "Free Glow O Clock Face Kit",
+            "ofr_sld_dec_3": "<p>Valid on all Orders Above Rs.549</p><p>Use Code \"<strong>FREEFACEPALETTE</strong>\" at Checkout</p>",
+            "ofr_sld_ttl_4": "Free Glow O Clock Face Kit",
+            "ofr_sld_dec_4": "<p>Valid on all Orders Above Rs.549</p><p>Use Code \"<strong>FREEFACEPALETTE</strong>\" at Checkout</p>",
+            "ofr_sld_ttl_5": "Free Glow O Clock Face Kit",
+            "ofr_sld_dec_5": "<p>Valid on all Orders Above Rs.549</p><p>Use Code \"<strong>FREEFACEPALETTE</strong>\" at Checkout</p>",
+            "ofr_sld_ttl_6": "Free Glow O Clock Face Kit",
+            "ofr_sld_dec_6": "<p>Valid on all Orders Above Rs.549</p><p>Use Code \"<strong>FREEFACEPALETTE</strong>\" at Checkout</p>",
+            "ofr_sld_ttl_7": "Free Glow O Clock Face Kit",
+            "ofr_sld_dec_7": "<p>Valid on all Orders Above Rs.549</p><p>Use Code \"<strong>FREEFACEPALETTE</strong>\" at Checkout</p>",
+            "img_svg_1": "shopify://shop_images/Discount.png",
+            "img_txt_1": "5% OFF on all prepaid orders",
+            "img_svg_2": "shopify://shop_images/Discount.png",
+            "img_txt_2": "5% OFF on all prepaid orders",
+            "img_svg_3": "shopify://shop_images/Discount.png",
+            "img_txt_3": "5% OFF on all prepaid orders"
+          }
         }
       },
       "block_order": [
@@ -128,7 +163,9 @@
         "variant_picker",
         "buy_buttons",
         "image_Hbm4K8",
-        "264e37ac-8ac8-475c-9f10-973d46bb217d"
+        "264e37ac-8ac8-475c-9f10-973d46bb217d",
+        "surprise_bma6YJ",
+        "gm_offer_BbAyaw"
       ],
       "custom_css": [],
       "settings": {

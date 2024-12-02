@@ -29,6 +29,21 @@ if (!customElements.get('media-gallery')) {
       }
 
       setActiveMedia(mediaId, prepend) {
+        let selector;
+        if(event.currentTarget.classList.contains('thumbnail') && event.currentTarget.dataset.gmTarget){
+          selector = document.querySelector(`select>option[data-img="${event.currentTarget.dataset.gmTarget}"]`);
+          if(selector){
+            let opt1 = selector.dataset.option1;
+            if(opt1)
+            $(`input[value="${opt1}"]+label`).each((i,el)=>{$(el).click()});
+            let opt2 = selector.dataset.option2;
+            if(opt2)
+            $(`input[value="${opt2}"]+label`).each((i,el)=>{$(el).click()});
+            let opt3 = selector.dataset.option3;
+            if(opt3)
+            $(`input[value="${opt3}"]+label`).each((i,el)=>{$(el).click()});
+          }
+        }
         const activeMedia = this.elements.viewer.querySelector(`[data-media-id="${mediaId}"]`);
         this.elements.viewer.querySelectorAll('[data-media-id]').forEach((element) => {
           element.classList.remove('is-active');

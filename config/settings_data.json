@@ -245,16 +245,6 @@
         "type": "shopify://apps/quick-social-login/blocks/app-embed/835209bc-8680-493e-b34a-6dd763a16101",
         "disabled": false,
         "settings": {}
-      },
-      "9498845458295061716": {
-        "type": "shopify://apps/getsale/blocks/banner-embed-v3/dae9396b-6892-475e-8260-9c39c0a67574",
-        "disabled": false,
-        "settings": {}
-      },
-      "16703339255274331331": {
-        "type": "shopify://apps/getsale/blocks/app-embed-v3/dae9396b-6892-475e-8260-9c39c0a67574",
-        "disabled": false,
-        "settings": {}
       }
     },
     "color_schemes": {

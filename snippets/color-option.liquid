@@ -141,7 +141,7 @@
       type="radio"
       id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
       name="{{ option.name }}"
-      value="{{ value | escape }}"
+      value="{{ value | escape }}" 
       form="{{ product_form_id }}"
       {% if option.selected_value == value %}
         checked
@@ -208,7 +208,7 @@
       <input
         type="radio"
         id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
-        name="{{ option.name }}" data-color-name="{{ gm_var_img[0] }}"
+        name="{{ option.name }}" data-color-name="{{ gm_var_img[0] }}" 
         value="{{ value | escape }}"
         form="{{ product_form_id }}"
         {% if option.selected_value == value %}
@@ -231,7 +231,7 @@
       %}
       <input
         type="radio"
-        id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
+        id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" 
         name="{{ option.name }}" data-color-name="{{ gm_value[0] }}"
         value="{{ value | escape }}"
         form="{{ product_form_id }}"

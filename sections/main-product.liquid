@@ -2405,7 +2405,9 @@
                     <option data-option1="{{ variant.option1 }}" data-option2="{{ variant.option2 }}" data-option3="{{ variant.option3 }}" data-img="{{ variant.featured_media.id }}">{{variant.id}}</option>
                   {% endfor %}
                 </select>
-                {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
+                {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id, hide_on_mobile: block.settings.hide_on_mobile, mobile_version: false %}
+              {%- when 'variant_picker_mbl' -%}
+                {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id, mobile_version: true %}
               {%- when 'buy_buttons' -%}
                 {%- render 'buy-buttons',
                   block: block,
@@ -4580,6 +4582,40 @@
           ],
           "default": "button",
           "label": "t:sections.main-product.blocks.variant_picker.settings.picker_type.label"
+        }
+      ]
+    },
+    {
+      "type": "variant_picker_mbl",
+      "name": "Mobile Variant Picker",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "select",
+          "id": "picker_type",
+          "info": "t:settings_schema.color_swatch.settings.header__3.info",
+          "options": [
+            {
+              "value": "dropdown",
+              "label": "t:sections.main-product.blocks.variant_picker.settings.picker_type.options__1.label"
+            },
+            {
+              "value": "button",
+              "label": "t:sections.main-product.blocks.variant_picker.settings.picker_type.options__2.label"
+            },
+            {
+              "value":"gm-variant",
+              "label":"GM Variant '|' Color"
+            }
+          ],
+          "default": "button",
+          "label": "t:sections.main-product.blocks.variant_picker.settings.picker_type.label"
+        },
+        {
+          "type":"checkbox",
+          "id":"hide_on_mobile",
+          "default":false,
+          "label": "Check to hide on mobile device"
         }
       ]
     },

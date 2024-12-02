@@ -29,6 +29,13 @@
             "title_size": 30
           }
         },
+        "variant_picker_mbl_CMqahD": {
+          "type": "variant_picker_mbl",
+          "settings": {
+            "picker_type": "gm-variant",
+            "hide_on_mobile": false
+          }
+        },
         "judge_me_reviews_preview_badge_bFPePG": {
           "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {}
@@ -155,6 +162,7 @@
       },
       "block_order": [
         "title",
+        "variant_picker_mbl_CMqahD",
         "judge_me_reviews_preview_badge_bFPePG",
         "gm_feature_LXVUqG",
         "ad73ef22-d96e-41c5-b4e1-ed8d9daf2239",

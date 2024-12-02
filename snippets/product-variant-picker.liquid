@@ -9,11 +9,18 @@
   Usage:
   {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
 {% endcomment %}
+{% comment %} hide_on_mobile {% endcomment %}
+{% if mobile_version %}
+  {% assign dsk_class = 'dsk_none' %}
+{% elsif true %}
+  {% assign mobile_class = 'mbl_none' %}    
+  <div class="without-variant dsk_none"></div>   
+{% endif %}
 {%- unless product.has_only_default_variant -%}
   {%- if block.settings.picker_type == 'button' or block.settings.picker_type == 'gm-variant' -%}
     <variant-radios
       id="variant-radios-{{ section.id }}"
-      class="no-js-hidden sw-variantbox"
+      class="no-js-hidden sw-variantbox {{ mobile_class }} {{ dsk_class }}"
       data-section="{{ section.id }}"
       data-url="{{ product.url }}"
       {% if update_url == false %}

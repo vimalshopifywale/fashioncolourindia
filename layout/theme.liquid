@@ -508,5 +508,27 @@
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
+    <style>
+      @media screen and (max-width:750px) {
+        .mbl_none{
+          display: none !important;
+        }
+        .dsk_none{
+          display: block !important;
+        }
+      }
+      .dsk_none{
+        display: block !important;
+      }
+      @media screen and (min-width:750px) {
+        .dsk_none{
+          display: none !important;
+        }
+      }
+      .sw-variantbox.dsk_none{
+        padding:unset;
+        border: unset;
+      }
+    </style>
   </body>
 </html>

@@ -29,16 +29,16 @@
             "title_size": 30
           }
         },
+        "judge_me_reviews_preview_badge_bFPePG": {
+          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        },
         "variant_picker_mbl_CMqahD": {
           "type": "variant_picker_mbl",
           "settings": {
             "picker_type": "gm-variant",
             "hide_on_mobile": false
           }
-        },
-        "judge_me_reviews_preview_badge_bFPePG": {
-          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {}
         },
         "gm_feature_LXVUqG": {
           "type": "gm-feature",
@@ -128,7 +128,7 @@
           "type": "surprise",
           "settings": {
             "icn_img": "shopify://shop_images/Group_1.webp",
-            "sup_txt": "<p><strong>Free Surprise*</strong></p><p>Get Free product on orders above ₹1299*<br/><strong>Coupon Code: BIGBASHSALE</strong></p>",
+            "sup_txt": "<p><strong>Free Surprise*</strong></p><h5>Get a free Eyeshadow Palette on order above 1599/-</h5><h5><strong>USE CODE- GLOWKARO</strong></h5>",
             "border_top": true,
             "border_bottom": true
           }
@@ -137,33 +137,33 @@
           "type": "gm_offer",
           "settings": {
             "ttl": "Offers and coupons",
-            "ofr_sld_ttl_1": "Free Glow O Clock Face Kit",
-            "ofr_sld_dec_1": "<p>Valid on all Orders Above Rs.549</p><p>Use Code \"<strong>FREEFACEPALETTE</strong>\" at Checkout</p>",
-            "ofr_sld_ttl_2": "Free Glow O Clock Face Kit",
-            "ofr_sld_dec_2": "<p>Valid on all Orders Above Rs.549</p><p>Use Code \"<strong>FREEFACEPALETTE</strong>\" at Checkout</p>",
-            "ofr_sld_ttl_3": "Free Glow O Clock Face Kit",
-            "ofr_sld_dec_3": "<p>Valid on all Orders Above Rs.549</p><p>Use Code \"<strong>FREEFACEPALETTE</strong>\" at Checkout</p>",
-            "ofr_sld_ttl_4": "Free Glow O Clock Face Kit",
-            "ofr_sld_dec_4": "<p>Valid on all Orders Above Rs.549</p><p>Use Code \"<strong>FREEFACEPALETTE</strong>\" at Checkout</p>",
-            "ofr_sld_ttl_5": "Free Glow O Clock Face Kit",
-            "ofr_sld_dec_5": "<p>Valid on all Orders Above Rs.549</p><p>Use Code \"<strong>FREEFACEPALETTE</strong>\" at Checkout</p>",
-            "ofr_sld_ttl_6": "Free Glow O Clock Face Kit",
-            "ofr_sld_dec_6": "<p>Valid on all Orders Above Rs.549</p><p>Use Code \"<strong>FREEFACEPALETTE</strong>\" at Checkout</p>",
-            "ofr_sld_ttl_7": "Free Glow O Clock Face Kit",
-            "ofr_sld_dec_7": "<p>Valid on all Orders Above Rs.549</p><p>Use Code \"<strong>FREEFACEPALETTE</strong>\" at Checkout</p>",
+            "ofr_sld_ttl_1": "\"Flat 10% off on First Order\"",
+            "ofr_sld_dec_1": "<p>Valid on all Orders Above Rs.399</p><p>Use Code \"<strong>Welcome</strong>\" at Checkout</p>",
+            "ofr_sld_ttl_2": "\"Flat 10% off with code SAVE10\"",
+            "ofr_sld_dec_2": "<p>Valid on all Orders Above Rs.800</p><p>Use Code \"<strong>Save10</strong>\" at Checkout</p>",
+            "ofr_sld_ttl_3": "\"Get a Lip Kiss Lip Balm Free\"",
+            "ofr_sld_dec_3": "<p>Valid on all Orders Above Rs.799</p><p>Use Code \"<strong>BALMITUP</strong>\" at Checkout</p>",
+            "ofr_sld_ttl_4": "\"Flat 10% off on First Order\"",
+            "ofr_sld_dec_4": "<p>Valid on all Orders Above Rs.399</p><p>Use Code \"<strong>Welcome</strong>\" at Checkout</p>",
+            "ofr_sld_ttl_5": "\"Flat 10% off with code SAVE10\"",
+            "ofr_sld_dec_5": "<p>Valid on all Orders Above Rs.800</p><p>Use Code \"<strong>Save10</strong>\" at Checkout</p>",
+            "ofr_sld_ttl_6": "\"Get a Lip Kiss Lip Balm Free\"",
+            "ofr_sld_dec_6": "<p>Valid on all Orders Above Rs.799</p><p>Use Code \"<strong>BALMITUP</strong>\" at Checkout</p>",
+            "ofr_sld_ttl_7": "\"Flat 10% off on First Order\"",
+            "ofr_sld_dec_7": "<p>Valid on all Orders Above Rs.399</p><p>Use Code \"<strong>Welcome</strong>\" at Checkout</p>",
             "img_svg_1": "shopify://shop_images/Discount.png",
             "img_txt_1": "5% OFF on all prepaid orders",
-            "img_svg_2": "shopify://shop_images/Discount.png",
-            "img_txt_2": "5% OFF on all prepaid orders",
-            "img_svg_3": "shopify://shop_images/Discount.png",
-            "img_txt_3": "5% OFF on all prepaid orders"
+            "img_svg_2": "shopify://shop_images/secure-payment_9431936.png",
+            "img_txt_2": "Secure Payment",
+            "img_svg_3": "shopify://shop_images/delivered_4442604.png",
+            "img_txt_3": "PAN India Delivery"
           }
         }
       },
       "block_order": [
         "title",
-        "variant_picker_mbl_CMqahD",
         "judge_me_reviews_preview_badge_bFPePG",
+        "variant_picker_mbl_CMqahD",
         "gm_feature_LXVUqG",
         "ad73ef22-d96e-41c5-b4e1-ed8d9daf2239",
         "price",

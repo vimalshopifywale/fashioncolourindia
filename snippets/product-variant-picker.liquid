@@ -67,7 +67,7 @@
             {% render 'color-option', product: product, option: option, block: block,mobile_class:mobile_class %}
           {%- else -%}
             <legend class="form__label ">{{ option.name }}: <span id="selected-{{ option.name | downcase | replace: ' ', '-' |  remove: '|'  }}"> {{ option_selected }}</span></legend>
-          {% render 'product-variant-options', product: product, option: option, block: block %}
+          {% render 'product-variant-options', product: product, option: option, block: block,mobile_class:mobile_class %}
         {%- endif -%}
           </fieldset>
       {%- endfor -%}

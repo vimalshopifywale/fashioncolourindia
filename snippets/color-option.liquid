@@ -210,8 +210,8 @@
     {% endif %}
     {% if value contains '~' %}
       {% assign gm_var_img = value |  split: '~' %}
-      {% assign gm_img_url = shop.metaobjects.swatch_images[gm_var_img[1]].swatch_image | image_url: width:80%}
-    
+      {% assign gm_img_url = shop.metaobjects.swatch_images[gm_var_img[1]].swatch_image | image_url: width:80 %}
+      {{ gm_img_url }}
       <input
         type="radio"
         id="{{ mbl_id }}"
@@ -232,6 +232,7 @@
             for="{{ mbl_id }}">
         <span class="visually-hidden">{{ 'products.product.variant_sold_out_or_unavailable' | t }}</span>
       </label>
+      {% assign gm_img_url = '' %}
     {% elsif value contains '|' %}
       {% liquid
         assign gm_value = value | split: '|'
@@ -299,6 +300,7 @@
         </label>
         {%- assign colorCodes = "" -%}
       {% endif %}
+      {% liquid assign gm_value = '' %}
     {% else %}
       <input
         type="radio"

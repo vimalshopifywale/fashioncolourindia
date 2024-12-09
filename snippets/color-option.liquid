@@ -205,10 +205,17 @@
     {% if value contains '~' %}
       {% assign gm_var_img = value |  split: '~' %}
       {% assign gm_img_url = shop.metaobjects.swatch_images[gm_var_img[1]].swatch_image | image_url: width:80%}
+    {% if mobile_class == 'mbl_none' %}
+      {% assign mbl_cls = option.name | append: '-mbl' %}
+      {% assign mbl_id = section.id | append: '-' | append: option.position |  append: '-' |  append: forloop.index0 |  append: '-mbl' %}
+    {% else %}
+      {% assign mbl_cls = option.name %}
+      {% assign mbl_id = section.id | append: '-' | append: option.position |  append: '-' |  append: forloop.index0 %}
+    {% endif %}
       <input
         type="radio"
-        id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
-        name="{{ option.name }}" data-color-name="{{ gm_var_img[0] }}" 
+        id="{{ mbl_id }}"
+        name="{{ mbl_cls }}" data-color-name="{{ gm_var_img[0] }}" 
         value="{{ value | escape }}"
         form="{{ product_form_id }}"
         {% if option.selected_value == value %}
@@ -222,7 +229,7 @@
         data-{{ option.name | downcase | replace: ' ', '-'  }}="{{value[0]}}"
         style="background-image:url({{gm_img_url}});"
         class="color-swatch variant-swatch {% case swatchStyle %}{% when "round" %}round{% when "square-round-corners" %}round-corners{% endcase %} img_swatches"
-            for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
+            for="{{ mbl_id }}">
         <span class="visually-hidden">{{ 'products.product.variant_sold_out_or_unavailable' | t }}</span>
       </label>
     {% elsif value contains '|' %}

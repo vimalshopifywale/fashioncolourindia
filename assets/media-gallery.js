@@ -30,6 +30,7 @@ if (!customElements.get('media-gallery')) {
 
       setActiveMedia(mediaId, prepend) {
         let selector;
+        debugger
         if(event.currentTarget.classList.contains('thumbnail') && event.currentTarget.dataset.gmTarget){
           selector = document.querySelector(`select>option[data-img="${event.currentTarget.dataset.gmTarget}"]`);
           if(selector){

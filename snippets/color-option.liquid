@@ -216,7 +216,7 @@
       {% else %}
       {% assign gm_var_img_handle = gm_var_img[1] | downcase %}
       {% paginate shop.metaobjects.swatch_images.values by 500 %}
-        {% for meta_count in shop.metaobjects.swatch_images.values %}          
+        {% for meta_count in shop.metaobjects.swatch_images.values %}   
             {% assign meta_count_ttl = meta_count.title | downcase %}
             {% if meta_count_ttl == gm_var_img_handle %}
               {% assign gm_img_url = meta_count.swatch_image | image_url: width:80 %}

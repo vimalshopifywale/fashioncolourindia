@@ -209,9 +209,38 @@
       {% assign mbl_id = section.id | append: '-' | append: option.position |  append: '-' |  append: forloop.index0 %}
     {% endif %}
     {% if value contains '~' %}
-      {% assign gm_var_img = value |  split: '~' %}
-      {% assign gm_img_url = shop.metaobjects.swatch_images[gm_var_img[1]].swatch_image | image_url: width:80 %}
-      {{ gm_img_url }}
+      {% assign option_len = option.values.size |  plus: 0 %}
+      {% assign gm_var_img = value | split: '~' %}
+      {% if option_len < 20 %}
+        {% assign gm_img_url = shop.metaobjects.swatch_images[gm_var_img[1]].swatch_image | image_url: width:80 %}
+      {% else %}
+      {% assign gm_var_img_handle = gm_var_img[1] | downcase %}
+      {% paginate shop.metaobjects.swatch_images.values by 500 %}
+        {% for meta_count in shop.metaobjects.swatch_images.values %}          
+            {% assign meta_count_ttl = meta_count.title | downcase %}
+            {% if meta_count_ttl == gm_var_img_handle %}
+              {% assign gm_img_url = meta_count.swatch_image | image_url: width:80 %}
+              {% break %}
+            {% endif %}
+          {% endfor %}
+      {% endpaginate %}
+        {% comment %} {% assign gm_var_img_handle = gm_var_img[1] | downcase %}
+        {% assign off_count = 0 %}
+        {% assign total_count = shop.metaobjects.swatch_images.values.count %}
+        {% assign max_itt = total_count |  divided_by: 50 | round: 0 | plus: 1 %}
+        {% assign count_break = false %}
+        {% for item in (1..max_itt) %}
+            {% for meta_count in shop.metaobjects.swatch_images.values offset: 50 %}
+              {{ meta_count.title }}
+              {% assign meta_count_ttl = meta_count.title | downcase %}
+              {% if meta_count_ttl == gm_var_img_handle %}
+                {% assign gm_img_url = meta_count.swatch_image | image_url: width:80 %}
+                {% break %}
+              {% endif %}
+            {% endfor %}
+          {% assign off_count = off_count | plus: 50 %}
+        {% endfor %} {% endcomment %}
+      {% endif %}
       <input
         type="radio"
         id="{{ mbl_id }}"
